@@ -252,6 +252,9 @@
 	payload = /obj/item/bombcore/large
 	can_unanchor = FALSE
 
+/obj/machinery/syndicatebomb/self_destruct/larger
+	payload = /obj/item/bombcore/larger
+
 ///Bomb Cores///
 
 /obj/item/bombcore
@@ -364,6 +367,14 @@
 	range_medium = 10
 	range_light = 20
 	range_flame = 20
+
+//larger
+/obj/item/bombcore/larger
+	name = "massive bomb payload"
+	range_heavy = 145
+	range_medium = 165
+	range_light = 185
+	range_flame = 185
 
 /obj/item/bombcore/miniature
 	name = "small bomb core"

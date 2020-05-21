@@ -1024,7 +1024,7 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 	else
 		if(H.transpiration_efficiency != 0.1)
 			H << "<span class='warning'>You are extremely dehydrated, death is apon you, you must find water.</span>"
-		H.adjustOxyLoss(5)
+//		H.adjustOxyLoss(5)//temp disable until this is fixed up.
 		H.transpiration_efficiency = 0.1
 //		if(prob(10))
 //			H.AdjustWeakened(5)

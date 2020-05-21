@@ -1073,3 +1073,20 @@
 			var/factiontoadd = stripped_input(user, "What faction would you like to add? Valid faction tags are: Vault, BOS, Den, NCR, Legion, Wastelander, capitalization matters and must be put in exactly that and separately.", "Turret Faction Control" , null , 10)
 			faction += factiontoadd
 			user << "You add the [factiontoadd] to the list of factions."
+
+/////////
+// Wasteland Turret
+/////////
+/obj/machinery/porta_turret/syndicate/wasteland
+	installation = null
+	always_up = 1
+	use_power = NO_POWER_USE
+	has_cover = 0
+	scan_range = 16
+	req_access = list(ACCESS_SYNDICATE)
+	faction = list("wastebot")
+	desc = "A ballistic machine gun auto-turret. It appears to have incredibly advanced sensors."
+
+/obj/machinery/porta_turret/syndicate/wasteland/ComponentInitialize()
+	. = ..()
+	AddComponent(/datum/component/empprotection, EMP_PROTECT_SELF | EMP_PROTECT_WIRES)

@@ -61,11 +61,11 @@
 	layer = FLY_LAYER
 
 /turf/closed/indestructible/splashscreen/New()
-	icon = 'icons/misc/splashscreen.dmi'
-	icon_state = "title[rand(1,12)]"
+	icon = 'icons/fallout/misc/lobby.dmi'
+	icon_state = "title[rand(1,13)]"
 
 	src.fullDark = new/atom/movable{
-		icon = 'icons/misc/splashscreen.dmi' //Replace with actual icon
+		icon = 'icons/fallout/misc/lobby.dmi' //Replace with actual icon
 		icon_state = "transition" //Replace with actual state
 		layer = 61;
 		alpha = 0;
@@ -95,7 +95,7 @@
 	return
 
 /turf/closed/indestructible/splashscreen/proc/chooseIcon()
-	var/chosen_icon = "title[rand(1,12)]"
+	var/chosen_icon = "title[rand(1,13)]"
 	if(icon_state != chosen_icon)
 		icon_state = chosen_icon
 	else

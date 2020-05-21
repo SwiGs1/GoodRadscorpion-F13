@@ -154,7 +154,7 @@
 /obj/screen/alert/thirst
 	name = "Thirst"
 	desc = "Drink."
-	icon_state = "water"
+	icon_state = "water"//temp
 
 /obj/screen/alert/fat
 	name = "Fat"

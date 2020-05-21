@@ -172,6 +172,7 @@
 	icon_gib = "gib"
 	maxHealth = 90
 	health = 90
+	faction = list("ghoul", "wastebot")
 
 /mob/living/simple_animal/hostile/ghoul/soldier/armored
 	name = "Armored Ghoul Soldier"
@@ -183,6 +184,7 @@
 	icon_gib = "gib"
 	maxHealth = 100
 	health = 100
+	faction = list("ghoul", "wastebot")
 
 /mob/living/simple_animal/hostile/ghoul/scorched
 	name = "Scorched Ghoul Soldier"
