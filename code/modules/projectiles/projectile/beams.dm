@@ -199,7 +199,7 @@
 /obj/item/projectile/beam/laser/pistol/wattz/magneto //upgraded Wattz
 	name = "penetrating laser beam"
 	damage = 20
-	armour_penetration = 10
+	armour_penetration = 15
 
 /obj/item/projectile/beam/laser/solar //Solar Scorcher
 	name = "solar scorcher beam"

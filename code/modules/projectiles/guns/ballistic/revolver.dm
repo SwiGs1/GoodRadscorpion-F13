@@ -370,7 +370,7 @@
 
 /obj/item/gun/ballistic/revolver/m29/peacekeeper
 	name = "Peacekeeper"
-	desc = "Even desert roses have thorns. This .44 revolver has been modified with a special hammer mechanism, allowing for slow, powerful shots, or fanning the hammer for a flurry of more inaccurate shots."
+	desc = "This .44 revolver has been modified with a special hammer mechanism, allowing for slow, powerful shots, or fanning the hammer for a flurry of more inaccurate shots."
 	item_state = "m29peace"
 	icon_state = "m29peace"
 	extra_damage = 15

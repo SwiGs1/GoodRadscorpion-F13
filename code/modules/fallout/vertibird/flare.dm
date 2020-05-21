@@ -1,6 +1,6 @@
 /obj/item/vertibird_flare
 	icon = 'icons/obj/lighting.dmi'
-	icon_state = "flareblue"
+	icon_state = "flare"
 	name = "Vertibird emergency flare"
 	desc = "REQUESTING MED-EVAC!"
 	w_class = 1

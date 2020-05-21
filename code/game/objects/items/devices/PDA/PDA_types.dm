@@ -116,7 +116,7 @@
 	icon_state = "pda-rd"
 
 /obj/item/pda/captain
-	name = "sentinel Pip-Boy 3000"
+	name = "elder Pip-Boy 3000"
 	default_cartridge = /obj/item/cartridge/captain
 	inserted_item = /obj/item/pen/fountain/captain
 	icon_state = "pda-captain"

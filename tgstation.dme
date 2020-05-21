@@ -14,7 +14,6 @@
 
 // BEGIN_INCLUDE
 #include "_maps\_basemap.dm"
-#include "_maps\map_files\DeathValley\Valley.dmm"
 #include "code\_compile_options.dm"
 #include "code\world.dm"
 #include "code\__DEFINES\_globals.dm"
@@ -1497,6 +1496,7 @@
 #include "code\modules\clothing\under\jobs\medsci.dm"
 #include "code\modules\clothing\under\jobs\security.dm"
 #include "code\modules\crafting\craft.dm"
+#include "code\modules\crafting\forge.dm"
 #include "code\modules\crafting\guncrafting.dm"
 #include "code\modules\crafting\items.dm"
 #include "code\modules\crafting\recipes.dm"

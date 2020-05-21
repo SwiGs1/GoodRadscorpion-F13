@@ -1002,6 +1002,33 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 			to_chat(H, "<span class='notice'>You no longer feel vigorous.</span>")
 		H.metabolism_efficiency = 1
 
+	//THIRST//
+	if(H.water > THIRST_LEVEL_LIGHT)
+		if(H.transpiration_efficiency != 1.1)
+			H << "<span class='notice'>You are no longer thirsty.</span>"
+		H.transpiration_efficiency = 1.1
+	else if(H.water > THIRST_LEVEL_MIDDLE) //LITLE THIRST
+		if(H.transpiration_efficiency != 1)
+			H << "<span class='notice'>Your mouth is incredibly dry.</span>"
+		H.transpiration_efficiency = 1
+	else if(H.water > THIRST_LEVEL_HARD) //MIDDLE THIRST
+		if(H.transpiration_efficiency != 0.9)
+			H << "<span class='warning'>You are very thirsty, find water.</span>"
+		H.transpiration_efficiency = 0.9
+	else if(H.water > THIRST_LEVEL_DEADLY) //HARD THIRST
+		if(H.transpiration_efficiency != 0.6)
+			H << "<span class='warning'>You are very dehydrated, find water immediately or you will perish.</span>"
+//		if(prob(4))
+//			H.AdjustWeakened(5)
+		H.transpiration_efficiency = 0.6
+	else
+		if(H.transpiration_efficiency != 0.1)
+			H << "<span class='warning'>You are extremely dehydrated, death is apon you, you must find water.</span>"
+		H.adjustOxyLoss(5)
+		H.transpiration_efficiency = 0.1
+//		if(prob(10))
+//			H.AdjustWeakened(5)
+
 	switch(H.nutrition)
 		if(NUTRITION_LEVEL_FULL to INFINITY)
 			SEND_SIGNAL(H, COMSIG_ADD_MOOD_EVENT, "nutrition", /datum/mood_event/nutrition/fat)
@@ -1021,6 +1048,18 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 		if(0 to NUTRITION_LEVEL_STARVING)
 			SEND_SIGNAL(H, COMSIG_ADD_MOOD_EVENT, "nutrition", /datum/mood_event/nutrition/starving)
 			H.throw_alert("nutrition", /obj/screen/alert/starving)
+	switch(H.water)
+		if(THIRST_LEVEL_LIGHT to INFINITY)
+			H.clear_alert("thirst")
+		if(THIRST_LEVEL_MIDDLE to THIRST_LEVEL_LIGHT)
+			H.throw_alert("thirst", /obj/screen/alert/thirst, 2)
+		if (THIRST_LEVEL_HARD to THIRST_LEVEL_MIDDLE)
+			H.throw_alert("thirst", /obj/screen/alert/thirst, 3)
+		if (THIRST_LEVEL_DEADLY to THIRST_LEVEL_HARD)
+			H.throw_alert("thirst", /obj/screen/alert/thirst, 4)
+		else
+			H.throw_alert("thirst", /obj/screen/alert/thirst, 5)
+	return 1
 
 /datum/species/proc/update_health_hud(mob/living/carbon/human/H)
 	return 0
@@ -1132,6 +1171,9 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 			var/hungry = (500 - H.nutrition) / 5 //So overeat would be 100 and default level would be 80
 			if((hungry >= 70) && !flight) //Being hungry will still allow you to use a flightsuit/wings.
 				. += hungry / 50
+
+			if(H.water < THIRST_LEVEL_LIGHT)
+				. += (THIRST_LEVEL_LIGHT - H.water)/100
 
 		//Moving in high gravity is very slow (Flying too)
 		if(gravity > STANDARD_GRAVITY)

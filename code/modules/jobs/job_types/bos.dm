@@ -46,12 +46,21 @@ Elder
 	selection_color = "#7f8c8d"
 	req_admin_notify = 1
 	exp_requirements = 2700
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 1
+	spawn_positions = 1
+	description = "You, of all individuals, likely have the most power out of anyone within this wretched valley, and, by extension, the bunker. You're here to assure the chapter lives on, and, with that, you must maintain the Security of those in your charge. - Additionally, while normally you'd follow the codex and such to a letter, you may deviate, if you believe it for the better of the chapter. Good luck, Elder."
+	forbids = "The Brotherhood of Steel Forbids: Unethical human experimentation. Violence beyond what is needed to accomplish Brotherhood goals."
+	enforces = "The Brotherhood of Steel Expects: Collection and safeguarding of technology from the wasteland. Experimentation and research."
+	supervisors = "no one but your morals and the codex."
 	outfit = /datum/outfit/job/bos/f13elder
 
 	access = list(ACCESS_ROBOTICS, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_MINERAL_STOREROOM, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS)
 	minimal_access = list(ACCESS_ROBOTICS, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_MINERAL_STOREROOM, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS)
+
+	loadout_options = list(
+	/datum/outfit/loadout/elderpally,
+	/datum/outfit/loadout/elderscribe
+	)
 
 /datum/outfit/job/bos/f13elder
 	name = "Elder"
@@ -59,14 +68,30 @@ Elder
 	pa_wear = TRUE
 	suit = 			/obj/item/clothing/suit/f13/elder
 	accessory = 	/obj/item/clothing/accessory/bos/elder
-	suit_store =	/obj/item/gun/energy/laser/plasma
 	backpack_contents = list(
 		/obj/item/stock_parts/cell/ammo/mfc=2, \
 		/obj/item/kitchen/knife/combat=1, \
 		/obj/item/gun/ballistic/automatic/pistol/n99=1)
 
+/datum/job/bos/f13elder/after_spawn(mob/living/carbon/human/H, mob/M)
+	H.add_quirk("Hard Yards")
+	H.add_quirk("Lifegiver")
+	H.add_quirk("Iron Fist")
+
+/datum/outfit/loadout/elderpally
+	name = "Paladin Elder"
+	backpack_contents = list(
+		/obj/item/stock_parts/cell/ammo/mfc=3,
+		/obj/item/gun/energy/laser/plasma=1)
+
+/datum/outfit/loadout/elderscribe
+	name = "Scribe Elder"
+	l_hand = /obj/item/gun/energy/laser/scatter
+	backpack_contents = list(
+		/obj/item/blueprint/weapon/needler=1)
+
 /*
-Sentinel
+Sentinel - Not west cost abiding. Disabled for now.
 */
 
 /datum/job/bos/f13sentinel
@@ -74,8 +99,8 @@ Sentinel
 	flag = F13SENTINEL
 	faction = "BOS"
 	head_announce = list("Security")
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	description = "You are the acting field commander until the Brotherhood regains its strength enough to place an Elder for the bunker. You are a veteran of many battles and sorties in pursuit of Brotherhood goals; your only weakness may just be your hubris. Your main goals are defense of the Chapter and surveillance of the surrounding region for technology."
 	forbids = "The Brotherhood of Steel Forbids: Unethical human experimentation. Violence beyond what is needed to accomplish Brotherhood goals."
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
@@ -154,7 +179,7 @@ Head Scribe
 	description = "You are the foremost experienced scribe remaining in this bunker. Your role is to ensure the safekeeping and proper usage of technology within the Brotherhood. You are also the lead medical expert in this Chapter. Delegate your tasks to your Scribes."
 	forbids = "The Brotherhood of Steel Forbids: Unethical human experimentation. Violence beyond what is needed to accomplish Brotherhood goals."
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
-	supervisors = "the elder"
+	supervisors = "the Elder"
 	selection_color = "#7f8c8d"
 	exp_requirements = 600
 	exp_type = EXP_TYPE_SCRIBE
@@ -221,7 +246,7 @@ Knight-Captain
 	description = "You are the Knight-Captain, head of the Knight division in the Chapter. Your knowledge of pre-war materials and engineering is almost unparalleled, and you have basic combat training and experience. You are in charge of the Chapter's engineering Corps, and your Knights. Delegate to them as necessary. As Chief Armorer, you are also in charge of the armory."
 	forbids = "The Brotherhood of Steel Forbids: Unethical human experimentation. Violence beyond what is needed to accomplish Brotherhood goals."
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
-	supervisors = "the Sentinel"
+	supervisors = "the Elder"
 	selection_color = "#7f8c8d"
 	exp_requirements = 600
 
@@ -299,7 +324,7 @@ Senior Paladin
 	description = "As the Chapter's Senior offensive warrior, you have proven your service and dedication to the Brotherhood over your time as a Paladin. As your skills gained, however, you were deigned to be more useful as a commander and trainer. Now you have your trusty super-sledge, and were recently given a suit of T-51b power armor. Your job is to coordinate the Paladins and ensure they work as a team, instilling discipline as you go."
 	forbids = "The Brotherhood of Steel Forbids: Unethical human experimentation. Violence beyond what is needed to accomplish Brotherhood goals."
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
-	supervisors = "the Sentinel"
+	supervisors = "the Elder"
 	selection_color = "#95a5a6"
 	exp_requirements = 1200
 
@@ -367,7 +392,7 @@ Paladin
 	description = "You answer directly to the Sentinel. You are this Chapter's main line of defense and offense; highly trained in combat and weaponry though with little practical field experience, you are eager to prove your worth to the Brotherhood. Your primary duties are defense and surface operations. You may also be assigned a trainee Initiate."
 	forbids = "The Brotherhood of Steel Forbids: Unethical human experimentation. Violence beyond what is needed to accomplish Brotherhood goals."
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
-	supervisors = "the Sentinel"
+	supervisors = "the Elder"
 	selection_color = "#95a5a6"
 	exp_requirements = 900
 
@@ -601,3 +626,37 @@ Initiate
 		/obj/item/book/granter/trait/chemistry=1,
 		/obj/item/clothing/accessory/bos/initiateS=1
 		)
+
+//pilot
+/datum/job/bos/vertipilot
+	title = "Vertibird Pilot"
+	flag = VERTIPILOT
+	faction = "BOS"
+	total_positions = 1
+	spawn_positions = 1
+	description = "Likely starting out as a Knight, you've decided to train to pilot one of the most dangerous creations still around. Good job."
+	forbids = "The Brotherhood of Steel Forbids: Unethical human experimentation. Violence beyond what is needed to accomplish Brotherhood goals."
+	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
+	supervisors = "the Elder and Paladins"
+	selection_color = "#95a5a6"
+	exp_requirements = 1900
+	exp_type = EXP_TYPE_CREW
+
+	outfit = /datum/outfit/job/bos/vertipilot
+
+	access = list(ACCESS_ROBOTICS, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS)
+	minimal_access = list(ACCESS_ROBOTICS, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS)
+
+/datum/outfit/job/bos/vertipilot
+	name = "Pilot"
+	jobtype = /datum/job/bos/vertipilot
+	backpack = /obj/item/storage/backpack/explorer
+	ears = 			/obj/item/radio/headset/headset_bos
+	uniform =		/obj/item/clothing/under/syndicate/brotherhood
+	shoes = 		/obj/item/clothing/shoes/combat/swat
+	gloves = 		/obj/item/clothing/gloves/combat
+	id = 			/obj/item/card/id/dogtag
+	backpack_contents = list(
+		/obj/item/ammo_box/magazine/m10mm_adv=2, \
+		/obj/item/kitchen/knife/combat=1, \
+		/obj/item/gun/ballistic/automatic/pistol/n99=1)

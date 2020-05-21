@@ -1607,7 +1607,7 @@
 	time = 120
 	category = CAT_WEAPONRY
 	subcategory = CAT_WEAPON
-/* CRAFT rework: removed for balance
+
 /datum/crafting_recipe/citykiller
 	name = "combat shotgun"
 	result = /obj/item/gun/ballistic/shotgun/automatic/combat
@@ -1621,7 +1621,7 @@
 	time = 120
 	category = CAT_WEAPONRY
 	subcategory = CAT_WEAPON
-*//* CRAFT rework: removed for balance
+
 /datum/crafting_recipe/caws
 	name = "h&k caws"
 	result = /obj/item/gun/ballistic/automatic/shotgun/caws
@@ -1636,7 +1636,7 @@
 	time = 120
 	category = CAT_WEAPONRY
 	subcategory = CAT_WEAPON
-*//*CRAFT rework: removed for balance
+
 /datum/crafting_recipe/greasegun
 	name = "M3A1 Grease Gun"
 	result = /obj/item/gun/ballistic/automatic/greasegun
@@ -1648,7 +1648,7 @@
 	time = 120
 	category = CAT_WEAPONRY
 	subcategory = CAT_WEAPON
-*//* CRAFT rework: removed for balance
+
 /datum/crafting_recipe/smg10mm
 	name = "10mm submachine gun"
 	result = /obj/item/gun/ballistic/automatic/smg10mm
@@ -1662,7 +1662,7 @@
 	time = 120
 	category = CAT_WEAPONRY
 	subcategory = CAT_WEAPON
-*/
+
 /datum/crafting_recipe/magnetowattz
 	name = "(Upgrade) Wattz 1000 magneto-laser pistol"
 	result = /obj/item/gun/energy/laser/wattz/magneto
