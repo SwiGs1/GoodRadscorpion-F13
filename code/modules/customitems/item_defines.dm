@@ -19,7 +19,7 @@ All custom items with worn sprites must follow the contained sprite system: http
 
 //ITEM_ICONS ARE DEPRECATED. USE CONTAINED SPRITES IN FUTURE
 /obj/item/clothing/mask/fluff/corvo_cigarette //Vaporizer Pen - Nathan Corvo - jkjudgex
-	name = "vaporizer pen"
+	name = "vaporizer pen"//imagine having a vape pen when it'd be near impossible ecksdee :))))))))))))))
 	desc = "A simple vaporizer pen, the electronic version of the cigarette."
 	icon = 'icons/obj/custom_items/corvo_cigarette.dmi'
 	icon_state = "corvo_cigarette"
