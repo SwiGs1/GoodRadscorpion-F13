@@ -175,13 +175,13 @@
 	config_entry_value = "http://www.tgstation13.org/wiki"
 
 /datum/config_entry/string/discordurl
-	config_entry_value = "https://discord.gg/NGpP36m"
+	config_entry_value = "null"
 
 /datum/config_entry/string/rulesurl
-	config_entry_value = "http://www.tgstation13.org/wiki/Rules"
+	config_entry_value = "null"
 
 /datum/config_entry/string/githuburl
-	config_entry_value = "https://www.github.com/tgstation/-tg-station"
+	config_entry_value = "https://github.com/CrashpointF13/CrashpointF13"
 
 /datum/config_entry/flag/using_discord
 
