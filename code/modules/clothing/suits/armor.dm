@@ -699,7 +699,6 @@
 	armor = list("melee" = 75, "bullet" = 60, "laser" = 30, "energy" = 50, "bomb" = 48, "bio" = 60, "rad" = 50, "fire" = 80, "acid" = 0)
 
 /obj/item/clothing/suit/armor/f13/power_armor
-	armor = list("melee" = 100, "bullet" = 100, "laser" = 90, "energy" = 90, "bomb" = 90, "bio" = 100, "rad" = 100, "fire" = 90, "acid" = 0)//Change to make different PA purely aesthetic, except in certain cases.
 	w_class = WEIGHT_CLASS_HUGE
 	slowdown = 0.4 //+0.1 from helmet = total 0.5
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
@@ -740,12 +739,12 @@
 		if(ismob(loc))
 			to_chat(loc, "<span class='warning'>Warning: electromagnetic surge detected in armor. Rerouting power to emergency systems.</span>")
 			slowdown += 15
-			armor = armor.modifyRating(melee = -40, bullet = -40, laser = -40)
+			armor = armor.modifyRating(melee = -20, bullet = -20, laser = -20)
 			emped = 1
 			spawn(50) //5 seconds of being slow and weak
 				to_chat(loc, "<span class='warning'>Armor power reroute successful. All systems operational.</span>")
 				slowdown -= 15
-				armor = armor.modifyRating(melee = 40, bullet = 40, laser = 40)
+				armor = armor.modifyRating(melee = 20, bullet = 20, laser = 20)
 				emped = 0
 
 /obj/item/clothing/suit/armor/f13/power_armor/excavator
@@ -769,7 +768,7 @@
 	icon_state = "t60powerarmor"
 	item_state = "t60powerarmor"
 	slowdown = 0.16
-//	armor = list("melee" = 85, "bullet" = 75, "laser" = 55, "energy" = 70, "bomb" = 82, "bio" = 100, "rad" = 100, "fire" = 95, "acid" = 0)
+	armor = list("melee" = 85, "bullet" = 75, "laser" = 55, "energy" = 70, "bomb" = 82, "bio" = 100, "rad" = 100, "fire" = 95, "acid" = 0)
 
 /obj/item/clothing/suit/armor/f13/power_armor/t51b
 	name = "T-51b power armor"
@@ -777,7 +776,7 @@
 	icon_state = "t51bpowerarmor"
 	item_state = "t51bpowerarmor"
 	slowdown = 0.15 //+0.1 from helmet = total 0.25
-//	armor = list("melee" = 75, "bullet" = 70, "laser" = 50, "energy" = 60, "bomb" = 62, "bio" = 100, "rad" = 99, "fire" = 90, "acid" = 0)
+	armor = list("melee" = 75, "bullet" = 70, "laser" = 50, "energy" = 60, "bomb" = 62, "bio" = 100, "rad" = 100, "fire" = 90, "acid" = 0)
 
 /obj/item/clothing/suit/armor/f13/power_armor/t51b/sierra
 	name = "sierra power armor"
@@ -790,7 +789,7 @@
 	desc = "An advanced suit of armor typically used by the Enclave.<br>It is composed of lightweight metal alloys, reinforced with ceramic castings at key stress points.<br>Additionally, like the T-51b power armor, it includes a recycling system that can convert human waste into drinkable water, and an air conditioning system for it's user's comfort."
 	icon_state = "advpowerarmor1"
 	item_state = "advpowerarmor1"
-//	armor = list("melee" = 85, "bullet" = 80, "laser" = 65, "energy" = 75, "bomb" = 72, "bio" = 100, "rad" = 100, "fire" = 90, "acid" = 0)
+	armor = list("melee" = 85, "bullet" = 80, "laser" = 65, "energy" = 75, "bomb" = 72, "bio" = 100, "rad" = 100, "fire" = 90, "acid" = 0)
 
 /obj/item/clothing/suit/armor/f13/power_armor/advanced/mk2
 	name = "advanced power armor mark II"
@@ -798,14 +797,14 @@
 	icon_state = "advpowerarmor2"
 	item_state = "advpowerarmor2"
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS
-//	armor = list("melee" = 95, "bullet" = 95, "laser" = 70, "energy" = 90, "bomb" = 72, "bio" = 100, "rad" = 100, "fire" = 90, "acid" = 0)
+	armor = list("melee" = 95, "bullet" = 95, "laser" = 70, "energy" = 90, "bomb" = 72, "bio" = 100, "rad" = 100, "fire" = 90, "acid" = 0)
 
 /obj/item/clothing/suit/armor/f13/power_armor/tesla
 	name = "tesla power armor"
 	desc = "A variant of the Enclave's advanced power armor Mk I, jury-rigged with a Tesla device that is capable of dispersing a large percentage of the damage done by directed-energy attacks.<br>As it's made of complex composite materials designed to block most of energy damage - it's notably weaker against kinetic impacts."
 	icon_state = "tesla"
 	item_state = "tesla"
-	armor = list("melee" = 90, "bullet" = 90, "laser" = 100, "energy" = 100, "bomb" = 100, "bio" = 100, "rad" = 100, "fire" = 90, "acid" = 0)
+	armor = list("melee" = 35, "bullet" = 35, "laser" = 95, "energy" = 95, "bomb" = 62, "bio" = 100, "rad" = 100, "fire" = 90, "acid" = 0)
 
 /obj/item/clothing/suit/armor/f13/legion
 	name = "legion armor"
