@@ -33,12 +33,12 @@
 	caliber = "a50MG"
 	projectile_type = /obj/item/projectile/bullet/a50MG/incendiary
 
-/*/obj/item/ammo_casing/a50MG/AP
+/obj/item/ammo_casing/a50MG/AP
 	name = ".50 MG AP bullet casing"
 	desc = "A .50 MG armor-piercing bullet casing."
 	caliber = "a50MG"
 	icon_state = "50ap2"
-	projectile_type = /obj/item/projectile/bullet/a50MG/AP*/
+	projectile_type = /obj/item/projectile/bullet/a50MG/AP
 
 /obj/item/ammo_casing/a50MG/explosive
 	name = ".50 MG explosive bullet casing"

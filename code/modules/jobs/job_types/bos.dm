@@ -343,8 +343,8 @@ Senior Paladin
 	name = "Senior Paladin"
 	jobtype = /datum/job/bos/f13seniorpaladin
 	pa_wear = TRUE
-	suit = 			/obj/item/clothing/suit/armor/f13/power_armor/t51b
-	head = 			/obj/item/clothing/head/helmet/power_armor/t51b
+	suit = 			/obj/item/clothing/suit/armor/f13/power_armor/t60
+	head = 			/obj/item/clothing/head/helmet/power_armor/t60
 	accessory = 	/obj/item/clothing/accessory/bos/seniorpaladin
 	uniform = 		/obj/item/clothing/under/f13/recon
 	mask =			/obj/item/clothing/mask/gas/sechailer/swat
@@ -356,15 +356,17 @@ Senior Paladin
 		)
 
 /datum/outfit/loadout/spaladina
-	name = "Promotee Senior-Paladin"
+	name = "Frontline Senior-Paladin"
 	backpack_contents = list(
-		/obj/item/melee/powerfist=1,
+		/obj/item/gun/ballistic/shotgun/automatic/combat=1,
+		/obj/item/storage/box/lethalshot=2,
 		)
 
 /datum/outfit/loadout/spaladinb
-	name = "Veteran Senior-Paladin"
+	name = "Rearline Senior-Paladin"
 	backpack_contents = list(
-		/obj/item/twohanded/sledgehammer/supersledge=1,
+		/obj/item/gun/ballistic/automatic/bozar=1,
+		/obj/item/ammo_box/magazine/m556/rifle=2,
 		)
 
 /datum/outfit/loadout/spaladinc
@@ -410,8 +412,8 @@ Paladin
 	name = "Paladin"
 	jobtype = /datum/job/bos/f13paladin
 	pa_wear = TRUE
-	suit = 			/obj/item/clothing/suit/armor/f13/power_armor/t45d
-	head = 			/obj/item/clothing/head/helmet/power_armor/t45d
+	suit = 			/obj/item/clothing/suit/armor/f13/power_armor/t51b
+	head = 			/obj/item/clothing/head/helmet/power_armor/t51b
 	uniform = 		/obj/item/clothing/under/f13/recon
 	mask =			/obj/item/clothing/mask/gas/sechailer/swat
 	belt = 			/obj/item/storage/belt/military

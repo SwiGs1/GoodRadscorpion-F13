@@ -55,10 +55,10 @@
 		M.adjust_fire_stacks(fire_stacks)
 		M.IgniteMob()
 
-/*
+
 	/obj/item/projectile/bullet/a50MG/AP
 	damage = 35
-	armour_penetration = 65 will punch through anything short of Enclave power armor*/
+	armour_penetration = 95
 
 /obj/item/projectile/bullet/a50MG/explosive
 	damage = 30
