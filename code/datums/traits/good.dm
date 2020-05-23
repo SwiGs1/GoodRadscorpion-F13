@@ -151,8 +151,8 @@
 ///DO NOT USE IMPLANTS.
 ///Grenades
 /datum/quirk/grenadesloot
-	name = "Party Favor"
-	desc = "Who knows what's inside."
+	name = "Scavenged Gear"
+	desc = "You recently went through an old ruin, and found an odd... grenade? Probably."
 	value = 3
 	var/obj/item/heirloom ///SPAGETH CODE DON'T LEAVE TO REMOVE THE NAME.
 	var/where
