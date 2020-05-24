@@ -102,8 +102,8 @@ Ambassador
 	flag = F13AMBASSADOR
 	head_announce = list("Security")
 	faction = "NCR"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	description = "You are the political and diplomatic attaché to the NCR forces in the area. Though you are not part of the military, and should avoid conflict, you wield great bureaucratic power."
 	supervisors = "Colonel"
 	req_admin_notify = 1
@@ -262,7 +262,7 @@ Sergeant
 Corporal
 */
 /datum/job/ncr/f13specialist
-	title = "NCR Corporal"
+	title = "NCR Specialist"
 	flag = F13SPECIALIST
 	faction = "NCR"
 	total_positions = 2
@@ -395,8 +395,8 @@ NCR Military Police
 	title = "NCR Military Police"
 	flag = F13NCRMP
 	faction = "NCR"
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 0
+	spawn_positions = 0
 	description = "You are the primary enforcers of NCR law within the ranks of the local embassy. You are technically exempt from the standard chain of command, answering only to High-Command, and specifically, the NCR Office of Special Investigations (NCROSI). "
 	supervisors = "NCROSI"
 	selection_color = "#fff5cc"
@@ -432,8 +432,8 @@ Trooper
 	title = "NCR Trooper"
 	flag = F13TROOPER
 	faction = "NCR"
-	total_positions = 5
-	spawn_positions = 5
+	total_positions = 6
+	spawn_positions = 6
 	description = "You answer to everyone above you in the chain of command, taking orders from your Sergeant directly and obeying all commands given by officers such as the Lieutenant and Captain."
 	supervisors = "Corporals and above"
 	selection_color = "#fff5cc"
@@ -483,8 +483,8 @@ Recruit
 	title = "NCR Assistant"
 	flag = F13RECRUIT
 	faction = "NCR"
-	total_positions = 3
-	spawn_positions = 3
+	total_positions = 0
+	spawn_positions = 0
 	description = "You are a noncombatant member of the NCR assigned the vital duty of helping them with cooking, farming, mining, and other menial tasks. While you have been to basic training, it was rushed and hardly prepared you for the horrors of war. Your sidearm is to be used in your own defense, only."
 	supervisors = "everyone in the NCR"
 	selection_color = "#fff5cc"

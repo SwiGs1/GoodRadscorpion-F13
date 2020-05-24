@@ -45,16 +45,16 @@
 	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
 	unsuitable_atmos_damage = 15
 	status_flags = CANPUSH
-	vision_range = 7 //reduced from 13 to 7 because who needs that kind of shit in their life
-	aggro_vision_range = 7 //as above
-//	idle_vision_range = 7
+	vision_range = 13
+	aggro_vision_range = 4
+//	idle_vision_range = 12
 	ranged = 1
 	projectiletype = /obj/item/projectile/beam/laser/lasgun
 	projectilesound = 'sound/weapons/resonator_fire.ogg'
 
 /mob/living/simple_animal/hostile/eyebot/New()
 	..()
-	name = "ED-[rand(1,99)]"
+	name = "ED-[rand(1,999)]"
 
 /mob/living/simple_animal/hostile/eyebot/floatingeye
 	name = "floating eyebot"

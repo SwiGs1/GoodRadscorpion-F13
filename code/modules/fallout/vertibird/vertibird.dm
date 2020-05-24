@@ -5,6 +5,9 @@
 	pixel_x = -128
 	pixel_y = -64
 	layer = 4
+	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF
+	anchored = TRUE
+	density = TRUE
 	var/engine = FALSE
 	var/locked = TRUE
 	var/inFly = FALSE
