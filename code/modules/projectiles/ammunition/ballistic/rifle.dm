@@ -24,11 +24,6 @@
 	desc = "A 5.56x45mm jacketed hollow point bullet casing."
 	projectile_type = /obj/item/projectile/bullet/a556/jhp
 
-/obj/item/ammo_casing/a556/sport
-	name = "5.56x45 match bullet casing"
-	desc = "A 5.56x45mm hand-loaded match grade bullet casing."
-	projectile_type = /obj/item/projectile/bullet/a556/sport
-
 // 7.62x51, .308 Winchester
 /obj/item/ammo_casing/a762
 	name = "7.62x51 FMJ bullet casing"
@@ -46,11 +41,6 @@
 	name = "7.62x51 JHP bullet casing"
 	desc = "A 7.62x51 jacketed hollow point bullet casing."
 	projectile_type = /obj/item/projectile/bullet/a762/jhp
-
-/obj/item/ammo_casing/a762/sport
-	name = ".308 Winchester bullet casing"
-	desc = "A .308 Winchester sporting bullet casing."
-	projectile_type = /obj/item/projectile/bullet/a762/sport
 
 // 2mm EC
 /obj/item/ammo_casing/c2mm
@@ -74,12 +64,6 @@
 /obj/item/ammo_casing/F13/m308/armourpiercing
 	projectile_type = /obj/item/projectile/bullet/F13/c308mmBullet/armourpiercing
 
-/obj/item/ammo_casing/F13/m308/toxic
-	projectile_type = /obj/item/projectile/bullet/F13/c308mmBullet/toxic
-
-/obj/item/ammo_casing/F13/m308/fire
-	projectile_type = /obj/item/projectile/bullet/F13/c308mmBullet/fire
-
 /obj/item/ammo_casing/F13/a556
 	desc = "A 5.56 bullet casing."
 	caliber = "223mm"
@@ -92,10 +76,4 @@
 
 /obj/item/ammo_casing/F13/a556/armourpiercing
 	projectile_type = /obj/item/projectile/bullet/F13/c556Bullet/armourpiercing
-
-/obj/item/ammo_casing/F13/a556/toxic
-	projectile_type = /obj/item/projectile/bullet/F13/c556Bullet/toxic
-
-/obj/item/ammo_casing/F13/a556/fire
-	projectile_type = /obj/item/projectile/bullet/F13/c556Bullet/fire
 

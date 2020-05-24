@@ -923,8 +923,8 @@
 	icon_state = "sledgehammer0"
 	lefthand_file = 'icons/mob/inhands/weapons/polearms_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/polearms_righthand.dmi'
-	force_unwielded = 20
-	force_wielded = 45
+	force_unwielded = 12//Likely not able to hit too hard with those noodle arms, bro.
+	force_wielded = 62
 	throwforce = 20
 	slot_flags = ITEM_SLOT_BACK
 	attack_verb = list("bashed", "pounded", "bludgeoned", "pummeled", "thrashed")
@@ -955,7 +955,7 @@
 	lefthand_file = 'icons/mob/inhands/weapons/polearms_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/polearms_righthand.dmi'
 	force_unwielded = 25
-	force_wielded = 60
+	force_wielded = 72
 
 /obj/item/twohanded/sledgehammer/supersledge/update_icon()
 	icon_state = "supersledge[wielded]"

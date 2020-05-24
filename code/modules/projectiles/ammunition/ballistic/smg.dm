@@ -10,8 +10,3 @@
 	name = "4.6x30mm armor-piercing bullet casing"
 	desc = "A 4.6x30mm armor-piercing bullet casing."
 	projectile_type = /obj/item/projectile/bullet/c46x30mm_ap
-
-/obj/item/ammo_casing/c46x30mm/inc
-	name = "4.6x30mm incendiary bullet casing"
-	desc = "A 4.6x30mm incendiary bullet casing."
-	projectile_type = /obj/item/projectile/bullet/incendiary/c46x30mm

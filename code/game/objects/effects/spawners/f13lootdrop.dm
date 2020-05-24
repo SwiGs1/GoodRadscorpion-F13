@@ -623,8 +623,8 @@
 
 	var/loot6 = list(
 				/obj/item/gun/ballistic/shotgun/remington,
-				/obj/item/ammo_box/a308,
-				/obj/item/ammo_box/a308
+				/obj/item/ammo_box/a762,
+				/obj/item/ammo_box/a762
 				)
 
 	var/loot7 = list(
@@ -678,8 +678,8 @@
 
 	var/loot3 = list(
 				/obj/item/gun/ballistic/shotgun/remington/scoped,
-				/obj/item/ammo_box/a308,
-				/obj/item/ammo_box/a308
+				/obj/item/ammo_box/a762,
+				/obj/item/ammo_box/a762
 				)
 
 	var/loot4 = list(
@@ -958,8 +958,7 @@
 
 	loot = list(
 				/obj/item/ammo_box/magazine/m45,
-				/obj/item/ammo_box/a762,
-        		/obj/item/ammo_box/a308,
+        		/obj/item/ammo_box/a762,
 				/obj/item/ammo_box/magazine/m10mm_adv,
 				/obj/item/ammo_box/magazine/m556/rifle,
 				/obj/item/ammo_box/c38,

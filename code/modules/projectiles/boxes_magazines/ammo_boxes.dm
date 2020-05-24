@@ -130,10 +130,6 @@
 	name = "ammo box (.357 Magnum JHP)"
 	ammo_type = /obj/item/ammo_casing/a357/jhp
 
-/obj/item/ammo_box/a357box/swc
-	name = "ammo box (.357 Magnum SWC)"
-	ammo_type = /obj/item/ammo_casing/a357/swc
-
 /obj/item/ammo_box/box38
 	name = "ammo box (.38 Spl)"
 	icon_state = "38box"
@@ -193,10 +189,6 @@
 	name = "ammo box (5.56 AP)"
 	ammo_type = /obj/item/ammo_casing/a556/ap
 
-/obj/item/ammo_box/a556/sport
-	name = "ammo box (5.56 match)"
-	ammo_type = /obj/item/ammo_casing/a556/sport
-
 //.45 ACP
 /obj/item/ammo_box/c45
 	name = "ammo box (.45 FMJ)"
@@ -223,19 +215,7 @@
 	name = "ammo box (.44 Magnum JHP)"
 	ammo_type = /obj/item/ammo_casing/m44/jhp
 
-/obj/item/ammo_box/m44box/swc
-	name = "ammo box (.44 Magnum SWC)"
-	ammo_type = /obj/item/ammo_casing/m44/swc
-
 //7.62x51, .308 Winchester
-/obj/item/ammo_box/a308box
-	name = "ammo box (.308)"
-	icon_state = "308box"
-	ammo_type = /obj/item/ammo_casing/a762/sport
-	max_ammo = 30
-	materials = list(MAT_METAL = 15000)
-	w_class = WEIGHT_CLASS_NORMAL
-
 /obj/item/ammo_box/a762box
 	name = "ammo box (7.62x51 FMJ)"
 	icon_state = "762box"
@@ -264,10 +244,6 @@
 /obj/item/ammo_box/c4570box/jhp
 	name = "ammo box (.45-70 JHP)"
 	ammo_type = /obj/item/ammo_casing/c4570/jhp
-
-/obj/item/ammo_box/c4570box/swc
-	name = "ammo box (.45-70 SWC)"
-	ammo_type = /obj/item/ammo_casing/c4570/swc
 
 //.50 MG and .50 AE
 /obj/item/ammo_box/a50MGbox
@@ -324,16 +300,6 @@
 	multiple_sprites = 1
 	materials = list(MAT_METAL = 5000)
 	w_class = WEIGHT_CLASS_SMALL
-
-/obj/item/ammo_box/a308
-	name = "stripper clip (.308)"
-	desc = "A stripper clip."
-	icon_state = "308"
-	ammo_type = /obj/item/ammo_casing/a762/sport
-	max_ammo = 5
-	multiple_sprites = 1
-	materials = list(MAT_METAL = 7000)
-	w_class = WEIGHT_CLASS_SMALL
 /*
 /obj/item/ammo_box/magazine/m308/heap
 	name = "rifle magazine (.308) (+Heap!)"
@@ -353,10 +319,10 @@
 */
 
 /obj/item/ammo_box/a762/doublestacked
-	name = "double stack stripper clip (.308)"
+	name = "double stack stripper clip (7.62)"
 	desc = "A stripper clip."
 	icon_state = "762a"
-	ammo_type = /obj/item/ammo_casing/a762/sport
+	ammo_type = /obj/item/ammo_casing/a762
 	max_ammo = 10
 	multiple_sprites = 1
 	materials = list(MAT_METAL = 10000)

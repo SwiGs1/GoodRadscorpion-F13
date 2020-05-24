@@ -18,15 +18,6 @@
 	..()
 	icon_state = "46x30mmtA-[round(ammo_count(),4)]"
 
-/obj/item/ammo_box/magazine/wt550m9/wtic
-	name = "submachine gun magazine (Incindiary 4.6x30mm)"
-	icon_state = "46x30mmtI-20"
-	ammo_type = /obj/item/ammo_casing/c46x30mm/inc
-
-/obj/item/ammo_box/magazine/wt550m9/wtic/update_icon()
-	..()
-	icon_state = "46x30mmtI-[round(ammo_count(),4)]"
-
 /obj/item/ammo_box/magazine/uzim9mm
 	name = "smg magazine (9mm)"
 	icon_state = "uzi9mm-32"

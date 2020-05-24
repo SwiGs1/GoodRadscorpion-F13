@@ -41,11 +41,11 @@
 
 /obj/item/projectile/bullet/a50MG
 	damage = 60
-	armour_penetration = 60
+	armour_penetration = 65
 
 /obj/item/projectile/bullet/a50MG/incendiary
-	damage = 40
-	armour_penetration = 20
+	damage = 32
+	armour_penetration = -20
 	var/fire_stacks = 4
 
 /obj/item/projectile/bullet/a50MG/incendiary/on_hit(atom/target, blocked = FALSE)
@@ -56,12 +56,12 @@
 		M.IgniteMob()
 
 
-	/obj/item/projectile/bullet/a50MG/AP
+/obj/item/projectile/bullet/a50MG/AP
 	damage = 35
-	armour_penetration = 95
+	armour_penetration = 95//gang gang
 
 /obj/item/projectile/bullet/a50MG/explosive
-	damage = 30
+	damage = 24
 	armour_penetration = 0
 
 /obj/item/projectile/bullet/a50MG/explosive/on_hit(atom/target, blocked = FALSE)
