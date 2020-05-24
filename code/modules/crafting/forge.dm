@@ -27,7 +27,7 @@
 	name = "Machete Gladius"
 	result = /obj/item/claymore/machete/gladius
 	time = 80
-	reqs = list(/obj/item/stack/sheet/metal = 10,
+	reqs = list(/obj/item/stack/sheet/metal = 24,
 				/obj/item/stack/sheet/mineral/wood = 2)
 	tools = list(TOOL_WELDER, TOOL_FORGE)
 	category = CAT_PRIMAL

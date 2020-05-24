@@ -578,7 +578,7 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 
 /obj/effect/landmark/start/f13/initiate
 	name = "Initiate"
-	icon_state = "Initiate_Scribe"
+	icon_state = "Knight"
 
 /obj/effect/landmark/start/f13/vertipilot
 	name = "Vertibird Pilot"

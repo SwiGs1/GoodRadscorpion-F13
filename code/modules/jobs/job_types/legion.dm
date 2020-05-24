@@ -137,6 +137,7 @@ Centurion
 		/obj/item/assembly/signaler/electropack/shockcollar=1, \
 		/obj/item/assembly/signaler/electropack/boomcollar=2, \
 		/obj/item/storage/bag/money/small/legofficers=1, \
+		/obj/item/restraints/legcuffs/bola/tactical=1, \
 		)
 
 /datum/outfit/loadout/centheavy
@@ -288,10 +289,11 @@ Decanus
 		/obj/item/flashlight/lantern=1, \
 		/obj/item/key/scollar=1, \
 		/obj/item/assembly/signaler/electropack/shockcollar=1, \
-		/obj/item/storage/bag/money/small/legofficers)
+		/obj/item/storage/bag/money/small/legofficers=1, \
+		/obj/item/restraints/legcuffs/bola/tactical=1)
 
 /datum/outfit/loadout/decancharger
-	name = "Recruit Decanus"
+	name = "Standard Decanus"
 	suit = 			/obj/item/clothing/suit/armor/f13/legion/vet
 	head = 			/obj/item/clothing/head/helmet/f13/legion/recruit/decan
 	suit_store = /obj/item/gun/ballistic/automatic/greasegun
@@ -359,6 +361,7 @@ Vexillarius
 		/obj/item/reagent_containers/pill/patch/healingpowder=2, \
 		/obj/item/flashlight/lantern=1, \
 		/obj/item/megaphone/cornu=1, \
+		/obj/item/restraints/legcuffs/bola/tactical=1, \
 		/obj/item/storage/bag/money/small/legenlisted)
 	r_pocket = /obj/item/restraints/handcuffs
 
@@ -407,6 +410,7 @@ datum/job/CaesarsLegion/Legionnaire/f13slavemaster
 		/obj/item/claymore/machete/reinforced=1, \
 		/obj/item/reagent_containers/pill/patch/healingpowder=2, \
 		/obj/item/flashlight/lantern=1, \
+		/obj/item/restraints/legcuffs/bola/tactical=1, \
 		/obj/item/storage/bag/money/small/legenlisted,
 		/obj/item/radio)
 	r_pocket = /obj/item/restraints/handcuffs
@@ -576,9 +580,9 @@ Recruit Legionary
 	mask =			/obj/item/clothing/mask/bandana/legrecruit
 	glasses = 		/obj/item/clothing/glasses/legiongoggles
 	r_pocket =      /obj/item/restraints/handcuffs
-	suit_store =	/obj/item/gun/ballistic/revolver/pipe_rifle
+	suit_store =	/obj/item/gun/ballistic/automatic/marksman/servicerifle/varmint
 	backpack_contents = list(
-		/obj/item/kitchen/knife/butcher, \
+		/obj/item/claymore/machete, \
 		/obj/item/flashlight/flare/torch=1,
 		/obj/item/radio)
 
