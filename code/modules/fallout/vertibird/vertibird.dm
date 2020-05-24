@@ -68,8 +68,8 @@ obj/vertibird/proc/flew(targetX, targetY, targetZ)
 	y = targetY
 	z = targetZ
 
-	playsound(src, "sound/f13machines/vertibird_land.ogg", 100)
-	playsound(vertibirdEnterZone, "sound/f13machines/vertibird_land.ogg", 50)
+	playsound(src, "sound/f13machines/vertibird_stop.ogg", 100)
+	playsound(vertibirdEnterZone, "sound/f13machines/vertibird_stop.ogg", 50)
 
 	spawn(100)
 		inFly = FALSE
@@ -87,7 +87,7 @@ obj/vertibird/proc/beginFly()
 obj/vertibird/proc/flyGlobal()
 	to_chat(world, "<font size='3' color='orange'>The ever increasing roar of an aircraft tearing through the skies above enters your ears.</font>")
 	var/sound/global_sound
-	global_sound = sound("sound/f13machines/vertibird_global.ogg", repeat = 0, wait = 0, channel = 776)
+	global_sound = sound("sound/effects/flyby.ogg", repeat = 0, wait = 0, channel = 776)
 	global_sound.priority = 250
 	global_sound.status = SOUND_UPDATE|SOUND_STREAM
 
@@ -96,13 +96,13 @@ obj/vertibird/proc/fly(targetX, targetY, targetZ)
 	if(inFly)
 		return
 
-	playsound(src, "sound/f13machines/vertibird_takeoff.ogg", 100)
-	playsound(vertibirdEnterZone, "sound/f13machines/vertibird_takeoff.ogg", 50)
+	playsound(src, "sound/f13machines/vertibird_start.ogg", 100)
+	playsound(vertibirdEnterZone, "sound/f13machines/vertibird_start.ogg", 50)
 	inFly = TRUE
 	icon_state = "vb-fast"
 	spawn(60)
-		playsound(src, "sound/f13machines/vertibird_local.ogg", 100)
-		playsound(vertibirdEnterZone, "sound/f13machines/vertibird_local.ogg", 50)
+		playsound(src, "sound/effects/flyby.ogg", 100)
+		playsound(vertibirdEnterZone, "sound/effects/flyby.ogg", 50)
 
 		flyGlobal()
 
