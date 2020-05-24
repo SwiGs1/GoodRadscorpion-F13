@@ -45532,6 +45532,14 @@
 /obj/structure/simple_door/metal/fence,
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/city)
+"heY" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/landmark/start/f13/ncrspecialist,
+/turf/open/floor/f13{
+	tag = "icon-floorrusty";
+	icon_state = "floorrusty"
+	},
+/area/f13/ncr)
 "ibj" = (
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier1,
 /turf/open/indestructible/ground/outside/desert,
@@ -45584,6 +45592,13 @@
 	icon_state = "dirtcorner"
 	},
 /area/f13/city)
+"npx" = (
+/obj/effect/landmark/start/f13/ncrspecialist,
+/turf/open/floor/f13{
+	tag = "icon-floorrusty";
+	icon_state = "floorrusty"
+	},
+/area/f13/ncr)
 "nHC" = (
 /obj/structure/car/rubbish1,
 /turf/open/indestructible/ground/outside/dirt,
@@ -54107,7 +54122,7 @@ amW
 aqY
 anr
 bDY
-cpA
+heY
 bDP
 bDY
 aoq
@@ -54364,7 +54379,7 @@ ajS
 aqY
 ans
 bDY
-cpz
+npx
 bDP
 bDY
 aoq
@@ -54621,7 +54636,7 @@ ajW
 akv
 ant
 bDY
-cpA
+heY
 bDP
 bDY
 aoC

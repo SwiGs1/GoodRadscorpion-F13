@@ -429,6 +429,11 @@
 				else
 					alert("Unable to use this emote, must be either hearable or visible.")
 					return
+			message = custom_emote
+	else
+		message = params
+		if(type_override)
+			emote_type = type_override
 	. = ..()
 
 	message = null
