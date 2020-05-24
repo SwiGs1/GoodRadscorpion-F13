@@ -176,8 +176,8 @@ Orator
 	title = "Legion Orator"
 	flag = F13ORATOR
 	faction = "Legion"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	description = "You are the the resonator of Caesar's better wills; a Legionnaire who has, perhaps through injury or advanced age, proven himself unable to fight effectively any longer. Instead of facing \"retirement\" in the Legion, one of your superiors took note of your studies and way with words, and you have been made the face and voice of the Conturbernae."
 	supervisors = "the Centurion"
 	exp_requirements = 800
@@ -208,8 +208,8 @@ Priestess of Mars
 	title = "Priestess of Mars"
 	flag = F13PRIESTESS
 	faction = "Legion"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	description = "You are a spiritual and logistics advisor for the Legion forces in the area. Being raised in and from the homeland, you have fully adapted to the Legion's ideals and fully committed yourself to the role as mother and caretaker of the Legion's future. You are an icon to be respected, even by fellow Legion; and although a woman, your status does not allow you to be belittled."
 	supervisors = "the Centurion, Mars"
 	exp_requirements = 800
@@ -255,8 +255,8 @@ Decanus
 	title = "Legion Decanus"
 	flag = F13DECAN
 	faction = "Legion"
-	total_positions = 3
-	spawn_positions = 3
+	total_positions = 1
+	spawn_positions = 1
 	description = "You answer directly to the Centurion, working with them to organize the Legionaries. You lead the Legionaries, and Vexillari on patrols, raids and scouting missions on behalf of your Centurion."
 	supervisors = "the Centurion and up"
 	exp_requirements = 2400
@@ -390,8 +390,8 @@ datum/job/CaesarsLegion/Legionnaire/f13slavemaster
 	title = "Legion Slavemaster"
 	flag = F13SLAVEMASTER
 	faction = "Legion"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	description = "You are the feared and respected disciplinary corps of the Legion. Acting as both master of the Slaves and de-facto executioner of the Centurion's will within his ranks, you are a faceless and undoubtedly cruel torturer... but be careful to not let your hubris and malice lead to a strikeback from those you thought broken."
 	supervisors = "the Decani and Centurion"
 	exp_requirements = 300
@@ -427,8 +427,8 @@ Veteran Legionary
 	title = "Veteran Legionary"
 	flag = F13VETLEGIONARY
 	faction = "Legion"
-	total_positions = 3
-	spawn_positions = 3
+	total_positions = 0
+	spawn_positions = 0
 	description = "You answer to the Decani and the Centurion, as well as the Auxilia when in your camp. Acting as a loyal soldier of the Centuria, you have the great honour of serving under Caesar in his quest to unite the scattered tribes of The Mojave. You are a hardened warrior, and have been waging war with the Legion for many years."
 	supervisors = "the Decani and Centurion"
 	exp_requirements = 300
@@ -489,12 +489,12 @@ Prime Legionairy
 */
 
 /datum/job/CaesarsLegion/Legionnaire/f13legionary
-	title = "Prime Legionary"
+	title = "Legionary"
 	flag = F13LEGIONARY
 	faction = "Legion"
-	total_positions = 3
-	spawn_positions = 3
-	description = "You answer to the Decani and the Centurion, as well as the Auxilia when in your camp. Acting as a loyal soldier of the Centuria, you have the great honour of serving under Caesar in his quest to unite the scattered tribes of The Mojave. You have been through enough battles to call yourself a prime, but you are by no means yet a Veteran."
+	total_positions = 6
+	spawn_positions = 6
+	description = "You answer to the Decani and the Centurion. Acting as a loyal soldier of the Legion, you're not expected to do anything but follow orders."
 	supervisors = "the Decani and Centurion"
 	exp_requirements = 300
 
@@ -502,7 +502,8 @@ Prime Legionairy
 
 	loadout_options = list(
 	/datum/outfit/loadout/legassault, //.357 revolver
-	/datum/outfit/loadout/legbreach //hunting shotgun
+	/datum/outfit/loadout/legbreach, //hunting shotgun
+	/datum/outfit/loadout/legvet
 	)
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13legionary
@@ -534,6 +535,22 @@ Prime Legionairy
 	backpack_contents = list(
 		/obj/item/storage/box/lethalshot=1)
 
+/datum/outfit/loadout/legvet
+	name = "Veteran Legionary"
+	mask =			/obj/item/clothing/mask/bandana/legvet
+	head = 			/obj/item/clothing/head/helmet/f13/legion/vet
+	suit = 			/obj/item/clothing/suit/armor/f13/legion/vet
+	glasses = 		/obj/item/clothing/glasses/sunglasses
+	backpack_contents = list(
+		/obj/item/restraints/legcuffs/bola=1, \
+		/obj/item/throwing_star/spear, \
+		/obj/item/claymore/machete/reinforced=1, \
+		/obj/item/reagent_containers/pill/patch/healingpowder=2, \
+		/obj/item/flashlight/lantern=1, \
+		/obj/item/storage/bag/money/small/legenlisted,
+		/obj/item/radio)
+	r_pocket = /obj/item/restraints/handcuffs
+
 /datum/job/CaesarsLegion/Legionnaire/f13legionary/after_spawn(mob/living/carbon/human/H, mob/M)
 	H.add_quirk("Big Leagues")
 	H.add_quirk("Poor Aim")
@@ -544,8 +561,8 @@ Recruit Legionary
 	title = "Recruit Legionary"
 	flag = F13RECRUITLEG
 	faction = "Legion"
-	total_positions = 3
-	spawn_positions = 3
+	total_positions = 0
+	spawn_positions = 0
 	description = "You have recently come of age or been inducted into Caesar's Legion. You have absolutely no training, and are expected to follow every whim of the Decanii and your Centurion."
 	supervisors = "the Decani and Centurion"
 	exp_requirements = 300
@@ -639,8 +656,8 @@ Auxilia
 	flag = F13AUXILIA
 	faction = "Legion"
 	head_announce = list("Security")
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 0
+	spawn_positions = 0
 	description = "You are a respected and valued noncombatant for the Legion, commanding the slaves and Camp Followers and providing important surgical or engineering expertise. Though you hold more authority than the Legionaries in camp, you are not a warrior, and should not act as such unless absolutely necessary."
 	supervisors = "the Decani and Centurion"
 	exp_requirements = 400
@@ -769,8 +786,8 @@ Slave
 	faction = "Legion"
 	total_positions = 4
 	spawn_positions = 4
-	description = "You answer to any member of the Legion, but take orders directly from the Auxilia around the camp. You are to the point where you have been broken in as a slave and most slaves will no longer consider escaping as an option."
-	supervisors = "the entire legion, but mostly the Slavemaster"
+	description = "You answer to any member of the Legion. You are to the point where you have been broken in as a slave and most slaves will no longer consider escaping as an option."
+	supervisors = "the entire legion"
 	exp_requirements = 300
 
 	outfit = /datum/outfit/job/CaesarsLegion/slave
