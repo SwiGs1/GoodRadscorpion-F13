@@ -739,12 +739,12 @@
 		if(ismob(loc))
 			to_chat(loc, "<span class='warning'>Warning: electromagnetic surge detected in armor. Rerouting power to emergency systems.</span>")
 			slowdown += 15
-			armor = armor.modifyRating(melee = -20, bullet = -20, laser = -20)
+			armor = armor.modifyRating(melee = -60, bullet = -60, laser = -60)
 			emped = 1
 			spawn(50) //5 seconds of being slow and weak
 				to_chat(loc, "<span class='warning'>Armor power reroute successful. All systems operational.</span>")
 				slowdown -= 15
-				armor = armor.modifyRating(melee = 20, bullet = 20, laser = 20)
+				armor = armor.modifyRating(melee = 60, bullet = 60, laser = 60)
 				emped = 0
 
 /obj/item/clothing/suit/armor/f13/power_armor/excavator

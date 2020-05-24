@@ -796,7 +796,7 @@
 			if(istype(loc, /mob/living/carbon))
 				var/mob/living/carbon/M = loc
 				M.update_tint()
-			armor = armor.modifyRating(melee = -20, bullet = -20, laser = -20)
+			armor = armor.modifyRating(melee = -60, bullet = -60, laser = -60)
 			emped = 1
 			spawn(50) //5 seconds of being blind and weak
 				to_chat(loc, "<span class='warning'>Helmet power reroute successful. All systems operational.</span>")
@@ -804,7 +804,7 @@
 				if(istype(loc, /mob/living/carbon))
 					var/mob/living/carbon/M = loc
 					M.update_tint()
-				armor = armor.modifyRating(melee = 20, bullet = 20, laser = 20)
+				armor = armor.modifyRating(melee = 60, bullet = 60, laser = 60)
 				emped = 0
 
 /obj/item/clothing/head/helmet/power_armor/t45b
