@@ -330,7 +330,7 @@ Corporal
 	suit_store = /obj/item/gun/ballistic/shotgun/remington/scoped
 	head = /obj/item/clothing/head/beret/ncr_scout
 	backpack_contents = list(
-		/obj/item/ammo_box/a308=3,
+		/obj/item/ammo_box/a762=3,
 		/obj/item/twohanded/binocs=1
 		)
 /*
@@ -473,7 +473,7 @@ Trooper
 	name = "Ranged Trooper"
 	suit_store = /obj/item/gun/ballistic/shotgun/remington
 	backpack_contents = list(
-		/obj/item/ammo_box/a308=3
+		/obj/item/ammo_box/a762=3
 		)
 
 /*

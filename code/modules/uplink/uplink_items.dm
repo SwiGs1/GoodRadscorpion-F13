@@ -532,12 +532,6 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 			to puncture even the most durable armor."
 	item = /obj/item/ammo_box/magazine/mm195x129/ap
 
-/datum/uplink_item/ammo/machinegun/incen
-	name = "1.95x129mm (Incendiary) Box Magazine"
-	desc = "A 50-round magazine of 1.95x129mm ammunition for use in the L6 SAW; tipped with a special flammable \
-			mixture that'll ignite anyone struck by the bullet. Some men just want to watch the world burn."
-	item = /obj/item/ammo_box/magazine/mm195x129/incen
-
 /datum/uplink_item/ammo/sniper
 	cost = 4
 	include_modes = list(/datum/game_mode/nuclear)

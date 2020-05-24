@@ -598,16 +598,6 @@
 	category = CAT_WEAPONRY
 	subcategory = CAT_AMMO
 
-/datum/crafting_recipe/a556sport
-	name = "5.56 match ammo box"
-	result = /obj/item/ammo_box/a556/sport
-	reqs = list(/obj/item/stack/sheet/metal = 15,
-				/datum/reagent/blackpowder = 40)
-	tools = list(TOOL_WORKBENCH)
-	time = 10
-	category = CAT_WEAPONRY
-	subcategory = CAT_AMMO
-
 /datum/crafting_recipe/c9mm
 	name = "9mm FMJ ammo box"
 	result = /obj/item/ammo_box/c9mm
@@ -668,16 +658,6 @@
 	traits = list(TRAIT_GUNSMITH_TWO)
 	tools = list(TOOL_WORKBENCH, TOOL_GUNTIER2)
 	time = 10
-	category = CAT_WEAPONRY
-	subcategory = CAT_AMMO
-
-/datum/crafting_recipe/a308
-	name = ".308 ammo box"
-	result = /obj/item/ammo_box/a308box
-	reqs = list(/obj/item/stack/sheet/metal = 7,
-				/datum/reagent/blackpowder = 40)
-	traits = list(TRAIT_GUNSMITH_ONE)
-	tools = list(TOOL_WORKBENCH, TOOL_GUNTIER1)
 	category = CAT_WEAPONRY
 	subcategory = CAT_AMMO
 

@@ -185,20 +185,21 @@
 
 /obj/item/projectile/beam/laser/lasgun //AER9
 	name = "laser beam"
-	damage = 28
-	armour_penetration = 15
+	damage = 16
+	armour_penetration = 10
 
 /obj/item/projectile/beam/laser/pistol //AEP7
 	name = "laser beam"
-	damage = 22
-	armour_penetration = 10
+	damage = 12
+	armour_penetration = 5
 
 /obj/item/projectile/beam/laser/pistol/wattz //Wattz pistol
-	damage = 18
+	damage = 14
+	armour_penetration = 2//lol
 
 /obj/item/projectile/beam/laser/pistol/wattz/magneto //upgraded Wattz
 	name = "penetrating laser beam"
-	damage = 20
+	damage = 18
 	armour_penetration = 15
 
 /obj/item/projectile/beam/laser/solar //Solar Scorcher
@@ -208,20 +209,20 @@
 
 /obj/item/projectile/beam/laser/tribeam //Tribeam laser, fires 3 shots, will melt you
 	name = "tribeam laser"
-	damage = 22
-	armour_penetration = 12
+	damage = 15
+	armour_penetration = 10
 
 /obj/item/projectile/plasma //Plasma rifle
 	name = "plasma bolt"
 	icon_state = "plasma_clot"
 	damage_type = BURN
-	damage = 38
+	damage = 28
 	armour_penetration = 25
 	flag = "laser" //checks vs. energy protection
 	eyeblur = 0
 	is_reflectable = TRUE
 
-/obj/item/projectile/plasma/repeater //Plasma repeater
+/obj/item/projectile/plasma/repeater //Is this even used?
 	name = "plasma stream"
 	icon_state = "plasma_clot"
 	damage_type = BURN
@@ -232,16 +233,16 @@
 	is_reflectable = FALSE
 
 /obj/item/projectile/plasma/pistol //Plasma pistol
-	damage = 28
+	damage = 19
 	armour_penetration = 20
 
 /obj/item/projectile/plasma/pistol/glock //Glock (upgraded plasma pistol)
-	damage = 28
-	armour_penetration = 15
+	damage = 22
+	armour_penetration = 24
 
 /obj/item/projectile/plasma/scatter //Multiplas, fires 3 shots, will melt you
-	damage = 26
-	armour_penetration = 30
+	damage = 18//less damage, given multiple projectiles.
+	armour_penetration = 15//less pen.
 
 /obj/item/projectile/plasma/alien
 	name = "alien projectile"
