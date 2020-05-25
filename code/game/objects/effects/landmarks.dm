@@ -584,6 +584,10 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 	name = "Vertibird Pilot"
 	icon_state = "Knight"
 
+/obj/effect/landmark/start/f13/handy
+	name = "Mr. Handy"
+	icon_state = "Scribe"
+
 // Vault
 
 /obj/effect/landmark/start/f13/overseer

@@ -27,7 +27,7 @@ SUBSYSTEM_DEF(research)
 	var/list/errored_datums = list()
 	var/list/point_types = list()				//typecache style type = TRUE list
 	//----------------------------------------------
-	var/list/single_server_income = list(TECHWEB_POINT_TYPE_GENERIC = 60)
+	var/list/single_server_income = list(TECHWEB_POINT_TYPE_GENERIC = 1)
 	var/multiserver_calculation = FALSE //turning this on is a bad idea (re: told you)
 	var/last_income = 0
 	//^^^^^^^^ ALL OF THESE ARE PER SECOND! ^^^^^^^^
@@ -68,7 +68,7 @@ SUBSYSTEM_DEF(research)
 				bitcoins = single_server_income.Copy()
 				break			//Just need one to work.
 	var/income_time_difference = world.time - last_income
-		
+
 	science_tech.last_bitcoins = bitcoins  // Doesn't take tick drift into account
 	bos_tech.last_bitcoins = bitcoins
 	unknown_tech.last_bitcoins = bitcoins
