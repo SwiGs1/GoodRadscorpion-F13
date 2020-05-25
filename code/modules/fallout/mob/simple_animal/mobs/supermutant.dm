@@ -18,12 +18,12 @@
 	response_help = "touches"
 	response_disarm = "tries to perform a kung fu move, then suddenly remembers that it's actually"
 	response_harm = "hits"
-	maxHealth = 350
-	health = 350
+	maxHealth = 150
+	health = 150
 	force_threshold = 15
 	faction = list("hostile", "supermutant")
-	melee_damage_lower = 55
-	melee_damage_upper = 75
+	melee_damage_lower = 25
+	melee_damage_upper = 45
 	mob_size = MOB_SIZE_LARGE
 	anchored = TRUE //unpullable
 	attacktext = "smashes"
@@ -84,13 +84,13 @@
 	icon_living = "hulk_ranged_s"
 	icon_dead = "hulk_ranged_s"
 	ranged = 1
-	maxHealth = 400
-	health = 400
+	maxHealth = 200
+	health = 200
 	retreat_distance = 4
 	minimum_distance = 6
 	projectiletype = /obj/item/projectile/bullet/F13/c308mmBullet
 	projectilesound = 'sound/f13weapons/hunting_rifle.ogg'
-	loot = list(/obj/item/ammo_box/a308)
+	loot = list(/obj/item/ammo_box/a762)
 
 /mob/living/simple_animal/hostile/supermutant/rangedmutant/death(gibbed)
 	icon = 'icons/fallout/mobs/supermutant_dead.dmi'

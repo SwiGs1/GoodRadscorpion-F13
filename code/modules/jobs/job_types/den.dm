@@ -93,7 +93,7 @@ Sheriff
 		/obj/item/ammo_box/m44=2, \
 		/obj/item/restraints/handcuffs=1)
 	r_pocket = /obj/item/flashlight/flare
-	belt = /obj/item/gun/ballistic/revolver/m29/peacekeeper
+	belt = /obj/item/gun/ballistic/revolver/m29
 
 /datum/job/den/f13sheriff/after_spawn(mob/living/carbon/human/H, mob/M)
 	H.add_quirk("Hard Yards")
@@ -436,8 +436,8 @@ Shopkeeper
     flag = F13SHOPKEEPER
     department_flag = DEN
     faction = "Town"
-    total_positions = 2
-    spawn_positions = 2
+    total_positions = 1
+    spawn_positions = 1
     supervisors = "the sheriff and the mayor"
     description = "The capitalist economy of pre-war america survived alongside its people. Now it's your job to continue its survival so make some caps!"
     selection_color = "#dcba97"

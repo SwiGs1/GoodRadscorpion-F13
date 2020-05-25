@@ -77,6 +77,7 @@
 #define F13LEGIONSLAVE	(1<<11)
 #define F13EXPLORER		(1<<12)
 #define F13SLAVEMASTER	(1<<13)
+#define F13CAMPFOLLOWER	(1<<14)
 
 #define BOS				(1<<5)
 

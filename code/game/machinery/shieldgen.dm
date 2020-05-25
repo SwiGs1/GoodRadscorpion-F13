@@ -240,6 +240,12 @@
 	icon_state = "Shield_Gen"
 	req_access = list(ACCESS_XENOBIOLOGY)
 
+/obj/machinery/shieldwallgen/bos
+	name = "shield wall generator"
+	desc = "A shield generator meant for use in the bunker."
+	icon_state = "Shield_Gen"
+	req_access = list(ACCESS_BOS)
+
 /obj/machinery/shieldwallgen/Destroy()
 	for(var/d in GLOB.cardinals)
 		cleanup_field(d)

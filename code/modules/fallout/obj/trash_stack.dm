@@ -78,7 +78,7 @@
 		/obj/item/ammo_box/magazine/m556/rifle, /obj/item/ammo_box/magazine/greasegun,
 		/obj/item/ammo_box/m44,/obj/item/ammo_box/magazine/m45,
 		/obj/item/reagent_containers/pill/patch/healingpowder, /obj/item/ammo_box/a762,
-		/obj/item/ammo_box/a308, /obj/item/ammo_box/a762/doublestacked,
+		/obj/item/ammo_box/a762/doublestacked,
 		/obj/item/ammo_box/c9mm, /obj/item/ammo_box/c10mm,
 		/obj/item/ammo_box/a556, /obj/item/ammo_box/c45,
 		/obj/item/storage/pill_bottle/chem_tin/mentats, /obj/item/storage/pill_bottle/chem_tin/fixer,

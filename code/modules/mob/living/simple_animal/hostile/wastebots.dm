@@ -8,8 +8,8 @@
 	gender = NEUTER
 	mob_biotypes = list(MOB_ROBOTIC)
 	anchored = TRUE //unpullable
-	health = 160
-	maxHealth = 160
+	health = 120
+	maxHealth = 120
 	healable = 0
 	speed = 1
 	melee_damage_lower = 28 //halved this on req
@@ -60,8 +60,8 @@
 	icon_state = "protectron"
 	icon_living = "protectron"
 	icon_dead = "protectron_dead"
-	health = 160
-	maxHealth = 160
+	health = 120
+	maxHealth = 120
 	speed = 4
 	melee_damage_lower = 5 //severely reduced melee damage here because its silly to have a ranged mob also be a cqc master
 	melee_damage_upper = 10
@@ -104,8 +104,8 @@
 	icon_state = "sentrybot"
 	icon_living = "sentrybot"
 	icon_dead = "sentrybot"
-	health = 280
-	maxHealth = 280
+	health = 380
+	maxHealth = 380
 	melee_damage_lower = 48
 	melee_damage_upper = 72
 	extra_projectiles = 4 //5 projectiles
@@ -167,8 +167,8 @@
 	icon_state = "assaultron"
 	icon_living = "assaultron"
 	icon_dead = "gib7"
-	health = 450
-	maxHealth = 450
+	health = 250
+	maxHealth = 250
 	faction = list("wastebot", "enclave")
 	speed = 0
 	melee_damage_lower = 55
