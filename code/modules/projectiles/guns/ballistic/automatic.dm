@@ -525,22 +525,23 @@
 	item_state = "smg10mm"
 	slot_flags = 0
 	mag_type = /obj/item/ammo_box/magazine/m10mm_auto
-	w_class = WEIGHT_CLASS_NORMAL
+	w_class = WEIGHT_CLASS_BULKY
+	weapon_weight = WEAPON_HEAVY
 	fire_sound = 'sound/f13weapons/10mm_fire_03.ogg'
-	burst_size = 4
-	fire_delay = 3
-	burst_delay = 3
+	burst_size = 2
+	fire_delay = 2
+	burst_delay = 2
 	can_suppress = FALSE //we dont have sprites therefore cease
-	force = 10
-	spread = 23
+	force = 15
+	spread = 18
 
 /obj/item/gun/ballistic/automatic/smg10mm/burst_select()
 	var/mob/living/carbon/human/user = usr
 	switch(select)
 		if(0)
 			select += 1
-			burst_size = 4
-			spread = 23
+			burst_size = 2
+			spread = 18
 			to_chat(user, "<span class='notice'>You switch to [burst_size]-rnd burst.</span>")
 		if(1)
 			select = 0
