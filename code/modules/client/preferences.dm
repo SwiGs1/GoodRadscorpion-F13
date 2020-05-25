@@ -67,9 +67,6 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	var/facial_hair_style = "Shaved"	//Face hair type
 	var/facial_hair_color = "000"		//Facial hair color
 	var/skin_tone = "caucasian1"		//Skin color
-	var/has_penis = 0						//Do they have a penis? (for ERP verbs and surgery)
-	var/has_vagina = 0						//Do they have a vagina? (for ERP verbs and surgery)
-	var/has_breasts = 0						//Do they have breasts? (for ERP verbs and surgery)
 	var/eye_color = "000"				//Eye color
 	var/datum/species/pref_species = new /datum/species/human()	//Mutant race
 	var/list/features = list("mcolor" = "FFF", "tail_lizard" = "Smooth", "tail_human" = "None", "snout" = "Round", "horns" = "None", "ears" = "None", "wings" = "None", "frills" = "None", "spines" = "None", "body_markings" = "None", "legs" = "Normal Legs", "moth_wings" = "Plain")
