@@ -1664,22 +1664,6 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					facial_hair_style = random_facial_hair_style(gender)
 					hair_style = random_hair_style(gender)
 
-				if("has_penis")
-					if(has_penis == 1)
-						has_penis = 0
-					else
-						has_penis = 1
-				if("has_vagina")
-					if(has_vagina == 1)
-						has_vagina = 0
-					else
-						has_vagina = 1
-				if("has_breasts")
-					if(has_breasts == 1)
-						has_breasts = 0
-					else
-						has_breasts = 1
-
 				if("hotkeys")
 					hotkeys = !hotkeys
 					if(hotkeys)
@@ -1813,9 +1797,6 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 	character.gender = gender
 	character.age = age
-	character.has_penis = has_penis
-	character.has_vagina = has_vagina
-	character.has_breasts = has_breasts
 
 	character.eye_color = eye_color
 	var/obj/item/organ/eyes/organ_eyes = character.getorgan(/obj/item/organ/eyes)
