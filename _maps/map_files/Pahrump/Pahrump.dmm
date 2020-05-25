@@ -9669,6 +9669,12 @@
 	tag = "icon-verticalinnermainbottom"
 	},
 /area/f13/wasteland)
+"azu" = (
+/turf/open/indestructible/ground/outside/sidewalk{
+	dir = 7;
+	icon_state = "outerpavement"
+	},
+/area/f13/city)
 "azv" = (
 /obj/structure/simple_door/house,
 /turf/open/floor/f13/wood,
@@ -10706,6 +10712,16 @@
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier1,
 /turf/open/floor/f13/wood,
 /area/f13/village)
+"aBZ" = (
+/obj/structure/guillotine,
+/turf/open/indestructible/ground/outside/sidewalk,
+/area/f13/city)
+"aCa" = (
+/turf/open/indestructible/ground/outside/sidewalk{
+	dir = 2;
+	icon_state = "outerpavementcorner"
+	},
+/area/f13/city)
 "aCb" = (
 /obj/structure/table/wood,
 /turf/open/floor/f13/wood,
@@ -11003,6 +11019,12 @@
 /obj/item/bedsheet/orange,
 /turf/open/floor/f13/wood,
 /area/f13/village)
+"aCT" = (
+/turf/open/indestructible/ground/outside/sidewalk{
+	dir = 8;
+	icon_state = "outerpavement"
+	},
+/area/f13/city)
 "aCU" = (
 /obj/structure/tires,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -11074,6 +11096,12 @@
 	tag = "icon-horizontaloutermain0"
 	},
 /area/f13/wasteland)
+"aDd" = (
+/turf/open/indestructible/ground/outside/sidewalk{
+	dir = 4;
+	icon_state = "outerpavementcorner"
+	},
+/area/f13/city)
 "aDe" = (
 /obj/machinery/light/small{
 	dir = 4
@@ -11092,6 +11120,12 @@
 /obj/structure/barricade/wooden/planks/pregame,
 /turf/open/floor/f13/wood,
 /area/f13/village)
+"aDh" = (
+/turf/open/indestructible/ground/outside/sidewalk{
+	dir = 1;
+	icon_state = "outerpavementcorner"
+	},
+/area/f13/city)
 "aDi" = (
 /obj/machinery/vending/nukacolavend,
 /turf/open/floor/f13/wood,
@@ -11227,6 +11261,18 @@
 /obj/effect/spawner/lootdrop/f13/armor/random,
 /turf/open/floor/f13/wood,
 /area/f13/village)
+"aDC" = (
+/turf/open/indestructible/ground/outside/sidewalk{
+	dir = 8;
+	icon_state = "outerpavementcorner"
+	},
+/area/f13/city)
+"aDD" = (
+/turf/open/indestructible/ground/outside/sidewalk{
+	dir = 4;
+	icon_state = "outerpavement"
+	},
+/area/f13/city)
 "aDE" = (
 /obj/structure/table/wood,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2,
@@ -11391,6 +11437,12 @@
 	icon_state = "whitegreenrustychess"
 	},
 /area/f13/village)
+"aEa" = (
+/turf/open/indestructible/ground/outside/sidewalk{
+	dir = 1;
+	icon_state = "outerpavement"
+	},
+/area/f13/city)
 "aEb" = (
 /obj/structure/rack,
 /obj/item/clothing/neck/petcollar,
@@ -27269,13 +27321,6 @@
 	},
 /turf/open/floor/f13/wood,
 /area/f13/city)
-"bzf" = (
-/obj/item/flag/oasis,
-/turf/open/indestructible/ground/outside/dirt{
-	dir = 6;
-	icon_state = "dirt"
-	},
-/area/f13/city)
 "bzg" = (
 /turf/open/indestructible/ground/outside/sidewalk{
 	tag = "icon-outerturn";
@@ -27527,13 +27572,6 @@
 /obj/effect/landmark/start/f13/priestess,
 /turf/open/floor/f13/wood,
 /area/f13/legion)
-"bzV" = (
-/obj/item/flag/oasis,
-/turf/open/indestructible/ground/outside/dirt{
-	dir = 5;
-	icon_state = "dirt"
-	},
-/area/f13/city)
 "bzW" = (
 /obj/effect/landmark/start/f13/recleg,
 /turf/open/indestructible/ground/outside/dirt{
@@ -46126,10 +46164,10 @@ bmG
 bmG
 bmG
 bmG
-bzf
+bok
 bkW
 bkW
-bzV
+awj
 bmG
 aVm
 aaa
@@ -46615,11 +46653,11 @@ bmG
 bmG
 awv
 bkA
-bkW
-bkW
-bkW
-bkW
-bkW
+bnp
+bkX
+bkX
+bkX
+bma
 bkW
 bkW
 bkW
@@ -46872,11 +46910,11 @@ bkW
 avX
 bmq
 bkA
-bkW
-bkW
-bkW
-bkW
-bkW
+bmq
+aCa
+aDD
+aDd
+bkA
 bkW
 bnp
 bkX
@@ -47129,11 +47167,11 @@ bkW
 bkW
 bmq
 bkA
-bkW
-bkW
-bkW
-bkW
-bkW
+bmq
+azu
+aBZ
+aEa
+bkA
 bkW
 bmq
 awK
@@ -47386,11 +47424,11 @@ bkX
 bkX
 sAf
 bkA
-bkW
-bkW
-bkW
-bkW
-bkW
+bmq
+aDC
+aCT
+aDh
+bkA
 bkW
 bmq
 awK
@@ -47643,11 +47681,11 @@ bmG
 bmG
 bmG
 bok
-bkW
-bkW
-bkW
-bkW
-bkW
+awj
+bmG
+bmG
+bmG
+bok
 bkW
 bmq
 awS
