@@ -53,7 +53,12 @@
 
 /obj/item/ammo_box/magazine/internal/shot/riot
 	name = "riot shotgun internal magazine"
-	ammo_type = /obj/item/ammo_casing/shotgun/buckshot
+	ammo_type = /obj/item/ammo_casing/shotgun/rubbershot
+	max_ammo = 7
+
+/obj/item/ammo_box/magazine/internal/shot/riot/lethal
+	name = "riot shotgun internal magazine"
+	ammo_type = /obj/item/ammo_casing/shotgun/magnumshot
 	max_ammo = 7
 
 //Fallout13
