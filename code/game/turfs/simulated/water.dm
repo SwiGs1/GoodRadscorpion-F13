@@ -33,11 +33,6 @@
 	light_power = 0.5
 	light_range = 0.2
 
-/turf/open/water/New()
+/turf/open/water/radioactive/New()
 	..()
 	AddComponent(/datum/component/radioactive, 200, src, 0, TRUE, TRUE) //half-life of 0 because we keep on going.
-
-/turf/open/water/Initialize()
-	. = ..()
-	MakeSlippery(TURF_WET_WATER, INFINITY, 0, INFINITY, TRUE)
-
