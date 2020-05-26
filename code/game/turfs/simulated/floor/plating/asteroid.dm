@@ -66,7 +66,7 @@
 
 /turf/open/floor/plating/asteroid/basalt/New()
 	..()
-	AddComponent(/datum/component/radioactive, 100, src, 0, TRUE, TRUE) //half-life of 0 because we keep on going.
+	AddComponent(/datum/component/radioactive, 5, src, 0, TRUE, TRUE) //half-life of 0 because we keep on going.
 
 /turf/open/floor/plating/asteroid/basalt/lava //lava underneath
 	baseturfs = /turf/open/water/radioactive
