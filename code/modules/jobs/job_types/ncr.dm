@@ -375,9 +375,11 @@ NCR Heavy Trooper
 
 /datum/outfit/loadout/heavygren
 	name = "Heavy Grenadier"
-	suit_store = /obj/item/gun/ballistic/revolver/grenadelauncher/unrestricted
+	suit_store = /obj/item/gun/ballistic/shotgun/riot/lethal
 	backpack_contents = list(
-		/obj/item/ammo_box/a40mm=2,
+		/obj/item/storage/box/magnumshot=2,
+		/obj/item/grenade/chem_grenade/incendiary=1,
+		/obj/item/grenade/smokebomb=4,
 		)
 
 /datum/outfit/loadout/heavyaslt
