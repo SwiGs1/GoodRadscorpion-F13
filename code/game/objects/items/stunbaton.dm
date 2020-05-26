@@ -188,13 +188,10 @@
 	item_state = "prod"
 	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/melee_righthand.dmi'
-	w_class = WEIGHT_CLASS_BULKY
-	force = 3
-	throwforce = 5
-	stunforce = 100
-	hitcost = 2000
-	throw_hit_chance = 10
-	slot_flags = ITEM_SLOT_BACK
+	slot_flags = ITEM_SLOT_BELT
+	force = 10
+	throwforce = 7
+	w_class = WEIGHT_CLASS_NORMAL
 	var/obj/item/assembly/igniter/sparkler = 0
 
 /obj/item/melee/baton/cattleprod/Initialize()
