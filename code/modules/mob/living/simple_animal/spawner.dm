@@ -86,6 +86,19 @@
 	mob_types = list(/mob/living/simple_animal/hostile/ghoul, /mob/living/simple_animal/hostile/ghoul/reaver, /mob/living/simple_animal/hostile/ghoul/glowing)
 	faction = list("ghoul")
 
+/mob/living/simple_animal/hostile/spawner/ghoul/larger
+	name = "ghoul pit"
+	desc = "A pit full of feral ghouls, and some still seem to be moving"
+	icon_state = "hole"
+	icon_living = "hole"
+	icon = 'icons/mob/nest.dmi'
+	health = 500//less health to make up for more spawns
+	maxHealth = 500//less health to make up for more spawns
+	max_mobs = 12
+	spawn_time = 150
+	mob_types = list(/mob/living/simple_animal/hostile/ghoul, /mob/living/simple_animal/hostile/ghoul/reaver, /mob/living/simple_animal/hostile/ghoul/glowing)
+	faction = list("ghoul")
+
 /mob/living/simple_animal/hostile/spawner/deathclaw
 	name = "death claw nest"
 	desc = "A nest full of deathclaws, some are coming out."

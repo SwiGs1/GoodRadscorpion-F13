@@ -197,7 +197,7 @@ update_label("John Doe", "Clowny")
 
 /obj/item/card/id/gold/mayor
 	name = "Mayor's mayoral permit"
-	desc = "A golden identification permit reserved for the Mayor of Oasis."
+	desc = "A golden identification permit reserved for the Mayor of Kebab."
 	icon_state = "gold"
 	item_state = "gold_id"
 	id_type = "mayoral permit"

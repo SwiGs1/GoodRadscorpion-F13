@@ -177,21 +177,21 @@
 	icon_state = "legionflag"
 	item_state = "legionflag"
 	faction = "Legion"
-
+/*
 /obj/item/flag/oasis
 	name = "Oasis flag"
 	desc = "A flag depicting a stylised pink flower on a green background. It's the symbol of the town of Oasis."
 	icon_state = "oasisflag"
 	item_state = "oasisflag"
 	faction = "Oasis"
-
+*/
 /obj/item/flag/attackby(obj/item/I, mob/user, params)
 	if(istype(I, /obj/item/stack/sheet/leather) && item_state == "emptyflag")
 		visible_message("<span class='notice'>[user] begins to make a flag.</span>")
 		if(do_after(user, 60, target = src))
 			var/obj/item/stack/sheet/leather/H = I
 			if(H.use(1))
-				var/flag = alert(user, "Please choose which faction flag you wish to create.", "Flag type", "NCR", "Legion", "Oasis",)
+				var/flag = alert(user, "Please choose which faction flag you wish to create.", "Flag type", "NCR", "Legion",)
 				switch(flag)
 					if("NCR")
 						name = "NCR flag"
@@ -205,12 +205,6 @@
 						icon_state = "legionflag"
 						item_state = "legionflag"
 						faction = "Legion"
-					if("Oasis")
-						name = "Oasis flag"
-						desc = "A flag depicting a stylised pink flower on a green background. It's the symbol of the town of Oasis."
-						icon_state = "oasisflag"
-						item_state = "oasisflag"
-						faction = "Oasis"
 				update_icon()
 	else
 		attack_hand(user)

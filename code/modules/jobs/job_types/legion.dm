@@ -488,8 +488,8 @@ Veteran Legionary
 Prime Legionairy
 */
 
-/datum/job/CaesarsLegion/Legionnaire/f13legionary
-	title = "Legionary"
+/datum/job/CaesarsLegion/Legionnaire/f13prime
+	title = "Legionnaire"
 	flag = F13LEGIONARY
 	faction = "Legion"
 	total_positions = 12

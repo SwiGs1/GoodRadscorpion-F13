@@ -137,8 +137,8 @@
 	if (!mineralSpawnChanceList)
 		mineralSpawnChanceList = list(
 			/turf/closed/mineral/uranium = 5, /turf/closed/mineral/diamond = 1, /turf/closed/mineral/gold = 10,
-			/turf/closed/mineral/silver = 12, /turf/closed/mineral/plasma = 20, /turf/closed/mineral/iron = 40, /turf/closed/mineral/titanium = 11/*,
-			/turf/closed/mineral/gibtonite = 4, /turf/closed/mineral/bscrystal = 1*/)
+			/turf/closed/mineral/silver = 12, /turf/closed/mineral/plasma = 20, /turf/closed/mineral/iron = 40, /turf/closed/mineral/titanium = 11,
+			/turf/closed/mineral/gibtonite = 4, /*/turf/closed/mineral/bscrystal = 1*/)
 	if (display_icon_state)
 		icon_state = display_icon_state
 	. = ..()
@@ -180,8 +180,8 @@
 	mineralChance = 6
 	mineralSpawnChanceList = list(
 		/turf/closed/mineral/uranium = 2, /turf/closed/mineral/diamond = 1, /turf/closed/mineral/gold = 4, /turf/closed/mineral/titanium = 4,
-		/turf/closed/mineral/silver = 6, /turf/closed/mineral/plasma = 15, /turf/closed/mineral/iron = 40/*,
-		/turf/closed/mineral/gibtonite = 2, /turf/closed/mineral/bscrystal = 1*/)
+		/turf/closed/mineral/silver = 6, /turf/closed/mineral/plasma = 15, /turf/closed/mineral/iron = 40,
+		/turf/closed/mineral/gibtonite = 2, /*/turf/closed/mineral/bscrystal = 1*/)
 
 
 /turf/closed/mineral/random/volcanic
@@ -418,7 +418,7 @@
 
 //GIBTONITE
 
-/*/turf/closed/mineral/gibtonite
+/turf/closed/mineral/gibtonite
 	mineralAmt = 1
 	spreadChance = 0
 	spread = 0
@@ -518,4 +518,4 @@
 	turf_type = /turf/open/floor/plating/asteroid/basalt/lava_land_surface
 	baseturfs = /turf/open/floor/plating/asteroid/basalt/lava_land_surface
 	initial_gas_mix = LAVALAND_DEFAULT_ATMOS
-	defer_change = 1*/
+	defer_change = 1

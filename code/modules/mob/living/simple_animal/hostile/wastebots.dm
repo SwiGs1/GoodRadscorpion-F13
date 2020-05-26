@@ -38,8 +38,8 @@
 	icon_dead = "gib7"
 	health = 200
 	maxHealth = 200
-	melee_damage_lower = 72
-	melee_damage_upper = 72
+	melee_damage_lower = 24
+	melee_damage_upper = 32
 	attack_sound = 'sound/items/welder.ogg'
 	attacktext = "shoots a burst of flame at"
 	projectilesound = 'sound/weapons/laser.ogg'
@@ -104,8 +104,8 @@
 	icon_state = "sentrybot"
 	icon_living = "sentrybot"
 	icon_dead = "sentrybot"
-	health = 380
-	maxHealth = 380
+	health = 680
+	maxHealth = 680
 	melee_damage_lower = 48
 	melee_damage_upper = 72
 	extra_projectiles = 4 //5 projectiles
@@ -167,8 +167,8 @@
 	icon_state = "assaultron"
 	icon_living = "assaultron"
 	icon_dead = "gib7"
-	health = 250
-	maxHealth = 250
+	health = 450
+	maxHealth = 450
 	faction = list("wastebot", "enclave")
 	speed = 0
 	melee_damage_lower = 55
