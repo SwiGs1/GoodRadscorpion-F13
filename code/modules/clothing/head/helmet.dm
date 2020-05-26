@@ -258,20 +258,30 @@
 	item_state = "metalhelmet"
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
 	armor = list("melee" = 40, "bullet" = 25, "laser" = 25, "energy" = 20, "bomb" = 16, "bio" = 0, "rad" = 0)
-	color = "#514E4E" // Light Grey
+
+/obj/item/clothing/head/helmet/knight/fluff/metal/Initialize()
+	. = ..()
+	AddComponent(/datum/component/spraycan_paintable)
+	START_PROCESSING(SSobj, src)
+
+/obj/item/clothing/head/helmet/knight/fluff/metal/Destroy()
+	STOP_PROCESSING(SSobj, src)
+	return ..()
 
 /obj/item/clothing/head/helmet/knight/fluff/metal/reinforced
 	name = "reinforced metal helmet"
 	icon_state = "metalhelmet_r"
 	item_state = "metalhelmet_r"
 	armor = list("melee" = 45, "bullet" = 35, "laser" = 40, "energy" = 25, "bomb" = 16, "bio" = 0, "rad" = 0)
-	color = "#514E4E" // Light Grey
 
-/obj/item/clothing/head/helmet/knight/fluff/metal/strange
-	name = "strange helmet"
-	desc = "A steel helmet forged by tribal warriors, with additional plating to protect again projectile and laser fire."
-	armor = list("melee" = 40, "bullet" = 40, "laser" = 40, "energy" = 25, "bomb" = 16, "bio" = 0, "rad" = 0)
-	color = "#514E4E" // Light Grey
+/obj/item/clothing/head/helmet/knight/fluff/metal/reinforced/Initialize()
+	. = ..()
+	AddComponent(/datum/component/spraycan_paintable)
+	START_PROCESSING(SSobj, src)
+
+/obj/item/clothing/head/helmet/knight/fluff/metal/reinforced/Destroy()
+	STOP_PROCESSING(SSobj, src)
+	return ..()
 
 /obj/item/clothing/head/helmet/knight/fluff/rider
 	name = "rider helmet" //Not raider. Rider.
@@ -395,11 +405,6 @@
 	dynamic_hair_suffix = ""
 	dynamic_fhair_suffix = ""
 
-/obj/item/clothing/head/helmet/f13/combat/dark
-	name = "combat helmet"
-	desc = "An old military grade pre-war combat helmet."
-	color = "#302E2E" // Dark Grey
-
 /obj/item/clothing/head/helmet/f13/combat/Initialize()
 	. = ..()
 	AddComponent(/datum/component/spraycan_paintable)
@@ -416,9 +421,14 @@
 	item_state = "combat_helmet_mk2"
 	armor = list("melee" = 45, "bullet" = 50, "laser" = 45, "energy" = 40, "bomb" = 39, "bio" = 70, "rad" = 70, "fire" = 70, "acid" = 0)
 
-/obj/item/clothing/head/helmet/f13/combat/mk2/dark
-	name = "reinforced combat helmet"
-	color = "#302E2E" // Dark Grey
+/obj/item/clothing/head/helmet/f13/combat/mk2/Initialize()
+	. = ..()
+	AddComponent(/datum/component/spraycan_paintable)
+	START_PROCESSING(SSobj, src)
+
+/obj/item/clothing/head/helmet/f13/combat/mk2/Destroy()
+	STOP_PROCESSING(SSobj, src)
+	return ..()
 
 /obj/item/clothing/head/helmet/f13/combat/brotherhood
 	name = "brotherhood combat helmet"
@@ -698,6 +708,15 @@
 	icon_state = "metal_mask2"
 	item_state = "metal_mask2"
 	armor = list("melee" = 50, "bullet" = 35, "laser" = 50, "energy" = 50, "bomb" = 25, "bio" = 30, "rad" = 30, "fire" = 30, "acid" = 0)
+
+/obj/item/clothing/head/helmet/f13/metalmask/mk2/Initialize()
+	. = ..()
+	AddComponent(/datum/component/spraycan_paintable)
+	START_PROCESSING(SSobj, src)
+
+/obj/item/clothing/head/helmet/f13/metalmask/mk2/Destroy()
+	STOP_PROCESSING(SSobj, src)
+	return ..()
 
 /obj/item/clothing/head/helmet/f13/tesla
 	name = "tesla helmet"
