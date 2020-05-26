@@ -102,8 +102,8 @@ Ambassador
 	flag = F13AMBASSADOR
 	head_announce = list("Security")
 	faction = "NCR"
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 1
+	spawn_positions = 1
 	description = "You are the political and diplomatic attaché to the NCR forces in the area. Though you are not part of the military, and should avoid conflict, you wield great bureaucratic power."
 	supervisors = "Colonel"
 	req_admin_notify = 1
@@ -343,7 +343,7 @@ NCR Heavy Trooper
 	faction = "NCR"
 	total_positions = 2
 	spawn_positions = 2
-	description = "You are a corporal or a Sargeant who has been selected for the special duty of Heavy Trooper. You are exceptionally physically fit, being conditioned to wear the many, many pounds of salvaged power armor; and trained with your R84 LMG. You are the poster-child of the NCR Embassy, and should act accordingly."
+	description = "You are a Sergeant who has been selected for the special duty of Heavy Trooper. You are exceptionally physically fit, being conditioned to wear the many, many pounds of salvaged power armor; and trained with your R84 LMG. You are the poster-child of the NCR Embassy, and should act accordingly."
 	supervisors = "the officers"
 	selection_color = "#fff5cc"
 	exp_requirements = 300
@@ -351,8 +351,8 @@ NCR Heavy Trooper
 	outfit = /datum/outfit/job/ncr/f13ncrht
 
 	loadout_options = list(
-	/datum/outfit/loadout/heavycpl,
-	/datum/outfit/loadout/heavysgt,
+	/datum/outfit/loadout/heavygren,
+	/datum/outfit/loadout/heavyaslt,
 	)
 
 
@@ -361,7 +361,6 @@ NCR Heavy Trooper
 	jobtype = /datum/job/ncr/f13ncrht
 	id = 			/obj/item/card/id/dogtag/ncrht
 	uniform =  		/obj/item/clothing/under/f13/ncr
-	suit_store = 	/obj/item/gun/ballistic/automatic/lmg
 	suit = 			/obj/item/clothing/suit/armor/f13/brokenpa/ncr
 	head = 			/obj/item/clothing/head/helmet/power_armor/t45b
 	belt =          /obj/item/storage/belt/military/NCR_Bandolier
@@ -371,19 +370,21 @@ NCR Heavy Trooper
 		/obj/item/reagent_containers/hypospray/medipen/stimpak=1, \
 		/obj/item/storage/bag/money/small/ncrenlisted=1, \
 		/obj/item/book/granter/trait/trekking=1, \
-		/obj/item/ammo_box/magazine/lmg=3
+		/obj/item/clothing/accessory/ncr/SGT=1
 		)
 
-/datum/outfit/loadout/heavycpl
-	name = "Heavy Corporal"
+/datum/outfit/loadout/heavygren
+	name = "Heavy Grenadier"
+	suit_store = /obj/item/gun/ballistic/revolver/grenadelauncher/unrestricted
 	backpack_contents = list(
-		/obj/item/clothing/accessory/ncr/CPL=1,
+		/obj/item/ammo_box/a40mm=2,
 		)
 
-/datum/outfit/loadout/heavysgt
-	name = "Heavy Sargeant"
+/datum/outfit/loadout/heavyaslt
+	name = "Heavy Assault"
+	suit_store = 	/obj/item/gun/ballistic/automatic/lmg
 	backpack_contents = list(
-		/obj/item/clothing/accessory/ncr/SGT=1,
+		/obj/item/ammo_box/magazine/lmg=3,
 		)
 
 
@@ -395,8 +396,8 @@ NCR Military Police
 	title = "NCR Military Police"
 	flag = F13NCRMP
 	faction = "NCR"
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 2
+	spawn_positions = 2
 	description = "You are the primary enforcers of NCR law within the ranks of the local embassy. You are technically exempt from the standard chain of command, answering only to High-Command, and specifically, the NCR Office of Special Investigations (NCROSI). "
 	supervisors = "NCROSI"
 	selection_color = "#fff5cc"
@@ -464,17 +465,17 @@ Trooper
 		/obj/item/clothing/mask/ncr_facewrap)
 
 /datum/outfit/loadout/trooperfrontline
-	name = "Front-Line Trooper"
-	suit_store = 	/obj/item/gun/ballistic/automatic/marksman/servicerifle
+	name = "Grenadier"
+	suit_store = 	/obj/item/gun/ballistic/automatic/pistol/ninemil
+	belt = /obj/item/storage/belt/grenade/ncr
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m556/rifle=3)
+		/obj/item/ammo_box/magazine/m9mm=2)
 
 /datum/outfit/loadout/trooperranged
 	name = "Ranged Trooper"
-	suit_store = /obj/item/gun/ballistic/shotgun/remington
+	suit_store = 	/obj/item/gun/ballistic/automatic/marksman/servicerifle
 	backpack_contents = list(
-		/obj/item/ammo_box/a762=3
-		)
+		/obj/item/ammo_box/magazine/m556/rifle=3)
 
 /*
 Recruit
@@ -560,9 +561,10 @@ Veteran Ranger
 
 /datum/outfit/loadout/vrclassic
 	name = "Classic Veteran Ranger"
-	suit_store = /obj/item/gun/ballistic/automatic/sniper_rifle/syndicate
+	suit_store = /obj/item/gun/ballistic/shotgun/antimateriel
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/sniper_rounds=3)
+		/obj/item/ammo_box/a50MG=3,
+		/obj/item/ammo_box/a50MG/AP=1)
 
 /datum/outfit/loadout/vrlite
 	name = "Light Veteran Ranger"

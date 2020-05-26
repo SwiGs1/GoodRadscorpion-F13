@@ -148,8 +148,10 @@
 #define CANATMOSPASS(A, O) ( A.CanAtmosPass == ATMOS_PASS_PROC ? A.CanAtmosPass(O) : ( A.CanAtmosPass == ATMOS_PASS_DENSITY ? !A.density : A.CanAtmosPass ) )
 
 //LAVALAND
-#define LAVALAND_EQUIPMENT_EFFECT_PRESSURE 50 //what pressure you have to be under to increase the effect of equipment meant for lavaland
-#define LAVALAND_DEFAULT_ATMOS "o2=14;n2=23;TEMP=300"
+//#define LAVALAND_EQUIPMENT_EFFECT_PRESSURE 50 //what pressure you have to be under to increase the effect of equipment meant for lavaland
+//#define LAVALAND_DEFAULT_ATMOS "o2=14;n2=23;TEMP=300"
+#define LAVALAND_EQUIPMENT_EFFECT_PRESSURE 100 //temp change
+#define LAVALAND_DEFAULT_ATMOS "o2=22;n2=82;TEMP=293.15" //temp change
 
 //ATMOSIA GAS MONITOR TAGS
 #define ATMOS_GAS_MONITOR_INPUT_O2 "o2_in"

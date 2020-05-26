@@ -54,7 +54,8 @@
 	baseturfs = /turf/open/floor/plating/asteroid/basalt/lava_land_surface
 
 /turf/open/floor/plating/asteroid/basalt
-	name = "volcanic floor"
+	name = "wasteland"
+	desc = "Good thing you weren't around when the bombs went off, as you'd look no more than this here patch of wasteland."
 	baseturfs = /turf/open/floor/plating/asteroid/basalt
 	icon = 'icons/turf/floors.dmi'
 	icon_state = "basalt"
@@ -63,8 +64,12 @@
 	archdrops = list(/obj/item/stack/ore/glass/basalt = list(ARCH_PROB = 100,ARCH_MAXDROP = 5))
 	floor_variance = 15
 
+/turf/open/floor/plating/asteroid/basalt/New()
+	..()
+	AddComponent(/datum/component/radioactive, 100, src, 0, TRUE, TRUE) //half-life of 0 because we keep on going.
+
 /turf/open/floor/plating/asteroid/basalt/lava //lava underneath
-	baseturfs = /turf/open/lava/smooth
+	baseturfs = /turf/open/water/radioactive
 
 /turf/open/floor/plating/asteroid/basalt/airless
 	initial_gas_mix = "TEMP=2.7"
@@ -88,7 +93,7 @@
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface
 	initial_gas_mix = LAVALAND_DEFAULT_ATMOS
 	planetary_atmos = TRUE
-	baseturfs = /turf/open/lava/smooth/lava_land_surface
+	baseturfs = /turf/open/water/radioactive
 
 
 
