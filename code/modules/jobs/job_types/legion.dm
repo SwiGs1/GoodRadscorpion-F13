@@ -390,8 +390,8 @@ datum/job/CaesarsLegion/Legionnaire/f13slavemaster
 	title = "Legion Slavemaster"
 	flag = F13SLAVEMASTER
 	faction = "Legion"
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 1
+	spawn_positions = 1
 	description = "You are the feared and respected disciplinary corps of the Legion. Acting as both master of the Slaves and de-facto executioner of the Centurion's will within his ranks, you are a faceless and undoubtedly cruel torturer... but be careful to not let your hubris and malice lead to a strikeback from those you thought broken."
 	supervisors = "the Decani and Centurion"
 	exp_requirements = 300
@@ -406,6 +406,7 @@ datum/job/CaesarsLegion/Legionnaire/f13slavemaster
 	belt = 			/obj/item/melee/curator_whip
 	head = 			/obj/item/clothing/head/helmet/gladiator
 	glasses = 		/obj/item/clothing/glasses/sunglasses
+	r_hand = 		/obj/item/melee/baton/cattleprod
 	backpack_contents = list(
 		/obj/item/claymore/machete/reinforced=1, \
 		/obj/item/reagent_containers/pill/patch/healingpowder=2, \
