@@ -1839,18 +1839,6 @@
 	icon_state = "darkdirtysolid"
 	},
 /area/f13/bunker)
-"eL" = (
-/obj/docking_port/stationary{
-	dheight = 0;
-	dir = 2;
-	dwidth = 1;
-	height = 3;
-	id = "Mining_Level_1";
-	name = "Mines";
-	width = 4
-	},
-/turf/open/floor/plasteel/elevatorshaft,
-/area/f13/building)
 "eM" = (
 /obj/structure/toilet,
 /turf/open/floor/plasteel/freezer,
@@ -5958,12 +5946,6 @@
 	icon_state = "showroomfloor"
 	},
 /area/f13/bunker)
-"og" = (
-/obj/machinery/computer/shuttle/miningelevator{
-	dir = 1
-	},
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/tunnel)
 "oh" = (
 /obj/structure/rack,
 /obj/effect/spawner/lootdrop/f13/resourcespawner,
@@ -67141,7 +67123,7 @@ Qa
 Qa
 Qa
 hN
-eL
+FJ
 FJ
 FJ
 mo
@@ -67653,7 +67635,7 @@ Qa
 Qa
 Qa
 Qa
-og
+Qa
 mo
 mo
 mo

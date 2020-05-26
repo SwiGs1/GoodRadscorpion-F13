@@ -503,6 +503,7 @@ Prime Legionairy
 	loadout_options = list(
 	/datum/outfit/loadout/legassault, //.357 revolver
 	/datum/outfit/loadout/legbreach, //hunting shotgun
+	/datum/outfit/loadout/legscout,
 	/datum/outfit/loadout/legvet
 	)
 
@@ -525,15 +526,24 @@ Prime Legionairy
 
 /datum/outfit/loadout/legassault
 	name = "Foot Legionary"
-	suit_store = /obj/item/gun/ballistic/revolver/colt357
+	suit_store = /obj/item/gun/ballistic/automatic/marksman/servicerifle/varmint
 	backpack_contents = list(
-		/obj/item/ammo_box/a357=2)
+		/obj/item/ammo_box/magazine/m556/rifle/small=2)
 
 /datum/outfit/loadout/legbreach
-	name = "Close Quarters Legionary"
-	suit_store = /obj/item/gun/ballistic/shotgun/hunting
+	name = "Assault Legionary"
+	suit_store = /obj/item/gun/ballistic/shotgun/trench
 	backpack_contents = list(
-		/obj/item/storage/box/lethalshot=1)
+		/obj/item/storage/box/lethalshot=2)
+
+/datum/outfit/loadout/legscout
+	name = "Scout Legionary"
+	suit = /obj/item/clothing/suit/armor/f13/legion/recruit/scout
+	head = /obj/item/clothing/head/helmet/f13/legion/recruit/scout
+	suit_store = /obj/item/gun/ballistic/shotgun/remington
+	backpack_contents = list(
+		/obj/item/ammo_box/a762/doublestacked=1, \
+		/obj/item/twohanded/binocs=1)
 
 /datum/outfit/loadout/legvet
 	name = "Veteran Legionary"
@@ -541,15 +551,7 @@ Prime Legionairy
 	head = 			/obj/item/clothing/head/helmet/f13/legion/vet
 	suit = 			/obj/item/clothing/suit/armor/f13/legion/vet
 	glasses = 		/obj/item/clothing/glasses/sunglasses
-	backpack_contents = list(
-		/obj/item/restraints/legcuffs/bola=1, \
-		/obj/item/throwing_star/spear, \
-		/obj/item/claymore/machete/reinforced=1, \
-		/obj/item/reagent_containers/pill/patch/healingpowder=2, \
-		/obj/item/flashlight/lantern=1, \
-		/obj/item/storage/bag/money/small/legenlisted,
-		/obj/item/radio)
-	r_pocket = /obj/item/restraints/handcuffs
+	r_hand = /obj/item/storage/backpack/spearquiver
 
 /datum/job/CaesarsLegion/Legionnaire/f13legionary/after_spawn(mob/living/carbon/human/H, mob/M)
 	H.add_quirk("Big Leagues")
