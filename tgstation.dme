@@ -2754,6 +2754,7 @@
 #include "code\modules\vehicles\speedbike.dm"
 #include "code\modules\vehicles\vehicle_actions.dm"
 #include "code\modules\vehicles\vehicle_key.dm"
+#include "code\modules\vehicles\wasteland\buggy.dm"
 #include "code\modules\vehicles\wasteland\bus.dm"
 #include "code\modules\vehicles\wasteland\car.dm"
 #include "code\modules\vending\_vending.dm"

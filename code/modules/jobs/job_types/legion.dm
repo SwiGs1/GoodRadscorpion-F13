@@ -488,7 +488,7 @@ Veteran Legionary
 Prime Legionairy
 */
 
-/datum/job/CaesarsLegion/Legionnaire/f13legionary
+/datum/job/CaesarsLegion/Legionnaire/f13prime
 	title = "Legionary"
 	flag = F13LEGIONARY
 	faction = "Legion"

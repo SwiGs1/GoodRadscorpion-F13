@@ -47,7 +47,7 @@
 
 /obj/machinery/light/kebab_sign/break_light_tube()
 	return 0
-
+/*
 /obj/machinery/light/oasis
 	name = "Oasis sign"
 	icon_state = "Oasis"
@@ -79,7 +79,7 @@
 
 /obj/machinery/light/oasis_sign/break_light_tube()
 	return 0
-
+*/
 /obj/machinery/light/chiken_ranch
 	name = "Chiken Ranch sign"
 	icon_state = "chiken_ranch"
