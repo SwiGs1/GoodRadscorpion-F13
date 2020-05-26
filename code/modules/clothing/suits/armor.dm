@@ -140,21 +140,22 @@
 	equip_delay_other = 50
 
 /obj/item/clothing/suit/armor/laserproof
-	name = "tesla armor"
-	desc = "A prewar armor design by Nikola Tesla before being confinscated by the U.S. government. Provides the high energy weapons resistance."
-	icon_state = "tesla_armor"
-	item_state = "tesla_armor"
+	name = "reflector vest"
+	desc = "A vest that excels in protecting the wearer against energy projectiles, as well as occasionally reflecting them."
+	icon_state = "armor_reflec"
+	item_state = "armor_reflec"
 	blood_overlay_type = "armor"
-	armor = list("melee" = 50, "bullet" = 40, "laser" = 60, "energy" = 60, "bomb" = 40, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
-	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | ACID_PROOF
 	body_parts_covered = CHEST|GROIN|ARMS
-	var/hit_reflect_chance = 40
+	cold_protection = CHEST|GROIN|ARMS
+	heat_protection = CHEST|GROIN|ARMS
+	armor = list("melee" = 10, "bullet" = 10, "laser" = 60, "energy" = 60, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 100, "acid" = 100)
+	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | ACID_PROOF
 
-/obj/item/clothing/suit/armor/laserproof/IsReflect(def_zone)
-	if(!(def_zone in list(BODY_ZONE_CHEST, BODY_ZONE_PRECISE_GROIN))) //If not shot where ablative is covering you, you don't get the reflection bonus!
-		return 0
-	if (prob(hit_reflect_chance))
-		return 1
+//obj/item/clothing/suit/armor/laserproof/IsReflect(def_zone)  Whole thing resulted in an error, since its an item you cant get through regular means and its from regular ss13 im just going to leave it there like this as of now
+	//if(!(def_zone in list(BODY_ZONE_CHEST, BODY_ZONE_PRECISE_GROIN, BODY_ZONE_L_ARM, BODY_ZONE_R_ARM))) //If not shot where ablative is covering you, you don't get the reflection bonus!
+	//	return FALSE
+	//if (prob(hit_reflect_chance))
+	//	return TRUE
 
 /obj/item/clothing/suit/armor/vest/det_suit
 	name = "detective's armor vest"
@@ -265,20 +266,6 @@
 	desc = "This heavily padded leather jacket is unusual in that it has two sleeves. You'll definitely make a fashion statement whenever, and wherever, you rumble."
 	armor = list("melee" = 30, "bullet" = 30, "laser" = 20, "energy" = 20, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25)
 
-/obj/item/clothing/suit/armor/f13/leather_jacket/combat/coat
-	name = "combat leather coat"
-	icon_state = "combat_coat"
-	item_state = "combat_coat"
-	desc = "A combat leather jacket, outfitted with a special armored leather coat."
-	armor = list("melee" = 35, "bullet" = 35, "laser" = 25, "energy" = 25, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 35)
-
-/obj/item/clothing/suit/armor/f13/leather_jacket/combat/riotpolice
-	name = "combat body armor"
-	icon_state = "combat_coat"
-	item_state = "combat_coat"
-	desc = "A heavy armor with ballistic inserts, sewn into a padded riot police coat."
-	armor = list("melee" = 50, "bullet" = 50, "laser" = 40, "energy" = 25, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 5, "acid" = 35)
-
 /obj/item/clothing/suit/armor/f13/kit
 	name = "armor kit"
 	desc = "Separate armor parts you can wear over the clothing to get the most basic protection from the dangers of wasteland.<br>It is unable to reflect laser beams and probably won't shield you from a random bullet, but it sure is better than going into the battle without any armor at all."
@@ -303,6 +290,16 @@
 	item_state = "leather_armor_2"
 	desc = "An enhanced version of the basic leather armor with extra layers of protection. Finely crafted from tanned brahmin hide."
 	armor = list("melee" = 40, "bullet" = 40, "laser" = 30, "energy" = 30, "bomb" = 35, "bio" = 0, "rad" = 15, "fire" = 40, "acid" = 35)
+	
+/obj/item/clothing/suit/armor/f13/bmetalarmor
+	name = "metal armor"
+	desc = "A set of sturdy metal armor made from various bits of scrap metal. It looks heavy and impairs movement"
+	icon_state = "bmetalarmor"
+	item_state = "bmetalarmor"
+	body_parts_covered = CHEST|GROIN|LEGS|ARMS
+	armor = list("melee" = 60, "bullet" = 40, "laser" = 40, "energy" = 30, "bomb" = 25, "bio" = 30, "rad" = 30, "fire" = 90, "acid" = 0)
+	slowdown = 0.75
+	strip_delay = 60
 
 /obj/item/clothing/suit/armor/f13/metalarmor
 	name = "metal armor"
@@ -313,14 +310,13 @@
 	armor = list("melee" = 45, "bullet" = 40, "laser" = 45, "energy" = 40, "bomb" = 40, "bio" = 30, "rad" = 15, "fire" = 60, "acid" = 0)
 	slowdown = 0.25
 	strip_delay = 10
-	color = "#625E5B"
 
-/obj/item/clothing/suit/armor/fluff/chestplate/Initialize()
+/obj/item/clothing/suit/armor/f13/metalarmor/Initialize()
 	. = ..()
 	AddComponent(/datum/component/spraycan_paintable)
 	START_PROCESSING(SSobj, src)
 
-/obj/item/clothing/suit/armor/fluff/chestplate/Destroy()
+/obj/item/clothing/suit/armor/f13/metalarmor/Destroy()
 	STOP_PROCESSING(SSobj, src)
 	return ..()
 
@@ -333,18 +329,24 @@
     armor = list("melee" = 45, "bullet" = 45, "laser" = 55, "energy" = 50, "bomb" = 40, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
     slowdown = 0
     strip_delay = 10
-    color = "#625E5B"
 
-/obj/item/clothing/suit/armor/f13/metalarmor/strange
-    name = "strange metal armor"
-    desc = "A set of metal plates formed together to form a robust chestplate, designed to resist both projectile and laser weaponry."
-    icon_state = "metal_chestplate2"
-    item_state = "metal_chestplate2"
-    body_parts_covered = CHEST|GROIN|ARMS|LEGS
-    armor = list("melee" = 45, "bullet" = 50, "laser" = 50, "energy" = 40, "bomb" = 40, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
-    slowdown = 0
-    strip_delay = 10
-    color = "#625E5B"
+/obj/item/clothing/suit/armor/f13/metalarmor/reinforced/Initialize()
+	. = ..()
+	AddComponent(/datum/component/spraycan_paintable)
+	START_PROCESSING(SSobj, src)
+
+/obj/item/clothing/suit/armor/f13/metalarmor/reinforced/Destroy()
+	STOP_PROCESSING(SSobj, src)
+	return ..()
+
+/obj/item/clothing/suit/armor/f13/tesla
+	name = "tesla armor"
+	desc = "A prewar armor design by Nikola Tesla before being confinscated by the U.S. government. Provides the high energy weapons resistance."
+	icon_state = "tesla_armor"
+	item_state = "tesla_armor"
+	blood_overlay_type = "armor"
+	armor = list("melee" = 35, "bullet" = 35, "laser" = 55, "energy" = 55, "bomb" = 35, "bio" = 0, "rad" = 0, "fire" = 100, "acid" = 100)
+	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | ACID_PROOF
 
 /obj/item/clothing/suit/armor/f13/raider
 	name = "supa-fly raider armor"
@@ -417,6 +419,15 @@
 	armor = list("melee" = 40, "bullet" = 45, "laser" = 40, "energy" = 40, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20)
 	strip_delay = 60
 
+/obj/item/clothing/suit/armor/f13/combat/Initialize()
+	. = ..()
+	AddComponent(/datum/component/spraycan_paintable)
+	START_PROCESSING(SSobj, src)
+
+/obj/item/clothing/suit/armor/f13/combat/Destroy()
+	STOP_PROCESSING(SSobj, src)
+	return ..()
+
 /obj/item/clothing/suit/armor/f13/reconarmor
 	name = "recon armor"
 	desc = "An old military grade pre war combat armor."
@@ -435,6 +446,15 @@
 	body_parts_covered = CHEST|GROIN|LEGS|ARMS
 	armor = list("melee" = 45, "bullet" = 55, "laser" = 45, "energy" = 45, "bomb" = 55, "bio" = 65, "rad" = 10, "fire" = 60, "acid" = 20)
 	strip_delay = 60
+	
+/obj/item/clothing/suit/armor/f13/combatmk2/Initialize()
+	. = ..()
+	AddComponent(/datum/component/spraycan_paintable)
+	START_PROCESSING(SSobj, src)
+
+/obj/item/clothing/suit/armor/f13/combatmk2/Destroy()
+	STOP_PROCESSING(SSobj, src)
+	return ..()
 
 /obj/item/clothing/suit/armor/f13/combatmk2ncr
 	name = "combat armor mk2"
@@ -512,21 +532,6 @@
 	body_parts_covered = CHEST|GROIN|LEGS|ARMS
 	armor = list("melee" = 45, "bullet" = 55, "laser" = 45, "energy" = 45, "bomb" = 55, "bio" = 65, "rad" = 10, "fire" = 60, "acid" = 20)
 
-
-/obj/item/clothing/suit/armor/f13/combat/dark
-	name = "combat armor"
-	desc = "An old military grade pre war combat armor."
-	color = "#514E4E"
-
-/obj/item/clothing/suit/armor/f13/combat/Initialize()
-	. = ..()
-	AddComponent(/datum/component/spraycan_paintable)
-	START_PROCESSING(SSobj, src)
-
-/obj/item/clothing/suit/armor/f13/combat/Destroy()
-	STOP_PROCESSING(SSobj, src)
-	return ..()
-
 /obj/item/clothing/suit/armor/f13/combat/mk2
 	name = "reinforced combat armor"
 	desc = "A reinforced model based of the pre-war combat armor."
@@ -535,10 +540,14 @@
 	item_state = "combat_armor_mk2"
 	armor = list("melee" = 45, "bullet" = 50, "laser" = 45, "energy" = 45, "bomb" = 55, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
 
-/obj/item/clothing/suit/armor/f13/combat/mk2/dark
-	name = "reinforced combat armor"
-	desc = "A reinforced model based of the pre-war combat armor."
-	color = "#302E2E"
+/obj/item/clothing/suit/armor/f13/combat/mk2/Initialize()
+	. = ..()
+	AddComponent(/datum/component/spraycan_paintable)
+	START_PROCESSING(SSobj, src)
+
+/obj/item/clothing/suit/armor/f13/combat/mk2/Destroy()
+	STOP_PROCESSING(SSobj, src)
+	return ..()
 
 /obj/item/clothing/suit/armor/f13/combat/ncr
 	name = "ranger patrol armor"
