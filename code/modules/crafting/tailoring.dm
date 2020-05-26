@@ -84,16 +84,6 @@
 	category = CAT_CLOTHING
 	subcategory = CAT_CLOTHING
 
-/datum/crafting_recipe/combat_coat
-	name = "combat coat"
-	result = /obj/item/clothing/suit/armor/f13/leather_jacket/combat/coat
-	reqs = list(/obj/item/clothing/suit/armor/f13/leather_jacket/combat = 1,
-				/obj/item/stack/sheet/animalhide/deathclaw = 1)
-	tools = list(TOOL_WORKBENCH)
-	time = 60
-	category = CAT_CLOTHING
-	subcategory = CAT_CLOTHING
-
 /datum/crafting_recipe/armorkit
 	name = "armor kit"
 	result = /obj/item/clothing/suit/armor/f13/kit
@@ -105,9 +95,9 @@
 	category = CAT_CLOTHING
 	subcategory = CAT_CLOTHING
 
-/datum/crafting_recipe/tesla_armor
+/datum/crafting_recipe/f13/tesla_armor
 	name = "tesla armor"
-	result = /obj/item/clothing/suit/armor/laserproof
+	result = /obj/item/clothing/suit/armor/f13/tesla
 	reqs = list(/obj/item/clothing/suit/armor/f13/metalarmor/reinforced = 1,
 				/obj/item/stack/sheet/mineral/titanium = 1,
 				/obj/item/stack/crafting/electronicparts = 4)
