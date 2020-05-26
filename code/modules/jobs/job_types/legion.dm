@@ -489,7 +489,7 @@ Prime Legionairy
 */
 
 /datum/job/CaesarsLegion/Legionnaire/f13prime
-	title = "Legionary"
+	title = "Legionnaire"
 	flag = F13LEGIONARY
 	faction = "Legion"
 	total_positions = 12
