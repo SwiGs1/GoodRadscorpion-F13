@@ -367,7 +367,7 @@ Vexillarius
 
 /datum/outfit/loadout/vexassault
 	name = "Assault Vexillarius"
-	head = 			/obj/item/clothing/head/helmet/f13/legion/vet/combvexil
+	head = 			/obj/item/clothing/head/helmet/f13/legion/vet/vexil
 	suit_store = /obj/item/gun/ballistic/automatic/greasegun
 	backpack_contents = list(
 		/obj/item/nullrod/claymore/chainsaw_sword=1,
