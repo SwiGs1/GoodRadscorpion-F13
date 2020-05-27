@@ -559,8 +559,8 @@
 	item_state = "legvexil_alt"
 
 /obj/item/clothing/head/helmet/f13/legion/venator
-	name = "legion venator hood"
-	desc = "It's a leather hood worn by legion venators. It looks carefully crafted and reinforced."
+	name = "legion slavemaster hood"
+	desc = "It's a leather hood worn by legion slavemasters. It looks carefully crafted and reinforced."
 	icon_state = "legvenator"
 	item_state = "legvenator"
 	armor = list("melee" = 60, "bullet" = 50, "laser" = 30, "energy" = 15, "bomb" = 25, "bio" = 50, "rad" = 20, "fire" = 70, "acid" = 0)

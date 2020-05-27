@@ -290,7 +290,7 @@
 	item_state = "leather_armor_2"
 	desc = "An enhanced version of the basic leather armor with extra layers of protection. Finely crafted from tanned brahmin hide."
 	armor = list("melee" = 40, "bullet" = 40, "laser" = 30, "energy" = 30, "bomb" = 35, "bio" = 0, "rad" = 15, "fire" = 40, "acid" = 35)
-	
+
 /obj/item/clothing/suit/armor/f13/bmetalarmor
 	name = "metal armor"
 	desc = "A set of sturdy metal armor made from various bits of scrap metal. It looks heavy and impairs movement"
@@ -446,7 +446,7 @@
 	body_parts_covered = CHEST|GROIN|LEGS|ARMS
 	armor = list("melee" = 45, "bullet" = 55, "laser" = 45, "energy" = 45, "bomb" = 55, "bio" = 65, "rad" = 10, "fire" = 60, "acid" = 20)
 	strip_delay = 60
-	
+
 /obj/item/clothing/suit/armor/f13/combatmk2/Initialize()
 	. = ..()
 	AddComponent(/datum/component/spraycan_paintable)
@@ -879,7 +879,7 @@
 	armor = list("melee" = 60, "bullet" = 50, "laser" = 30, "energy" = 15, "bomb" = 25, "bio" = 50, "rad" = 20, "fire" = 70, "acid" = 0)
 
 /obj/item/clothing/suit/armor/f13/legion/vet/orator
-	name = "legion orator armor"
+	name = "legion slavemaster armor"
 	desc = "The armor appears to be based off of a suit of Legion veteran armor, with the addition of bracers, a chainmail skirt, and large pauldrons.  A tabard emblazoned with the bull is loosely draped over the torso."
 	icon_state = "legheavy"
 	armor = list("melee" = 65, "bullet" = 50, "laser" = 30, "energy" = 15, "bomb" = 25, "bio" = 50, "rad" = 20, "fire" = 70, "acid" = 0)

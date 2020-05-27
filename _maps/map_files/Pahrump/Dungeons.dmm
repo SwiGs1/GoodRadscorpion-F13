@@ -8911,6 +8911,13 @@
 	tag = "icon-plating"
 	},
 /area/f13/bunker)
+"Lc" = (
+/obj/structure/simple_door/metal/fence{
+	dir = 8;
+	icon_state = "fence"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/tunnel)
 "Le" = (
 /obj/effect/decal/remains/human,
 /turf/open/floor/plasteel/barber{
@@ -9733,6 +9740,18 @@
 	tag = "icon-bluerustychess2"
 	},
 /area/f13/bunker)
+"SJ" = (
+/obj/docking_port/stationary{
+	dheight = 0;
+	dir = 2;
+	dwidth = 1;
+	height = 3;
+	id = "Mining_Level_1";
+	name = "Mines";
+	width = 4
+	},
+/turf/open/floor/plasteel/elevatorshaft,
+/area/f13/building)
 "SM" = (
 /turf/closed/indestructible/opshuttle,
 /area/f13/bunker)
@@ -10035,6 +10054,9 @@
 	tag = "icon-housewood2"
 	},
 /area/f13/bunker)
+"UT" = (
+/turf/closed/wall/r_wall/rust,
+/area/f13/underground/cave)
 "Vb" = (
 /obj/structure/table/reinforced,
 /obj/item/paper_bin,
@@ -10246,6 +10268,12 @@
 	icon_state = "darkdirtysolid"
 	},
 /area/f13/bunker)
+"WG" = (
+/obj/machinery/computer/shuttle/miningelevator{
+	dir = 1
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/tunnel)
 "WI" = (
 /obj/structure/window/reinforced,
 /turf/open/floor/f13{
@@ -65059,9 +65087,9 @@ ei
 ei
 Qa
 Qa
-ei
-ei
-ei
+UT
+UT
+UT
 ei
 ei
 ei
@@ -65314,12 +65342,12 @@ ei
 ei
 ei
 ei
-ei
+UT
+Lc
+UT
 Qa
-ei
-Qa
-ei
-ei
+UT
+UT
 ei
 ei
 ei
@@ -65571,14 +65599,14 @@ ei
 ei
 ei
 ei
-ei
+UT
 Qa
 Qa
 Qa
 Qa
-ei
-ei
-ei
+UT
+UT
+UT
 ei
 ei
 ei
@@ -65828,14 +65856,14 @@ ei
 ei
 ei
 ei
-ei
-ei
+UT
+UT
 Qa
 Qa
 Qa
 Qa
 Qa
-ei
+UT
 ei
 ei
 ei
@@ -66086,14 +66114,14 @@ ei
 ei
 ei
 ei
-ei
-ei
+UT
+UT
 Qa
 Qa
 Qa
 Qa
-ei
-ei
+UT
+UT
 ei
 ei
 ei
@@ -66343,14 +66371,14 @@ ei
 ei
 ei
 ei
-ei
-ei
+UT
+UT
 PB
 Qa
 Qa
 Qa
 Qa
-ei
+UT
 mo
 mo
 mo
@@ -66599,8 +66627,8 @@ ei
 ei
 ei
 ei
-ei
-ei
+UT
+UT
 Qa
 Qa
 Qa
@@ -66855,8 +66883,8 @@ ei
 ei
 ei
 ei
-ei
-ei
+UT
+UT
 Qa
 Qa
 Qa
@@ -67112,7 +67140,7 @@ ei
 ei
 ei
 ei
-ei
+UT
 fI
 HX
 Qa
@@ -67123,7 +67151,7 @@ Qa
 Qa
 Qa
 hN
-FJ
+SJ
 FJ
 FJ
 mo
@@ -67369,7 +67397,7 @@ ei
 ei
 ei
 ei
-ei
+UT
 Qv
 Qa
 Qa
@@ -67626,8 +67654,8 @@ ei
 ei
 ei
 ei
-ei
-ei
+UT
+UT
 Qa
 Qa
 Qa
@@ -67635,7 +67663,7 @@ Qa
 Qa
 Qa
 Qa
-Qa
+WG
 mo
 mo
 mo
@@ -67881,9 +67909,9 @@ ei
 ei
 ei
 ei
-ei
-ei
-ei
+UT
+UT
+UT
 Um
 Qa
 Qa
@@ -67892,8 +67920,8 @@ Qa
 Qa
 Qa
 Qa
-ei
-ei
+UT
+UT
 ei
 ei
 ei
@@ -68148,8 +68176,8 @@ Qa
 Qa
 Qa
 Qa
-ei
-ei
+UT
+UT
 ei
 ei
 ei
@@ -68406,8 +68434,8 @@ Qa
 Qa
 Qa
 Qa
-ei
-ei
+UT
+UT
 ei
 ei
 ei
@@ -68664,7 +68692,7 @@ Qa
 Qa
 Qa
 LH
-ei
+UT
 ei
 ei
 ei
@@ -68921,7 +68949,7 @@ Qa
 Qa
 Qa
 fI
-ei
+UT
 ei
 ei
 ei
@@ -69178,7 +69206,7 @@ Qa
 Qa
 Qa
 fI
-ei
+UT
 ei
 ei
 ei
@@ -69434,8 +69462,8 @@ JG
 PB
 Qa
 Qa
-ei
-ei
+UT
+UT
 ei
 ei
 ei
@@ -69687,11 +69715,11 @@ ei
 ei
 ei
 ei
-ei
+UT
 Qa
 Qa
-ei
-ei
+UT
+UT
 ei
 ei
 ei
@@ -69944,10 +69972,10 @@ ei
 ei
 ei
 ei
-ei
-ei
-ei
-ei
+UT
+UT
+UT
+UT
 ei
 ei
 ei

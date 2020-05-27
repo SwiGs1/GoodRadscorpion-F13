@@ -368,11 +368,11 @@ Vexillarius
 /datum/outfit/loadout/vexassault
 	name = "Assault Vexillarius"
 	head = 			/obj/item/clothing/head/helmet/f13/legion/vet/combvexil
-	suit_store = 	/obj/item/gun/ballistic/revolver/m29
+	suit_store = /obj/item/gun/ballistic/automatic/greasegun
 	backpack_contents = list(
-		/obj/item/ammo_box/m44=1,
-		/obj/item/nullrod/claymore/chainsaw_sword=1
-		)
+		/obj/item/nullrod/claymore/chainsaw_sword=1,
+		/obj/item/ammo_box/magazine/greasegun=2)
+
 
 /datum/outfit/loadout/vexsupport
 	name = "Support Vexillarius"
@@ -402,9 +402,9 @@ datum/job/CaesarsLegion/Legionnaire/f13slavemaster
 	name = "Legion Slavemaster"
 	jobtype = /datum/job/CaesarsLegion/Legionnaire/f13legionary
 	id =			/obj/item/card/id/dogtag/legslavemaster
-	uniform =		/obj/item/clothing/under/gladiator
+	suit = 			/obj/item/clothing/suit/armor/f13/legion/vet/orator
 	belt = 			/obj/item/melee/curator_whip
-	head = 			/obj/item/clothing/head/helmet/gladiator
+	head = 			/obj/item/clothing/head/helmet/f13/legion/venator
 	glasses = 		/obj/item/clothing/glasses/sunglasses
 	r_hand = 		/obj/item/melee/baton/cattleprod
 	backpack_contents = list(
@@ -412,7 +412,11 @@ datum/job/CaesarsLegion/Legionnaire/f13slavemaster
 		/obj/item/reagent_containers/pill/patch/healingpowder=2, \
 		/obj/item/flashlight/lantern=1, \
 		/obj/item/restraints/legcuffs/bola/tactical=1, \
-		/obj/item/storage/bag/money/small/legenlisted,
+		/obj/item/storage/bag/money/small/legenlisted, \
+		/obj/item/key/collar,\
+		/obj/item/key/bcollar,\
+		/obj/item/assembly/signaler/electropack/boomcollar=2, \
+		/obj/item/assembly/signaler/electropack/shockcollar=2, \
 		/obj/item/radio)
 	r_pocket = /obj/item/restraints/handcuffs
 
