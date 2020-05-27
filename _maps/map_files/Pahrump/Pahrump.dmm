@@ -12984,9 +12984,12 @@
 /turf/closed/wall/f13/wood,
 /area/f13/village)
 "aJM" = (
-/obj/item/candle/tribal_torch,
-/turf/open/indestructible/ground/outside/desert,
-/area/f13/wasteland)
+/obj/structure/closet/crate/bin{
+	desc = "Smells like shit.";
+	name = "Desert Rose 2"
+	},
+/turf/closed/mineral/random/low_chance,
+/area/f13/caves)
 "aJR" = (
 /turf/open/indestructible/ground/outside/sidewalk{
 	dir = 4;
@@ -13998,10 +14001,12 @@
 /turf/open/floor/f13/wood,
 /area/f13/city)
 "aNe" = (
-/turf/closed/wall/r_wall/f13composite{
-	icon_state = "ruins12"
+/obj/structure/closet/crate/bin{
+	desc = "Smells like shit.";
+	name = "Desert Rose 2"
 	},
-/area/space)
+/turf/open/indestructible/ground/outside/desert,
+/area/f13/ruins)
 "aNf" = (
 /obj/structure/tires/two,
 /turf/open/floor/f13/wood{
@@ -22274,10 +22279,12 @@
 /turf/open/floor/f13/wood,
 /area/f13/city)
 "bkl" = (
-/turf/closed/wall/r_wall/f13composite{
-	icon_state = "ruins3"
+/mob/living/simple_animal/hostile/radroach,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2";
+	tag = "icon-housewood2"
 	},
-/area/space)
+/area/f13/village)
 "bkm" = (
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/city)
@@ -22365,8 +22372,12 @@
 	},
 /area/f13/village)
 "bkz" = (
-/turf/closed/wall/f13/wood/house,
-/area/space)
+/obj/structure/chair/wood,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2";
+	tag = "icon-housewood2"
+	},
+/area/f13/village)
 "bkA" = (
 /turf/open/indestructible/ground/outside/dirt{
 	icon_state = "dirt"
@@ -39409,6 +39420,12 @@
 /area/f13/caves)
 "cmD" = (
 /obj/structure/rack,
+/obj/item/gun/ballistic/automatic/tribalbow,
+/obj/item/gun/ballistic/automatic/tribalbow,
+/obj/item/projectile/bullet/reusable/arrow,
+/obj/item/projectile/bullet/reusable/arrow,
+/obj/item/projectile/bullet/reusable/arrow,
+/obj/item/projectile/bullet/reusable/arrow,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/village)
 "cnc" = (
@@ -40701,6 +40718,12 @@
 /obj/structure/fence/corner,
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/farm)
+"dIc" = (
+/mob/living/simple_animal/hostile/radroach,
+/turf/open/floor/f13{
+	icon_state = "whitegreenrustychess"
+	},
+/area/f13/village)
 "dMK" = (
 /obj/structure/dresser,
 /turf/open/indestructible/ground/outside/dirt,
@@ -40788,6 +40811,16 @@
 	tag = "icon-housewood2"
 	},
 /area/f13/village)
+"fBb" = (
+/obj/structure/rack,
+/obj/item/clothing/under/f13/female/tribal,
+/obj/item/clothing/under/f13/female/tribal,
+/obj/item/clothing/under/f13/female/tribal,
+/obj/item/clothing/under/f13/tribal,
+/obj/item/clothing/under/f13/tribal,
+/obj/item/clothing/under/f13/tribal,
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/village)
 "fKC" = (
 /obj/structure/closet/cabinet,
 /obj/effect/spawner/lootdrop/f13/armor/random,
@@ -40822,9 +40855,18 @@
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "gsf" = (
-/obj/structure/simple_door/wood,
-/obj/structure/decoration/rag,
-/turf/open/indestructible/ground/outside/desert,
+/obj/structure/table/wood/settler,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2";
+	tag = "icon-housewood2"
+	},
+/area/f13/village)
+"gHq" = (
+/obj/structure/simple_door/house,
+/obj/structure/barricade/wooden/planks/pregame,
+/turf/open/floor/f13{
+	icon_state = "whitegreenrustychess"
+	},
 /area/f13/village)
 "gKE" = (
 /obj/structure/table/wood/settler,
@@ -40882,6 +40924,14 @@
 /obj/structure/debris/v3,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
+"hBZ" = (
+/obj/structure/table/wood/settler,
+/obj/structure/table/wood/settler,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2";
+	tag = "icon-housewood2"
+	},
+/area/f13/village)
 "hDu" = (
 /obj/structure/chair/bench,
 /obj/effect/landmark/start/f13/villager,
@@ -40969,6 +41019,13 @@
 	tag = "icon-verticalrightborderleft0"
 	},
 /area/f13/wasteland)
+"kMN" = (
+/obj/structure/rack,
+/obj/item/clothing/suit/armor/f13/tribal,
+/obj/item/clothing/suit/armor/f13/tribal,
+/obj/item/clothing/suit/armor/f13/tribal,
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/village)
 "lkO" = (
 /obj/structure/table/wood/settler,
 /obj/item/chair,
@@ -41104,6 +41161,14 @@
 /obj/structure/sink/puddle,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
+"saC" = (
+/obj/structure/closet/cabinet,
+/obj/effect/spawner/lootdrop/f13/armor/clothes,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2";
+	tag = "icon-housewood2"
+	},
+/area/f13/village)
 "smc" = (
 /obj/effect/decal/remains/human,
 /turf/open/indestructible/ground/outside/dirt{
@@ -41343,6 +41408,13 @@
 /area/f13/ncr)
 "xkA" = (
 /obj/structure/fermenting_barrel,
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/village)
+"xnY" = (
+/turf/open/space/basic,
+/area/f13/village)
+"xCv" = (
+/obj/machinery/workbench,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/village)
 "xFi" = (
@@ -41689,9 +41761,9 @@ aae
 aae
 aae
 aae
-aat
-aat
-aat
+ahJ
+ahJ
+ahJ
 aae
 aae
 aae
@@ -47244,13 +47316,13 @@ bjx
 bjx
 aLX
 aLK
-bkl
-bkl
-bkl
-bkl
-bkl
-bkl
-bkz
+boF
+boF
+boF
+boF
+boF
+boF
+aLK
 aat
 ach
 acv
@@ -47507,7 +47579,7 @@ bmG
 bmG
 bmG
 bjX
-aNe
+aBZ
 aat
 anl
 acv
@@ -47774,8 +47846,8 @@ bju
 aLK
 bji
 lJJ
-bkl
-bkz
+boF
+aLK
 ach
 acv
 acv
@@ -47908,7 +47980,7 @@ acv
 bsj
 ads
 aHF
-aKC
+fBb
 aJf
 aIw
 aIw
@@ -48032,7 +48104,7 @@ bmt
 bmI
 bkX
 bni
-aNe
+aBZ
 ach
 acv
 acv
@@ -48289,7 +48361,7 @@ bxA
 bmI
 bkm
 bkm
-aNe
+aBZ
 ach
 acv
 acv
@@ -48422,7 +48494,7 @@ acv
 acv
 ads
 aHF
-aKC
+kMN
 aJf
 aIw
 aIw
@@ -48546,7 +48618,7 @@ bkE
 aLK
 bmC
 bkm
-aNe
+aBZ
 ach
 acv
 acv
@@ -48803,7 +48875,7 @@ bmv
 aLK
 bkm
 bkm
-aNe
+aBZ
 ach
 acv
 acv
@@ -49042,7 +49114,7 @@ bnQ
 bji
 ryU
 bkm
-aNe
+aBZ
 bkA
 bkW
 bdi
@@ -49060,7 +49132,7 @@ aLK
 aLK
 bkm
 bkm
-aNe
+aBZ
 ach
 acv
 acv
@@ -49196,7 +49268,7 @@ acv
 aIc
 aHF
 wbg
-gsf
+aJy
 wbg
 aHF
 aat
@@ -49299,7 +49371,7 @@ aNu
 bji
 ryU
 bkm
-aNe
+aBZ
 bkA
 bkW
 bdY
@@ -49317,7 +49389,7 @@ bmw
 bkm
 blV
 bkm
-aNe
+aBZ
 ach
 acv
 acv
@@ -49556,7 +49628,7 @@ bmu
 bji
 ryU
 bkm
-aNe
+aBZ
 bkA
 aVo
 bkW
@@ -49574,7 +49646,7 @@ bla
 bkm
 bkm
 bkm
-aNe
+aBZ
 ach
 acv
 acv
@@ -49813,7 +49885,7 @@ bji
 bji
 bkm
 bkm
-aNe
+aBZ
 bkA
 bkW
 bkW
@@ -49831,7 +49903,7 @@ blV
 bqW
 bkm
 bqW
-aNe
+aBZ
 ach
 acv
 acv
@@ -50070,7 +50142,7 @@ bkm
 bkm
 bkm
 bkm
-aNe
+aBZ
 aTh
 bkW
 bkW
@@ -50088,7 +50160,7 @@ bkm
 bkm
 bkm
 bkm
-aNe
+aBZ
 ach
 acv
 acv
@@ -50345,7 +50417,7 @@ bmC
 bqW
 bkm
 bqW
-aNe
+aBZ
 ach
 acv
 acv
@@ -50584,7 +50656,7 @@ bkm
 bkm
 bkm
 bkm
-aNe
+aBZ
 bkA
 bkW
 bkW
@@ -50602,7 +50674,7 @@ bkm
 blW
 bkm
 bkm
-aNe
+aBZ
 ach
 acv
 acv
@@ -50733,7 +50805,7 @@ sVW
 aKC
 aKC
 aKC
-aKC
+xCv
 wbg
 acv
 acv
@@ -50841,7 +50913,7 @@ bkm
 bkm
 bkm
 bkm
-aNe
+aBZ
 aPq
 bkX
 byu
@@ -50859,7 +50931,7 @@ blV
 bqW
 bkm
 bqW
-aNe
+aBZ
 ach
 acv
 acv
@@ -51085,38 +51157,38 @@ aae
 aBZ
 aTw
 aBZ
-bkl
-bkl
-bkl
-bkl
-bkl
-bkl
-bkl
-bkl
-bkl
-bkl
-bkl
-bkl
-bkl
+boF
+boF
+boF
+boF
+boF
+boF
+boF
+boF
+boF
+boF
+boF
+boF
+boF
 aLK
-bkl
-bkl
-bkl
-aLK
-aLK
+boF
+boF
+boF
 aLK
 aLK
 aLK
-bkl
-bkl
-bkl
-bkl
-bkl
-bkl
-bkl
-bkl
-bkl
-bkz
+aLK
+aLK
+boF
+boF
+boF
+boF
+boF
+boF
+boF
+boF
+boF
+aLK
 acu
 acv
 acv
@@ -51772,7 +51844,7 @@ aat
 aat
 aHF
 aHF
-aHF
+xnY
 aHF
 aat
 aat
@@ -53556,7 +53628,7 @@ acv
 acv
 ads
 aat
-aJM
+aat
 aat
 aat
 aat
@@ -57168,12 +57240,12 @@ aat
 aat
 aat
 aat
-aat
-aat
-aat
-aat
-aat
-aat
+aHF
+aHF
+aHF
+aHF
+aHF
+aHF
 aat
 aat
 aat
@@ -57425,12 +57497,12 @@ aat
 aat
 ayJ
 aat
-aat
-aat
-aat
-aat
-aat
-aat
+aHF
+azE
+azE
+aAc
+azE
+aHF
 aii
 acO
 acO
@@ -57682,12 +57754,12 @@ bss
 aat
 aat
 aat
-aat
-aat
-aat
-aat
-aat
-aat
+sub
+azE
+azI
+hBZ
+gsf
+aHF
 ach
 acv
 acv
@@ -57939,12 +58011,12 @@ bgL
 aat
 aat
 aat
-aat
-aat
-aat
-aat
-aat
-aat
+sub
+azE
+aAf
+aAf
+aAf
+aHF
 ach
 acv
 nvR
@@ -58196,12 +58268,12 @@ aat
 aat
 aat
 aat
-aat
-aat
-aat
-ayJ
-aat
-aat
+aHF
+azE
+bky
+azE
+aHh
+aHF
 afw
 bvT
 bvT
@@ -58453,12 +58525,12 @@ aat
 aat
 aat
 aSj
-aat
-aat
-aat
-aat
-aat
-aat
+aHF
+azE
+aAf
+saC
+azE
+aHF
 aat
 aat
 aat
@@ -58710,12 +58782,12 @@ aat
 aat
 aat
 aat
-aat
-aat
-aat
-aat
-aat
-aat
+aHF
+bky
+aHF
+aAf
+gHq
+aHF
 aat
 aat
 aat
@@ -58969,10 +59041,10 @@ aat
 aat
 aat
 aat
-aat
-aat
-aat
-aat
+aHF
+aCA
+aCn
+aHF
 aat
 aat
 ahF
@@ -59204,6 +59276,13 @@ acP
 afj
 aat
 aat
+aHF
+sub
+aHF
+aHF
+aHF
+aHF
+aHF
 aat
 aat
 aat
@@ -59219,17 +59298,10 @@ aat
 aat
 aat
 aat
-aat
-aat
-aat
-aat
-aat
-aat
-aat
-aat
-aat
-aat
-aat
+aHF
+aDF
+dIc
+aHF
 aat
 aat
 aat
@@ -59461,13 +59533,13 @@ aat
 aat
 aat
 aat
-aat
-aat
-aat
-aat
-aat
-aat
-aat
+aHF
+azE
+gsf
+aAf
+azE
+azE
+aHF
 aat
 aat
 aat
@@ -59483,10 +59555,10 @@ aat
 aii
 acO
 acO
-acO
-bss
-aat
-aat
+aHF
+aHF
+aHF
+aHF
 aat
 aat
 aat
@@ -59718,13 +59790,13 @@ aHF
 aat
 aat
 aat
-aat
-aat
-aat
-aat
-aat
-aat
-aat
+aHF
+bkz
+gsf
+aAf
+bkl
+aHh
+aHF
 aat
 aat
 aat
@@ -59968,20 +60040,20 @@ aat
 aHF
 fKC
 fyo
-aHF
+aAf
 azE
 gdO
 aHF
 aat
 aat
 aat
-aat
-aat
-aat
-aat
-aat
-aat
-aat
+aHF
+azE
+azE
+aAf
+bky
+aAf
+aHF
 aat
 aat
 aat
@@ -60232,13 +60304,13 @@ aHF
 aat
 aCK
 aat
-aat
-aat
-aat
-aat
-aat
-aat
-aat
+aHF
+azE
+azE
+bky
+azE
+azE
+aHF
 aat
 aat
 abz
@@ -60482,20 +60554,20 @@ aat
 aHF
 azL
 azE
+aAf
+aAf
+aAf
+aHF
+aat
+aat
+aat
+aHF
+sub
 aHF
 aHF
+bky
 aHF
 aHF
-aat
-aat
-aat
-aat
-aat
-aat
-aat
-aat
-aat
-aat
 aat
 aat
 aat
@@ -60738,7 +60810,7 @@ aat
 aat
 aHF
 azE
-azE
+bkl
 aMP
 azE
 fbV
@@ -60994,9 +61066,9 @@ bss
 aat
 aat
 aHF
-aHF
-aHF
-aHF
+aAf
+aAf
+aAf
 azE
 uJo
 aHF
@@ -61510,7 +61582,7 @@ aat
 aHF
 aCA
 ueP
-aHF
+aAf
 azE
 tfq
 aHF
@@ -62234,7 +62306,7 @@ aae
 aae
 aae
 aae
-ajM
+aNe
 alp
 akL
 ajw
@@ -93068,7 +93140,7 @@ aae
 aae
 aae
 aae
-aae
+aJM
 aae
 aae
 aae
