@@ -177,18 +177,22 @@ GLOBAL_LIST_INIT(wasteland_positions, list(
     "Preacher",
     "Wastelander"
 ))
+
 GLOBAL_LIST_INIT(security_positions, list(
     "Vault-tec Security",
     "Deputy"
 ))
+
 GLOBAL_LIST_INIT(silicon_positions, list(
     "Mr. Handy"
 ))
+
 GLOBAL_LIST_INIT(tribal_positions, list(
     "Chief",
     "Shaman",
     "Villager"
 ))
+
 /*
 GLOBAL_LIST_INIT(engineering_positions, list(
     "Chief Engineer",
@@ -256,7 +260,7 @@ GLOBAL_LIST_INIT(exp_jobsmap, list(
     EXP_TYPE_RANGER        = list("titles" = list("NCR Veteran Ranger","NCR Ranger")),
     EXP_TYPE_SCRIBE        = list("titles" = list("Scribe")),
     EXP_TYPE_DECANUS       = list("titles" = list("Legion Decanus")),
-    EXP_TYPE_TRIBAL        = list("titles" = tribal_positions),
+    EXP_TYPE_TRIBAL        = list("titles" = tribal_positions       ),
     EXP_TYPE_TRIBALCOMMAND = list("titles" = list("Chief","Shaman")),
     //EXP_TYPE_ENCLAVE = list("titles" = enclave_positions),
     // EXP_TYPE_CREW = list("titles" = command_positions | engineering_positions | medical_positions | science_positions | supply_positions | security_positions | civilian_positions | list("AI","Cyborg")), // crew positions
