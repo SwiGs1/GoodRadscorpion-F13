@@ -22,14 +22,14 @@
 /obj/item/projectile/bullet/reusable/arrow
     name = "metal arrow"
     desc = "a simple arrow with a metal head."
-    damage = 40
+    damage = 25
     armour_penetration = 5
     icon_state = "arrow"
     ammo_type = /obj/item/ammo_casing/caseless/arrow
 /obj/item/projectile/bullet/reusable/arrow/ap
     name = "sturdy arrow"
     desc = "A reinforced arrow with a metal shaft and heavy duty head."
-    damage = 45
+    damage = 15
     armour_penetration = 35
     icon_state = "arrow"
     ammo_type = /obj/item/ammo_casing/caseless/arrow/ap
@@ -37,7 +37,7 @@
 /obj/item/projectile/bullet/reusable/arrow/poison
     name = "poison arrow"
     desc = "A simple arrow, tipped in a poisonous paste."
-    damage = 35
+    damage = 15
     armour_penetration = 5
     damage_type = TOX
     icon_state = "arrow"
@@ -46,7 +46,7 @@
 /obj/item/projectile/bullet/reusable/arrow/burning
     name = "burn arrow"
     desc = "A sumple arrow slathered in a paste that burns skin on contact."
-    damage = 35
+    damage = 15
     armour_penetration = 5
     damage_type = BURN
     icon_state = "arrow"
