@@ -116,7 +116,8 @@ GLOBAL_LIST_INIT(den_positions, list(
     "Settler",
     "Deputy",
     "Farmer",
-    "Prospector"
+    "Prospector",
+    "Shopkeeper"
 ))
 
 GLOBAL_LIST_INIT(legion_command_positions, list(
@@ -130,6 +131,7 @@ GLOBAL_LIST_INIT(legion_positions, list(
     "Veteran Legionary",
 	"Prime Legionary",
     "Recruit Legionary",
+    "Legionnaire",
     "Legion Vexillarius",
     "Legion Explorer",
     "Legion Slavemaster",
@@ -150,6 +152,7 @@ GLOBAL_LIST_INIT(ncr_positions, list(
     "NCR Military Police",
     "NCR Heavy Trooper",
     "NCR Corporal",
+    "NCR Specialist"
     "NCR Trooper",
     "NCR Assistant",
     "NCR Ranger"
@@ -181,7 +184,6 @@ GLOBAL_LIST_INIT(security_positions, list(
 GLOBAL_LIST_INIT(silicon_positions, list(
     "Mr. Handy"
 ))
-
 GLOBAL_LIST_INIT(tribal_positions, list(
     "Chief",
     "Shaman",
