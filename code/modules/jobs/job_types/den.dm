@@ -439,7 +439,7 @@ Shopkeeper
     total_positions = 1
     spawn_positions = 1
     supervisors = "the sheriff and the mayor"
-    description = "The capitalist economy of pre-war america survived alongside its people. Now it's your job to continue its survival so make some caps!"
+    description = "The capitalist economy of pre-war America survived alongside its people. Now it's your job to continue its survival, so go make some caps!"
     selection_color = "#dcba97"
     exp_requirements = 180
     exp_type = EXP_TYPE_DEN
