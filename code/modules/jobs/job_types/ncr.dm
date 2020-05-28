@@ -376,9 +376,9 @@ NCR Heavy Trooper
 /datum/outfit/loadout/heavygren
 	name = "Heavy Grenadier"
 	suit_store = /obj/item/gun/ballistic/shotgun/riot/lethal
+	belt =		/obj/item/storage/belt/grenade/ncr
 	backpack_contents = list(
 		/obj/item/storage/box/magnumshot=2,
-		/obj/item/grenade/smokebomb=4,
 		)
 
 /datum/outfit/loadout/heavyaslt
@@ -435,8 +435,8 @@ Trooper
 	title = "NCR Trooper"
 	flag = F13TROOPER
 	faction = "NCR"
-	total_positions = 6
-	spawn_positions = 6
+	total_positions = 12
+	spawn_positions = 12
 	description = "You answer to everyone above you in the chain of command, taking orders from your Sergeant directly and obeying all commands given by officers such as the Lieutenant and Captain."
 	supervisors = "Corporals and above"
 	selection_color = "#fff5cc"
@@ -483,11 +483,11 @@ Trooper
 Recruit
 */
 /datum/job/ncr/f13recruit
-	title = "NCR Assistant"
+	title = "NCR Non-Combatant"
 	flag = F13RECRUIT
 	faction = "NCR"
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 2
+	spawn_positions = 2
 	description = "You are a noncombatant member of the NCR assigned the vital duty of helping them with cooking, farming, mining, and other menial tasks. While you have been to basic training, it was rushed and hardly prepared you for the horrors of war. Your sidearm is to be used in your own defense, only."
 	supervisors = "everyone in the NCR"
 	selection_color = "#fff5cc"
