@@ -433,6 +433,12 @@
 	icon_state = "medblueband"
 	item_color = "medblueband"
 
+/obj/item/clothing/accessory/armband/mp
+	name = "MP armband"
+	desc = "An armband, worn by those meant to beat you after a sunday night..."
+	icon_state = "mpband"
+	item_color = "mpband"
+
 //////////////
 //OBJECTION!//
 //////////////

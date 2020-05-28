@@ -378,7 +378,6 @@ NCR Heavy Trooper
 	suit_store = /obj/item/gun/ballistic/shotgun/riot/lethal
 	backpack_contents = list(
 		/obj/item/storage/box/magnumshot=2,
-		/obj/item/grenade/chem_grenade/incendiary=1,
 		/obj/item/grenade/smokebomb=4,
 		)
 
@@ -412,20 +411,21 @@ NCR Military Police
 	jobtype = /datum/job/ncr/f13trooper
 	id = 			/obj/item/card/id/dogtag/ncrmp
 	uniform =  		/obj/item/clothing/under/f13/ncr
-	accessory =     /obj/item/clothing/accessory/ncr/SPC
+	accessory =     /obj/item/clothing/accessory/ncr/SSGT
 	head = 			/obj/item/clothing/head/f13/ncr/goggles
 	suit = 			/obj/item/clothing/suit/armor/f13/ncrarmor
-	suit_store = 	/obj/item/gun/ballistic/shotgun/automatic/hunting
+	suit_store = 	/obj/item/gun/ballistic/shotgun/riot
 	r_hand = 		/obj/item/melee/baton/cattleprod
 	belt =          /obj/item/storage/belt/military/NCR_Bandolier
-	glasses = 		null
+	r_pocket =		/obj/item/restraints/handcuffs
+	glasses = 		/obj/item/clothing/glasses/sunglasses/big
 	backpack_contents = list(
 		/obj/item/kitchen/knife/combat=1, \
 		/obj/item/reagent_containers/hypospray/medipen/stimpak=1, \
 		/obj/item/storage/bag/money/small/ncrenlisted, \
-		/obj/item/storage/box/rubbershot = 1, \
-		/obj/item/storage/box/rubbershot/beanbag =1, \
-		/obj/item/stock_parts/cell/high/plus=1
+		/obj/item/storage/box/rubbershot = 2, \
+		/obj/item/stock_parts/cell/high/plus=2,
+		/obj/item/clothing/accessory/armband/mp=1,
 		)
 
 /*
