@@ -37,7 +37,7 @@
 	icon_state = "ghoulreaver"
 	icon_living = "ghoulreaver"
 	icon_dead = "ghoulreaver_dead"
-	speed = 2
+	speed = 1
 	a_intent = INTENT_HARM
 	maxHealth = 150
 	health = 150
@@ -59,10 +59,10 @@
 	icon_state = "cold_feral"
 	icon_living = "cold_feral"
 	icon_dead = "cold_feral_dead"
-	speed = 1.5
+	speed = 1
 	a_intent = INTENT_HARM
-	maxHealth = 200
-	health = 200
+	maxHealth = 150
+	health = 150
 	harm_intent_damage = 5
 	melee_damage_lower = 15
 	melee_damage_upper = 15
@@ -74,10 +74,10 @@
 	icon_state = "frozen_reaver"
 	icon_living = "frozen_reaver"
 	icon_dead = "frozen_reaver_dead"
-	speed = 1.5
+	speed = 1
 	a_intent = INTENT_HARM
-	maxHealth = 200
-	health = 200
+	maxHealth = 150
+	health = 150
 	harm_intent_damage = 5
 	melee_damage_lower = 15
 	melee_damage_upper = 15
@@ -90,7 +90,7 @@
 	icon_dead = "glowinghoul_dead"
 	maxHealth = 180
 	health = 180
-	speed = 2
+	speed = 1
 	harm_intent_damage = 10
 	melee_damage_lower = 20
 	melee_damage_upper = 20
