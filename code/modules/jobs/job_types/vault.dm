@@ -128,7 +128,7 @@ Head of Security
 	satchel = 		/obj/item/storage/backpack/satchel/sec
 	duffelbag = 	/obj/item/storage/backpack/duffelbag/sec
 	box = 			/obj/item/storage/box/security
-	backpack_contents = list(/obj/item/melee/classic_baton/telescopic = 1, /obj/item/restraints/handcuffs = 2, /obj/item/ammo_box/l10mm = 2)
+	backpack_contents = list(/obj/item/melee/classic_baton/telescopic = 1, /obj/item/restraints/handcuffs = 2, /obj/item/ammo_box/l10mm = 2, /obj/item/shield/riot/tele = 1)
 
 	implants = list(/obj/item/implant/mindshield)
 
@@ -339,7 +339,7 @@ Security Officer
 	satchel = 		/obj/item/storage/backpack/satchel/sec
 	duffelbag = 	/obj/item/storage/backpack/duffelbag/sec
 	box = 			/obj/item/storage/box/security
-	backpack_contents = list(/obj/item/melee/classic_baton/telescopic = 1, /obj/item/restraints/handcuffs = 1, /obj/item/ammo_box/magazine/m10mm_adv = 2)
+	backpack_contents = list(/obj/item/melee/classic_baton/telescopic = 1, /obj/item/restraints/handcuffs = 1, /obj/item/ammo_box/magazine/m10mm_adv = 2, /obj/item/shield/riot/tele = 1)
 
 	implants = list(/obj/item/implant/mindshield)
 
