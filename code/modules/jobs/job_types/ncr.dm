@@ -408,7 +408,7 @@ NCR Military Police
 
 /datum/outfit/job/ncr/f13ncrmp
 	name = "NCR Military Police"
-	jobtype = /datum/job/ncr/f13trooper
+	jobtype = /datum/job/ncr/f13ncrmp
 	id = 			/obj/item/card/id/dogtag/ncrmp
 	uniform =  		/obj/item/clothing/under/f13/ncr
 	accessory =     /obj/item/clothing/accessory/ncr/SSGT
