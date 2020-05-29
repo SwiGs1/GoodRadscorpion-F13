@@ -176,3 +176,70 @@
 	attacktext = "grinds their claws on"
 	faction = list("wastebot")
 	loot = list(/obj/effect/decal/cleanable/robot_debris, /obj/item/stack/crafting/electronicparts/three, /obj/item/stock_parts/cell/ammo/mfc)
+
+/mob/living/simple_animal/hostile/handy/robobrain
+	name = "Robobrain"
+	desc = "A pre-war military robot armed with a deadly psionic beam and covered in thick armor plating. That dome even looks armored, somehow. Jesus..."
+	icon_state = "robobrain"
+	icon_living = "robobrain"
+	icon_dead = "robobrain"
+	health = 480
+	maxHealth = 480
+	melee_damage_lower = 24
+	melee_damage_upper = 72//why would you even get close?
+	extra_projectiles = 0
+	ranged_cooldown_time = 24//big ol' 'fuck off' laser
+	stat_attack = UNCONSCIOUS
+	ranged = TRUE
+	retreat_distance = 6
+	minimum_distance = 8
+	del_on_death = FALSE
+	attacktext = "slaps about"
+	attack_sound = 'sound/weapons/punch1.ogg'
+	projectilesound = 'sound/weapons/ionrifle.ogg'
+	projectiletype = /obj/item/projectile/beam/laser/pistol/ultraweak
+	faction = list("wastebot")
+	check_friendly_fire = TRUE
+	loot = list(/obj/effect/decal/cleanable/robot_debris, /obj/item/stack/crafting/electronicparts/five, /obj/item/stock_parts/cell/ammo/mfc, /obj/item/mmi/posibrain)
+	speak = list("You could run? I'm trying to kill you, you know.", "Please believe me when I say I'm not enjoying this.", "There's no point in trying to hide from me. I'm programmed to be quite relentless.", "Why are you hiding? I will find you.", "They could have programmed me to love, to forgive; but noooooo.", "I calculate your chance of success to be...well, I don't want to be morbid...")
+
+
+/obj/item/projectile/beam/mindflayer/robobrain
+	name = "psionic beam"
+
+/obj/item/projectile/beam/mindflayer/robobrain/on_hit(atom/target, blocked = FALSE)
+	. = ..()
+	if(ishuman(target))
+		var/mob/living/carbon/human/M = target
+		M.adjustBrainLoss(10)
+		M.confused = max(M.confused, 8)
+		M.hallucination += 15
+
+
+/mob/living/simple_animal/hostile/handy/robobrain/bullet_act(obj/item/projectile/Proj)
+	if(!Proj)
+		CRASH("[src] sentrybot invoked bullet_act() without a projectile")
+	if(prob(45) || Proj.damage > 26) //far less chance to do something, even in comparison to a sentry bot, due to being an uncommon/boss creature.
+		return ..()
+	else
+		visible_message("<span class='danger'>\The [Proj] shatters on \the [src]'s armor plating!</span>")
+		return FALSE
+
+/mob/living/simple_animal/hostile/handy/robobrain/proc/do_death_beep()
+	playsound(src, 'sound/machines/triple_beep.ogg', 75, TRUE)
+	visible_message("<span class='warning'>You hear an ominous beep coming from [src]!</span>", "<span class='warning'>You hear an ominous beep!</span>")
+
+/mob/living/simple_animal/hostile/handy/robobrain/proc/self_destruct()
+	explosion(src,1,1,1,1)//tiny explosion, purely because we don't have an actual death sprite.
+	qdel(src)
+
+/mob/living/simple_animal/hostile/handy/robobrain/death()
+	do_sparks(3, TRUE, src)
+	for(var/i in 1 to 3)
+		addtimer(CALLBACK(src, .proc/do_death_beep), i * 1 SECONDS)
+	addtimer(CALLBACK(src, .proc/self_destruct), 4 SECONDS)
+	return ..()
+
+/mob/living/simple_animal/hostile/handy/robobrain/Aggro()
+	. = ..()
+	summon_backup(15)

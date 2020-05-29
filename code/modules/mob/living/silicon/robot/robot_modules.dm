@@ -283,8 +283,8 @@
 	ratvar_modules = list(
 		/obj/item/clockwork/slab/cyborg/medical,
 		/obj/item/clockwork/weapon/ratvarian_spear)
-	cyborg_base_icon = "medical"
-	moduleselect_icon = "medical"
+	cyborg_base_icon = "mediborg"
+	moduleselect_icon = "mediborg"
 	can_be_pushed = FALSE
 	hat_offset = 3
 
@@ -324,20 +324,18 @@
 	hat_offset = -4
 
 /obj/item/robot_module/security
-	name = "Security"
+	name = "Gutsy"
 	basic_modules = list(
 		/obj/item/assembly/flash/cyborg,
 		/obj/item/restraints/handcuffs/cable/zipties,
 		/obj/item/melee/baton/loaded,
-		/obj/item/gun/energy/disabler/cyborg,
+		/obj/item/gun/energy/laser/plasma/pistol/cyborg,
+		/obj/item/gun/energy/laser/fire,
 		/obj/item/clothing/mask/gas/sechailer/cyborg)
-	emag_modules = list(/obj/item/gun/energy/laser/cyborg)
-	ratvar_modules = list(/obj/item/clockwork/slab/cyborg/security,
-		/obj/item/clockwork/weapon/ratvarian_spear)
-	cyborg_base_icon = "sec"
+	cyborg_base_icon = "secborg"
 	moduleselect_icon = "security"
 	can_be_pushed = FALSE
-	hat_offset = 3
+	hat_offset = -4
 
 /obj/item/robot_module/security/do_transform_animation()
 	..()
@@ -346,7 +344,18 @@
 
 /obj/item/robot_module/security/respawn_consumable(mob/living/silicon/robot/R, coeff = 1)
 	..()
-	var/obj/item/gun/energy/e_gun/advtaser/cyborg/T = locate(/obj/item/gun/energy/e_gun/advtaser/cyborg) in basic_modules
+	var/obj/item/gun/energy/laser/plasma/pistol/cyborg/T = locate(/obj/item/gun/energy/laser/plasma/pistol/cyborg) in basic_modules
+	if(T)
+		if(T.cell.charge < T.cell.maxcharge)
+			var/obj/item/ammo_casing/energy/S = T.ammo_type[T.select]
+			T.cell.give(S.e_cost * coeff)
+			T.update_icon()
+		else
+			T.charge_tick = 0
+
+/obj/item/robot_module/security/respawn_consumable(mob/living/silicon/robot/R, coeff = 1)
+	..()
+	var/obj/item/gun/energy/laser/fire/T = locate(/obj/item/gun/energy/laser/fire) in basic_modules
 	if(T)
 		if(T.cell.charge < T.cell.maxcharge)
 			var/obj/item/ammo_casing/energy/S = T.ammo_type[T.select]

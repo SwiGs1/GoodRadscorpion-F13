@@ -8574,21 +8574,20 @@
 /turf/open/floor/plasteel/f13/vault_floor/yellow,
 /area/quartermaster/storage)
 "axt" = (
-/obj/structure/spacevine{
-	name = "Mutant Vines"
+/obj/machinery/shower{
+	dir = 4
 	},
-/turf/open/indestructible/ground/outside/desert,
-/turf/closed/wall/r_wall/f13composite{
-	icon_state = "ruinswindowbrokenvertical"
+/obj/effect/landmark/start/f13/ncrtrooper,
+/turf/open/floor/plasteel/f13{
+	icon_state = "whitepurplerustychess2"
 	},
-/area/f13/desert)
+/area/f13/ncr_main)
 "axu" = (
-/obj/effect/decal/cleanable/shreds,
-/turf/open/space/basic,
-/turf/open/floor/plating{
-	icon_state = "platingdmg2"
+/obj/effect/landmark/start/f13/ncrmp,
+/turf/open/floor/plasteel/f13{
+	icon_state = "floorgrime"
 	},
-/area/f13/powerplant)
+/area/f13/ncr_main)
 "axv" = (
 /obj/structure/table,
 /turf/open/floor/plasteel/f13/vault_floor/floor,
@@ -8770,19 +8769,21 @@
 	},
 /area/quartermaster/qm)
 "axX" = (
-/obj/structure/window/fulltile/wood_window,
-/turf/open/indestructible/ground/outside/desert,
-/turf/closed/wall/r_wall/f13composite,
-/area/f13/desert)
-"axY" = (
 /obj/structure/spacevine{
 	name = "Mutant Vines"
 	},
 /turf/open/indestructible/ground/outside/desert,
 /turf/closed/wall/r_wall/f13composite{
-	icon_state = "ruinswindowbroken"
+	icon_state = "ruinswindowbrokenvertical"
 	},
 /area/f13/desert)
+"axY" = (
+/obj/effect/decal/cleanable/shreds,
+/turf/open/space/basic,
+/turf/open/floor/plating{
+	icon_state = "platingdmg2"
+	},
+/area/f13/powerplant)
 "axZ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -9031,18 +9032,23 @@
 /turf/open/floor/plasteel/f13/vault_floor/yellow/whiteyellowfull,
 /area/quartermaster/qm)
 "ayG" = (
-/obj/structure/spacevine{
-	name = "Mutant Vines"
-	},
+/obj/structure/window/fulltile/wood_window,
 /turf/open/indestructible/ground/outside/desert,
-/turf/closed/wall/r_wall/f13composite{
-	icon_state = "ruinswindowdestroyed"
-	},
+/turf/closed/wall/r_wall/f13composite,
 /area/f13/desert)
 "ayH" = (
 /obj/structure/noticeboard/staff,
 /turf/closed/indestructible/vaultdoor,
 /area/f13/underground/vault_atrium_upper)
+"ayI" = (
+/obj/structure/spacevine{
+	name = "Mutant Vines"
+	},
+/turf/open/indestructible/ground/outside/desert,
+/turf/closed/wall/r_wall/f13composite{
+	icon_state = "ruinswindowbroken"
+	},
+/area/f13/desert)
 "ayJ" = (
 /obj/structure/sign/directions/evac{
 	dir = 4;
@@ -9057,6 +9063,15 @@
 	},
 /turf/closed/indestructible/vaultdoor,
 /area/f13/underground/vault_atrium_upper)
+"ayK" = (
+/obj/structure/spacevine{
+	name = "Mutant Vines"
+	},
+/turf/open/indestructible/ground/outside/desert,
+/turf/closed/wall/r_wall/f13composite{
+	icon_state = "ruinswindowdestroyed"
+	},
+/area/f13/desert)
 "ayL" = (
 /obj/structure/closet/crate/bin,
 /obj/machinery/power/apc{
@@ -24001,14 +24016,6 @@
 	icon_state = "supermart3"
 	},
 /area/f13/ncr_main)
-"boE" = (
-/obj/machinery/shower{
-	dir = 4
-	},
-/turf/open/floor/plasteel/f13{
-	icon_state = "whitepurplerustychess2"
-	},
-/area/f13/ncr_main)
 "boF" = (
 /obj/machinery/light/small{
 	dir = 1
@@ -37616,11 +37623,11 @@ aab
 aab
 aab
 bor
-boE
-boE
-boE
-boE
-boE
+axt
+axt
+axt
+axt
+axt
 boq
 bpI
 bpU
@@ -38421,9 +38428,9 @@ aaK
 aaK
 bor
 boG
-boG
 eNU
-boG
+eNU
+eNU
 bve
 boq
 bpK
@@ -47670,9 +47677,9 @@ aag
 aag
 aag
 boq
-vQi
-vQi
-vQi
+axu
+axu
+axu
 bpv
 vQi
 vQi
@@ -48072,9 +48079,9 @@ bae
 bae
 bae
 boq
-vQi
-vQi
-vQi
+axu
+axu
+axu
 vQi
 vQi
 vQi
@@ -63383,7 +63390,7 @@ byd
 btb
 byF
 byG
-axu
+axY
 bxa
 bzY
 boQ
@@ -100793,8 +100800,8 @@ brA
 brA
 aaZ
 abg
-axY
-ayG
+ayI
+ayK
 aaz
 aaI
 aag
@@ -106808,7 +106815,7 @@ aaI
 brC
 aeO
 bst
-axY
+ayI
 bls
 aze
 aaZ
@@ -110808,8 +110815,8 @@ aaU
 aDU
 aCN
 aaU
-axt
-axt
+axX
+axX
 aaU
 aaI
 bhQ
@@ -118038,8 +118045,8 @@ aag
 aag
 aze
 brA
-axt
-axt
+axX
+axX
 aaU
 aaU
 aFp
@@ -118061,7 +118068,7 @@ aag
 aag
 aDU
 bae
-axX
+ayG
 blR
 bvr
 bvB
