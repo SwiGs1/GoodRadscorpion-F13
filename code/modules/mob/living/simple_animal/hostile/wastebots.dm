@@ -197,7 +197,7 @@
 	attacktext = "slaps about"
 	attack_sound = 'sound/weapons/punch1.ogg'
 	projectilesound = 'sound/weapons/ionrifle.ogg'
-	projectiletype = /obj/item/projectile/beam/laser/pistol/ultraweak
+	projectiletype = /obj/item/projectile/beam/mindflayer/robobrain
 	faction = list("wastebot")
 	check_friendly_fire = TRUE
 	loot = list(/obj/effect/decal/cleanable/robot_debris, /obj/item/stack/crafting/electronicparts/five, /obj/item/stock_parts/cell/ammo/mfc, /obj/item/mmi/posibrain)

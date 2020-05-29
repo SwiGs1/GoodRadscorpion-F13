@@ -1030,6 +1030,14 @@
 	tools = list(TOOL_WORKBENCH)
 	category = CAT_DRUGS
 
+/datum/crafting_recipe/turbo
+	name = "Turbo"
+	result = /obj/item/reagent_containers/pill/patch/turbo
+	reqs = list(/obj/item/reagent_containers/food/snacks/grown/broc = 1, /obj/item/reagent_containers/food/snacks/meat/slab/cazador_meat = 1, /obj/item/reagent_containers/pill/patch/jet = 1, /obj/item/toy/crayon/spraycan = 1)
+	time = 20
+	tools = list(TOOL_WORKBENCH)
+	category = CAT_DRUGS
+
 /datum/crafting_recipe/rags
 	name = "Cut clothing into rags"
 	result = /obj/item/stack/sheet/cloth/three

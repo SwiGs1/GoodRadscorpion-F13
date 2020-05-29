@@ -367,7 +367,7 @@ Vexillarius
 
 /datum/outfit/loadout/vexassault
 	name = "Assault Vexillarius"
-	head = 			/obj/item/clothing/head/helmet/f13/legion/vet/combvexil
+	head = 			/obj/item/clothing/head/helmet/f13/legion/vet/vexil
 	suit_store = /obj/item/gun/ballistic/automatic/greasegun
 	backpack_contents = list(
 		/obj/item/nullrod/claymore/chainsaw_sword=1,
@@ -411,12 +411,10 @@ datum/job/CaesarsLegion/Legionnaire/f13slavemaster
 		/obj/item/claymore/machete/reinforced=1, \
 		/obj/item/reagent_containers/pill/patch/healingpowder=2, \
 		/obj/item/flashlight/lantern=1, \
-		/obj/item/restraints/legcuffs/bola/tactical=1, \
 		/obj/item/storage/bag/money/small/legenlisted, \
-		/obj/item/key/collar,\
 		/obj/item/key/bcollar,\
 		/obj/item/assembly/signaler/electropack/boomcollar=2, \
-		/obj/item/assembly/signaler/electropack/shockcollar=2, \
+		/obj/item/stock_parts/cell/high/plus=2,, \
 		/obj/item/radio)
 	r_pocket = /obj/item/restraints/handcuffs
 
