@@ -226,6 +226,15 @@
 	cell_type = /obj/item/stock_parts/cell/ammo/ec
 	slot_flags = ITEM_SLOT_BELT
 
+/obj/item/gun/energy/laser/plasma/pistol/cyborg
+	name ="plasma caster"
+	can_charge = 0
+	desc = "An energy-based laser gun that draws power from the cyborg's internal energy cell directly. So this is what freedom looks like?"
+	use_cyborg_cell = 1
+
+/obj/item/gun/energy/laser/plasma/pistol/cyborg/emp_act()
+	return
+
 /obj/item/gun/energy/laser/plasma/glock
 	name = "glock 86"
 	item_state = "plasma-pistol"

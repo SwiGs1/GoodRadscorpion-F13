@@ -436,7 +436,7 @@
 /obj/item/clothing/accessory/armband/mp
 	name = "MP armband"
 	desc = "An armband, worn by those meant to beat you after a sunday night..."
-	icon_state = "mpband"
+	icon_state = "medband"
 	item_color = "mpband"
 
 //////////////
