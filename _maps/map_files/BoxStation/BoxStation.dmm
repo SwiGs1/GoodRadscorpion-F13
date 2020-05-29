@@ -8769,21 +8769,13 @@
 	},
 /area/quartermaster/qm)
 "axX" = (
-/obj/structure/spacevine{
-	name = "Mutant Vines"
-	},
-/turf/open/indestructible/ground/outside/desert,
-/turf/closed/wall/r_wall/f13composite{
-	icon_state = "ruinswindowbrokenvertical"
-	},
-/area/f13/desert)
+/obj/structure/reagent_dispensers/barrel/four,
+/turf/open/floor/plating/f13/inside/mountain,
+/area/f13/underground/mountain)
 "axY" = (
-/obj/effect/decal/cleanable/shreds,
-/turf/open/space/basic,
-/turf/open/floor/plating{
-	icon_state = "platingdmg2"
-	},
-/area/f13/powerplant)
+/obj/structure/reagent_dispensers/barrel/dangerous,
+/turf/open/floor/plating/f13/inside/mountain,
+/area/f13/underground/mountain)
 "axZ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -9032,23 +9024,21 @@
 /turf/open/floor/plasteel/f13/vault_floor/yellow/whiteyellowfull,
 /area/quartermaster/qm)
 "ayG" = (
-/obj/structure/window/fulltile/wood_window,
-/turf/open/indestructible/ground/outside/desert,
-/turf/closed/wall/r_wall/f13composite,
-/area/f13/desert)
+/obj/effect/decal/waste,
+/turf/open/floor/plating/f13/inside/mountain,
+/area/f13/underground/mountain)
 "ayH" = (
 /obj/structure/noticeboard/staff,
 /turf/closed/indestructible/vaultdoor,
 /area/f13/underground/vault_atrium_upper)
 "ayI" = (
-/obj/structure/spacevine{
-	name = "Mutant Vines"
+/obj/machinery/light{
+	dir = 1
 	},
-/turf/open/indestructible/ground/outside/desert,
-/turf/closed/wall/r_wall/f13composite{
-	icon_state = "ruinswindowbroken"
-	},
-/area/f13/desert)
+/obj/effect/decal/remains/human,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/tier3,
+/turf/open/floor/plating/f13/inside/mountain,
+/area/maintenance/central/secondary)
 "ayJ" = (
 /obj/structure/sign/directions/evac{
 	dir = 4;
@@ -9064,13 +9054,7 @@
 /turf/closed/indestructible/vaultdoor,
 /area/f13/underground/vault_atrium_upper)
 "ayK" = (
-/obj/structure/spacevine{
-	name = "Mutant Vines"
-	},
-/turf/open/indestructible/ground/outside/desert,
-/turf/closed/wall/r_wall/f13composite{
-	icon_state = "ruinswindowdestroyed"
-	},
+/turf/open/indestructible/ground/outside/ruins,
 /area/f13/desert)
 "ayL" = (
 /obj/structure/closet/crate/bin,
@@ -9266,6 +9250,10 @@
 /obj/effect/turf_decal/bot,
 /turf/open/floor/plasteel/f13/vault_floor/yellow/whiteyellowfull,
 /area/quartermaster/storage)
+"azi" = (
+/obj/effect/decal/waste,
+/turf/open/indestructible/ground/outside/desert,
+/area/f13/desert)
 "azj" = (
 /obj/machinery/light{
 	dir = 8
@@ -9302,6 +9290,10 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/underground/vault_atrium_upper)
+"azn" = (
+/obj/structure/reagent_dispensers/barrel/dangerous,
+/turf/open/indestructible/ground/outside/ruins,
+/area/f13/desert)
 "azo" = (
 /obj/machinery/vending/coffee,
 /turf/open/floor/plasteel/f13/vault_floor/floor,
@@ -9428,6 +9420,10 @@
 /obj/effect/turf_decal/bot,
 /turf/open/floor/plasteel/f13/vault_floor/green/whitegreenfull,
 /area/hydroponics/garden)
+"azE" = (
+/obj/effect/decal/waste,
+/turf/open/indestructible/ground/outside/ruins,
+/area/f13/desert)
 "azF" = (
 /turf/closed/wall/r_wall/f13composite{
 	icon_state = "ruins11"
@@ -9681,6 +9677,14 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/hallway/secondary/exit)
+"aAj" = (
+/obj/structure/reagent_dispensers/barrel/dangerous,
+/turf/open/indestructible/ground/outside/ruins{
+	dir = 5;
+	icon_state = "rubble";
+	tag = "icon-rubble (NORTHEAST)"
+	},
+/area/f13/desert)
 "aAk" = (
 /mob/living/simple_animal/hostile/handy/gutsy{
 	a_intent = "harm";
@@ -10109,12 +10113,41 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/hallway/secondary/exit)
+"aBj" = (
+/turf/open/indestructible/ground/outside/ruins{
+	dir = 9;
+	icon_state = "rubble";
+	tag = "icon-rubble (NORTHWEST)"
+	},
+/area/f13/desert)
+"aBk" = (
+/turf/open/indestructible/ground/outside/ruins{
+	dir = 4;
+	icon_state = "rubble";
+	tag = "icon-rubble (EAST)"
+	},
+/area/f13/desert)
 "aBl" = (
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/hallway/secondary/exit)
+"aBm" = (
+/obj/effect/decal/waste,
+/turf/open/indestructible/ground/outside/ruins{
+	dir = 8;
+	icon_state = "rubble";
+	tag = "icon-rubble (WEST)"
+	},
+/area/f13/desert)
+"aBn" = (
+/turf/open/indestructible/ground/outside/ruins{
+	dir = 8;
+	icon_state = "rubble";
+	tag = "icon-rubble (WEST)"
+	},
+/area/f13/desert)
 "aBo" = (
 /obj/machinery/computer/shuttle/vaultelevator{
 	icon_state = "computer";
@@ -10180,6 +10213,12 @@
 /obj/effect/decal/cleanable/vomit/old,
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/hallway/secondary/exit)
+"aBv" = (
+/turf/open/indestructible/ground/outside/ruins{
+	icon_state = "rubblepillar";
+	tag = "icon-rubblepillar"
+	},
+/area/f13/desert)
 "aBw" = (
 /obj/structure/closet/crate/coffin,
 /obj/item/lighter,
@@ -10492,6 +10531,26 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite/rarecyan,
 /area/medical/medbay/central)
+"aCl" = (
+/turf/open/indestructible/ground/outside/ruins{
+	icon_state = "rubbleslab";
+	tag = "icon-rubbleslab"
+	},
+/area/f13/desert)
+"aCm" = (
+/turf/open/indestructible/ground/outside/ruins{
+	icon_state = "rubbleplate";
+	tag = "icon-rubbleplate"
+	},
+/area/f13/desert)
+"aCn" = (
+/obj/effect/decal/waste,
+/turf/open/indestructible/ground/outside/ruins{
+	dir = 1;
+	icon_state = "rubble";
+	tag = "icon-rubble (NORTH)"
+	},
+/area/f13/desert)
 "aCo" = (
 /turf/closed/indestructible/vaultdoor,
 /area/maintenance/central)
@@ -10748,6 +10807,13 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/red,
 /area/ai_monitored/security/armory)
+"aCY" = (
+/turf/open/indestructible/ground/outside/ruins{
+	dir = 1;
+	icon_state = "rubble";
+	tag = "icon-rubble (NORTH)"
+	},
+/area/f13/desert)
 "aCZ" = (
 /turf/open/floor/plasteel/f13/vault_floor/red/corner,
 /area/f13/underground/vault_atrium_upper)
@@ -11511,6 +11577,13 @@
 	icon_state = "showroomfloor"
 	},
 /area/f13/underground/enclave_base)
+"aES" = (
+/turf/open/indestructible/ground/outside/ruins{
+	dir = 4;
+	icon_state = "rubblecorner";
+	tag = "icon-rubblecorner (EAST)"
+	},
+/area/f13/desert)
 "aET" = (
 /obj/structure/table,
 /obj/structure/cable,
@@ -11847,12 +11920,11 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
 /area/medical/medbay/central)
 "aFI" = (
-/obj/machinery/light{
-	dir = 1
-	},
 /obj/effect/decal/remains/human,
+/obj/effect/decal/waste,
+/obj/effect/spawner/lootdrop/f13/armor/tier3,
 /turf/open/floor/plating/f13/inside/mountain,
-/area/maintenance/central/secondary)
+/area/f13/underground/mountain)
 "aFJ" = (
 /obj/machinery/light{
 	dir = 1
@@ -15857,6 +15929,13 @@
 	},
 /turf/open/floor/wood/f13/old,
 /area/f13/den)
+"aRt" = (
+/turf/open/indestructible/ground/outside/ruins{
+	dir = 1;
+	icon_state = "rubblecorner";
+	tag = "icon-rubblecorner (NORTH)"
+	},
+/area/f13/desert)
 "aRu" = (
 /turf/closed/wall/r_wall/f13superstore{
 	icon_state = "supermart5"
@@ -15932,6 +16011,10 @@
 	},
 /turf/open/floor/wood/f13/old,
 /area/f13/den)
+"aRF" = (
+/obj/structure/window/fulltile/ruins/broken,
+/turf/open/indestructible/ground/outside/ruins,
+/area/f13/desert)
 "aRG" = (
 /obj/machinery/light/lampost,
 /turf/open/floor/plating/f13/outside/road{
@@ -18069,6 +18152,9 @@
 	icon_state = "floorgrime"
 	},
 /area/f13/sunny_dale)
+"aXK" = (
+/turf/closed/wall/f13/ruins,
+/area/f13/desert)
 "aXL" = (
 /turf/open/floor/wood/f13/old/ruinedcornerbr,
 /area/f13/sunny_dale)
@@ -23866,6 +23952,10 @@
 "bog" = (
 /turf/closed/mineral/random/high_chance,
 /area/f13/underground/mountain)
+"boh" = (
+/obj/structure/wreck/trash/machinepiletwo,
+/turf/open/indestructible/ground/outside/ruins,
+/area/f13/desert)
 "boi" = (
 /turf/closed/wall/r_wall/f13composite{
 	icon_state = "rubblepillar"
@@ -24016,6 +24106,10 @@
 	icon_state = "supermart3"
 	},
 /area/f13/ncr_main)
+"boE" = (
+/obj/structure/wreck/trash/five_tires,
+/turf/open/indestructible/ground/outside/ruins,
+/area/f13/desert)
 "boF" = (
 /obj/machinery/light/small{
 	dir = 1
@@ -27820,6 +27914,10 @@
 	icon_state = "platingdmg3"
 	},
 /area/f13/powerplant)
+"bzt" = (
+/obj/structure/wreck/car/bike,
+/turf/open/indestructible/ground/outside/desert,
+/area/f13/desert)
 "bzu" = (
 /obj/structure/sign/poster/contraband/tools,
 /turf/closed/wall/r_wall/rust,
@@ -29949,6 +30047,11 @@
 /obj/structure/window/fulltile/wood_window,
 /turf/open/floor/wood/f13/old,
 /area/f13/underground/bos)
+"bFC" = (
+/obj/structure/wreck/trash/engine,
+/obj/effect/decal/cleanable/oil,
+/turf/open/indestructible/ground/outside/desert,
+/area/f13/desert)
 "bFD" = (
 /turf/closed/wall/r_wall/f13superstore{
 	icon_state = "supermart14"
@@ -31126,6 +31229,12 @@
 /obj/item/extinguisher,
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/science/xenobiology)
+"bJb" = (
+/obj/effect/decal/cleanable/oil{
+	icon_state = "floor6"
+	},
+/turf/open/indestructible/ground/outside/desert,
+/area/f13/desert)
 "bJc" = (
 /obj/structure/window/reinforced/fulltile,
 /obj/structure/grille,
@@ -31134,6 +31243,10 @@
 	},
 /turf/open/floor/engine,
 /area/science/xenobiology)
+"bJd" = (
+/obj/effect/decal/cleanable/glass,
+/turf/open/floor/plating/f13/inside/mountain,
+/area/f13/underground/mountain)
 "bJe" = (
 /obj/structure/window/reinforced/fulltile,
 /obj/structure/grille,
@@ -31306,6 +31419,11 @@
 	icon_state = "platingdmg3"
 	},
 /area/f13/klamat)
+"bJD" = (
+/obj/structure/reagent_dispensers/barrel/dangerous,
+/obj/effect/decal/cleanable/glass,
+/turf/open/indestructible/ground/outside/ruins,
+/area/f13/desert)
 "bJE" = (
 /obj/structure/closet/crate,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier1,
@@ -31924,6 +32042,10 @@
 /obj/effect/spawner/lootdrop/f13/armor/tier3,
 /turf/open/floor/plasteel/cult,
 /area/f13/underground/mountain)
+"bLE" = (
+/obj/effect/decal/cleanable/glass,
+/turf/open/indestructible/ground/outside/ruins,
+/area/f13/desert)
 "bLF" = (
 /obj/machinery/door/airlock/hatch{
 	req_access_txt = "120"
@@ -32264,6 +32386,11 @@
 /obj/item/wrench,
 /turf/open/floor/plating,
 /area/f13/brotherhood)
+"bMB" = (
+/obj/effect/decal/waste,
+/obj/effect/decal/cleanable/glass,
+/turf/open/floor/plating/f13/inside/mountain,
+/area/f13/underground/mountain)
 "bMC" = (
 /obj/machinery/door/window/northleft{
 	req_one_access_txt = "120"
@@ -32314,6 +32441,11 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/purple/whitepurplefull,
 /area/f13/brotherhood)
+"bMG" = (
+/obj/effect/decal/cleanable/oil/slippery,
+/obj/effect/decal/cleanable/glass,
+/turf/open/indestructible/ground/outside/ruins,
+/area/f13/desert)
 "bMH" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced/fulltile,
@@ -33807,6 +33939,64 @@
 /obj/item/stock_parts/cell/ammo/ec,
 /turf/open/floor/plasteel/f13/vault_floor/red/whiteredfull,
 /area/ai_monitored/security/armory)
+"bRy" = (
+/obj/effect/decal/remains/human,
+/obj/effect/spawner/lootdrop/f13/armor/tier3,
+/turf/open/floor/plating/f13/inside/mountain,
+/area/f13/underground/mountain)
+"bRz" = (
+/obj/effect/decal/remains/human,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/tier3,
+/turf/open/floor/plating/f13/inside/mountain,
+/area/f13/underground/mountain)
+"bRA" = (
+/obj/effect/spawner/lootdrop/f13/weapon/melee/tier3,
+/turf/open/floor/plating/f13/inside/mountain,
+/area/f13/underground/mountain)
+"bRB" = (
+/obj/effect/decal/waste,
+/turf/open/floor/wood/f13/old,
+/turf/open/floor/plating/f13/inside/mountain,
+/area/f13/underground/mountain)
+"bRC" = (
+/obj/structure/spacevine{
+	name = "Mutant Vines"
+	},
+/turf/open/indestructible/ground/outside/desert,
+/turf/closed/wall/r_wall/f13composite{
+	icon_state = "ruinswindowbrokenvertical"
+	},
+/area/f13/desert)
+"bRD" = (
+/obj/effect/decal/cleanable/shreds,
+/turf/open/space/basic,
+/turf/open/floor/plating{
+	icon_state = "platingdmg2"
+	},
+/area/f13/powerplant)
+"bRE" = (
+/obj/structure/window/fulltile/wood_window,
+/turf/open/indestructible/ground/outside/desert,
+/turf/closed/wall/r_wall/f13composite,
+/area/f13/desert)
+"bRF" = (
+/obj/structure/spacevine{
+	name = "Mutant Vines"
+	},
+/turf/open/indestructible/ground/outside/desert,
+/turf/closed/wall/r_wall/f13composite{
+	icon_state = "ruinswindowbroken"
+	},
+/area/f13/desert)
+"bRG" = (
+/obj/structure/spacevine{
+	name = "Mutant Vines"
+	},
+/turf/open/indestructible/ground/outside/desert,
+/turf/closed/wall/r_wall/f13composite{
+	icon_state = "ruinswindowdestroyed"
+	},
+/area/f13/desert)
 "cbD" = (
 /obj/machinery/shower{
 	dir = 4
@@ -63390,7 +63580,7 @@ byd
 btb
 byF
 byG
-axY
+bRD
 bxa
 bzY
 boQ
@@ -68837,8 +69027,8 @@ aDu
 bLR
 bLR
 bLR
-aFI
-aic
+ayI
+ayG
 aFN
 aab
 aab
@@ -69242,10 +69432,10 @@ bRh
 aic
 aic
 aic
-aic
-aic
-aic
-aic
+axX
+axX
+axY
+axY
 aaf
 aaf
 aaf
@@ -69647,7 +69837,7 @@ aic
 aic
 aic
 aic
-aic
+axY
 aaf
 aaf
 aaf
@@ -70045,10 +70235,10 @@ aFz
 aDv
 aic
 aic
+ayG
 aic
 aic
-aic
-aic
+axX
 aaf
 aaf
 aaf
@@ -70450,7 +70640,7 @@ aic
 aic
 aic
 aic
-aic
+axX
 aaf
 aaf
 aaf
@@ -70850,7 +71040,7 @@ bLU
 aFK
 aic
 aic
-aic
+ayG
 aic
 aaf
 aaf
@@ -71250,13 +71440,13 @@ aoc
 aol
 bLU
 aaf
+axY
 aic
 aic
 aic
-aic
-aic
+ayG
 aaf
-aic
+axY
 aaf
 aaf
 aaf
@@ -71652,14 +71842,14 @@ aoc
 aol
 bLU
 aaf
-ahS
+aFI
 aic
 aic
 aic
 aic
-aic
-aic
-aic
+axY
+axY
+axY
 aaf
 aaf
 aaf
@@ -72055,13 +72245,13 @@ aol
 bLU
 aaf
 aaf
+bRA
+ayG
 aic
 aic
 aic
-aic
-aic
-aic
-aic
+bRy
+axY
 aaf
 aaf
 aaf
@@ -72457,12 +72647,12 @@ aol
 bLU
 aaf
 aaf
+axY
 aic
 aic
 aic
 aic
-aic
-aic
+bRA
 aic
 aaf
 aaf
@@ -72859,14 +73049,14 @@ aol
 bLU
 aaf
 aaf
+axY
+axY
 aic
 aic
+bRy
 aic
 aic
-aic
-aic
-aic
-aic
+ayG
 aGz
 aic
 aaf
@@ -73263,9 +73453,9 @@ aaf
 aaf
 aaf
 aaf
-aic
-aic
-aic
+axY
+axY
+bRA
 aic
 aic
 aic
@@ -73666,11 +73856,11 @@ aaf
 aaf
 aaf
 aaf
+axY
+ayG
 aic
 aic
-aic
-aic
-aic
+bRz
 aGz
 aic
 aaf
@@ -74075,7 +74265,7 @@ bRg
 aGe
 aGA
 aic
-aic
+ayG
 aaf
 aaf
 aaf
@@ -75279,7 +75469,7 @@ aaf
 aic
 aic
 aic
-aic
+ayG
 aic
 aic
 aic
@@ -75678,12 +75868,12 @@ aaf
 aaf
 aaf
 aaf
+ayG
+aic
+axY
 aic
 aic
-aic
-aic
-aic
-aic
+axY
 aic
 aaf
 aaf
@@ -76888,7 +77078,7 @@ aaf
 aic
 aic
 aic
-aic
+ayG
 aic
 aic
 aaf
@@ -77287,7 +77477,7 @@ aaf
 aaf
 aaf
 aaf
-aic
+ayG
 aic
 aic
 aic
@@ -77703,7 +77893,7 @@ aab
 aab
 aKh
 aKh
-aKh
+bRB
 aab
 aab
 aaf
@@ -78079,7 +78269,7 @@ aaf
 aaf
 aaf
 aaf
-aic
+ayG
 aaf
 aaf
 aaf
@@ -78094,7 +78284,7 @@ aaf
 aaf
 aic
 aic
-aic
+axY
 aic
 aic
 aaf
@@ -78110,7 +78300,7 @@ aKh
 aic
 aic
 aic
-aic
+ayG
 aaf
 aaf
 aaf
@@ -78495,7 +78685,7 @@ aaf
 aaf
 aaf
 aic
-aic
+ayG
 aic
 aic
 aic
@@ -78505,7 +78695,7 @@ aaf
 aaf
 aaf
 aab
-aKh
+bRB
 aKh
 aKh
 aab
@@ -78886,7 +79076,7 @@ aic
 aic
 aic
 aic
-aic
+ayG
 aaf
 aaf
 aaf
@@ -78909,7 +79099,7 @@ aaf
 aab
 aab
 aKh
-aKh
+bRB
 aab
 aaf
 aaf
@@ -79282,7 +79472,7 @@ aaf
 aaf
 aaf
 aaf
-aic
+ayG
 aic
 aic
 aic
@@ -79302,7 +79492,7 @@ aic
 aic
 aic
 aic
-aic
+ayG
 aaf
 aaf
 aaf
@@ -79315,7 +79505,7 @@ aab
 aab
 aaf
 aaf
-aic
+ayG
 aic
 aic
 aaf
@@ -79700,9 +79890,9 @@ aaf
 aaf
 aic
 aic
+axY
 aic
-aic
-aic
+axY
 aaf
 aaf
 aaf
@@ -79719,7 +79909,7 @@ aaf
 aic
 aic
 aic
-aic
+ayG
 aaf
 aaf
 aaf
@@ -80100,10 +80290,10 @@ aaf
 aaf
 aaf
 aaf
-aic
-aic
-aic
-aic
+aGe
+bRg
+aGe
+aGe
 aaf
 aaf
 aaf
@@ -80496,16 +80686,16 @@ aic
 aaf
 aic
 aic
-aic
+ayG
 aaf
 aaf
 aaf
+ayG
 aic
 aic
 aic
 aic
-aic
-aic
+ayG
 aaf
 aaf
 aaf
@@ -80520,7 +80710,7 @@ aaf
 aaf
 aaf
 aaf
-aic
+ayG
 aic
 aic
 aaf
@@ -80891,10 +81081,10 @@ aaf
 aaf
 aaf
 aaf
+axY
+axY
 aic
-aic
-aic
-aic
+ayG
 aaf
 aaf
 aic
@@ -80905,7 +81095,7 @@ aic
 aic
 aic
 aic
-aic
+ayG
 aic
 aaf
 aaf
@@ -80924,7 +81114,7 @@ aaf
 aaf
 aaf
 aic
-aic
+ayG
 aaf
 aaf
 aaf
@@ -81294,8 +81484,8 @@ aaf
 aaf
 aaf
 aaf
-aic
-aic
+axY
+axY
 aaf
 aaf
 aaf
@@ -81305,12 +81495,12 @@ aic
 aic
 aic
 aic
+ayG
 aic
 aic
 aic
-aic
-aic
-aic
+axY
+axY
 aaf
 aaf
 aaf
@@ -82106,7 +82296,7 @@ aaf
 aaf
 aic
 aic
-aic
+ayG
 aic
 aic
 aic
@@ -82126,7 +82316,7 @@ aaf
 aab
 aab
 aab
-aic
+ayG
 aic
 aaf
 aaf
@@ -82510,16 +82700,16 @@ aic
 aic
 aic
 aic
-aic
+ayG
 aic
 aic
 aic
 aaf
+ayG
 aic
 aic
 aic
-aic
-aic
+ayG
 aaf
 aaf
 aab
@@ -82906,7 +83096,7 @@ aab
 aab
 aaf
 aaf
-aic
+axY
 aic
 aic
 aic
@@ -83306,14 +83496,14 @@ aab
 aab
 aab
 aaf
+ayG
 aic
 aic
 aic
 aic
 aic
-aic
-aic
-aic
+axY
+axY
 aaf
 aaf
 aaf
@@ -83730,7 +83920,7 @@ aic
 aic
 aic
 aaf
-aic
+ayG
 aic
 aaf
 aaf
@@ -84108,13 +84298,13 @@ aaf
 aab
 aab
 aaf
+ayG
 aic
 aic
 aic
 aic
 aic
-aic
-aic
+ayG
 aaf
 aaf
 aab
@@ -84127,7 +84317,7 @@ aab
 aab
 aab
 aab
-aic
+ayG
 aic
 aic
 aic
@@ -84915,8 +85105,8 @@ aaf
 aic
 aic
 aic
-aic
-aic
+axY
+axY
 aaf
 aab
 aab
@@ -85317,7 +85507,7 @@ aaf
 aic
 aic
 aic
-aic
+axY
 aaf
 aaf
 aaf
@@ -85718,7 +85908,7 @@ aaf
 aic
 aic
 aic
-aic
+ayG
 aaf
 aaf
 aaf
@@ -87322,7 +87512,7 @@ aaf
 aaf
 aaf
 aaf
-aic
+axY
 aic
 aic
 aic
@@ -87724,7 +87914,7 @@ aaf
 aaf
 aaf
 aaf
-aic
+axY
 aic
 aic
 aic
@@ -88127,7 +88317,7 @@ aaf
 aaf
 aaf
 aaf
-aic
+ayG
 aic
 aic
 aaf
@@ -88531,7 +88721,7 @@ aaf
 aaf
 aaf
 aic
-aic
+axY
 aab
 aab
 aab
@@ -88933,7 +89123,7 @@ aaf
 aaf
 aaf
 aic
-aic
+axY
 aab
 aab
 aab
@@ -89329,8 +89519,8 @@ aBW
 aaf
 aic
 aic
-aic
-aic
+axY
+axY
 aaf
 aaf
 aaf
@@ -89732,7 +89922,7 @@ aic
 aic
 aic
 aic
-aic
+ayG
 aic
 aic
 aic
@@ -90130,14 +90320,14 @@ aaf
 aaf
 aaf
 aBW
-aic
+ayG
 aic
 aic
 aaf
 aic
 aic
 aic
-aic
+ayG
 aic
 aab
 aab
@@ -90938,7 +91128,7 @@ aaf
 aaf
 aic
 aaf
-aic
+ayG
 aic
 aic
 aic
@@ -91742,9 +91932,9 @@ aaf
 aic
 aic
 aic
-aic
+ayG
 aaf
-aic
+axY
 aic
 aab
 aaf
@@ -92146,7 +92336,7 @@ aic
 aic
 aic
 aaf
-aic
+axY
 aic
 aab
 aaf
@@ -92946,7 +93136,7 @@ aaf
 aBW
 aaf
 aaf
-aic
+ayG
 aic
 aic
 aic
@@ -93757,7 +93947,7 @@ aic
 aad
 aaf
 aic
-aic
+ayG
 aic
 aic
 aaf
@@ -94181,7 +94371,7 @@ aag
 aag
 aag
 aag
-aag
+azi
 aag
 aag
 aag
@@ -94567,7 +94757,7 @@ aic
 aic
 aic
 aic
-aic
+ayG
 aaf
 aaf
 aaf
@@ -94580,7 +94770,7 @@ aab
 aaf
 aaf
 aag
-aag
+azi
 aag
 aag
 aag
@@ -94981,9 +95171,9 @@ aaf
 aaf
 aaf
 aaf
-aag
-aag
-aag
+aBk
+aBk
+aES
 aag
 aag
 aag
@@ -95374,7 +95564,7 @@ aic
 aad
 aic
 aic
-aic
+ayG
 aab
 aab
 aaf
@@ -95383,10 +95573,10 @@ aaf
 aaf
 aaf
 aab
-aag
-aag
-aag
-aag
+aXK
+azn
+aAj
+aES
 aag
 aag
 aag
@@ -95785,10 +95975,10 @@ aaf
 aaf
 aaf
 aab
-aag
-aag
-aag
-aag
+boh
+azn
+azn
+aCn
 aag
 aag
 aKi
@@ -96176,21 +96366,21 @@ aab
 aab
 aaf
 aaf
+axY
 aic
 aic
 aic
-aic
-aic
-aic
+axY
+axY
 aaf
 aaf
 aaf
 aaf
 aab
-aag
-aag
-aag
-aag
+ayK
+aCm
+aXK
+aCY
 aag
 aag
 aKj
@@ -96588,11 +96778,11 @@ aic
 aic
 aic
 aic
-aic
-aic
-aag
-aag
-aag
+bJd
+bMB
+ayK
+aRF
+aCY
 aag
 aag
 aKj
@@ -96989,12 +97179,12 @@ aic
 aic
 aic
 aic
-aic
-aic
-aag
-aag
-aag
-aag
+bJd
+bJd
+boE
+azE
+aRF
+aCY
 aag
 aag
 aKj
@@ -97388,15 +97578,15 @@ aaf
 aaf
 aaf
 aaf
+ayG
 aic
 aic
-aic
-aic
-aag
-aag
-aag
-aag
-aag
+bJd
+bMG
+aCl
+aBv
+aRF
+aCn
 aag
 aag
 aKj
@@ -97793,12 +97983,12 @@ aaf
 aaf
 aaf
 aaf
-aag
-aag
-aag
-aag
-aag
-aag
+bJD
+bLE
+aXK
+aXK
+aXK
+aCY
 aag
 aag
 bhO
@@ -98195,12 +98385,12 @@ aaf
 aaf
 aaf
 aaf
-aag
-aag
-aag
-aag
-aag
-aag
+azn
+aBv
+azn
+azn
+aCl
+aCY
 aag
 aag
 bhO
@@ -98596,14 +98786,14 @@ aaf
 aaf
 aaf
 aaf
-aag
-aag
-aag
-aag
-aag
-aag
-aag
-aag
+aXK
+aXK
+ayK
+azn
+azn
+aBj
+aRt
+azi
 aag
 aKj
 aKx
@@ -98998,12 +99188,12 @@ aaf
 aaf
 aaf
 aaf
-aag
-aag
-aag
-aag
-aag
-aag
+aBm
+aBn
+aBn
+aBn
+aBn
+aRt
 aag
 aag
 aag
@@ -99403,9 +99593,9 @@ aBK
 aag
 aag
 aag
-aag
-aag
-aag
+bJb
+bzt
+azi
 aag
 aag
 aag
@@ -99804,7 +99994,7 @@ aaf
 aBK
 aBK
 aag
-aag
+azi
 aag
 aag
 aag
@@ -100208,7 +100398,7 @@ aBK
 aag
 aag
 aag
-aag
+bFC
 aag
 aag
 aag
@@ -100800,8 +100990,8 @@ brA
 brA
 aaZ
 abg
-ayI
-ayK
+bRF
+bRG
 aaz
 aaI
 aag
@@ -106815,7 +107005,7 @@ aaI
 brC
 aeO
 bst
-ayI
+bRF
 bls
 aze
 aaZ
@@ -110815,8 +111005,8 @@ aaU
 aDU
 aCN
 aaU
-axX
-axX
+bRC
+bRC
 aaU
 aaI
 bhQ
@@ -118045,8 +118235,8 @@ aag
 aag
 aze
 brA
-axX
-axX
+bRC
+bRC
 aaU
 aaU
 aFp
@@ -118068,7 +118258,7 @@ aag
 aag
 aDU
 bae
-ayG
+bRE
 blR
 bvr
 bvB
