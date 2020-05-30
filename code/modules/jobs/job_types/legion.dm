@@ -180,7 +180,7 @@ Orator - lol no just kidding it's a not-so-useless role. :)
 	spawn_positions = 2
 	description = "You are, effectively, the counter to the Bear's 'heavy troopers', as you carry some pretty heavy equipment yourself. A much larger gun, in fact. Don't let down your fellows."
 	supervisors = "the Centurion and Decani"
-	exp_requirements = 900
+	exp_requirements = 60
 	exp_type = EXP_TYPE_DECANUS
 
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13libritor
