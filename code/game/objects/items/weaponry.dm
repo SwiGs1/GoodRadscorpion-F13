@@ -383,7 +383,7 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 	icon_state = "throw_spear"
 	item_state = "tribalspear"
 	force = 20
-	throwforce = 35
+	throwforce = 25
 	item_flags = SLOWS_WHILE_IN_HAND
 	throw_speed = 12
 	slowdown = 0.3

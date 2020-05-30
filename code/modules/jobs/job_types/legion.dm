@@ -169,35 +169,34 @@ Centurion
 
 
 /*
-Orator
+Orator - lol no just kidding it's a not-so-useless role. :)
 */
 
-/datum/job/CaesarsLegion/Legionnaire/f13orator
-	title = "Legion Orator"
-	flag = F13ORATOR
+/datum/job/CaesarsLegion/Legionnaire/f13libritor
+	title = "Legion Libritor"
+	flag = F13LIBRITOR
 	faction = "Legion"
-	total_positions = 0
-	spawn_positions = 0
-	description = "You are the the resonator of Caesar's better wills; a Legionnaire who has, perhaps through injury or advanced age, proven himself unable to fight effectively any longer. Instead of facing \"retirement\" in the Legion, one of your superiors took note of your studies and way with words, and you have been made the face and voice of the Conturbernae."
-	supervisors = "the Centurion"
-	exp_requirements = 800
+	total_positions = 2
+	spawn_positions = 2
+	description = "You are, effectively, the counter to the Bear's 'heavy troopers', as you carry some pretty heavy equipment yourself. A much larger gun, in fact. Don't let down your fellows."
+	supervisors = "the Centurion and Decani"
+	exp_requirements = 900
 	exp_type = EXP_TYPE_DECANUS
 
-	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13orator
+	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13libritor
 
-/datum/outfit/job/CaesarsLegion/Legionnaire/f13orator
-	name = "Legion Orator"
-	suit = 	/obj/item/clothing/suit/armor/f13/legion/vet/orator
-	jobtype = /datum/job/CaesarsLegion/f13orator
-	id = /obj/item/card/id/dogtag/legorator
+/datum/outfit/job/CaesarsLegion/Legionnaire/f13libritor
+	name = "Legion Libritor"
+	suit = /obj/item/clothing/suit/armor/f13/legion/libritor
+	jobtype = /datum/job/CaesarsLegion/Legionnaire/f13libritor
+	id = /obj/item/card/id/dogtag/leglibritor
+	head = /obj/item/clothing/head/helmet/f13/legion/vet
+	suit_store = /obj/item/gun/ballistic/automatic/l6_saw/m38
 	backpack_contents = list(
 		/obj/item/reagent_containers/pill/patch/healingpowder=3, \
 		/obj/item/flashlight/lantern=1,
-		/obj/item/storage/box/ids/follower=1
+		/obj/item/ammo_box/magazine/mm762=2
 		)
-
-/datum/job/CaesarsLegion/f13orator/after_spawn(mob/living/carbon/human/H, mob/M)
-	H.add_quirk("Poor Aim")
 
 /*
 Priestess of Mars
@@ -264,9 +263,8 @@ Decanus
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13decan
 
 	loadout_options = list(
-	/datum/outfit/loadout/decancharger, //greasegun and bumper sword
-	/datum/outfit/loadout/decanspec, //nerfed infiltrator and machete gladius
-	/datum/outfit/loadout/decanprotec //lever-action shotgun, roman shield and ballistic fist
+	/datum/outfit/loadout/decanspec, //negative slowdown
+	/datum/outfit/loadout/decanprotec //slight slowdown
 	)
 
 /datum/job/CaesarsLegion/Legionnaire/f13decan/after_spawn(mob/living/carbon/human/H, mob/M)
@@ -291,15 +289,6 @@ Decanus
 		/obj/item/assembly/signaler/electropack/shockcollar=1, \
 		/obj/item/storage/bag/money/small/legofficers=1, \
 		/obj/item/restraints/legcuffs/bola/tactical=1)
-
-/datum/outfit/loadout/decancharger
-	name = "Standard Decanus"
-	suit = 			/obj/item/clothing/suit/armor/f13/legion/vet
-	head = 			/obj/item/clothing/head/helmet/f13/legion/recruit/decan
-	suit_store = /obj/item/gun/ballistic/automatic/greasegun
-	backpack_contents = list(
-		/obj/item/twohanded/fireaxe/bmprsword=1,
-		/obj/item/ammo_box/magazine/greasegun=1)
 
 /datum/outfit/loadout/decanspec
 	name = "Prime Decanus"

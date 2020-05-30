@@ -1,10 +1,10 @@
 //.45-70 Gov't
 /obj/item/projectile/bullet/c4570
-	damage = 24
+	damage = 34
 	armour_penetration = 16
 
 /obj/item/projectile/bullet/c4570/jhp
-	damage = 32
+	damage = 24
 	armour_penetration = -10
 
 // .357 Magnum, .38 Special

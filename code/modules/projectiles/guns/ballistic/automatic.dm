@@ -345,22 +345,22 @@
 	..()
 
 /obj/item/gun/ballistic/automatic/l6_saw/m38
-	name = "M38 LMG"
-	desc = "A special LMG generally used to lay down suppressive fire."
+	name = "M1919 LMG"
+	desc = "An LMG generally used to lay down suppressive fire. This looks like an anachronism from another time..."
 	icon_state = "M38"
 	item_state = "M38"
 	slot_flags = 0
 	automatic = 1
 	mag_type = /obj/item/ammo_box/magazine/mm762
-	fire_sound = 'sound/f13weapons/assaultrifle_fire.ogg'
+	fire_sound = 'sound/f13weapons/bozar_fire.ogg'
 	can_suppress = FALSE
 	burst_size = 1
-	fire_delay = 3
+	fire_delay = 12
 	burst_delay = 3
-	slowdown = 1.0
+	slowdown = 3
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
-	spread = 20
+	spread = 5
 	randomspread = 1
 
 /obj/item/gun/ballistic/automatic/l6_saw/m38/update_icon()
@@ -373,22 +373,22 @@
 		if(0)
 			select += 1
 			burst_size = 2
-			spread = 30
+			spread = 10
 			to_chat(user, "<span class='notice'>You switch to [burst_size]-rnd burst.</span>")
 		if(1)
 			select += 1
-			burst_size = 3
-			spread = 40
+			burst_size = 6
+			spread = 30
 			to_chat(user, "<span class='notice'>You switch to [burst_size]-rnd burst.</span>")
 		if(2)
 			select += 1
-			burst_size = 4
-			spread = 50
+			burst_size = 12
+			spread = 120//good luck
 			to_chat(user, "<span class='notice'>You switch to [burst_size]-rnd burst.</span>")
 		if(3)
 			select = 0
 			burst_size = 1
-			spread = 20
+			spread = 5
 			to_chat(user, "<span class='notice'>You switch to semi-automatic.</span>")
 	playsound(user, 'sound/weapons/empty.ogg', 100, 1)
 	update_icon()

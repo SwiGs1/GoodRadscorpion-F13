@@ -41,11 +41,13 @@
 
 /obj/item/projectile/bullet/a50MG
 	damage = 60
+	dismemberment = 1//very low chance
 	armour_penetration = 65
 
 /obj/item/projectile/bullet/a50MG/incendiary
 	damage = 32
 	armour_penetration = -20
+	dismemberment = 0//not when you light people on fire
 	var/fire_stacks = 4
 
 /obj/item/projectile/bullet/a50MG/incendiary/on_hit(atom/target, blocked = FALSE)
@@ -57,12 +59,15 @@
 
 
 /obj/item/projectile/bullet/a50MG/AP
-	damage = 35
+	damage = 15//due to dismemberment chance being raised
 	armour_penetration = 95//gang gang
+	dismemberment = 15//higher chance - it's AP used primarily
 
 /obj/item/projectile/bullet/a50MG/explosive
 	damage = 24
-	armour_penetration = 0
+	armour_penetration = -15
+	knockdown = 100
+	dismemberment = 45//B O O M
 
 /obj/item/projectile/bullet/a50MG/explosive/on_hit(atom/target, blocked = FALSE)
 	..()

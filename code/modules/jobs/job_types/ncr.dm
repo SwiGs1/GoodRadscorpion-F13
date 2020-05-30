@@ -533,9 +533,9 @@ Veteran Ranger
 	outfit = /datum/outfit/job/ncr/f13vetranger
 
 	loadout_options = list(
-	/datum/outfit/loadout/vrclassic, //AMR and Sequoia,
-	/datum/outfit/loadout/vrlite, //Rangemaster and Sequoia,
-	/datum/outfit/loadout/vrbrush //Scoped Brushgun and Sequoia
+	/datum/outfit/loadout/vrelite, //AMR, elite armor and slower slowdown.
+	/datum/outfit/loadout/vrrecon, //Recon duster, scoped brush gun, no slowdown.
+	/datum/outfit/loadout/vrstandard //Standard Vet Gear, minor slowdown, non-scoped brush gun.
 	)
 
 /datum/job/ncr/f13vetranger/after_spawn(mob/living/carbon/human/H, mob/M)
@@ -549,9 +549,7 @@ Veteran Ranger
 	jobtype = /datum/job/ncr/f13vetranger
 	id = 			/obj/item/card/id/dogtag/ncrranger
 	uniform =  		/obj/item/clothing/under/f13/vetranger
-	suit = 			/obj/item/clothing/suit/armor/f13/rangercombat
 	belt =			/obj/item/storage/belt/military/assault/ncr
-	head = 			/obj/item/clothing/head/helmet/f13/ncr/rangercombat
 	gloves =		/obj/item/clothing/gloves/rifleman
 	shoes =			/obj/item/clothing/shoes/laced
 	backpack_contents = list(
@@ -561,24 +559,29 @@ Veteran Ranger
 		/obj/item/reagent_containers/hypospray/medipen/stimpak=1, \
 		/obj/item/storage/bag/money/small/ncrofficers)
 
-/datum/outfit/loadout/vrclassic
-	name = "Classic Veteran Ranger"
+/datum/outfit/loadout/vrelite
+	name = "Elite Veteran Ranger"
+	suit = /obj/item/clothing/suit/armor/f13/rangercombat/eliteriot
+	head = /obj/item/clothing/head/helmet/f13/ncr/rangercombat/eliteriot
 	suit_store = /obj/item/gun/ballistic/shotgun/antimateriel
 	backpack_contents = list(
-		/obj/item/ammo_box/a50MG=3,
+		/obj/item/ammo_box/a50MG=2,
 		/obj/item/ammo_box/a50MG/AP=1)
 
-/datum/outfit/loadout/vrlite
-	name = "Light Veteran Ranger"
-	suit_store = /obj/item/gun/ballistic/automatic/rangemaster
-	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m762=3)
-
-/datum/outfit/loadout/vrbrush
-	name = "Brush Veteran Ranger"
+/datum/outfit/loadout/vrrecon
+	name = "Recon Veteran Ranger"
+	suit = /obj/item/clothing/suit/toggle/armor/f13/rangerrecon
 	suit_store = /obj/item/gun/ballistic/shotgun/automatic/hunting/brush/scoped
 	backpack_contents = list(
-		/obj/item/ammo_box/tube/c4570=3)
+		/obj/item/ammo_box/tube/c4570=4)
+
+/datum/outfit/loadout/vrstandard
+	name = "Standard Veteran Ranger"
+	suit = 			/obj/item/clothing/suit/armor/f13/rangercombat
+	head = 			/obj/item/clothing/head/helmet/f13/ncr/rangercombat
+	suit_store = /obj/item/gun/ballistic/shotgun/automatic/hunting/brush
+	backpack_contents = list(
+		/obj/item/ammo_box/tube/c4570=2)
 
 /*
 Ranger
@@ -590,7 +593,7 @@ Ranger
 	total_positions = 2
 	spawn_positions = 2
 	description = "As a Ranger, you perform reconnaissance, seize or destroy assets, and capture or recover designated targets in service to the Republic. Your reason for being sent here is to find and exploit local assets within the Region in order to prepare the area for the Republic's eventual arrival."
-	supervisors = "Veteran Ranger"
+	supervisors = "Ranger Command, and the Veteran Ranger"
 	selection_color = "#fff5cc"
 	exp_requirements = 720
 	exp_type = EXP_TYPE_NCRCOMMAND
@@ -598,9 +601,9 @@ Ranger
 	outfit = /datum/outfit/job/ncr/f13ranger
 
 	loadout_options = list(
-	/datum/outfit/loadout/prclassic, //Scoped Sniper rifle and .44,
-	/datum/outfit/loadout/prlite, //Assault carbine and .44,
-	/datum/outfit/loadout/prtrail //Scoped Trail carbine and .44
+	/datum/outfit/loadout/patrolranger, //Standard no slowdown Patrol Armor and Assault Carbine.
+	/datum/outfit/loadout/scoutranger, //308 Sniper, alongside negative slowdown.
+	/datum/outfit/loadout/vetranger //Vet armor, minor slowdown and Marksman Carbine.
 	)
 
 /datum/job/ncr/f13ranger/after_spawn(mob/living/carbon/human/H, mob/M)
@@ -625,30 +628,29 @@ Ranger
 		/obj/item/storage/bag/money/small/ncrofficers)
 	r_pocket = /obj/item/twohanded/binocs
 
-/datum/outfit/loadout/prclassic
-	name = "Classic Ranger"
+/datum/outfit/loadout/patrolranger
+	name = "Patrol Ranger"
 	head = 			/obj/item/clothing/head/f13/ranger
 	suit = /obj/item/clothing/suit/armor/f13/combat/ncr
-	suit_store = /obj/item/gun/ballistic/automatic/marksman/sniper
-	backpack_contents = list(
-		/obj/item/ammo_box/magazine/w308=3)
-
-/datum/outfit/loadout/prlite
-	name = "Light Ranger"
-	suit = /obj/item/clothing/suit/armor/f13/combat/ncr
-	head = /obj/item/clothing/head/f13/ranger
 	suit_store = /obj/item/gun/ballistic/automatic/assault_carbine
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m556/rifle=3)
 
-/datum/outfit/loadout/prtrail
-	name = "Trail Ranger"
+/datum/outfit/loadout/scoutranger
+	name = "Recon Ranger"
 	uniform = /obj/item/clothing/under/f13/trailranger
 	suit = /obj/item/clothing/suit/armor/f13/trailranger
-	head = /obj/item/clothing/head/f13/trailranger
-	suit_store = /obj/item/gun/ballistic/shotgun/automatic/hunting/trail/scoped
+	suit_store = /obj/item/gun/ballistic/automatic/marksman/sniper
 	backpack_contents = list(
-		/obj/item/ammo_box/tube/m44=2,
-		/obj/item/gun/ballistic/revolver/m29/alt=1,
-		/obj/item/ammo_box/m44=2
+		/obj/item/ammo_box/magazine/w308=3,
+		/obj/item/twohanded/binocs=1)
+
+/datum/outfit/loadout/vetranger
+	name = "Veteran Ranger"
+	suit = 			/obj/item/clothing/suit/armor/f13/rangercombat
+	head = 			/obj/item/clothing/head/helmet/f13/ncr/rangercombat
+	gloves =		/obj/item/clothing/gloves/rifleman
+	suit_store = /obj/item/gun/ballistic/automatic/marksman
+	backpack_contents = list(
+		/obj/item/ammo_box/magazine/m556/rifle=2
 		)

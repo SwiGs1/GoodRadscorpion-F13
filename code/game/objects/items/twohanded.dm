@@ -462,9 +462,9 @@
 	slot_flags = ITEM_SLOT_BACK
 	force_unwielded = 25
 	force_wielded = 40
-	throwforce = 25
+	throwforce = 5//less incentive to use it over throwing spears
 	throw_speed = 4
-	embedding = list("embedded_impact_pain_multiplier" = 3)
+	embedding = list("embedded_pain_multiplier" = 1, "embed_chance" = 10, "embedded_fall_chance" = 90)
 	armour_penetration = 0
 	materials = list(MAT_METAL=1150, MAT_GLASS=2075)
 	hitsound = 'sound/weapons/bladeslice.ogg'

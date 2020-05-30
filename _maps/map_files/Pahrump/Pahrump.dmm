@@ -9223,6 +9223,18 @@
 	tag = "icon-verticalinnermain0"
 	},
 /area/f13/wasteland)
+"axS" = (
+/obj/structure/rack,
+/obj/item/ammo_box/magazine/mm762,
+/obj/item/ammo_box/magazine/mm762,
+/obj/item/ammo_box/magazine/mm762,
+/obj/item/ammo_box/magazine/mm762,
+/obj/item/ammo_box/magazine/mm762,
+/obj/item/ammo_box/magazine/mm762,
+/turf/open/floor/plasteel/f13{
+	icon_state = "plating"
+	},
+/area/f13/legion)
 "axT" = (
 /obj/effect/decal/marking,
 /obj/effect/decal/cleanable/oil,
@@ -27311,7 +27323,7 @@
 /turf/open/floor/plating,
 /area/f13/outpost)
 "bzI" = (
-/obj/effect/landmark/start/f13/orator,
+/obj/effect/landmark/start/f13/librator,
 /turf/open/floor/f13/wood,
 /area/f13/legion)
 "bzK" = (
@@ -99821,7 +99833,7 @@ aat
 ach
 bnB
 bqf
-boB
+bzI
 boB
 bEq
 bsA
@@ -101080,7 +101092,7 @@ bsA
 bpv
 bpx
 bpA
-bqw
+axS
 bnC
 brj
 bgA
