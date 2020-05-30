@@ -33958,11 +33958,25 @@
 /turf/open/floor/plating/f13/inside/mountain,
 /area/f13/underground/mountain)
 "bRB" = (
+/obj/item/ammo_box/magazine/mm762,
+/obj/item/ammo_box/magazine/mm762,
+/obj/item/ammo_box/magazine/mm762,
+/obj/item/ammo_box/magazine/mm762,
+/obj/item/ammo_box/magazine/mm762,
+/obj/item/ammo_box/magazine/mm762,
+/obj/structure/rack,
+/turf/open/floor/wood/f13/old,
+/area/f13/legioncamp)
+"bRC" = (
+/obj/effect/landmark/start/f13/librator,
+/turf/open/floor/wood/f13/old,
+/area/f13/legioncamp)
+"bRD" = (
 /obj/effect/decal/waste,
 /turf/open/floor/wood/f13/old,
 /turf/open/floor/plating/f13/inside/mountain,
 /area/f13/underground/mountain)
-"bRC" = (
+"bRE" = (
 /obj/structure/spacevine{
 	name = "Mutant Vines"
 	},
@@ -33971,19 +33985,19 @@
 	icon_state = "ruinswindowbrokenvertical"
 	},
 /area/f13/desert)
-"bRD" = (
+"bRF" = (
 /obj/effect/decal/cleanable/shreds,
 /turf/open/space/basic,
 /turf/open/floor/plating{
 	icon_state = "platingdmg2"
 	},
 /area/f13/powerplant)
-"bRE" = (
+"bRG" = (
 /obj/structure/window/fulltile/wood_window,
 /turf/open/indestructible/ground/outside/desert,
 /turf/closed/wall/r_wall/f13composite,
 /area/f13/desert)
-"bRF" = (
+"bRH" = (
 /obj/structure/spacevine{
 	name = "Mutant Vines"
 	},
@@ -33992,7 +34006,7 @@
 	icon_state = "ruinswindowbroken"
 	},
 /area/f13/desert)
-"bRG" = (
+"bRI" = (
 /obj/structure/spacevine{
 	name = "Mutant Vines"
 	},
@@ -63787,7 +63801,7 @@ byd
 btb
 byF
 byG
-bRD
+bRF
 bxa
 bzY
 boQ
@@ -78100,7 +78114,7 @@ aab
 aab
 aKh
 aKh
-bRB
+bRD
 aab
 aab
 aaf
@@ -78902,7 +78916,7 @@ aaf
 aaf
 aaf
 aab
-bRB
+bRD
 aKh
 aKh
 aab
@@ -79306,7 +79320,7 @@ aaf
 aab
 aab
 aKh
-bRB
+bRD
 aab
 aaf
 aaf
@@ -101197,8 +101211,8 @@ brA
 brA
 aaZ
 abg
-bRF
-bRG
+bRH
+bRI
 aaz
 aaI
 aag
@@ -107212,7 +107226,7 @@ aaI
 brC
 aeO
 bst
-bRF
+bRH
 bls
 aze
 aaZ
@@ -111212,8 +111226,8 @@ aaU
 aDU
 aCN
 aaU
-bRC
-bRC
+bRE
+bRE
 aaU
 aaI
 bhQ
@@ -118442,8 +118456,8 @@ aag
 aag
 aze
 brA
-bRC
-bRC
+bRE
+bRE
 aaU
 aaU
 aFp
@@ -118465,7 +118479,7 @@ aag
 aag
 aDU
 bae
-bRE
+bRG
 blR
 bvr
 bvB
@@ -132618,9 +132632,9 @@ aag
 aag
 aag
 abt
+bRC
 xTx
-xTx
-xTx
+bRC
 abt
 rJW
 iOM
@@ -133022,7 +133036,7 @@ aag
 abt
 bKO
 xTx
-xTx
+bRB
 abt
 aeI
 aeI

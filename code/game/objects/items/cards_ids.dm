@@ -568,9 +568,9 @@ update_label("John Doe", "Clowny")
 	item_color = ""
 	id_type = "priestess medallion"
 
-/obj/item/card/id/dogtag/legorator
-	name = "orator medallion"
-	desc = "A golden disc awarded to the one who is a dedicated ambassador for Caesar's Legion."
+/obj/item/card/id/dogtag/leglibritor
+	name = "libritor medallion"
+	desc = "A golden disc awarded to the one who is a dedicated bullet ambassador for Caesar's Legion."
 	icon_state = "legionmedallioncent"
 	item_state = "legionmedallioncent"
 	id_type = "orator medallion"

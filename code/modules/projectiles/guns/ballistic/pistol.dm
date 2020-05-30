@@ -108,6 +108,7 @@
 	w_class = WEIGHT_CLASS_NORMAL
 	fire_delay = 2
 	can_suppress = FALSE
+	extra_damage = 5
 	fire_sound = 'sound/f13weapons/ninemil.ogg'
 
 /obj/item/gun/ballistic/automatic/pistol/type17
@@ -117,6 +118,7 @@
 	mag_type = /obj/item/ammo_box/magazine/m9mm
 	fire_delay = 1
 	can_suppress = FALSE
+	extra_damage = 5
 	fire_sound = 'sound/f13weapons/ninemil.ogg'
 
 /obj/item/gun/ballistic/automatic/pistol/ninemil/maria

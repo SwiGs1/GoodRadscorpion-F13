@@ -337,7 +337,7 @@
 
 //Anti-Materiel Rifle (NCR)
 /obj/item/gun/ballistic/shotgun/antimateriel
-	name = "anti-materiel rifle"
+	name = "Hécate II AMR"
 	desc = "A heavy, high-powered sniper rifle chambered in .50 caliber ammunition, custom-made for use by the New California Republic Rangers. Although relatively austere, you're still pretty sure it could take the head off a deathclaw."
 	icon_state = "sniper-mag"
 	item_state = "sniper"
