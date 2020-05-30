@@ -98,6 +98,10 @@ GLOBAL_LIST_INIT(brotherhood_command_positions, list(
 ))
 
 GLOBAL_LIST_INIT(brotherhood_positions, list(
+    "Elder",
+	"Sentinel",
+	"Knight-Captain",
+	"Head Scribe",
 	"Senior Paladin",
 	"Paladin",
 	"Knight",
@@ -112,6 +116,8 @@ GLOBAL_LIST_INIT(den_command_positions, list(
 
 
 GLOBAL_LIST_INIT(den_positions, list(
+    "Mayor",
+    "Sheriff",
     "Doctor",
     "Settler",
     "Deputy",
@@ -127,6 +133,9 @@ GLOBAL_LIST_INIT(legion_command_positions, list(
 ))
 
 GLOBAL_LIST_INIT(legion_positions, list(
+    "Legion Centurion",
+    "Priestess of Mars",
+    "Legion Orator",
     "Legion Decanus",
     "Veteran Legionary",
 	"Prime Legionary",
@@ -147,6 +156,9 @@ GLOBAL_LIST_INIT(ncr_command_positions, list(
 ))
 
 GLOBAL_LIST_INIT(ncr_positions, list(
+    "NCR Captain",
+    "NCR Veteran Ranger",
+    "NCR Ambassador",
     "NCR Lieutenant",
     "NCR Sergeant",
     "NCR Military Police",
@@ -164,6 +176,8 @@ GLOBAL_LIST_INIT(vault_command_positions, list(
 ))
 
 GLOBAL_LIST_INIT(vault_positions, list(
+    "Overseer",
+    "Chief of Security",
     "Vault-tec Doctor",
     "Vault-tec Scientist",
     "Vault-tec Security",
@@ -182,8 +196,7 @@ GLOBAL_LIST_INIT(wasteland_positions, list(
 ))
 
 GLOBAL_LIST_INIT(security_positions, list(
-    "Vault-tec Security",
-    "Deputy"
+    "Vault-tec Security"
 ))
 
 GLOBAL_LIST_INIT(silicon_positions, list(
@@ -252,6 +265,7 @@ GLOBAL_LIST_INIT(nonhuman_positions, list(
 GLOBAL_LIST_INIT(exp_jobsmap, list(
     EXP_TYPE_CREW          = list("titles" = command_positions | brotherhood_positions | den_positions | legion_positions | ncr_positions | vault_positions | wasteland_positions),
     EXP_TYPE_COMMAND       = list("titles" = command_positions  ),
+    EXP_TYPE_BROTHERHOODCMD     = list("titles" = list("Paladin", "Head Scribe", "Elder")),
     EXP_TYPE_BROTHERHOOD   = list("titles" = brotherhood_positions),
     EXP_TYPE_DEN           = list("titles" = den_positions      ),
     EXP_TYPE_LEGION        = list("titles" = legion_positions       ),
@@ -261,10 +275,10 @@ GLOBAL_LIST_INIT(exp_jobsmap, list(
     EXP_TYPE_SECURITY      = list("titles" = security_positions),
     EXP_TYPE_NCRCOMMAND    = list("titles" = list("NCR Lieutenant","NCR Sergeant","NCR Captain","NCR Ambassador")),
     EXP_TYPE_RANGER        = list("titles" = list("NCR Veteran Ranger","NCR Ranger")),
+    EXP_TYPE_KNIGHT        = list("titles" = list("Knight")),
     EXP_TYPE_SCRIBE        = list("titles" = list("Scribe")),
     EXP_TYPE_DECANUS       = list("titles" = list("Legion Decanus")),
-    EXP_TYPE_TRIBAL        = list("titles" = tribal_positions),
-    EXP_TYPE_TRIBALCOMMAND = list("titles" = list("Chief","Shaman")),
+    EXP_TYPE_TRIBAL        = list("titles" = tribal_positions)
     //EXP_TYPE_ENCLAVE = list("titles" = enclave_positions),
     // EXP_TYPE_CREW = list("titles" = command_positions | engineering_positions | medical_positions | science_positions | supply_positions | security_positions | civilian_positions | list("AI","Cyborg")), // crew positions
     // EXP_TYPE_COMMAND = list("titles" = command_positions),
@@ -300,6 +314,7 @@ GLOBAL_PROTECT(exp_jobsmap)
         if(J.title == job_title)
             return J.department_head //this is a list
 
+
 /proc/get_full_job_name(job)
     var/static/regex/cap_expand = new("cap(?!tain)")
     var/static/regex/cmo_expand = new("cmo")
@@ -332,3 +347,4 @@ GLOBAL_PROTECT(exp_jobsmap)
     job = chef_expand.Replace(job, "cook")
     job = borg_expand.Replace(job, "cyborg")
     return job
+    

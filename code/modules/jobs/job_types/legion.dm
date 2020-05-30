@@ -57,7 +57,7 @@ Needs whitelist
 	supervisors = "Caesar"
 	selection_color = "#ffdddd"
 	req_admin_notify = 1
-	exp_requirements = 2700
+	exp_requirements = 960
 	total_positions = 0
 	spawn_positions = 0
 
@@ -102,7 +102,7 @@ Centurion
 	supervisors = "the Legate"
 	selection_color = "#ffdddd"
 	req_admin_notify = 1
-	exp_requirements = 900
+	exp_requirements = 180
 	exp_type = EXP_TYPE_DECANUS
 
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13centurion
@@ -259,7 +259,6 @@ Decanus
 	spawn_positions = 3
 	description = "You answer directly to the Centurion, working with them to organize the Legionaries. You lead the Legionaries, and Vexillari on patrols, raids and scouting missions on behalf of your Centurion."
 	supervisors = "the Centurion and up"
-	exp_requirements = 2400
 
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13decan
 
@@ -333,7 +332,6 @@ Vexillarius
 	spawn_positions = 2
 	description = "You answer directly to the Decani and the Centurion, acting as a standard bearer for your squad. You raise troop morale, relay orders from the Decanii and the Centurion, and rally men when ordered, however, you hold no actual authority over the troops and should instead only relay orders from your superiors."
 	supervisors = "the Decani and Centurion"
-	exp_requirements = 2100
 
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13vexillarius
 
@@ -394,7 +392,6 @@ datum/job/CaesarsLegion/Legionnaire/f13slavemaster
 	spawn_positions = 1
 	description = "You are the feared and respected disciplinary corps of the Legion. Acting as both master of the Slaves and de-facto executioner of the Centurion's will within his ranks, you are a faceless and undoubtedly cruel torturer... but be careful to not let your hubris and malice lead to a strikeback from those you thought broken."
 	supervisors = "the Decani and Centurion"
-	exp_requirements = 300
 
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13slavemaster
 
@@ -499,7 +496,6 @@ Prime Legionairy
 	spawn_positions = 12
 	description = "You answer to the Decani and the Centurion. Acting as a loyal soldier of the Legion, you're not expected to do anything but follow orders."
 	supervisors = "the Decani and Centurion"
-	exp_requirements = 300
 
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13legionary
 
@@ -570,8 +566,6 @@ Recruit Legionary
 	spawn_positions = 0
 	description = "You have recently come of age or been inducted into Caesar's Legion. You have absolutely no training, and are expected to follow every whim of the Decanii and your Centurion."
 	supervisors = "the Decani and Centurion"
-	exp_requirements = 300
-	exp_type = EXP_TYPE_CREW
 
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13recleg
 
@@ -606,7 +600,6 @@ Explorer
 	spawn_positions = 2
 	description = "Acting as the eyes and ears of the Legion, you are in the region to scout it out for potential conquest. Make note of your surroundings and above all, survive to report back."
 	supervisors = "the Decani and Centurion"
-	exp_requirements = 1200
 
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13explorer
 
@@ -724,7 +717,7 @@ Auxilia
 	spawn_positions = 6
 	description = "You answer to any member of the Legion. Working as a Camp Follower for the Centuria, you bear the great honor of supporting Caesar's Army in its conquest of the Mojave in whatever capacity required from those whom you serve. You perform any tasks required of you, for you know how to serve the Legion well."
 	supervisors = "the entire legion"
-	exp_requirements = 300
+
 
 	outfit = /datum/outfit/job/CaesarsLegion/f13campfollower
 
@@ -790,7 +783,6 @@ Slave
 	spawn_positions = 4
 	description = "You answer to any member of the Legion. You are to the point where you have been broken in as a slave and most slaves will no longer consider escaping as an option."
 	supervisors = "the entire legion"
-	exp_requirements = 300
 
 	outfit = /datum/outfit/job/CaesarsLegion/slave
 

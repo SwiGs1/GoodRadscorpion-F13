@@ -45,7 +45,7 @@ Overseer
 	supervisors = "Vault-Tec"
 	selection_color = "#ccffcc"
 	req_admin_notify = 1
-	exp_requirements = 2160
+	exp_requirements = 180
 
 	outfit = /datum/outfit/job/vault/f13overseer
 
@@ -96,7 +96,7 @@ Head of Security
 	supervisors = "the overseer"
 	selection_color = "#ccffcc"
 	req_admin_notify = 1
-	exp_requirements = 960
+	exp_requirements = 60
 	exp_type = EXP_TYPE_SECURITY
 
 	outfit = /datum/outfit/job/vault/f13hos
@@ -149,7 +149,8 @@ Medical Doctor
 	description = "You answer directly to the Overseer, administering medical aid to your fellow vault dwellers, you also work around the clock to produce the vital medicines and compounds needed to keep your department running. "
 	supervisors = "the overseer"
 	selection_color = "#ddffdd"
-	exp_requirements = 540
+	exp_requirements = 60
+	exp_type = EXP_TYPE_CREW
 
 	outfit = /datum/outfit/job/vault/f13doctor
 
@@ -194,7 +195,8 @@ Scientist
 	description = "You answer directly to the Overseer, conducting vital research for the denizens of the vault, you spend your days pouring over pre-war blueprints in the hopes of revitalizing the sciences of the old world. "
 	supervisors = "the overseer"
 	selection_color = "#ddffdd"
-	exp_requirements = 360
+	exp_requirements = 60
+	exp_type = EXP_TYPE_CREW
 
 	outfit = /datum/outfit/job/vault/f13vaultscientist
 
@@ -229,7 +231,7 @@ Security Officer
 	description = "You answer directly to the Chief Of Security, acting as the first line of defense against civil unrest and outside intrusion, you enforce the laws created by the Overseer, while proactively seeking out potential threats to the safety of vault residents."
 	supervisors = "the head of security"
 	selection_color = "#ddffdd"
-	exp_requirements = 480
+	exp_requirements = 160
 
 	outfit = /datum/outfit/job/vault/f13security
 
@@ -382,7 +384,8 @@ Vault Engineer
 	description = "You answer directly to the Overseer, tasked with the maintenance of the vaults defenses and machinery, while also overseeing the smooth operation of its generators and electrical systems."
 	supervisors = "the overseer"
 	selection_color = "#ddffdd"
-	exp_requirements = 180
+	exp_requirements = 60
+	exp_type = EXP_TYPE_CREW
 
 	outfit = /datum/outfit/job/vault/f13vaultengineer
 
@@ -421,7 +424,7 @@ Vault Engineer
 	selection_color = "#ddffdd"
 	access = list()			//See /datum/job/vault/assistant/get_access()
 	minimal_access = list()	//See /datum/job/vault/assistant/get_access()
-	exp_requirements = 900
+	exp_requirements = 60
 	exp_type = EXP_TYPE_CREW
 
 	outfit = /datum/outfit/job/vault/f13vaultDweller
