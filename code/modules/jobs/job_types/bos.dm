@@ -45,7 +45,6 @@ Elder
 	supervisors = "the high elders"
 	selection_color = "#7f8c8d"
 	req_admin_notify = 1
-	exp_requirements = 2700
 	total_positions = 1
 	spawn_positions = 1
 	description = "You, of all individuals, likely have the most power out of anyone within this wretched valley, and, by extension, the bunker. You're here to assure the chapter lives on, and, with that, you must maintain the Security of those in your charge. - Additionally, while normally you'd follow the codex and such to a letter, you may deviate, if you believe it for the better of the chapter. Good luck, Elder."
@@ -53,6 +52,8 @@ Elder
 	enforces = "The Brotherhood of Steel Expects: Collection and safeguarding of technology from the wasteland. Experimentation and research."
 	supervisors = "no one but your morals and the codex."
 	outfit = /datum/outfit/job/bos/f13elder
+	exp_requirements = 180
+	exp_type = EXP_TYPE_BROTHERHOODCMD
 
 	access = list(ACCESS_ROBOTICS, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_MINERAL_STOREROOM, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS)
 	minimal_access = list(ACCESS_ROBOTICS, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_MINERAL_STOREROOM, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS)
@@ -172,7 +173,6 @@ Head Scribe
 /datum/job/bos/f13headscribe
 	title = "Head Scribe"
 	flag = F13HEADSCRIBE
-	head_announce = list("Security")
 	faction = "BOS"
 	total_positions = 1
 	spawn_positions = 1
@@ -180,8 +180,8 @@ Head Scribe
 	forbids = "The Brotherhood of Steel Forbids: Unethical human experimentation. Violence beyond what is needed to accomplish Brotherhood goals."
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
 	supervisors = "the Elder"
-	selection_color = "#7f8c8d"
-	exp_requirements = 600
+	selection_color = "#95a5a6"
+	exp_requirements = 180
 	exp_type = EXP_TYPE_SCRIBE
 
 	loadout_options = list(
@@ -319,8 +319,8 @@ Senior Paladin
 	title = "Senior Paladin"
 	flag = F13SENIORPALADIN
 	faction = "BOS"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	description = "As the Chapter's Senior offensive warrior, you have proven your service and dedication to the Brotherhood over your time as a Paladin. As your skills gained, however, you were deigned to be more useful as a commander and trainer. Now you have your trusty super-sledge, and were recently given a suit of T-51b power armor. Your job is to coordinate the Paladins and ensure they work as a team, instilling discipline as you go."
 	forbids = "The Brotherhood of Steel Forbids: Unethical human experimentation. Violence beyond what is needed to accomplish Brotherhood goals."
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
@@ -389,14 +389,15 @@ Paladin
 	title = "Paladin"
 	flag = F13PALADIN
 	faction = "BOS"
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 1
+	spawn_positions = 1
 	description = "You answer directly to the Sentinel. You are this Chapter's main line of defense and offense; highly trained in combat and weaponry though with little practical field experience, you are eager to prove your worth to the Brotherhood. Your primary duties are defense and surface operations. You may also be assigned a trainee Initiate."
 	forbids = "The Brotherhood of Steel Forbids: Unethical human experimentation. Violence beyond what is needed to accomplish Brotherhood goals."
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
 	supervisors = "the Elder"
 	selection_color = "#95a5a6"
-	exp_requirements = 900
+	exp_requirements = 180
+	exp_type = EXP_TYPE_KNIGHT
 
 	loadout_options = list(
 	/datum/outfit/loadout/paladinb, //Carbine and aep7
@@ -462,7 +463,8 @@ Scribe
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
 	supervisors = "the Head Scribe"
 	selection_color = "#95a5a6"
-	exp_requirements = 600
+	exp_requirements = 120
+	exp_type = EXP_TYPE_BROTHERHOOD
 
 	loadout_options = list(
 	/datum/outfit/loadout/scribea, //Scribe
@@ -478,6 +480,7 @@ Scribe
 	name = "Scribe"
 	jobtype = /datum/job/bos/f13scribe
 	chemwhiz = TRUE
+	pa_wear = TRUE
 	uniform =		/obj/item/clothing/under/syndicate/brotherhood
 	shoes = 		/obj/item/clothing/shoes/combat
 	belt = 			/obj/item/storage/belt/utility/full/engi
@@ -523,8 +526,8 @@ Knight
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
 	supervisors = "the Knight-Captain"
 	selection_color = "#95a5a6"
-	exp_requirements = 1800
-	exp_type = EXP_TYPE_CREW
+	exp_requirements = 120
+	exp_type = EXP_TYPE_BROTHERHOOD
 
 	loadout_options = list(
 	/datum/outfit/loadout/knighta, //AER9
@@ -550,6 +553,7 @@ Knight
 	gunsmith_two = TRUE
 	gunsmith_three = TRUE
 	gunsmith_four = TRUE
+	pa_wear = TRUE
 	backpack_contents = list(
 		/obj/item/gun/energy/laser/pistol=1, \
 		/obj/item/stock_parts/cell/ammo/ec=2)
@@ -576,14 +580,14 @@ Initiate
 	title = "Initiate"
 	flag = F13INITIATE
 	faction = "BOS"
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 3
+	spawn_positions = 2
 	description = "Either recently inducted or born into the Brotherhood, you have since proven yourself worthy of assignment to the Chapter. You are to assist your superiors and receive training how they deem fit. You are NEVER allowed to leave the bunker without the direct supervision of a superior; doing so may result in exile or transferrence back the Valley."
 	forbids = "The Brotherhood of Steel Forbids: Unethical human experimentation. Violence beyond what is needed to accomplish Brotherhood goals."
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
 	supervisors = "the scribes, knights, or Paladins"
 	selection_color = "#95a5a6"
-	exp_requirements = 1800
+	exp_requirements = 180
 	exp_type = EXP_TYPE_CREW
 
 	loadout_options = list(

@@ -20,7 +20,7 @@ Mayor
 	supervisors = "the people of the town"
 	description = "The liason for the town for the deputies and land owners, you pass laws, policies based around the law and commerce that effect those local or passing through. Meanwhile with outsiders you engage in diplomatic meetings and make deals with the powers present within the Region."
 	selection_color = "#d7b088"
-	exp_requirements = 1080
+	exp_requirements = 180
 	exp_type = EXP_TYPE_DEN
 
 	outfit = /datum/outfit/job/den/f13mayor
@@ -63,7 +63,7 @@ Sheriff
 	supervisors = "the mayor"
 	description = "Seems like you're Johnny Law these days. Outside of the more obvious day to day tasks in dealing with local disputes and keeping the peace, you're main trade is in corpses - dead or alive... doesn't matter much to the town. Whether you obtain these bounties yourself or through the means of notorious gunslingers is up to you, just as long as you keep the road safe and your people alive."
 	selection_color = "#d7b088"
-	exp_requirements = 720
+	exp_requirements = 180
 	exp_type = EXP_TYPE_DEN
 
 	outfit = /datum/outfit/job/den/f13sheriff
@@ -116,7 +116,7 @@ Deputy
 	supervisors = "the sheriff and the mayor"
 	description = "Working alongside the Sheriff you've known them for a while, having worked with them under the previous Sheriff - you bagged many a bandit and raider together on the road. These days you patrol the areas outside of town, tracking down bounties on the run and keeping the settlers safe from harm."
 	selection_color = "#dcba97"
-	exp_requirements = 360
+	exp_requirements = 120
 	exp_type = EXP_TYPE_DEN
 
 	outfit = /datum/outfit/job/den/f13deputy
@@ -205,8 +205,6 @@ Prospector
 	supervisors = "the sheriff and the mayor"
 	description = "Prospecting is a complicated business, some call it scrounging or looting but there is more to it then sifting through rubble - few can boast the skills you posess in mining and delving through the ruins of pre-war America. Not many survive this line of business and the pay has always been uncertain, but perhaps today you'll find strike gold."
 	selection_color = "#dcba97"
-	exp_requirements = 180
-	exp_type = EXP_TYPE_DEN
 
 	outfit = /datum/outfit/job/den/f13prospector
 	access = list(ACCESS_BAR)
@@ -250,8 +248,6 @@ Doctor
 	supervisors = "the sheriff and the mayor"
 	description = "Handy with a scalpel and a scanner, your expertise in the practice of medicine makes you an indespesnbile asset to the town. How you play your trade and whether it be for profit or the fortune of others rests entirely upon your shoulders."
 	selection_color = "#dcba97"
-	exp_requirements = 540
-	exp_type = EXP_TYPE_DEN
 
 	outfit = /datum/outfit/job/den/f13dendoc
 	access = list(ACCESS_BAR, ACCESS_CLONING)
@@ -441,7 +437,7 @@ Shopkeeper
     supervisors = "the sheriff and the mayor"
     description = "The capitalist economy of pre-war America survived alongside its people. Now it's your job to continue its survival, so go make some caps!"
     selection_color = "#dcba97"
-    exp_requirements = 180
+    exp_requirements = 120
     exp_type = EXP_TYPE_DEN
 
     outfit = /datum/outfit/job/den/f13shopkeeper
