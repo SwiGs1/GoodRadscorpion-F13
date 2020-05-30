@@ -503,6 +503,7 @@
 	fire_sound = 'sound/f13weapons/policepistol.ogg'
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/rev38
 	w_class = WEIGHT_CLASS_SMALL
+	fire_delay = 1
 
 /obj/item/gun/ballistic/revolver/thatgun
 	name = ".223 pistol"
