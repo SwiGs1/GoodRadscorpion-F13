@@ -856,7 +856,7 @@
 	armor = list("melee" = 55, "bullet" = 40, "laser" = 25, "energy" = 15, "bomb" = 25, "bio" = 50, "rad" = 20, "fire" = 70, "acid" = 0)
 
 /obj/item/clothing/suit/armor/f13/legion/heavy
-	name = "legion veteran decan armor"
+	name = "legion heavy decan armor"
 	desc = "Heavy metal armor worn by the Veteran Decanii retinue of the region."
 	icon_state = "legmetal"
 	item_state = "legmetal"

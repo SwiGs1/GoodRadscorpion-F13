@@ -652,6 +652,5 @@ Ranger
 	gloves =		/obj/item/clothing/gloves/rifleman
 	suit_store = /obj/item/gun/ballistic/automatic/marksman
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m556/rifle=2,
-		/obj/item/gun/ballistic/revolver/m29/alt=1
+		/obj/item/ammo_box/magazine/m556/rifle=2
 		)

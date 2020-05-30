@@ -534,7 +534,7 @@
 	armor = list("melee" = 60, "bullet" = 40, "laser" = 25, "energy" = 15, "bomb" = 25, "bio" = 50, "rad" = 20, "fire" = 70, "acid" = 0)
 
 /obj/item/clothing/head/helmet/f13/legion/heavy
-	name = "legion veteran decan helmet"
+	name = "legion heavy decan helmet"
 	desc = "It's a metal legion helmet, with a plume, denoting veteran Decanus status."
 	icon_state = "legheavy"
 	item_state = "legheavy"
