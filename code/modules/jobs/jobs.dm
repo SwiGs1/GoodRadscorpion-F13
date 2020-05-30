@@ -135,7 +135,7 @@ GLOBAL_LIST_INIT(legion_command_positions, list(
 GLOBAL_LIST_INIT(legion_positions, list(
     "Legion Centurion",
     "Priestess of Mars",
-    "Legion Orator",
+    "Legion Libritor",
     "Legion Decanus",
     "Veteran Legionary",
 	"Prime Legionary",
