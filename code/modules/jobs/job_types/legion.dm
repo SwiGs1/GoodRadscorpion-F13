@@ -190,7 +190,7 @@ Orator - lol no just kidding it's a not-so-useless role. :)
 	suit = /obj/item/clothing/suit/armor/f13/legion/libritor
 	jobtype = /datum/job/CaesarsLegion/Legionnaire/f13libritor
 	id = /obj/item/card/id/dogtag/leglibritor
-	head = /obj/item/clothing/head/helmet/f13/legion/vet
+	head = /obj/item/clothing/head/helmet/f13/legion/libritor
 	suit_store = /obj/item/gun/ballistic/automatic/l6_saw/m38
 	backpack_contents = list(
 		/obj/item/reagent_containers/pill/patch/healingpowder=3, \

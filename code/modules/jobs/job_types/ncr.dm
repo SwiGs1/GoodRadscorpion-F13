@@ -573,9 +573,9 @@ Veteran Ranger
 	name = "Standard Veteran Ranger"
 	suit = 			/obj/item/clothing/suit/armor/f13/rangercombat
 	head = 			/obj/item/clothing/head/helmet/f13/ncr/rangercombat
-	suit_store = /obj/item/gun/ballistic/shotgun/automatic/hunting/brush
+	suit_store = /obj/item/gun/ballistic/automatic/assault_carbine
 	backpack_contents = list(
-		/obj/item/ammo_box/tube/c4570=2)
+		/obj/item/ammo_box/magazine/m556/rifle=3)
 
 /*
 Ranger
@@ -594,8 +594,7 @@ Ranger
 
 	loadout_options = list(
 	/datum/outfit/loadout/patrolranger, //Standard no slowdown Patrol Armor and Assault Carbine.
-	/datum/outfit/loadout/scoutranger, //308 Sniper, alongside negative slowdown.
-	/datum/outfit/loadout/vetranger //Vet armor, minor slowdown and Marksman Carbine.
+	/datum/outfit/loadout/scoutranger //308 Sniper, alongside negative slowdown.
 	)
 
 /datum/job/ncr/f13ranger/after_spawn(mob/living/carbon/human/H, mob/M)
@@ -636,13 +635,3 @@ Ranger
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/w308=3,
 		/obj/item/twohanded/binocs=1)
-
-/datum/outfit/loadout/vetranger
-	name = "Veteran Ranger"
-	suit = 			/obj/item/clothing/suit/armor/f13/rangercombat
-	head = 			/obj/item/clothing/head/helmet/f13/ncr/rangercombat
-	gloves =		/obj/item/clothing/gloves/rifleman
-	suit_store = /obj/item/gun/ballistic/automatic/marksman
-	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m556/rifle=2
-		)
