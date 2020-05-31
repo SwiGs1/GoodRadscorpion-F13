@@ -599,7 +599,7 @@
 	icon_state = "ranger"
 	item_state = "ranger"
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS
-	slowdown = .5
+	slowdown = 0.5
 	armor = list("melee" = 65, "bullet" = 65, "laser" = 45, "energy" = 45, "bomb" = 55, "bio" = 60, "rad" = 60, "fire" = 90, "acid" = 20)
 	strip_delay = 60
 
@@ -614,7 +614,7 @@
 	desc = "A heavily reinforced set of military grade armor, commonly seen in the Divide now repurposed and reissued to Leading Rangers."
 	icon_state = "elite_riot"
 	item_state = "elite_riot"
-	slowdown = .6
+	slowdown = 0.6
 	armor = list("melee" = 65, "bullet" = 60, "laser" = 60, "energy" = 60, "bomb" = 70, "bio" = 60, "rad" = 60, "fire" = 90, "acid" = 50)
 //	icon = 'icons/fallout/clothing_w/suit.dmi'
 
@@ -920,7 +920,7 @@
 	desc = "The armor appears to be a full suit of heavy gauge steel and offers full body protection. It's very likely that you'll be slower than a bus in this."
 	icon_state = "legmetal"
 	item_state = "legmetal"
-	slowdown = 0.5
+	slowdown = 0.4
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS
 	armor = list("melee" = 85, "bullet" = 75, "laser" = 25, "energy" = 25, "bomb" = 25, "bio" = 60, "rad" = 20, "fire" = 80, "acid" = 0)
 
