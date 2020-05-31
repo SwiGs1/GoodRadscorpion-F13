@@ -330,7 +330,7 @@
 		/obj/item/restraints/handcuffs/cable/zipties,
 		/obj/item/melee/baton/loaded,
 		/obj/item/gun/energy/laser/plasma/pistol/cyborg,
-		/obj/item/gun/energy/laser/fire,
+	//	/obj/item/gun/energy/laser/fire, //Carl man bad
 		/obj/item/clothing/mask/gas/sechailer/cyborg)
 	cyborg_base_icon = "secborg"
 	moduleselect_icon = "security"
