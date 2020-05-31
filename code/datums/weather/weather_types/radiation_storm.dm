@@ -44,7 +44,7 @@
 						else
 							H.randmutg()
 						H.domutcheck()
-		L.rad_act(20)
+		L.rad_act(15)
 
 /datum/weather/rad_storm/end()
 	if(..())
