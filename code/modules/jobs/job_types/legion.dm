@@ -180,8 +180,6 @@ Orator - lol no just kidding it's a not-so-useless role. :)
 	spawn_positions = 2
 	description = "You are, effectively, the counter to the Bear's 'heavy troopers', as you carry some pretty heavy equipment yourself. A much larger gun, in fact. Don't let down your fellows."
 	supervisors = "the Centurion and Decani"
-	exp_requirements = 60
-	exp_type = EXP_TYPE_DECANUS
 
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13libritor
 
@@ -258,6 +256,7 @@ Decanus
 	spawn_positions = 3
 	description = "You answer directly to the Centurion, working with them to organize the Legionaries. You lead the Legionaries, and Vexillari on patrols, raids and scouting missions on behalf of your Centurion."
 	supervisors = "the Centurion and up"
+	exp_requirements = 120
 
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13decan
 
@@ -321,6 +320,7 @@ Vexillarius
 	spawn_positions = 2
 	description = "You answer directly to the Decani and the Centurion, acting as a standard bearer for your squad. You raise troop morale, relay orders from the Decanii and the Centurion, and rally men when ordered, however, you hold no actual authority over the troops and should instead only relay orders from your superiors."
 	supervisors = "the Decani and Centurion"
+	exp_requirements = 120
 
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13vexillarius
 

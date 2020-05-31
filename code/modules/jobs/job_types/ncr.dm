@@ -143,7 +143,7 @@ Lieutenant
 	description = "You are the direct superior to the Sergeant and Enlisted, working with the Captain and under special circumstances, Rangers. You plan patrols, training and missions, working in some cases with Rangers in accomplishing objectives otherwise beyond the capabilities of ordinary enlisted personnel."
 	supervisors = "Captain and above"
 	selection_color = "#fff5cc"
-	exp_requirements = 120
+	exp_requirements = 240
 	exp_type = EXP_TYPE_NCR
 
 	outfit = /datum/outfit/job/ncr/f13lieutenant
@@ -216,6 +216,8 @@ Sergeant
 	description = "You are the direct superior to the enlisted troops, working with the chain of command you echo the orders of your superiors and ensure that the enlisted follow them to the letter. Additionally, you are responsible for the wellbeing of the troops and their ongoing training with the NCR."
 	supervisors = "Lieutenants and above"
 	selection_color = "#fff5cc"
+	exp_requirements = 120
+	exp_type = EXP_TYPE_NCR
 
 	outfit = /datum/outfit/job/ncr/f13sergeant
 
