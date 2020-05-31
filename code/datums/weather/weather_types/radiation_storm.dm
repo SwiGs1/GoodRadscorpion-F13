@@ -2,7 +2,7 @@
 /datum/weather/rad_storm
 	name = "radiation storm"
 	desc = "A cloud of intense radiation passes through the area dealing rad damage to those who are unprotected."
-	probability = 8
+	probability = 2
 
 	telegraph_duration = 400
 	telegraph_message = "<span class='userdanger'><i>You feel waves of heat wash over you! Find shelter!</i></span>"
@@ -44,7 +44,7 @@
 						else
 							H.randmutg()
 						H.domutcheck()
-		L.rad_act(20)
+		L.rad_act(15)
 
 /datum/weather/rad_storm/end()
 	if(..())
