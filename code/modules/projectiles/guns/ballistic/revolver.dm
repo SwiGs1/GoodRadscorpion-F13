@@ -484,6 +484,7 @@
 	fire_sound = 'sound/weapons/Gunshot.ogg'
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/improvised9mm
 	spread = 6
+	fire_delay = 1
 
 /obj/item/gun/ballistic/revolver/pipe_rifle
 	name = "pipe rifle"
@@ -495,6 +496,7 @@
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
 	spread = 4
+	fire_delay = 1
 
 /obj/item/gun/ballistic/revolver/police
 	name = "police pistol"
@@ -503,6 +505,7 @@
 	fire_sound = 'sound/f13weapons/policepistol.ogg'
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/rev38
 	w_class = WEIGHT_CLASS_SMALL
+	fire_delay = 2
 
 /obj/item/gun/ballistic/revolver/thatgun
 	name = ".223 pistol"
