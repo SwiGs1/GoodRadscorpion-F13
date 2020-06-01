@@ -348,6 +348,8 @@
 	if(. && isliving(user))
 		var/mob/living/L = user
 		L.Knockdown(200)
+		playsound(user.loc, 'sound/f13effects/surrender.ogg', 50, 1)
+	user.log_message("[user] surrendered.", INDIVIDUAL_ATTACK_LOG)
 
 /datum/emote/living/sway
 	key = "sway"
