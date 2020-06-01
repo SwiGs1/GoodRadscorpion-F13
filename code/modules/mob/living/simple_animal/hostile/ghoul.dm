@@ -11,8 +11,8 @@
 	speak_emote = list("growls")
 	emote_see = list("screeches")
 	a_intent = INTENT_HARM
-	maxHealth = 40
-	health = 40
+	maxHealth = 45
+	health = 45
 	speed = 2
 	harm_intent_damage = 15
 	melee_damage_lower = 10
@@ -44,6 +44,13 @@
 	harm_intent_damage = 6
 	melee_damage_lower = 15
 	melee_damage_upper = 25
+
+/mob/living/simple_animal/hostile/ghoul/reaver/Initialize()
+	. = ..()
+
+/mob/living/simple_animal/hostile/ghoul/reaver/Aggro()
+	..()
+	summon_backup(10)
 
 /mob/living/simple_animal/hostile/ghoul/coldferal
 	name = "cold ghoul feral"
