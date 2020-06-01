@@ -11,8 +11,8 @@
 	speak_emote = list("growls")
 	emote_see = list("screeches")
 	a_intent = INTENT_HARM
-	maxHealth = 80
-	health = 80
+	maxHealth = 40
+	health = 40
 	speed = 2
 	harm_intent_damage = 15
 	melee_damage_lower = 10
@@ -39,18 +39,11 @@
 	icon_dead = "ghoulreaver_dead"
 	speed = 1
 	a_intent = INTENT_HARM
-	maxHealth = 150
-	health = 150
+	maxHealth = 100
+	health = 100
 	harm_intent_damage = 6
 	melee_damage_lower = 15
 	melee_damage_upper = 25
-
-/mob/living/simple_animal/hostile/ghoul/reaver/Initialize()
-	. = ..()
-
-/mob/living/simple_animal/hostile/ghoul/reaver/Aggro()
-	..()
-	summon_backup(10)
 
 /mob/living/simple_animal/hostile/ghoul/coldferal
 	name = "cold ghoul feral"
@@ -88,8 +81,8 @@
 	icon_state = "glowinghoul"
 	icon_living = "glowinghoul"
 	icon_dead = "glowinghoul_dead"
-	maxHealth = 180
-	health = 180
+	maxHealth = 80
+	health = 80
 	speed = 1
 	harm_intent_damage = 10
 	melee_damage_lower = 20
