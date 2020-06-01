@@ -13,7 +13,7 @@
 
 /obj/effect/portal
 	name = "portal"
-	desc = "Looks unstable. Best to test it with the clown."
+	desc = "Looks unstable. Best to test it with someone else."
 	icon = 'icons/obj/stationobjs.dmi'
 	icon_state = "portal"
 	anchored = TRUE
