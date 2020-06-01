@@ -570,7 +570,7 @@
 	desc = "A metal legion veteran helmet with an inverted color scheme for libritors"
 	icon_state = "legheavy"
 	item_state = "legheavy"
-	armor = list("melee" = 85, "bullet" = 75, "laser" = 25, "energy" = 25, "bomb" = 25, "bio" = 60, "rad" = 20, "fire" = 80, "acid" = 0)
+	armor = list("melee" = 80, "bullet" = 50, "laser" = 30, "energy" = 25, "bomb" = 25, "bio" = 60, "rad" = 20, "fire" = 80, "acid" = 0)
 
 /obj/item/clothing/head/helmet/f13/legion/recruit/decan
 	name = "legion recruit decanus helmet"
