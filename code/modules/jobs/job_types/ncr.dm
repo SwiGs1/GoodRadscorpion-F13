@@ -137,8 +137,8 @@ Lieutenant
 /datum/job/ncr/f13lieutenant
 	title = "NCR Lieutenant"
 	flag = F13LIEUTENANT
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 1
+	spawn_positions = 1
 	faction = "NCR"
 	description = "You are the direct superior to the Sergeant and Enlisted, working with the Captain and under special circumstances, Rangers. You plan patrols, training and missions, working in some cases with Rangers in accomplishing objectives otherwise beyond the capabilities of ordinary enlisted personnel."
 	supervisors = "Captain and above"
@@ -397,8 +397,8 @@ NCR Military Police
 	title = "NCR Military Police"
 	flag = F13NCRMP
 	faction = "NCR"
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 0
+	spawn_positions = 0
 	description = "You are the primary enforcers of NCR law within the ranks of the local embassy. You are technically exempt from the standard chain of command, answering only to High-Command, and specifically, the NCR Office of Special Investigations (NCROSI). "
 	supervisors = "NCROSI"
 	selection_color = "#fff5cc"

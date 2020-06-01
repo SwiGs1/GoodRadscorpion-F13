@@ -252,11 +252,11 @@ Decanus
 	title = "Legion Decanus"
 	flag = F13DECAN
 	faction = "Legion"
-	total_positions = 3
-	spawn_positions = 3
+	total_positions = 1
+	spawn_positions = 1
 	description = "You answer directly to the Centurion, working with them to organize the Legionaries. You lead the Legionaries, and Vexillari on patrols, raids and scouting missions on behalf of your Centurion."
 	supervisors = "the Centurion and up"
-	exp_requirements = 120
+	exp_requirements = 240
 
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13decan
 
