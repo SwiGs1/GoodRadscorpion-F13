@@ -660,7 +660,7 @@
 	desc = "An old combat helmet seen in the divide, repurposed for higher ranking Rangers."
 	icon_state = "elite_riot"
 	item_state = "elite_riot"
-	slowdown = 0.2//makes the full suit a full 1 of slowdown.
+	slowdown = 0.2
 	armor = list("melee" = 70, "bullet" = 60, "laser" = 40, "energy" = 60, "bomb" = 55, "bio" = 60, "rad" = 60, "fire" = 40, "acid" = 0)
 
 //Metal masks
