@@ -21,8 +21,8 @@
 	armour_penetration = 30
 
 /obj/item/projectile/bullet/a556/jhp
-	damage = 45
-	armour_penetration = -5
+	damage = 30
+	armour_penetration = -10
 
 //2mm Electromagnetic
 /obj/item/projectile/bullet/c2mm
