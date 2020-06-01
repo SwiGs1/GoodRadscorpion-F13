@@ -13,12 +13,12 @@
 
 //5.56x45mm
 /obj/item/projectile/bullet/a556
-	damage = 25
+	damage = 20
 	armour_penetration = 10
 
 /obj/item/projectile/bullet/a556/ap
 	damage = 15
-	armour_penetration = 45
+	armour_penetration = 30
 
 /obj/item/projectile/bullet/a556/jhp
 	damage = 45
