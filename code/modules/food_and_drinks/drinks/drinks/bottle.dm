@@ -433,7 +433,7 @@
 		to_chat(user, "<span class='info'>You light [src] on fire.</span>")
 		add_overlay(GLOB.fire_overlay)
 
-		spawn((75)) //Throw. And pray. //also those numbers might be in station time, not in IRL seconds
+		spawn((100)) //Throw. And pray. //10 = 1 second IRL, 100 = 10 seconds
 			if(active)
 				var/counter
 				var/target = src.loc
