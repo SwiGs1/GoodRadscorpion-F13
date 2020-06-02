@@ -922,7 +922,7 @@
 	item_state = "legmetal"
 	slowdown = 0.4
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS
-	armor = list("melee" = 85, "bullet" = 75, "laser" = 25, "energy" = 25, "bomb" = 25, "bio" = 60, "rad" = 20, "fire" = 80, "acid" = 0)
+	armor = list("melee" = 80, "bullet" = 50, "laser" = 30, "energy" = 25, "bomb" = 25, "bio" = 60, "rad" = 20, "fire" = 80, "acid" = 0)
 
 /obj/item/clothing/suit/armor/f13/ncrarmor
 	name = "NCR patrol vest"

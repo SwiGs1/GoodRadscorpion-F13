@@ -570,7 +570,7 @@
 	desc = "A metal legion veteran helmet with an inverted color scheme for libritors"
 	icon_state = "legheavy"
 	item_state = "legheavy"
-	armor = list("melee" = 85, "bullet" = 75, "laser" = 25, "energy" = 25, "bomb" = 25, "bio" = 60, "rad" = 20, "fire" = 80, "acid" = 0)
+	armor = list("melee" = 80, "bullet" = 50, "laser" = 30, "energy" = 25, "bomb" = 25, "bio" = 60, "rad" = 20, "fire" = 80, "acid" = 0)
 
 /obj/item/clothing/head/helmet/f13/legion/recruit/decan
 	name = "legion recruit decanus helmet"
@@ -758,7 +758,7 @@
 	desc = "This power armor helmet is so decrepit and battle-worn that it have lost most of its capability to protect the wearer from harm, no longer acting as a power helmet it is no more than a heavy metal helmet."
 	icon_state = "brokenhelmet"
 	item_state = "brokenhelmet"
-	armor = list("melee" = 50, "bullet" = 39, "laser" = 25, "energy" = 25, "bomb" = 39, "bio" = 0, "rad" = 50, "fire" = 0, "acid" = 0)
+	armor = list("melee" = 75, "bullet" = 60, "laser" = 25, "energy" = 25, "bomb" = 39, "bio" = 0, "rad" = 50, "fire" = 0, "acid" = 0)
 	flash_protect = 0
 
 /obj/item/clothing/head/helmet/f13/brokenpa/t45b
@@ -766,7 +766,7 @@
 	desc = "This power armor helmet is so decrepit and battle-worn that it have lost most of its capability to protect the wearer from harm, no longer acting as a power helmet it is no more than a heavy metal helmet."
 	icon_state = "t45bhelmet"
 	item_state = "t45bhelmet"
-	armor = list("melee" = 50, "bullet" = 39, "laser" = 25, "energy" = 25, "bomb" = 39, "bio" = 0, "rad" = 50, "fire" = 0, "acid" = 0)
+	armor = list("melee" = 75, "bullet" = 60, "laser" = 25, "energy" = 25, "bomb" = 39, "bio" = 0, "rad" = 50, "fire" = 0, "acid" = 0)
 	flash_protect = 0
 
 //Power armor helmets
