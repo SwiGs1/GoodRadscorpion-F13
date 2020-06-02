@@ -256,6 +256,8 @@
 
 /datum/config_entry/flag/maprotation
 
+/datum/config_entry/flag/old_maprotation
+
 /datum/config_entry/number/maprotatechancedelta
 	config_entry_value = 0.75
 	min_val = 0
@@ -331,6 +333,8 @@
 /datum/config_entry/flag/announce_admin_login
 
 /datum/config_entry/flag/allow_map_voting
+
+/datum/config_entry/flag/allow_vote_map
 
 // /datum/config_entry/flag/generate_minimaps
 

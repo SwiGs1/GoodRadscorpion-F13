@@ -72,6 +72,11 @@ SUBSYSTEM_DEF(vote)
 					choices[GLOB.master_mode] += non_voters.len
 					if(choices[GLOB.master_mode] >= greatest_votes)
 						greatest_votes = choices[GLOB.master_mode]
+			else if(mode == "map")
+				if(GLOB.master_mode in choices)
+					choices[GLOB.master_mode] += non_voters.len
+					if(choices[GLOB.master_mode] >= greatest_votes)
+						greatest_votes = choices[GLOB.master_mode]
 	//get all options with that many votes and return them in a list
 	. = list()
 	if(greatest_votes)
@@ -124,6 +129,12 @@ SUBSYSTEM_DEF(vote)
 						restart = 1
 					else
 						GLOB.master_mode = .
+			if("map")
+				var/datum/map_config/VM = config.maplist[.]
+				message_admins("The map has been voted for and will change to: [VM.map_name]")
+				log_admin("The map has been voted for and will change to: [VM.map_name]")
+				if(SSmapping.changemap(config.maplist[.]))
+					to_chat(world, "<span class='boldannounce'>The map vote has chosen [VM.map_name] for next round!</span>")
 	if(restart)
 		var/active_admins = 0
 		for(var/client/C in GLOB.admins)
@@ -172,6 +183,17 @@ SUBSYSTEM_DEF(vote)
 				choices.Add("Restart Round","Continue Playing")
 			if("gamemode")
 				choices.Add(config.votable_modes)
+			if("map")
+				var/players = GLOB.clients.len
+				for(var/M in config.maplist)
+					var/datum/map_config/targetmap = config.maplist[M]
+					if(!istype(targetmap))
+						continue
+					if(!targetmap.voteweight)
+						continue
+					if((targetmap.config_min_users && players < targetmap.config_min_users) || (targetmap.config_max_users && players > targetmap.config_max_users))
+						continue
+					choices |= M
 			if("custom")
 				question = stripped_input(usr,"What is the vote for?")
 				if(!question)
@@ -251,6 +273,16 @@ SUBSYSTEM_DEF(vote)
 			. += "\t(<a href='?src=[REF(src)];vote=toggle_gamemode'>[avm ? "Allowed" : "Disallowed"]</a>)"
 
 		. += "</li>"
+		//mapvote
+		var/amv = CONFIG_GET(flag/allow_vote_map)
+		if(trialmin || amv)
+			. += "<a href='?src=[REF(src)];vote=map'>Map</a>"
+		else
+			. += "<font color='grey'>Map (Disallowed)</font>"
+		if(trialmin)
+			. += "\t(<a href='?src=[REF(src)];vote=toggle_map'>[amv ? "Allowed" : "Disallowed"]</a>)"
+
+		. += "</li>"
 		//custom
 		if(trialmin)
 			. += "<li><a href='?src=[REF(src)];vote=custom'>Custom</a></li>"
@@ -276,6 +308,9 @@ SUBSYSTEM_DEF(vote)
 		if("toggle_gamemode")
 			if(usr.client.holder)
 				CONFIG_SET(flag/allow_vote_mode, !CONFIG_GET(flag/allow_vote_mode))
+		if("toggle_map")
+			if(usr.client.holder)
+				CONFIG_SET(flag/allow_vote_map, !CONFIG_GET(flag/allow_vote_map))
 		if("restart")
 			if(CONFIG_GET(flag/allow_vote_restart) || usr.client.holder)
 				if(min_restart_time < world.time)
@@ -285,6 +320,9 @@ SUBSYSTEM_DEF(vote)
 		if("gamemode")
 			if(CONFIG_GET(flag/allow_vote_mode) || usr.client.holder)
 				initiate_vote("gamemode",usr.key)
+		if("map")
+			if(CONFIG_GET(flag/allow_vote_mode) || usr.client.holder)
+				initiate_vote("map",usr.key)
 		if("custom")
 			if(usr.client.holder)
 				initiate_vote("custom",usr.key)
