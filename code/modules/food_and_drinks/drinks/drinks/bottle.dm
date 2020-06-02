@@ -430,10 +430,10 @@
 		message_admins(message)
 		log_game("[key_name(user)] has primed a [name] for detonation at [AREACOORD(user)].")
 
-		to_chat(user, "<span class='info'>You light [src] on fire. You're not sure this was a good idea.</span>")
+		to_chat(user, "<span class='info'>You light [src] on fire.</span>")
 		add_overlay(GLOB.fire_overlay)
 
-		spawn(rand(10,50)) //Throw. And pray.
+		spawn((75)) //Throw. And pray. //also those numbers might be in station time, not in IRL seconds
 			if(active)
 				var/counter
 				var/target = src.loc
