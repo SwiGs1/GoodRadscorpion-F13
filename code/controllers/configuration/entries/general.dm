@@ -256,6 +256,8 @@
 
 /datum/config_entry/flag/maprotation
 
+/datum/config_entry/flag/old_maprotation
+
 /datum/config_entry/number/maprotatechancedelta
 	config_entry_value = 0.75
 	min_val = 0

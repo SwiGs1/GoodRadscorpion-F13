@@ -130,16 +130,11 @@ SUBSYSTEM_DEF(vote)
 					else
 						GLOB.master_mode = .
 			if("map")
-				if(. == "Pahrump")
-					var/datum/map_config/VM = global.config.maplist["pahrump"]
-					message_admins("Rotating map to [VM.map_name]")
-					to_chat(world, "\n<font color='purple'>[global.config.defaultmap]</font>")
-				if(. == "Sunnydale")
-					var/datum/map_config/VM = global.config.maplist["boxstation"]
-					message_admins("Rotating map to [VM.map_name]")
-					to_chat(world, "\n<font color='purple'>[global.config.defaultmap]</font>")
-				else
-					to_chat(world, "\n<font color='purple'>Remaining on map.</font>")
+				var/datum/map_config/VM = config.maplist[.]
+				message_admins("The map has been voted for and will change to: [VM.map_name]")
+				log_admin("The map has been voted for and will change to: [VM.map_name]")
+				if(SSmapping.changemap(config.maplist[.]))
+					to_chat(world, "<span class='boldannounce'>The map vote has chosen [VM.map_name] for next round!</span>")
 	if(restart)
 		var/active_admins = 0
 		for(var/client/C in GLOB.admins)
@@ -189,7 +184,20 @@ SUBSYSTEM_DEF(vote)
 			if("gamemode")
 				choices.Add(config.votable_modes)
 			if("map")
-				choices.Add("Pahrump","Sunnydale")
+
+		//		choices.Add(config.maplist)
+
+				var/players = GLOB.clients.len
+				for(var/M in config.maplist)
+					var/datum/map_config/targetmap = config.maplist[M]
+					if(!istype(targetmap))
+						continue
+					if(!targetmap.voteweight)
+						continue
+					if((targetmap.config_min_users && players < targetmap.config_min_users) || (targetmap.config_max_users && players > targetmap.config_max_users))
+						continue
+					choices |= M
+
 			if("custom")
 				question = stripped_input(usr,"What is the vote for?")
 				if(!question)
