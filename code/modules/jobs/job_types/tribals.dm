@@ -28,8 +28,8 @@ Tribal Chief
 	flag = F13CHIEF
 	department_flag = TRIBAL
 	faction = "Village"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "The wellbeing of the tribe and every one of it's members."
 	description = "The leader and central political figure in the Wayfinder Tribe. It is your duty to preserve the culture of your people, including their historic aversion to pre-war weapons and technology. Meanwhile with outsiders you engage in diplomatic meetings with the powers present within the Region to ensure the village's safety and independence."
 	selection_color = "#006666"
@@ -63,8 +63,8 @@ Tribal Shaman
 	flag = F13SHAMAN
 	department_flag = TRIBAL
 	faction = "Village"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "Tribal Chief"
 	description = "The spiritual leader and cultural core of the Wayfinder Tribe. You aid villagers in their day to day lives by offering guidance and advice, while also acting as the direct aid to the chief. To you the breaking of cultural norms such as an aversion to pre-war weapons and technology is to be taken with the upmost seriousness."
 	selection_color = "#006666"
@@ -97,8 +97,8 @@ Villager
 	flag = F13VILLAGER
 	department_flag = TRIBAL
 	faction = "Village"
-	total_positions = 8
-	spawn_positions = 8
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "Tribal Chief and Shaman"
 	description = "A proud member of the Wayfinder tribe, you do what needs to be done to ensure the survival of yourself and your people while following the laws of the tribe in regards to the historic aversion to pre-war weapons and technology."
 	selection_color = "#008080"
