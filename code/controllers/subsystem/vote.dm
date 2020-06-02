@@ -184,9 +184,6 @@ SUBSYSTEM_DEF(vote)
 			if("gamemode")
 				choices.Add(config.votable_modes)
 			if("map")
-
-		//		choices.Add(config.maplist)
-
 				var/players = GLOB.clients.len
 				for(var/M in config.maplist)
 					var/datum/map_config/targetmap = config.maplist[M]
@@ -197,7 +194,6 @@ SUBSYSTEM_DEF(vote)
 					if((targetmap.config_min_users && players < targetmap.config_min_users) || (targetmap.config_max_users && players > targetmap.config_max_users))
 						continue
 					choices |= M
-
 			if("custom")
 				question = stripped_input(usr,"What is the vote for?")
 				if(!question)
