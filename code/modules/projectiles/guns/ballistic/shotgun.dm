@@ -108,6 +108,8 @@
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
 	fire_sound = 'sound/f13weapons/hunting_rifle.ogg'
+	extra_damage = 40
+	extra_penetration = 0
 
 /obj/item/gun/ballistic/shotgun/boltaction/enchanted
 	name = "enchanted bolt action rifle"
@@ -292,6 +294,8 @@
 	fire_delay = 3
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
+	extra_damage = 40
+	extra_penetration = 15
 
 /obj/item/gun/ballistic/shotgun/remington/attackby(obj/item/A, mob/user, params)
 	..()
@@ -310,7 +314,7 @@
 	mag_type = /obj/item/ammo_box/magazine/internal/boltaction/remington
 	sawn_desc = "In what is probably the most idiotic and crude modification of a gun you've ever seen, someone has taken this scoped hunting rifle and sawn off the bits that make it well-balanced and accurate."
 	fire_sound = 'sound/f13weapons/hunting_rifle.ogg'
-	fire_delay = 3
+	fire_delay = 4
 	zoomable = TRUE
 	zoom_amt = 10
 	zoom_out_amt = 13
@@ -322,8 +326,8 @@
 	item_state = "paciencia"
 	mag_type = /obj/item/ammo_box/magazine/internal/boltaction/remington/paciencia
 	fire_delay = 5
-	extra_damage = 20 //60 damage- hits as hard as an AMR!
-	extra_penetration = 10
+	extra_damage = 45
+	extra_penetration = 25
 
 /obj/item/gun/ballistic/shotgun/remington/scoped/paciencia/attackby(obj/item/A, mob/user, params) //no sawing off this one
 	if(istype(A, /obj/item/circular_saw) || istype(A, /obj/item/gun/energy/plasmacutter))
@@ -350,9 +354,11 @@
 	force = 25
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
-	recoil = 1 //have fun
+	recoil = 1 
 	fire_delay = 6
-	projectile_speed = 0 //basically hitscan
+	projectile_speed = 0.3
+	extra_damage = 55
+	extra_penetration = 25
 
 /obj/item/gun/ballistic/shotgun/automatic/hunting/trail
 	name = "trail carbine"
@@ -365,6 +371,8 @@
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
 	fire_delay = 4
+	extra_damage = 40
+	extra_penetration = 10
 
 /obj/item/gun/ballistic/shotgun/automatic/hunting/trail/scoped
 	name = "scoped trail carbine"
@@ -380,6 +388,7 @@
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
 	fire_delay = 6
+	projectile_speed = 0.7
 
 /obj/item/gun/ballistic/shotgun/automatic/hunting/cowboy
 	name = "cowboy repeater"
@@ -391,7 +400,9 @@
 	pump_sound = 'sound/f13weapons/cowboyrepeaterreload.ogg'
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
-	fire_delay = 6
+	fire_delay = 5
+	extra_damage = 40
+	extra_penetration = 0
 
 /obj/item/gun/ballistic/shotgun/automatic/hunting/cowboy/scoped
 	name = "scoped cowboy repeater"
@@ -407,6 +418,7 @@
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
 	fire_delay = 8
+	projectile_speed = 0.7
 
 /obj/item/gun/ballistic/shotgun/automatic/hunting/brush
 	name = "brush gun"
@@ -417,7 +429,9 @@
 	fire_sound = 'sound/f13weapons/brushgunfire.ogg'
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
-	fire_delay = 6
+	fire_delay = 4
+	extra_damage = 50
+	extra_penetration = 15
 
 /obj/item/gun/ballistic/shotgun/automatic/hunting/brush/scoped
 	name = "scoped brush gun"
@@ -431,7 +445,8 @@
 	zoom_out_amt = 13
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
-	fire_delay = 8
+	fire_delay = 6
+	projectile_speed = 0.7
 
 /obj/item/gun/ballistic/revolver/widowmaker
 	name = "winchester widowmaker"

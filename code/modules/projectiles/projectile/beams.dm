@@ -185,39 +185,39 @@
 
 /obj/item/projectile/beam/laser/lasgun //AER9
 	name = "laser beam"
-	damage = 16
-	armour_penetration = 10
+	damage = 30
+	armour_penetration = 0
 
 /obj/item/projectile/beam/laser/pistol //AEP7
 	name = "laser beam"
-	damage = 12
-	armour_penetration = 5
+	damage = 20
+	armour_penetration = 0
 
 /obj/item/projectile/beam/laser/pistol/wattz //Wattz pistol
-	damage = 14
-	armour_penetration = 2//lol
+	damage = 25
+	armour_penetration = -8
 
 /obj/item/projectile/beam/laser/pistol/wattz/magneto //upgraded Wattz
 	name = "penetrating laser beam"
-	damage = 18
-	armour_penetration = 15
+	damage = 30
+	armour_penetration = 0
 
 /obj/item/projectile/beam/laser/solar //Solar Scorcher
 	name = "solar scorcher beam"
-	damage = 20
+	damage = 30
 	armour_penetration = 20
 
 /obj/item/projectile/beam/laser/tribeam //Tribeam laser, fires 3 shots, will melt you
 	name = "tribeam laser"
 	damage = 15
-	armour_penetration = 10
+	armour_penetration = 0
 
 /obj/item/projectile/plasma //Plasma rifle
 	name = "plasma bolt"
 	icon_state = "plasma_clot"
 	damage_type = BURN
-	damage = 28
-	armour_penetration = 25
+	damage = 40
+	armour_penetration = 30
 	flag = "laser" //checks vs. energy protection
 	eyeblur = 0
 	is_reflectable = TRUE
@@ -226,26 +226,26 @@
 	name = "plasma stream"
 	icon_state = "plasma_clot"
 	damage_type = BURN
-	damage = 20
-	armour_penetration = 10
+	damage = 30
+	armour_penetration = 15
 	flag = "laser" //checks vs. energy protection
 	eyeblur = 0
 	is_reflectable = FALSE
 
 /obj/item/projectile/plasma/pistol //Plasma pistol
-	damage = 19
-	armour_penetration = 20
+	damage = 35
+	armour_penetration = 15
 
 /obj/item/projectile/plasma/pistol/glock //Glock (upgraded plasma pistol)
-	damage = 22
-	armour_penetration = 24
+	damage = 40
+	armour_penetration = 20
 
 /obj/item/projectile/plasma/scatter //Multiplas, fires 3 shots, will melt you
-	damage = 18//less damage, given multiple projectiles.
-	armour_penetration = 15//less pen.
+	damage = 20
+	armour_penetration = 10
 
 /obj/item/projectile/plasma/alien
 	name = "alien projectile"
 	icon_state = "ion"
-	damage = 85 //horrifyingly powerful, but very limited ammo
+	damage = 70
 	armour_penetration = 50
