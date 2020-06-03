@@ -432,21 +432,20 @@
 
 		to_chat(user, "<span class='info'>You light [src] on fire.</span>")
 		add_overlay(GLOB.fire_overlay)
-
-		spawn((100)) //Throw. And pray. //10 = 1 second IRL, 100 = 10 seconds
-			if(active)
-				var/counter
-				var/target = src.loc
-				for(counter = 0, counter<2, counter++)
-					if(istype(target, /obj/item/storage))
-						var/obj/item/storage/S = target
-						target = S.loc
-				if(istype(target, /atom))
-					var/atom/A = target
-					SplashReagents(A)
-					A.fire_act()
-					visible_message("<span class='danger'>The molotov cocktail explodes!</span>")
-				qdel(src)
+		if(!isGlass)
+			spawn(50)
+				if(active)
+					var/counter
+					var/target = src.loc
+					for(counter = 0, counter<2, counter++)
+						if(istype(target, /obj/item/storage))
+							var/obj/item/storage/S = target
+							target = S.loc
+					if(istype(target, /atom))
+						var/atom/A = target
+						SplashReagents(A)
+						A.fire_act()
+					qdel(src)
 
 /obj/item/reagent_containers/food/drinks/bottle/molotov/attack_self(mob/user)
 	if(active)
