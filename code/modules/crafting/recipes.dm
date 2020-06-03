@@ -1836,6 +1836,14 @@
 	time = 80
 	category = CAT_MEDICAL
 
+	/datum/crafting_recipe/antivenom
+	name = "Antivenom"
+	result = /obj/item/reagent_containers/glass/bottle/antivenom
+	reqs = list(/obj/item/reagent_containers/food/snacks/grown/feracactus = 2,
+				/obj/item/reagent_containers/food/snacks/grown/fungus = 1 )
+	time = 60
+	category = CAT_MEDICAL
+
 /datum/crafting_recipe/stimpak
 	name = "Stimpak"
 	result = /obj/item/reagent_containers/hypospray/medipen/stimpak
