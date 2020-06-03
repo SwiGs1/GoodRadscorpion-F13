@@ -1,7 +1,7 @@
 //7.62x51 NATO / .308 Winchester
 /obj/item/projectile/bullet/a762
-	damage = 32
-	armour_penetration = 18
+	damage = 0
+	armour_penetration = 0
 
 /obj/item/projectile/bullet/a762/ap
 	damage = -5
