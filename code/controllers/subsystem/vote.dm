@@ -16,6 +16,7 @@ SUBSYSTEM_DEF(vote)
 	var/list/voting = list()
 	var/list/generated_actions = list()
 	var/vote_sound = 'sound/f13/mysterious_stranger.ogg'
+	var/abandoned = 0
 	var/min_restart_time = 120 MINUTES
 
 /datum/controller/subsystem/vote/fire()	//called by master_controller
@@ -64,6 +65,9 @@ SUBSYSTEM_DEF(vote)
 			if (!C || C.is_afk())
 				non_voters -= non_voter_ckey
 		if(non_voters.len > 0)
+			if(mode == "abandon")
+				if(choices["Continue Playing"] >= greatest_votes)
+					greatest_votes = choices["Continue Playing"]
 			if(mode == "restart")
 				if(choices["Continue Playing"] >= greatest_votes)
 					greatest_votes = choices["Continue Playing"]
@@ -119,6 +123,13 @@ SUBSYSTEM_DEF(vote)
 	var/restart = 0
 	if(.)
 		switch(mode)
+			if("abandon")
+				if(. == "Abandon Wasteland")
+					if (abandoned == 0)
+						SSshuttle.emergency.request()
+					else
+						to_chat(world, "\n<font color='purple'>A vote has already being passed to abandon the wasteland.</font>")
+					abandoned = 1
 			if("restart")
 				if(. == "Restart Round")
 					restart = 1
@@ -138,14 +149,14 @@ SUBSYSTEM_DEF(vote)
 	if(restart)
 		var/active_admins = 0
 		for(var/client/C in GLOB.admins)
-			if(!C.is_afk() && check_rights_for(C, R_BAN))//R_BAN so coders don't hold up the restart anymore, and only trialmins/admins do
+			if(!C.is_afk() && check_rights_for(C, R_SERVER))
 				active_admins = 1
 				break
 		if(!active_admins)
-			SSticker.Reboot("Restart vote successful.", "restart vote")
+			SSticker.Reboot("Restart vote successful.", "restart vote", 1200)
 		else
 			to_chat(world, "<span style='boldannounce'>Notice:Restart vote will not restart the server automatically because there are active admins on.</span>")
-			message_admins("A restart vote has passed, but there are active admins on with +ban, so it has been canceled. If you wish, you may restart the server.")
+			message_admins("A restart vote has passed, but there are active admins on with +server, so it has been canceled. If you wish, you may restart the server.")
 
 	return .
 
@@ -179,6 +190,8 @@ SUBSYSTEM_DEF(vote)
 
 		reset()
 		switch(vote_type)
+			if("abandon")
+				choices.Add("Abandon Wasteland","Continue Playing")
 			if("restart")
 				choices.Add("Restart Round","Continue Playing")
 			if("gamemode")
@@ -254,6 +267,15 @@ SUBSYSTEM_DEF(vote)
 			. += "(<a href='?src=[REF(src)];vote=cancel'>Cancel Vote</a>) "
 	else
 		. += "<h2>Start a vote:</h2><hr><ul><li>"
+		//abandon
+		var/ava = CONFIG_GET(flag/allow_vote_abandon)
+		if(trialmin || ava)
+			. += "<a href='?src=[REF(src)];vote=abandon'>Abandon Wasteland</a>"
+		else
+			. += "<font color='grey'>Abandon Wasteland (Disallowed)</font>"
+		if(trialmin)
+			. += "\t(<a href='?src=[REF(src)];vote=toggle_abandon'>[ava ? "Allowed" : "Disallowed"]</a>)"
+		. += "</li><li>"
 		//restart
 		var/avr = CONFIG_GET(flag/allow_vote_restart)
 		if(trialmin || avr)
@@ -302,21 +324,30 @@ SUBSYSTEM_DEF(vote)
 		if("cancel")
 			if(usr.client.holder)
 				reset()
+		if("toggle_abandon")
+			if(check_rights(R_SERVER))
+				CONFIG_SET(flag/allow_vote_abandon, !CONFIG_GET(flag/allow_vote_abandon))
 		if("toggle_restart")
-			if(usr.client.holder)
+			if(check_rights(R_SERVER))
 				CONFIG_SET(flag/allow_vote_restart, !CONFIG_GET(flag/allow_vote_restart))
 		if("toggle_gamemode")
-			if(usr.client.holder)
+			if(check_rights(R_SERVER))
 				CONFIG_SET(flag/allow_vote_mode, !CONFIG_GET(flag/allow_vote_mode))
 		if("toggle_map")
-			if(usr.client.holder)
+			if(check_rights(R_SERVER))
 				CONFIG_SET(flag/allow_vote_map, !CONFIG_GET(flag/allow_vote_map))
+		if("abandon")
+			if(CONFIG_GET(flag/allow_vote_abandon) || usr.client.holder)
+				if(min_restart_time < world.time || check_rights_for(usr.client, R_BAN))
+					initiate_vote("abandon",usr.key)
+				else
+					to_chat(usr.client, "<span style='boldannounce'>Abandon votes can only initiate after [DisplayTimeText(min_restart_time)].</span>")
 		if("restart")
 			if(CONFIG_GET(flag/allow_vote_restart) || usr.client.holder)
-				if(min_restart_time < world.time)
+				if(min_restart_time < world.time || check_rights_for(usr.client, R_SERVER))
 					initiate_vote("restart",usr.key)
 				else
-					to_chat(usr.client, "<span style='boldannounce'>Restart can only initiate after [DisplayTimeText(min_restart_time)].</span>")
+					to_chat(usr.client, "<span style='boldannounce'>Restart votes can only initiate after [DisplayTimeText(min_restart_time)].</span>")
 		if("gamemode")
 			if(CONFIG_GET(flag/allow_vote_mode) || usr.client.holder)
 				initiate_vote("gamemode",usr.key)

@@ -59,9 +59,13 @@
 
 /datum/config_entry/flag/allow_admin_ooccolor	// Allows admins with relevant permissions to have their own ooc colour
 
+/datum/config_entry/flag/allow_vote_abandon  // allow votes to 'abandon the wasteland'
+
 /datum/config_entry/flag/allow_vote_restart	// allow votes to restart
 
 /datum/config_entry/flag/allow_vote_mode	// allow votes to change mode
+
+/datum/config_entry/flag/allow_vote_map    // allows votes to change map
 
 /datum/config_entry/number/vote_delay	// minimum time between voting sessions (deciseconds, 10 minute default)
 	config_entry_value = 6000
@@ -333,8 +337,6 @@
 /datum/config_entry/flag/announce_admin_login
 
 /datum/config_entry/flag/allow_map_voting
-
-/datum/config_entry/flag/allow_vote_map
 
 // /datum/config_entry/flag/generate_minimaps
 
