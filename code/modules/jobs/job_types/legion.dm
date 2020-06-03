@@ -392,7 +392,7 @@ datum/job/CaesarsLegion/Legionnaire/f13slavemaster
 	belt = 			/obj/item/melee/curator_whip
 	head = 			/obj/item/clothing/head/helmet/f13/legion/venator
 	glasses = 		/obj/item/clothing/glasses/sunglasses
-	r_hand = 		/obj/item/melee/baton/cattleprod
+	r_hand = 		/obj/item/melee/classic_baton/telescopic
 	backpack_contents = list(
 		/obj/item/claymore/machete/reinforced=1, \
 		/obj/item/reagent_containers/pill/patch/healingpowder=2, \
@@ -400,7 +400,6 @@ datum/job/CaesarsLegion/Legionnaire/f13slavemaster
 		/obj/item/storage/bag/money/small/legenlisted, \
 		/obj/item/key/bcollar,\
 		/obj/item/assembly/signaler/electropack/boomcollar=2, \
-		/obj/item/stock_parts/cell/high/plus=2,, \
 		/obj/item/radio)
 	r_pocket = /obj/item/restraints/handcuffs
 
