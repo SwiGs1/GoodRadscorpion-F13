@@ -284,8 +284,10 @@
 			//Tator Kit
 			new /obj/item/storage/box/syndicate(drop_location())
 		if(18)
-			//Captain ID
-			new /obj/item/card/id/captains_spare(drop_location())
+			//PA Armor
+			new /obj/item/book/granter/trait/pa_wear
+			new /obj/item/clothing/suit/armor/f13/power_armor/t45d
+			new /obj/item/clothing/head/helmet/power_armor/t45d
 		if(19)
 			//Instrinct Resistance
 			to_chat(user, "<span class='notice'>You feel robust.</span>")
