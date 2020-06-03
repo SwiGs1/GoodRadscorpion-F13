@@ -397,8 +397,8 @@ NCR Military Police
 	title = "NCR Military Police"
 	flag = F13NCRMP
 	faction = "NCR"
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 2
+	spawn_positions = 2
 	description = "You are the primary enforcers of NCR law within the ranks of the local embassy. You are technically exempt from the standard chain of command, answering only to High-Command, and specifically, the NCR Office of Special Investigations (NCROSI). "
 	supervisors = "NCROSI"
 	selection_color = "#fff5cc"
@@ -414,7 +414,7 @@ NCR Military Police
 	head = 			/obj/item/clothing/head/f13/ncr/goggles
 	suit = 			/obj/item/clothing/suit/armor/f13/ncrarmor
 	suit_store = 	/obj/item/gun/ballistic/shotgun/riot
-	r_hand = 		/obj/item/melee/baton/cattleprod
+	r_hand = 		/obj/item/melee/classic_baton/telescopic
 	belt =          /obj/item/storage/belt/military/NCR_Bandolier
 	r_pocket =		/obj/item/restraints/handcuffs
 	glasses = 		/obj/item/clothing/glasses/sunglasses/big
@@ -423,7 +423,6 @@ NCR Military Police
 		/obj/item/reagent_containers/hypospray/medipen/stimpak=1, \
 		/obj/item/storage/bag/money/small/ncrenlisted, \
 		/obj/item/storage/box/rubbershot = 2, \
-		/obj/item/stock_parts/cell/high/plus=2,
 		/obj/item/clothing/accessory/armband/mp=1,
 		)
 
