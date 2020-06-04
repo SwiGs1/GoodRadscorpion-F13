@@ -493,7 +493,7 @@
 
 //ncr
 /obj/item/storage/belt/grenade/ncr/PopulateContents()
-new /obj/item/grenade/flashbang(src)
+	new /obj/item/grenade/flashbang(src)
 	new /obj/item/grenade/flashbang(src)
 	new /obj/item/grenade/flashbang(src)
 	new /obj/item/grenade/smokebomb(src)
