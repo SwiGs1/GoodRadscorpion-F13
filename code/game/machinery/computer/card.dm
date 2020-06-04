@@ -57,7 +57,6 @@ GLOBAL_VAR_INIT(time_last_changed_position, 0)
 	"Veteran Legionnaire",
 	"Prime Legionary",
 	"Scout",
-	"Legion Slave",
 	"NCR Colonel",
 	"NCR Lieutenant",
 	"NCR Sergeant",
