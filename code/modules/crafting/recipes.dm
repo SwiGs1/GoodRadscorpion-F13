@@ -104,7 +104,7 @@
 	result = /obj/item/ammo_box/needle
 	reqs = list(/obj/item/stack/crafting/metalparts = 3)
 	traits = list(TRAIT_GUNSMITH_TWO)
-	tools = list(TOOL_WORKBENCH, TOOL_GUNTIER1)
+	tools = list(TOOL_WORKBENCH, TOOL_SCREWDRIVER)
 	time = 10
 	category = CAT_WEAPONRY
 	subcategory = CAT_AMMO
@@ -114,7 +114,7 @@
 	result = /obj/item/ammo_box/needleap
 	reqs = list(/obj/item/stack/crafting/goodparts = 3)
 	traits = list(TRAIT_GUNSMITH_THREE)
-	tools = list(TOOL_AWORKBENCH, TOOL_GUNTIER2)
+	tools = list(TOOL_AWORKBENCH, TOOL_SCREWDRIVER)
 	time = 10
 	category = CAT_WEAPONRY
 	subcategory = CAT_AMMO
@@ -142,7 +142,7 @@
 	result = /obj/item/ammo_box/m44/empty
 	reqs = list(/obj/item/stack/sheet/metal = 2)
 	traits = list(TRAIT_GUNSMITH_ONE)
-	tools = list(TOOL_WORKBENCH, TOOL_GUNTIER1)
+	tools = list(TOOL_WORKBENCH, TOOL_SCREWDRIVER)
 	time = 10
 	category = CAT_WEAPONRY
 	subcategory = CAT_AMMO
@@ -152,7 +152,7 @@
 	result = /obj/item/ammo_box/c4570/empty
 	reqs = list(/obj/item/stack/sheet/metal = 4)
 	traits = list(TRAIT_GUNSMITH_THREE)
-	tools = list(TOOL_WORKBENCH, TOOL_GUNTIER3)
+	tools = list(TOOL_WORKBENCH, TOOL_SCREWDRIVER)
 	time = 10
 	category = CAT_WEAPONRY
 	subcategory = CAT_AMMO
@@ -162,7 +162,7 @@
 	result = /obj/item/ammo_box/tube/m44/empty
 	reqs = list(/obj/item/stack/sheet/metal = 3)
 	traits = list(TRAIT_GUNSMITH_TWO)
-	tools = list(TOOL_WORKBENCH, TOOL_GUNTIER2)
+	tools = list(TOOL_WORKBENCH, TOOL_SCREWDRIVER)
 	time = 10
 	category = CAT_WEAPONRY
 	subcategory = CAT_AMMO
@@ -172,7 +172,7 @@
 	result = /obj/item/ammo_box/tube/a357/empty
 	reqs = list(/obj/item/stack/sheet/metal = 3)
 	traits = list(TRAIT_GUNSMITH_TWO)
-	tools = list(TOOL_WORKBENCH, TOOL_GUNTIER2)
+	tools = list(TOOL_WORKBENCH, TOOL_SCREWDRIVER)
 	time = 10
 	category = CAT_WEAPONRY
 	subcategory = CAT_AMMO
@@ -182,7 +182,7 @@
 	result = /obj/item/ammo_box/tube/c4570/empty
 	reqs = list(/obj/item/stack/sheet/metal = 6)
 	traits = list(TRAIT_GUNSMITH_THREE)
-	tools = list(TOOL_WORKBENCH, TOOL_GUNTIER3)
+	tools = list(TOOL_WORKBENCH, TOOL_SCREWDRIVER)
 	time = 10
 	category = CAT_WEAPONRY
 	subcategory = CAT_AMMO
@@ -192,7 +192,7 @@
 	result = /obj/item/ammo_box/magazine/m10mm_auto/empty
 	reqs = list(/obj/item/stack/sheet/metal = 2)
 	traits = list(TRAIT_GUNSMITH_TWO)
-	tools = list(TOOL_WORKBENCH, TOOL_GUNTIER2)
+	tools = list(TOOL_WORKBENCH, TOOL_SCREWDRIVER)
 	time = 10
 	category = CAT_WEAPONRY
 	subcategory = CAT_AMMO
@@ -202,7 +202,7 @@
 	result = /obj/item/ammo_box/magazine/greasegun/empty
 	reqs = list(/obj/item/stack/sheet/metal = 2)
 	traits = list(TRAIT_GUNSMITH_TWO)
-	tools = list(TOOL_WORKBENCH, TOOL_GUNTIER2)
+	tools = list(TOOL_WORKBENCH, TOOL_SCREWDRIVER)
 	time = 10
 	category = CAT_WEAPONRY
 	subcategory = CAT_AMMO
@@ -212,7 +212,7 @@
 	result = /obj/item/ammo_box/magazine/d12g/empty
 	reqs = list(/obj/item/stack/sheet/metal = 2)
 	traits = list(TRAIT_GUNSMITH_THREE)
-	tools = list(TOOL_WORKBENCH, TOOL_GUNTIER3)
+	tools = list(TOOL_WORKBENCH, TOOL_SCREWDRIVER)
 	time = 10
 	category = CAT_WEAPONRY
 	subcategory = CAT_AMMO
@@ -231,7 +231,7 @@
 	result = /obj/item/ammo_box/magazine/m556/rifle/empty
 	reqs = list(/obj/item/stack/sheet/metal = 3)
 	traits = list(TRAIT_GUNSMITH_ONE)
-	tools = list(TOOL_WORKBENCH, TOOL_GUNTIER1)
+	tools = list(TOOL_WORKBENCH, TOOL_SCREWDRIVER)
 	time = 10
 	category = CAT_WEAPONRY
 	subcategory = CAT_AMMO
@@ -241,7 +241,7 @@
 	result = /obj/item/ammo_box/magazine/m556/rifle/assault/empty
 	reqs = list(/obj/item/stack/sheet/metal = 4)
 	traits = list(TRAIT_GUNSMITH_TWO)
-	tools = list(TOOL_WORKBENCH, TOOL_GUNTIER3)
+	tools = list(TOOL_WORKBENCH, TOOL_SCREWDRIVER)
 	time = 10
 	category = CAT_WEAPONRY
 	subcategory = CAT_AMMO
@@ -269,7 +269,7 @@
 	result = /obj/item/ammo_box/magazine/a50/empty
 	reqs = list(/obj/item/stack/sheet/metal = 3)
 	traits = list(TRAIT_GUNSMITH_THREE)
-	tools = list(TOOL_WORKBENCH, TOOL_GUNTIER3)
+	tools = list(TOOL_WORKBENCH, TOOL_SCREWDRIVER)
 	time = 10
 	category = CAT_WEAPONRY
 	subcategory = CAT_AMMO
@@ -296,7 +296,7 @@
 	name = "empty en-bloc clip (7.62x51mm)"
 	result = /obj/item/ammo_box/magazine/garand308/empty
 	reqs = list(/obj/item/stack/sheet/metal = 1)
-	tools = list(TOOL_WORKBENCH, TOOL_GUNTIER4)
+	tools = list(TOOL_WORKBENCH, TOOL_SCREWDRIVER)
 	time = 10
 	category = CAT_WEAPONRY
 	subcategory = CAT_AMMO
@@ -305,7 +305,7 @@
 	name = "empty rifle magazine (7.62x51)"
 	result = /obj/item/ammo_box/magazine/m762/empty
 	reqs = list(/obj/item/stack/sheet/metal = 2)
-	tools = list(TOOL_WORKBENCH, TOOL_GUNTIER3)
+	tools = list(TOOL_WORKBENCH, TOOL_SCREWDRIVER)
 	time = 10
 	category = CAT_WEAPONRY
 	subcategory = CAT_AMMO
@@ -322,9 +322,8 @@
 /datum/crafting_recipe/c45
 	name = ".45 FMJ ammo box"
 	result = /obj/item/ammo_box/c45
-	reqs = list(/obj/item/stack/sheet/metal = 5,
-				/datum/reagent/blackpowder = 30)
-	tools = list(TOOL_WORKBENCH)
+	reqs = list(/obj/item/stack/sheet/metal = 5)
+	tools = list(TOOL_WORKBENCH, TOOL_SCREWDRIVER)
 	time = 10
 	category = CAT_WEAPONRY
 	subcategory = CAT_AMMO
@@ -332,9 +331,8 @@
 /datum/crafting_recipe/c45jhp
 	name = ".45 JHP ammo box"
 	result = /obj/item/ammo_box/c45/jhp
-	reqs = list(/obj/item/stack/sheet/metal = 3,
-				/datum/reagent/blackpowder = 30)
-	tools = list(TOOL_WORKBENCH)
+	reqs = list(/obj/item/stack/sheet/metal = 3)
+	tools = list(TOOL_WORKBENCH, TOOL_SCREWDRIVER)
 	time = 10
 	category = CAT_WEAPONRY
 	subcategory = CAT_AMMO
@@ -342,21 +340,20 @@
 /datum/crafting_recipe/m44
 	name = ".44 Magnum FMJ ammo box"
 	result = /obj/item/ammo_box/m44box
-	reqs = list(/obj/item/stack/sheet/metal = 7,
-				/datum/reagent/blackpowder = 35)
+	reqs = list(/obj/item/stack/sheet/metal = 7)
 	traits = list(TRAIT_GUNSMITH_ONE)
-	tools = list(TOOL_WORKBENCH, TOOL_GUNTIER1)
+	tools = list(TOOL_WORKBENCH, TOOL_SCREWDRIVER)
 	time = 10
 	category = CAT_WEAPONRY
 	subcategory = CAT_AMMO
 
+
 /datum/crafting_recipe/m44jhp
 	name = ".44 Magnum JHP ammo box"
 	result = /obj/item/ammo_box/m44box/jhp
-	reqs = list(/obj/item/stack/sheet/metal = 5,
-				/datum/reagent/blackpowder = 35)
+	reqs = list(/obj/item/stack/sheet/metal = 5)
 	traits = list(TRAIT_GUNSMITH_ONE)
-	tools = list(TOOL_WORKBENCH, TOOL_GUNTIER1)
+	tools = list(TOOL_WORKBENCH, TOOL_SCREWDRIVER)
 	time = 10
 	category = CAT_WEAPONRY
 	subcategory = CAT_AMMO
@@ -364,10 +361,9 @@
 /datum/crafting_recipe/a357
 	name = ".357 Magnum FMJ ammo box"
 	result = /obj/item/ammo_box/a357box
-	reqs = list(/obj/item/stack/sheet/metal = 8,
-				/datum/reagent/blackpowder = 35)
+	reqs = list(/obj/item/stack/sheet/metal = 8)
 	traits = list(TRAIT_GUNSMITH_ONE)
-	tools = list(TOOL_WORKBENCH, TOOL_GUNTIER1)
+	tools = list(TOOL_WORKBENCH, TOOL_SCREWDRIVER)
 	time = 10
 	category = CAT_WEAPONRY
 	subcategory = CAT_AMMO
@@ -375,10 +371,9 @@
 /datum/crafting_recipe/a357jhp
 	name = ".357 Magnum JHP ammo box"
 	result = /obj/item/ammo_box/a357box
-	reqs = list(/obj/item/stack/sheet/metal = 6,
-				/datum/reagent/blackpowder = 35)
+	reqs = list(/obj/item/stack/sheet/metal = 6)
 	traits = list(TRAIT_GUNSMITH_ONE)
-	tools = list(TOOL_WORKBENCH, TOOL_GUNTIER1)
+	tools = list(TOOL_WORKBENCH, TOOL_SCREWDRIVER)
 	time = 10
 	category = CAT_WEAPONRY
 	subcategory = CAT_AMMO
@@ -386,9 +381,8 @@
 /datum/crafting_recipe/c38
 	name = ".38 special ammo box"
 	result = /obj/item/ammo_box/box38
-	reqs = list(/obj/item/stack/sheet/metal = 4,
-				/datum/reagent/blackpowder = 30)
-	tools = list(TOOL_WORKBENCH)
+	reqs = list(/obj/item/stack/sheet/metal = 4)
+	tools = list(TOOL_WORKBENCH, TOOL_SCREWDRIVER)
 	time = 10
 	category = CAT_WEAPONRY
 	subcategory = CAT_AMMO
@@ -396,10 +390,9 @@
 /datum/crafting_recipe/c4570
 	name = ".45-70 FMJ ammo box"
 	result = /obj/item/ammo_box/c4570box
-	reqs = list(/obj/item/stack/sheet/metal = 8,
-				/datum/reagent/blackpowder = 40)
+	reqs = list(/obj/item/stack/sheet/metal = 8)
 	traits = list(TRAIT_GUNSMITH_THREE)
-	tools = list(TOOL_AWORKBENCH, TOOL_GUNTIER3)
+	tools = list(TOOL_AWORKBENCH, TOOL_SCREWDRIVER)
 	time = 10
 	category = CAT_WEAPONRY
 	subcategory = CAT_AMMO
@@ -407,10 +400,9 @@
 /datum/crafting_recipe/c4570jhp
 	name = ".45-70 JHP ammo box"
 	result = /obj/item/ammo_box/c4570box/jhp
-	reqs = list(/obj/item/stack/sheet/metal = 6,
-				/datum/reagent/blackpowder = 40)
+	reqs = list(/obj/item/stack/sheet/metal = 6)
 	traits = list(TRAIT_GUNSMITH_THREE)
-	tools = list(TOOL_AWORKBENCH, TOOL_GUNTIER3)
+	tools = list(TOOL_AWORKBENCH, TOOL_SCREWDRIVER)
 	time = 10
 	category = CAT_WEAPONRY
 	subcategory = CAT_AMMO
@@ -418,10 +410,9 @@
 /datum/crafting_recipe/a50mg
 	name = ".50 MG (rifle) ammo box"
 	result = /obj/item/ammo_box/a50MGbox
-	reqs = list(/obj/item/stack/sheet/metal = 10,
-				/datum/reagent/blackpowder = 50)
+	reqs = list(/obj/item/stack/sheet/metal = 10)
 	traits = list(TRAIT_GUNSMITH_THREE)
-	tools = list(TOOL_AWORKBENCH, TOOL_GUNTIER3)
+	tools = list(TOOL_AWORKBENCH, TOOL_SCREWDRIVER)
 	time = 10
 	category = CAT_WEAPONRY
 	subcategory = CAT_AMMO
@@ -429,10 +420,9 @@
 /datum/crafting_recipe/a50ae
 	name = ".50 AE (pistol) ammo box"
 	result = /obj/item/ammo_box/a50AEbox
-	reqs = list(/obj/item/stack/sheet/metal = 10,
-				/datum/reagent/blackpowder = 50)
+	reqs = list(/obj/item/stack/sheet/metal = 10)
 	traits = list(TRAIT_GUNSMITH_THREE)
-	tools = list(TOOL_AWORKBENCH, TOOL_GUNTIER3)
+	tools = list(TOOL_AWORKBENCH, TOOL_SCREWDRIVER)
 	time = 10
 	category = CAT_WEAPONRY
 	subcategory = CAT_AMMO
@@ -440,9 +430,8 @@
 /datum/crafting_recipe/c10mm
 	name = "10mm FMJ ammo box"
 	result = /obj/item/ammo_box/c10mm
-	reqs = list(/obj/item/stack/sheet/metal = 5,
-				/datum/reagent/blackpowder = 30)
-	tools = list(TOOL_WORKBENCH)
+	reqs = list(/obj/item/stack/sheet/metal = 5)
+	tools = list(TOOL_WORKBENCH, TOOL_SCREWDRIVER)
 	time = 10
 	category = CAT_WEAPONRY
 	subcategory = CAT_AMMO
@@ -450,9 +439,8 @@
 /datum/crafting_recipe/c10mmjhp
 	name = "10mm JHP ammo box"
 	result = /obj/item/ammo_box/c10mm/jhp
-	reqs = list(/obj/item/stack/sheet/metal = 3,
-				/datum/reagent/blackpowder = 30)
-	tools = list(TOOL_WORKBENCH)
+	reqs = list(/obj/item/stack/sheet/metal = 3)
+	tools = list(TOOL_WORKBENCH, TOOL_SCREWDRIVER)
 	time = 10
 	category = CAT_WEAPONRY
 	subcategory = CAT_AMMO
@@ -460,10 +448,9 @@
 /datum/crafting_recipe/c10mmap
 	name = "10mm AP ammo box"
 	result = /obj/item/ammo_box/c10mm/ap
-	reqs = list(/obj/item/stack/sheet/metal = 7,
-				/datum/reagent/blackpowder = 30)
+	reqs = list(/obj/item/stack/sheet/metal = 7)
 	traits = list(TRAIT_GUNSMITH_ONE)
-	tools = list(TOOL_WORKBENCH, TOOL_GUNTIER1)
+	tools = list(TOOL_WORKBENCH, TOOL_SCREWDRIVER)
 	time = 10
 	category = CAT_WEAPONRY
 	subcategory = CAT_AMMO
@@ -471,10 +458,9 @@
 /datum/crafting_recipe/magnumshot
 	name = "magnum buckshot shotgun box"
 	result = /obj/item/storage/box/magnumshot
-	reqs = list(/obj/item/stack/sheet/metal = 5,
-				/datum/reagent/blackpowder = 35)
+	reqs = list(/obj/item/stack/sheet/metal = 5)
 	traits = list(TRAIT_GUNSMITH_TWO)
-	tools = list(TOOL_WORKBENCH, TOOL_GUNTIER2)
+	tools = list(TOOL_WORKBENCH, TOOL_SCREWDRIVER)
 	time = 10
 	category = CAT_WEAPONRY
 	subcategory = CAT_AMMO
@@ -482,10 +468,9 @@
 /datum/crafting_recipe/lethalshot
 	name = "buckshot shotgun box"
 	result = /obj/item/storage/box/lethalshot
-	reqs = list(/obj/item/stack/sheet/metal = 4,
-				/datum/reagent/blackpowder = 25)
+	reqs = list(/obj/item/stack/sheet/metal = 45)
 	traits = list(TRAIT_GUNSMITH_ONE)
-	tools = list(TOOL_WORKBENCH, TOOL_GUNTIER1)
+	tools = list(TOOL_WORKBENCH, TOOL_SCREWDRIVER)
 	time = 10
 	category = CAT_WEAPONRY
 	subcategory = CAT_AMMO
@@ -493,10 +478,9 @@
 /datum/crafting_recipe/slugshot
 	name = "slug shotgun box"
 	result = /obj/item/storage/box/slugshot
-	reqs = list(/obj/item/stack/sheet/metal = 4,
-				/datum/reagent/blackpowder = 25)
+	reqs = list(/obj/item/stack/sheet/metal = 4)
 	traits = list(TRAIT_GUNSMITH_TWO)
-	tools = list(TOOL_WORKBENCH, TOOL_GUNTIER2)
+	tools = list(TOOL_WORKBENCH, TOOL_SCREWDRIVER)
 	time = 10
 	category = CAT_WEAPONRY
 	subcategory = CAT_AMMO
@@ -504,9 +488,8 @@
 /datum/crafting_recipe/beanbag
 	name = "beanbag shotgun box"
 	result = /obj/item/storage/box/rubbershot/beanbag
-	reqs = list(/obj/item/stack/sheet/metal = 4,
-				/datum/reagent/blackpowder = 15)
-	tools = list(TOOL_WORKBENCH)
+	reqs = list(/obj/item/stack/sheet/metal = 4)
+	tools = list(TOOL_WORKBENCH, TOOL_SCREWDRIVER)
 	time = 10
 	category = CAT_WEAPONRY
 	subcategory = CAT_AMMO
@@ -514,9 +497,8 @@
 /datum/crafting_recipe/rubbershot
 	name = "rubbershot shotgun box"
 	result = /obj/item/storage/box/rubbershot
-	reqs = list(/obj/item/stack/sheet/metal = 4,
-				/datum/reagent/blackpowder = 15)
-	tools = list(TOOL_WORKBENCH)
+	reqs = list(/obj/item/stack/sheet/metal = 4)
+	tools = list(TOOL_WORKBENCH, TOOL_SCREWDRIVER)
 	time = 10
 	category = CAT_WEAPONRY
 	subcategory = CAT_AMMO
@@ -524,10 +506,9 @@
 /datum/crafting_recipe/a556
 	name = "5.56mm FMJ ammo box"
 	result = /obj/item/ammo_box/a556
-	reqs = list(/obj/item/stack/sheet/metal = 10,
-				/datum/reagent/blackpowder = 40)
+	reqs = list(/obj/item/stack/sheet/metal = 10)
 	traits = list(TRAIT_GUNSMITH_ONE)
-	tools = list(TOOL_WORKBENCH, TOOL_GUNTIER1)
+	tools = list(TOOL_WORKBENCH, TOOL_SCREWDRIVER)
 	time = 10
 	category = CAT_WEAPONRY
 	subcategory = CAT_AMMO
@@ -535,10 +516,9 @@
 /datum/crafting_recipe/a556jhp
 	name = "5.56mm JHP ammo box"
 	result = /obj/item/ammo_box/a556/jhp
-	reqs = list(/obj/item/stack/sheet/metal = 8,
-				/datum/reagent/blackpowder = 40)
+	reqs = list(/obj/item/stack/sheet/metal = 8)
 	traits = list(TRAIT_GUNSMITH_ONE)
-	tools = list(TOOL_WORKBENCH, TOOL_GUNTIER1)
+	tools = list(TOOL_WORKBENCH, TOOL_SCREWDRIVER)
 	time = 10
 	category = CAT_WEAPONRY
 	subcategory = CAT_AMMO
@@ -546,10 +526,9 @@
 /datum/crafting_recipe/a556ap
 	name = "5.56 AP ammo box"
 	result = /obj/item/ammo_box/a556/ap
-	reqs = list(/obj/item/stack/sheet/metal = 12,
-				/datum/reagent/blackpowder = 40)
+	reqs = list(/obj/item/stack/sheet/metal = 12)
 	traits = list(TRAIT_GUNSMITH_TWO)
-	tools = list(TOOL_WORKBENCH, TOOL_GUNTIER2)
+	tools = list(TOOL_WORKBENCH, TOOL_SCREWDRIVER)
 	time = 10
 	category = CAT_WEAPONRY
 	subcategory = CAT_AMMO
@@ -557,9 +536,8 @@
 /datum/crafting_recipe/c9mm
 	name = "9mm FMJ ammo box"
 	result = /obj/item/ammo_box/c9mm
-	reqs = list(/obj/item/stack/sheet/metal = 8,
-				/datum/reagent/blackpowder = 30)
-	tools = list(TOOL_WORKBENCH)
+	reqs = list(/obj/item/stack/sheet/metal = 8)
+	tools = list(TOOL_WORKBENCH, TOOL_SCREWDRIVER)
 	time = 10
 	category = CAT_WEAPONRY
 	subcategory = CAT_AMMO
@@ -567,9 +545,8 @@
 /datum/crafting_recipe/c9mmjhp
 	name = "9mm JHP ammo box"
 	result = /obj/item/ammo_box/c9mm/jhp
-	reqs = list(/obj/item/stack/sheet/metal = 6,
-				/datum/reagent/blackpowder = 30)
-	tools = list(TOOL_WORKBENCH)
+	reqs = list(/obj/item/stack/sheet/metal = 6)
+	tools = list(TOOL_WORKBENCH, TOOL_SCREWDRIVER)
 	time = 10
 	category = CAT_WEAPONRY
 	subcategory = CAT_AMMO
@@ -577,9 +554,8 @@
 /datum/crafting_recipe/c9mmap
 	name = "9mm AP ammo box"
 	result = /obj/item/ammo_box/c9mm/ap
-	reqs = list(/obj/item/stack/sheet/metal = 10,
-				/datum/reagent/blackpowder = 30)
-	tools = list(TOOL_WORKBENCH)
+	reqs = list(/obj/item/stack/sheet/metal = 10)
+	tools = list(TOOL_WORKBENCH, TOOL_SCREWDRIVER)
 	time = 10
 	category = CAT_WEAPONRY
 	subcategory = CAT_AMMO
@@ -587,10 +563,9 @@
 /datum/crafting_recipe/a762
 	name = "7.62mm FMJ ammo box"
 	result = /obj/item/ammo_box/a762box
-	reqs = list(/obj/item/stack/sheet/metal = 8,
-				/datum/reagent/blackpowder = 40)
+	reqs = list(/obj/item/stack/sheet/metal = 8)
 	traits = list(TRAIT_GUNSMITH_TWO)
-	tools = list(TOOL_WORKBENCH, TOOL_GUNTIER2)
+	tools = list(TOOL_WORKBENCH, TOOL_SCREWDRIVER)
 	time = 10
 	category = CAT_WEAPONRY
 	subcategory = CAT_AMMO
@@ -598,10 +573,9 @@
 /datum/crafting_recipe/a762jhp
 	name = "7.62mm JHP ammo box"
 	result = /obj/item/ammo_box/a762box/jhp
-	reqs = list(/obj/item/stack/sheet/metal = 6,
-				/datum/reagent/blackpowder = 40)
+	reqs = list(/obj/item/stack/sheet/metal = 6)
 	traits = list(TRAIT_GUNSMITH_TWO)
-	tools = list(TOOL_WORKBENCH, TOOL_GUNTIER2)
+	tools = list(TOOL_WORKBENCH, TOOL_SCREWDRIVER)
 	time = 10
 	category = CAT_WEAPONRY
 	subcategory = CAT_AMMO
@@ -609,10 +583,9 @@
 /datum/crafting_recipe/a762ap
 	name = "7.62mm AP ammo box"
 	result = /obj/item/ammo_box/a762box/ap
-	reqs = list(/obj/item/stack/sheet/metal = 10,
-				/datum/reagent/blackpowder = 40)
+	reqs = list(/obj/item/stack/sheet/metal = 10)
 	traits = list(TRAIT_GUNSMITH_TWO)
-	tools = list(TOOL_WORKBENCH, TOOL_GUNTIER2)
+	tools = list(TOOL_WORKBENCH, TOOL_SCREWDRIVER)
 	time = 10
 	category = CAT_WEAPONRY
 	subcategory = CAT_AMMO
@@ -1834,6 +1807,15 @@
 				/obj/item/reagent_containers/food/snacks/grown/feracactus = 2,
 				/obj/item/reagent_containers/food/snacks/grown/fungus = 1)
 	time = 80
+	category = CAT_MEDICAL
+
+	/datum/crafting_recipe/antivenom
+	name = "Antivenom"
+	result = /obj/item/reagent_containers/glass/bottle/antivenom
+	reqs = list(/obj/item/stack/sheet/glass = 1,
+				/obj/item/reagent_containers/food/snacks/grown/feracactus = 2,
+				/obj/item/reagent_containers/food/snacks/grown/fungus = 1 )
+	time = 55
 	category = CAT_MEDICAL
 
 /datum/crafting_recipe/stimpak
