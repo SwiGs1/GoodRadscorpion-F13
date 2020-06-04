@@ -1839,9 +1839,10 @@
 	/datum/crafting_recipe/antivenom
 	name = "Antivenom"
 	result = /obj/item/reagent_containers/glass/bottle/antivenom
-	reqs = list(/obj/item/reagent_containers/food/snacks/grown/feracactus = 2,
+	reqs = list(/obj/item/stack/sheet/glass = 1,
+				/obj/item/reagent_containers/food/snacks/grown/feracactus = 2,
 				/obj/item/reagent_containers/food/snacks/grown/fungus = 1 )
-	time = 60
+	time = 55
 	category = CAT_MEDICAL
 
 /datum/crafting_recipe/stimpak
