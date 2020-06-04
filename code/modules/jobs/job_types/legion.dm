@@ -767,8 +767,8 @@ Slave
 	title = "Legion Slave"
 	flag = F13LEGIONSLAVE
 	faction = "Legion"
-	total_positions = 4
-	spawn_positions = 4
+	total_positions = 0
+	spawn_positions = 0
 	description = "You answer to any member of the Legion. You are to the point where you have been broken in as a slave and most slaves will no longer consider escaping as an option."
 	supervisors = "the entire legion"
 
