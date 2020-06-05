@@ -160,7 +160,7 @@
 					M.powerlevel = 0
 
 				visible_message("<span class='danger'>The [M.name] has shocked [src]!</span>", \
-				"<span class='userdanger'>The [M.name] has shocked [src]!</span>")
+				"<span class='boldannounce'>The [M.name] has shocked [src]!</span>")
 
 				do_sparks(5, TRUE, src)
 				var/power = M.powerlevel + rand(0,3)
@@ -199,7 +199,7 @@
 	if (stat == DEAD)
 		return
 	else
-		show_message("<span class='userdanger'>The blob attacks!</span>")
+		show_message("<span class='boldannounce'>The blob attacks!</span>")
 		adjustBruteLoss(10)
 
 /mob/living/carbon/emp_act(severity)
@@ -228,7 +228,7 @@
 		take_overall_damage(0,shock_damage)
 	visible_message(
 		"<span class='danger'>[src] was shocked by \the [source]!</span>", \
-		"<span class='userdanger'>You feel a powerful shock coursing through your body!</span>", \
+		"<span class='boldannounce'>You feel a powerful shock coursing through your body!</span>", \
 		"<span class='italics'>You hear a heavy electrical crack.</span>" \
 		)
 	jitteriness += 1000 //High numbers for violent convulsions
@@ -343,7 +343,7 @@
 			if(ears.ear_damage >= 15)
 				to_chat(src, "<span class='warning'>Your ears start to ring badly!</span>")
 				if(prob(ears.ear_damage - 5))
-					to_chat(src, "<span class='userdanger'>You can't hear anything!</span>")
+					to_chat(src, "<span class='boldannounce'>You can't hear anything!</span>")
 					ears.ear_damage = min(ears.ear_damage, UNHEALING_EAR_DAMAGE)
 					// you need earmuffs, inacusiate, or replacement
 			else if(ears.ear_damage >= 5)

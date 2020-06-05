@@ -146,7 +146,6 @@ GLOBAL_LIST_INIT(legion_positions, list(
     "Legion Slavemaster",
     "Auxilia",
     "Camp Follower",
-    "Legion Slave"
 ))
 
 GLOBAL_LIST_INIT(ncr_command_positions, list(

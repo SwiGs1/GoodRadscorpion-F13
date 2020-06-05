@@ -102,7 +102,7 @@ Centurion
 	supervisors = "the Legate"
 	selection_color = "#ffdddd"
 	req_admin_notify = 1
-	exp_requirements = 180
+	exp_requirements = 360
 	exp_type = EXP_TYPE_DECANUS
 
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13centurion
@@ -256,7 +256,7 @@ Decanus
 	spawn_positions = 1
 	description = "You answer directly to the Centurion, working with them to organize the Legionaries. You lead the Legionaries, and Vexillari on patrols, raids and scouting missions on behalf of your Centurion."
 	supervisors = "the Centurion and up"
-	exp_requirements = 240
+	exp_requirements = 360
 
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13decan
 
@@ -320,7 +320,7 @@ Vexillarius
 	spawn_positions = 2
 	description = "You answer directly to the Decani and the Centurion, acting as a standard bearer for your squad. You raise troop morale, relay orders from the Decanii and the Centurion, and rally men when ordered, however, you hold no actual authority over the troops and should instead only relay orders from your superiors."
 	supervisors = "the Decani and Centurion"
-	exp_requirements = 120
+	exp_requirements = 240
 
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13vexillarius
 
@@ -419,7 +419,7 @@ Veteran Legionary
 	spawn_positions = 0
 	description = "You answer to the Decani and the Centurion, as well as the Auxilia when in your camp. Acting as a loyal soldier of the Centuria, you have the great honour of serving under Caesar in his quest to unite the scattered tribes of The Mojave. You are a hardened warrior, and have been waging war with the Legion for many years."
 	supervisors = "the Decani and Centurion"
-	exp_requirements = 300
+	exp_requirements = 360
 
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13vetlegionary
 
@@ -641,12 +641,11 @@ Auxilia
 	title = "Auxilia"
 	flag = F13AUXILIA
 	faction = "Legion"
-	head_announce = list("Security")
 	total_positions = 0
 	spawn_positions = 0
 	description = "You are a respected and valued noncombatant for the Legion, commanding the slaves and Camp Followers and providing important surgical or engineering expertise. Though you hold more authority than the Legionaries in camp, you are not a warrior, and should not act as such unless absolutely necessary."
 	supervisors = "the Decani and Centurion"
-	exp_requirements = 400
+	exp_requirements = 360
 
 	outfit = /datum/outfit/job/CaesarsLegion/f13auxilia
 
@@ -759,100 +758,3 @@ Auxilia
 	else if (follower_job == "caretaker")
 		backpack = /obj/item/storage/backpack/satchel/explorer
 		backpack_contents = list(/obj/item/radio, /obj/item/soap/homemade, /obj/item/melee/flyswatter, /obj/item/reagent_containers/glass/rag, /obj/item/reagent_containers/glass/bucket, /obj/item/stack/medical/gauze/improvised)
-
-/*
-Slave
-*/
-/datum/job/CaesarsLegion/slave
-	title = "Legion Slave"
-	flag = F13LEGIONSLAVE
-	faction = "Legion"
-	total_positions = 4
-	spawn_positions = 4
-	description = "You answer to any member of the Legion. You are to the point where you have been broken in as a slave and most slaves will no longer consider escaping as an option."
-	supervisors = "the entire legion"
-
-	outfit = /datum/outfit/job/CaesarsLegion/slave
-
-	loadout_options = list(
-	/datum/outfit/loadout/slcook, //Apron Chef, Knife, Frying Pan, radio
-	/datum/outfit/loadout/slfarmer, //Coveralls, bag plants,radio
-	/datum/outfit/loadout/slsmith, //vest, screwdriver, wrench, crowbar wirecutters, radio
-	/datum/outfit/loadout/slhealer, //Apron Surgical, Healing powder 4,improvized gauze 2 radio
-	/datum/outfit/loadout/slcaretaker, //robe_liz, soap, flyswatter, rag, bucket, gauze, radio
-	/datum/outfit/loadout/slminer) //vest, ore bag, pickaxe
-
-
-/datum/outfit/job/CaesarsLegion/slave
-	name		= "Legion Slave"
-	jobtype		= /datum/job/CaesarsLegion/slave
-	id			= /obj/item/card/id/legionbrand
-	uniform		= /obj/item/clothing/under/f13/rag
-	neck		= /obj/item/assembly/signaler/electropack/shockcollar
-	shoes		= /obj/item/clothing/shoes/f13/rag
-	r_hand = /obj/item/flashlight/flare/torch
-	backpack = /obj/item/storage/backpack/satchel/explorer
-
-/datum/outfit/loadout/slcook
-	name = "Cook"
-	suit = /obj/item/clothing/suit/apron/chef
-	belt = /obj/item/kitchen/knife
-	backpack_contents = list(
-		/obj/item/radio=1, \
-		/obj/item/claymore/machete/pipe/pan=1)
-
-/datum/outfit/loadout/slfarmer
-	name = "Farmer"
-	suit = /obj/item/clothing/suit/apron/overalls
-	belt = /obj/item/storage/bag/plants
-	r_hand = /obj/item/flashlight/flare/torch
-	backpack_contents = list(
-		/obj/item/radio=1)
-
-
-/datum/outfit/loadout/slsmith
-	name = "Smith"
-	suit = /obj/item/clothing/suit/fluff/vest
-	r_hand = /obj/item/flashlight/flare/torch
-	backpack_contents = list(
-		/obj/item/radio=1, \
-		/obj/item/screwdriver=1, \
-		/obj/item/wrench=1, \
-		/obj/item/crowbar=1, \
-		/obj/item/radio=1, \
-		/obj/item/wirecutters=1)
-
-
-/datum/outfit/loadout/slhealer
-	name = "Cleric"
-	suit = /obj/item/clothing/suit/apron/surgical
-	r_hand = /obj/item/flashlight/flare/torch
-	backpack_contents = list(
-		/obj/item/radio=1, \
-		/obj/item/reagent_containers/pill/patch/healingpowder=4,
-		/obj/item/stack/medical/gauze/improvised = 2)
-
-
-/datum/outfit/loadout/slcaretaker
-	name = "Caretaker"
-	suit = /obj/item/clothing/suit/f13/robe_liz
-	belt = /obj/item/radio
-	backpack_contents = list(
-		/obj/item/soap/homemade=1, \
-		/obj/item/melee/flyswatter=1, \
-		/obj/item/reagent_containers/glass/rag=1, \
-		/obj/item/reagent_containers/glass/bucket=1, \
-		/obj/item/stack/medical/gauze/improvised=1)
-
-
-/datum/outfit/loadout/slminer
-	name = "Miner"
-	suit = /obj/item/clothing/suit/fluff/vest
-	belt = /obj/item/storage/bag/ore
-
-	backpack_contents = list(
-		/obj/item/pickaxe=1, \
-		/obj/item/radio=1)
-
-/datum/job/CaesarsLegion/f13slave/after_spawn(mob/living/carbon/human/H, mob/M)
-	H.add_quirk("Poor Aim")

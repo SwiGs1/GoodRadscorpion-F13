@@ -20,7 +20,7 @@ Mayor
 	supervisors = "the people of the town"
 	description = "The liason for the town for the deputies and land owners, you pass laws, policies based around the law and commerce that effect those local or passing through. Meanwhile with outsiders you engage in diplomatic meetings and make deals with the powers present within the Region."
 	selection_color = "#d7b088"
-	exp_requirements = 180
+	exp_requirements = 360
 	exp_type = EXP_TYPE_DEN
 
 	outfit = /datum/outfit/job/den/f13mayor
@@ -63,7 +63,7 @@ Sheriff
 	supervisors = "the mayor"
 	description = "Seems like you're Johnny Law these days. Outside of the more obvious day to day tasks in dealing with local disputes and keeping the peace, you're main trade is in corpses - dead or alive... doesn't matter much to the town. Whether you obtain these bounties yourself or through the means of notorious gunslingers is up to you, just as long as you keep the road safe and your people alive."
 	selection_color = "#d7b088"
-	exp_requirements = 180
+	exp_requirements = 360
 	exp_type = EXP_TYPE_DEN
 
 	outfit = /datum/outfit/job/den/f13sheriff
@@ -116,7 +116,7 @@ Deputy
 	supervisors = "the sheriff and the mayor"
 	description = "Working alongside the Sheriff you've known them for a while, having worked with them under the previous Sheriff - you bagged many a bandit and raider together on the road. These days you patrol the areas outside of town, tracking down bounties on the run and keeping the settlers safe from harm."
 	selection_color = "#dcba97"
-	exp_requirements = 120
+	exp_requirements = 240
 	exp_type = EXP_TYPE_DEN
 
 	outfit = /datum/outfit/job/den/f13deputy
