@@ -52,7 +52,7 @@ Elder
 	enforces = "The Brotherhood of Steel Expects: Collection and safeguarding of technology from the wasteland. Experimentation and research."
 	supervisors = "no one but your morals and the codex."
 	outfit = /datum/outfit/job/bos/f13elder
-	exp_requirements = 180
+	exp_requirements = 360
 	exp_type = EXP_TYPE_BROTHERHOODCMD
 
 	access = list(ACCESS_ROBOTICS, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_MINERAL_STOREROOM, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS)
@@ -181,7 +181,7 @@ Head Scribe
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
 	supervisors = "the Elder"
 	selection_color = "#95a5a6"
-	exp_requirements = 180
+	exp_requirements = 360
 	exp_type = EXP_TYPE_SCRIBE
 
 	loadout_options = list(
@@ -396,7 +396,7 @@ Paladin
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
 	supervisors = "the Elder"
 	selection_color = "#95a5a6"
-	exp_requirements = 180
+	exp_requirements = 360
 	exp_type = EXP_TYPE_KNIGHT
 
 	loadout_options = list(
@@ -463,8 +463,7 @@ Scribe
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
 	supervisors = "the Head Scribe"
 	selection_color = "#95a5a6"
-	exp_requirements = 120
-	exp_type = EXP_TYPE_BROTHERHOOD
+	exp_requirements = 240
 
 	loadout_options = list(
 	/datum/outfit/loadout/scribea, //Scribe
@@ -526,8 +525,7 @@ Knight
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
 	supervisors = "the Knight-Captain"
 	selection_color = "#95a5a6"
-	exp_requirements = 120
-	exp_type = EXP_TYPE_BROTHERHOOD
+	exp_requirements = 240
 
 	loadout_options = list(
 	/datum/outfit/loadout/knighta, //AER9
@@ -587,7 +585,7 @@ Initiate
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
 	supervisors = "the scribes, knights, or Paladins"
 	selection_color = "#95a5a6"
-	exp_requirements = 180
+	exp_requirements = 720
 	exp_type = EXP_TYPE_CREW
 
 	loadout_options = list(

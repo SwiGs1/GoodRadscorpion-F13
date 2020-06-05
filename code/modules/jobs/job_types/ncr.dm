@@ -65,7 +65,7 @@ Captain
 	description = "You are the commanding officer of your company and direct superior to the Veteran Ranger and Lieutenant. Coordinating with your staff, you must ensure that the objectives of High Command are completed to the letter. Working closely with your subordinates on logistics, mission planning and special operations with the Rangers, you are here to establish a strong foothold for the NCR within the region."
 	supervisors = "Colonel"
 	req_admin_notify = 1
-	exp_requirements = 180
+	exp_requirements = 360
 	exp_type = EXP_TYPE_NCRCOMMAND
 
 	outfit = /datum/outfit/job/ncr/f13captain
@@ -107,7 +107,7 @@ Ambassador
 	description = "You are the political and diplomatic attaché to the NCR forces in the area. Though you are not part of the military, and should avoid conflict, you wield great bureaucratic power."
 	supervisors = "Colonel"
 	req_admin_notify = 1
-	exp_requirements = 180
+	exp_requirements = 360
 	exp_type = EXP_TYPE_NCRCOMMAND
 
 	outfit = /datum/outfit/job/ncr/f13ambassador
@@ -143,8 +143,7 @@ Lieutenant
 	description = "You are the direct superior to the Sergeant and Enlisted, working with the Captain and under special circumstances, Rangers. You plan patrols, training and missions, working in some cases with Rangers in accomplishing objectives otherwise beyond the capabilities of ordinary enlisted personnel."
 	supervisors = "Captain and above"
 	selection_color = "#fff5cc"
-	exp_requirements = 240
-	exp_type = EXP_TYPE_NCR
+	exp_requirements = 360
 
 	outfit = /datum/outfit/job/ncr/f13lieutenant
 
@@ -216,8 +215,7 @@ Sergeant
 	description = "You are the direct superior to the enlisted troops, working with the chain of command you echo the orders of your superiors and ensure that the enlisted follow them to the letter. Additionally, you are responsible for the wellbeing of the troops and their ongoing training with the NCR."
 	supervisors = "Lieutenants and above"
 	selection_color = "#fff5cc"
-	exp_requirements = 120
-	exp_type = EXP_TYPE_NCR
+	exp_requirements = 240
 
 	outfit = /datum/outfit/job/ncr/f13sergeant
 
@@ -402,6 +400,7 @@ NCR Military Police
 	description = "You are the primary enforcers of NCR law within the ranks of the local embassy. You are technically exempt from the standard chain of command, answering only to High-Command, and specifically, the NCR Office of Special Investigations (NCROSI). You are NOT to engage in direct combat with the enemy unless truly nessecary, but instead enforce laws and regulations within the NCR's control."
 	supervisors = "NCROSI"
 	selection_color = "#fff5cc"
+	exp_requirements = 240
 
 	outfit = /datum/outfit/job/ncr/f13ncrmp
 
@@ -521,7 +520,7 @@ Veteran Ranger
 	description = "You answer directly to the Captain, working either independently or in a team to complete your mission objectives however required, operating either alone, in a squad or with the NCR Army. As a Veteran Ranger you work closely with the Captain in planning special operations with your team while also carrying out those orders in the field by any means necessary."
 	supervisors = "Captain and above"
 	selection_color = "#ffeeaa"
-	exp_requirements = 180
+	exp_requirements = 360
 	exp_type = EXP_TYPE_RANGER
 
 	outfit = /datum/outfit/job/ncr/f13vetranger

@@ -33,7 +33,7 @@ Tribal Chief
 	supervisors = "The wellbeing of the tribe and every one of it's members."
 	description = "The leader and central political figure in the Wayfinder Tribe. It is your duty to preserve the culture of your people, including their historic aversion to pre-war weapons and technology. Meanwhile with outsiders you engage in diplomatic meetings with the powers present within the Region to ensure the village's safety and independence."
 	selection_color = "#006666"
-	exp_requirements = 180
+	exp_requirements = 360
 	exp_type = EXP_TYPE_TRIBAL
 
 	outfit = /datum/outfit/job/tribal/f13chief
@@ -68,7 +68,7 @@ Tribal Shaman
 	supervisors = "Tribal Chief"
 	description = "The spiritual leader and cultural core of the Wayfinder Tribe. You aid villagers in their day to day lives by offering guidance and advice, while also acting as the direct aid to the chief. To you the breaking of cultural norms such as an aversion to pre-war weapons and technology is to be taken with the upmost seriousness."
 	selection_color = "#006666"
-	exp_requirements = 180
+	exp_requirements = 360
 	exp_type = EXP_TYPE_TRIBAL
 
 	outfit = /datum/outfit/job/tribal/f13shaman

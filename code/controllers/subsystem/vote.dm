@@ -127,9 +127,10 @@ SUBSYSTEM_DEF(vote)
 				if(. == "Abandon Wasteland")
 					if (abandoned == 0)
 						SSshuttle.emergency.request()
+						abandoned = 1
+						CONFIG_SET(flag/allow_vote_abandon, FALSE)
 					else
 						to_chat(world, "\n<font color='purple'>A vote has already being passed to abandon the wasteland.</font>")
-					abandoned = 1
 			if("restart")
 				if(. == "Restart Round")
 					restart = 1
