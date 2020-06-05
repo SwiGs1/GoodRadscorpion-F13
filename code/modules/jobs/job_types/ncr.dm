@@ -402,7 +402,7 @@ NCR Military Police
 	description = "You are the primary enforcers of NCR law within the ranks of the local embassy. You are technically exempt from the standard chain of command, answering only to High-Command, and specifically, the NCR Office of Special Investigations (NCROSI). You are NOT to engage in direct combat with the enemy unless truly nessecary, but instead enforce laws and regulations within the NCR's control."
 	supervisors = "NCROSI"
 	selection_color = "#fff5cc"
-	exp_requirements = 120
+	exp_requirements = 240
 
 	outfit = /datum/outfit/job/ncr/f13ncrmp
 
