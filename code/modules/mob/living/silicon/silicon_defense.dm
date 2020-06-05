@@ -12,7 +12,7 @@
 			add_logs(M, src, "attacked")
 			playsound(loc, 'sound/weapons/slash.ogg', 25, 1, -1)
 			visible_message("<span class='danger'>[M] has slashed at [src]!</span>", \
-							"<span class='userdanger'>[M] has slashed at [src]!</span>")
+							"<span class='boldannounce'>[M] has slashed at [src]!</span>")
 			if(prob(8))
 				flash_act(affect_silicon = 1)
 			add_logs(M, src, "attacked")
@@ -21,7 +21,7 @@
 		else
 			playsound(loc, 'sound/weapons/slashmiss.ogg', 25, 1, -1)
 			visible_message("<span class='danger'>[M] took a swipe at [src]!</span>", \
-							"<span class='userdanger'>[M] took a swipe at [src]!</span>")
+							"<span class='boldannounce'>[M] took a swipe at [src]!</span>")
 
 /mob/living/silicon/attack_animal(mob/living/simple_animal/M)
 	. = ..()
@@ -59,7 +59,7 @@
 		adjustBruteLoss(rand(10, 15))
 		playsound(loc, "punch", 25, 1, -1)
 		visible_message("<span class='danger'>[user] has punched [src]!</span>", \
-				"<span class='userdanger'>[user] has punched [src]!</span>")
+				"<span class='boldannounce'>[user] has punched [src]!</span>")
 		return 1
 	return 0
 
@@ -100,7 +100,7 @@
 			src.take_bodypart_damage(20)
 		if(2)
 			src.take_bodypart_damage(10)
-	to_chat(src, "<span class='userdanger'>*BZZZT*</span>")
+	to_chat(src, "<span class='boldannounce'>*BZZZT*</span>")
 	for(var/mob/living/M in buckled_mobs)
 		if(prob(severity*50))
 			unbuckle_mob(M)

@@ -1,0 +1,5 @@
+ip-whitelist:
+  - "127.0.0.1"
+
+ooc-webhook: "ooc webhook api key"
+ahelp-webhook: "above but for ahelps"

@@ -494,18 +494,8 @@
 //ncr
 /obj/item/storage/belt/grenade/ncr/PopulateContents()
 	new /obj/item/grenade/flashbang(src)
-	new /obj/item/grenade/flashbang(src)
-	new /obj/item/grenade/flashbang(src)
-	new /obj/item/grenade/flashbang(src)
 	new /obj/item/grenade/smokebomb(src)
 	new /obj/item/grenade/smokebomb(src)
-	new /obj/item/grenade/smokebomb(src)
-	new /obj/item/grenade/smokebomb(src)
-	new /obj/item/grenade/smokebomb(src)
-	new /obj/item/grenade/smokebomb(src)
-	new /obj/item/grenade/empgrenade(src)
-	new /obj/item/grenade/empgrenade(src)
-	new /obj/item/grenade/syndieminibomb/concussion/frag(src)
 	new /obj/item/grenade/syndieminibomb/concussion/frag(src)
 
 /obj/item/storage/belt/wands
