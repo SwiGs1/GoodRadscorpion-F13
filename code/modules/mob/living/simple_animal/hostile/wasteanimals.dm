@@ -121,6 +121,20 @@
 		var/mob/living/carbon/human/H = target
 		H.reagents.add_reagent("toxin", 5)
 
+/datum/reagent/toxin/radscorpion_venom
+	name = "Radscorpion venom"
+	id = "radscorpion_venom"
+	description = "A potent toxin resulting from Radscorpion stings that quickly kills if too much remains in the body."
+	color = "#801E28" 
+	toxpwr = 1
+	taste_description = "pain"
+	taste_mult = 1.2
+
+/datum/reagent/toxin/radscorpion_venom/on_mob_life(mob/living/M)
+	if(volume >= 15)
+		M.adjustToxLoss(7, 0)
+	..()
+
 /mob/living/simple_animal/hostile/radscorpion/Initialize()
 	. = ..()
 	scorpion_randomify()
