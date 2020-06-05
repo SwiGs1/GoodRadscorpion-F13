@@ -374,7 +374,7 @@
 	to_chat(src, "<span class='notice'>You are now [resting ? "resting" : "getting up"].</span>")
 	update_canmove()
 
-/mob/living/proc/surrender()
+/mob/living/proc/surrender(mob/user)
 	set name = "Surrender"
 	set category = "IC"
 
@@ -385,6 +385,7 @@
 		Knockdown(200)
 		visible_message("<span class='big bold'>[src] surrenders!</span>")
 		playsound(loc, 'sound/f13effects/surrender.ogg', 50, 1)
+	user.log_message("[user] surrendered.", INDIVIDUAL_ATTACK_LOG)
 
 //Recursive function to find everything a mob is holding. Really shitty proc tbh.
 /mob/living/get_contents()

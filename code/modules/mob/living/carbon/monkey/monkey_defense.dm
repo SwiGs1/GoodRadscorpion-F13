@@ -40,7 +40,7 @@
 			M.do_attack_animation(src, ATTACK_EFFECT_PUNCH)
 			if (prob(75))
 				visible_message("<span class='danger'>[M] has punched [name]!</span>", \
-						"<span class='userdanger'>[M] has punched [name]!</span>", null, COMBAT_MESSAGE_RANGE)
+						"<span class='boldannounce'>[M] has punched [name]!</span>", null, COMBAT_MESSAGE_RANGE)
 
 				playsound(loc, "punch", 25, 1, -1)
 				var/damage = rand(5, 10)
@@ -49,7 +49,7 @@
 					if(AmountUnconscious() < 100 && health > 0)
 						Unconscious(rand(200, 300))
 						visible_message("<span class='danger'>[M] has knocked out [name]!</span>", \
-									"<span class='userdanger'>[M] has knocked out [name]!</span>", null, 5)
+									"<span class='boldannounce'>[M] has knocked out [name]!</span>", null, 5)
 				var/obj/item/bodypart/affecting = get_bodypart(ran_zone(M.zone_selected))
 				if(!affecting)
 					affecting = get_bodypart(BODY_ZONE_CHEST)
@@ -59,7 +59,7 @@
 			else
 				playsound(loc, 'sound/weapons/punchmiss.ogg', 25, 1, -1)
 				visible_message("<span class='danger'>[M] has attempted to punch [name]!</span>", \
-					"<span class='userdanger'>[M] has attempted to punch [name]!</span>", null, COMBAT_MESSAGE_RANGE)
+					"<span class='boldannounce'>[M] has attempted to punch [name]!</span>", null, COMBAT_MESSAGE_RANGE)
 		if("disarm")
 			if(!IsUnconscious())
 				M.do_attack_animation(src, ATTACK_EFFECT_DISARM)
@@ -68,10 +68,10 @@
 					playsound(loc, 'sound/weapons/thudswoosh.ogg', 50, 1, -1)
 					add_logs(M, src, "pushed")
 					visible_message("<span class='danger'>[M] has pushed down [src]!</span>", \
-						"<span class='userdanger'>[M] has pushed down [src]!</span>", null, COMBAT_MESSAGE_RANGE)
+						"<span class='boldannounce'>[M] has pushed down [src]!</span>", null, COMBAT_MESSAGE_RANGE)
 				else if(dropItemToGround(get_active_held_item()))
 					playsound(src, 'sound/weapons/thudswoosh.ogg', 50, 1, -1)
-					visible_message("<span class='danger'>[M] has disarmed [src]!</span>", "<span class='userdanger'>[M] has disarmed [src]!</span>", null, COMBAT_MESSAGE_RANGE)
+					visible_message("<span class='danger'>[M] has disarmed [src]!</span>", "<span class='boldannounce'>[M] has disarmed [src]!</span>", null, COMBAT_MESSAGE_RANGE)
 
 /mob/living/carbon/monkey/attack_alien(mob/living/carbon/alien/humanoid/M)
 	if(..()) //if harm or disarm intent.
@@ -84,10 +84,10 @@
 					if(AmountUnconscious() < 300)
 						Unconscious(rand(200, 300))
 					visible_message("<span class='danger'>[M] has wounded [name]!</span>", \
-							"<span class='userdanger'>[M] has wounded [name]!</span>", null, COMBAT_MESSAGE_RANGE)
+							"<span class='boldannounce'>[M] has wounded [name]!</span>", null, COMBAT_MESSAGE_RANGE)
 				else
 					visible_message("<span class='danger'>[M] has slashed [name]!</span>", \
-							"<span class='userdanger'>[M] has slashed [name]!</span>", null, COMBAT_MESSAGE_RANGE)
+							"<span class='boldannounce'>[M] has slashed [name]!</span>", null, COMBAT_MESSAGE_RANGE)
 
 				var/obj/item/bodypart/affecting = get_bodypart(ran_zone(M.zone_selected))
 				add_logs(M, src, "attacked")
@@ -100,7 +100,7 @@
 			else
 				playsound(loc, 'sound/weapons/slashmiss.ogg', 25, 1, -1)
 				visible_message("<span class='danger'>[M] has attempted to lunge at [name]!</span>", \
-						"<span class='userdanger'>[M] has attempted to lunge at [name]!</span>", null, COMBAT_MESSAGE_RANGE)
+						"<span class='boldannounce'>[M] has attempted to lunge at [name]!</span>", null, COMBAT_MESSAGE_RANGE)
 
 		if (M.a_intent == INTENT_DISARM)
 			var/obj/item/I = null
@@ -108,11 +108,11 @@
 			if(prob(95))
 				Knockdown(20)
 				visible_message("<span class='danger'>[M] has tackled down [name]!</span>", \
-						"<span class='userdanger'>[M] has tackled down [name]!</span>", null, COMBAT_MESSAGE_RANGE)
+						"<span class='boldannounce'>[M] has tackled down [name]!</span>", null, COMBAT_MESSAGE_RANGE)
 			else
 				I = get_active_held_item()
 				if(dropItemToGround(I))
-					visible_message("<span class='danger'>[M] has disarmed [name]!</span>", "<span class='userdanger'>[M] has disarmed [name]!</span>", null, COMBAT_MESSAGE_RANGE)
+					visible_message("<span class='danger'>[M] has disarmed [name]!</span>", "<span class='boldannounce'>[M] has disarmed [name]!</span>", null, COMBAT_MESSAGE_RANGE)
 				else
 					I = null
 			add_logs(M, src, "disarmed", "[I ? " removing \the [I]" : ""]")

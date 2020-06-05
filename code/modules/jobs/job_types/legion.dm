@@ -252,11 +252,11 @@ Decanus
 	title = "Legion Decanus"
 	flag = F13DECAN
 	faction = "Legion"
-	total_positions = 3
-	spawn_positions = 3
+	total_positions = 1
+	spawn_positions = 1
 	description = "You answer directly to the Centurion, working with them to organize the Legionaries. You lead the Legionaries, and Vexillari on patrols, raids and scouting missions on behalf of your Centurion."
 	supervisors = "the Centurion and up"
-	exp_requirements = 120
+	exp_requirements = 240
 
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13decan
 
@@ -392,7 +392,7 @@ datum/job/CaesarsLegion/Legionnaire/f13slavemaster
 	belt = 			/obj/item/melee/curator_whip
 	head = 			/obj/item/clothing/head/helmet/f13/legion/venator
 	glasses = 		/obj/item/clothing/glasses/sunglasses
-	r_hand = 		/obj/item/melee/baton/cattleprod
+	r_hand = 		/obj/item/melee/classic_baton/telescopic
 	backpack_contents = list(
 		/obj/item/claymore/machete/reinforced=1, \
 		/obj/item/reagent_containers/pill/patch/healingpowder=2, \
@@ -400,7 +400,6 @@ datum/job/CaesarsLegion/Legionnaire/f13slavemaster
 		/obj/item/storage/bag/money/small/legenlisted, \
 		/obj/item/key/bcollar,\
 		/obj/item/assembly/signaler/electropack/boomcollar=2, \
-		/obj/item/stock_parts/cell/high/plus=2,, \
 		/obj/item/radio)
 	r_pocket = /obj/item/restraints/handcuffs
 
@@ -760,100 +759,3 @@ Auxilia
 	else if (follower_job == "caretaker")
 		backpack = /obj/item/storage/backpack/satchel/explorer
 		backpack_contents = list(/obj/item/radio, /obj/item/soap/homemade, /obj/item/melee/flyswatter, /obj/item/reagent_containers/glass/rag, /obj/item/reagent_containers/glass/bucket, /obj/item/stack/medical/gauze/improvised)
-
-/*
-Slave
-*/
-/datum/job/CaesarsLegion/slave
-	title = "Legion Slave"
-	flag = F13LEGIONSLAVE
-	faction = "Legion"
-	total_positions = 4
-	spawn_positions = 4
-	description = "You answer to any member of the Legion. You are to the point where you have been broken in as a slave and most slaves will no longer consider escaping as an option."
-	supervisors = "the entire legion"
-
-	outfit = /datum/outfit/job/CaesarsLegion/slave
-
-	loadout_options = list(
-	/datum/outfit/loadout/slcook, //Apron Chef, Knife, Frying Pan, radio
-	/datum/outfit/loadout/slfarmer, //Coveralls, bag plants,radio
-	/datum/outfit/loadout/slsmith, //vest, screwdriver, wrench, crowbar wirecutters, radio
-	/datum/outfit/loadout/slhealer, //Apron Surgical, Healing powder 4,improvized gauze 2 radio
-	/datum/outfit/loadout/slcaretaker, //robe_liz, soap, flyswatter, rag, bucket, gauze, radio
-	/datum/outfit/loadout/slminer) //vest, ore bag, pickaxe
-
-
-/datum/outfit/job/CaesarsLegion/slave
-	name		= "Legion Slave"
-	jobtype		= /datum/job/CaesarsLegion/slave
-	id			= /obj/item/card/id/legionbrand
-	uniform		= /obj/item/clothing/under/f13/rag
-	neck		= /obj/item/assembly/signaler/electropack/shockcollar
-	shoes		= /obj/item/clothing/shoes/f13/rag
-	r_hand = /obj/item/flashlight/flare/torch
-	backpack = /obj/item/storage/backpack/satchel/explorer
-
-/datum/outfit/loadout/slcook
-	name = "Cook"
-	suit = /obj/item/clothing/suit/apron/chef
-	belt = /obj/item/kitchen/knife
-	backpack_contents = list(
-		/obj/item/radio=1, \
-		/obj/item/claymore/machete/pipe/pan=1)
-
-/datum/outfit/loadout/slfarmer
-	name = "Farmer"
-	suit = /obj/item/clothing/suit/apron/overalls
-	belt = /obj/item/storage/bag/plants
-	r_hand = /obj/item/flashlight/flare/torch
-	backpack_contents = list(
-		/obj/item/radio=1)
-
-
-/datum/outfit/loadout/slsmith
-	name = "Smith"
-	suit = /obj/item/clothing/suit/fluff/vest
-	r_hand = /obj/item/flashlight/flare/torch
-	backpack_contents = list(
-		/obj/item/radio=1, \
-		/obj/item/screwdriver=1, \
-		/obj/item/wrench=1, \
-		/obj/item/crowbar=1, \
-		/obj/item/radio=1, \
-		/obj/item/wirecutters=1)
-
-
-/datum/outfit/loadout/slhealer
-	name = "Cleric"
-	suit = /obj/item/clothing/suit/apron/surgical
-	r_hand = /obj/item/flashlight/flare/torch
-	backpack_contents = list(
-		/obj/item/radio=1, \
-		/obj/item/reagent_containers/pill/patch/healingpowder=4,
-		/obj/item/stack/medical/gauze/improvised = 2)
-
-
-/datum/outfit/loadout/slcaretaker
-	name = "Caretaker"
-	suit = /obj/item/clothing/suit/f13/robe_liz
-	belt = /obj/item/radio
-	backpack_contents = list(
-		/obj/item/soap/homemade=1, \
-		/obj/item/melee/flyswatter=1, \
-		/obj/item/reagent_containers/glass/rag=1, \
-		/obj/item/reagent_containers/glass/bucket=1, \
-		/obj/item/stack/medical/gauze/improvised=1)
-
-
-/datum/outfit/loadout/slminer
-	name = "Miner"
-	suit = /obj/item/clothing/suit/fluff/vest
-	belt = /obj/item/storage/bag/ore
-
-	backpack_contents = list(
-		/obj/item/pickaxe=1, \
-		/obj/item/radio=1)
-
-/datum/job/CaesarsLegion/f13slave/after_spawn(mob/living/carbon/human/H, mob/M)
-	H.add_quirk("Poor Aim")

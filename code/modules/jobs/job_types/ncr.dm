@@ -137,8 +137,8 @@ Lieutenant
 /datum/job/ncr/f13lieutenant
 	title = "NCR Lieutenant"
 	flag = F13LIEUTENANT
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 1
+	spawn_positions = 1
 	faction = "NCR"
 	description = "You are the direct superior to the Sergeant and Enlisted, working with the Captain and under special circumstances, Rangers. You plan patrols, training and missions, working in some cases with Rangers in accomplishing objectives otherwise beyond the capabilities of ordinary enlisted personnel."
 	supervisors = "Captain and above"
@@ -399,7 +399,7 @@ NCR Military Police
 	faction = "NCR"
 	total_positions = 2
 	spawn_positions = 2
-	description = "You are the primary enforcers of NCR law within the ranks of the local embassy. You are technically exempt from the standard chain of command, answering only to High-Command, and specifically, the NCR Office of Special Investigations (NCROSI). "
+	description = "You are the primary enforcers of NCR law within the ranks of the local embassy. You are technically exempt from the standard chain of command, answering only to High-Command, and specifically, the NCR Office of Special Investigations (NCROSI). You are NOT to engage in direct combat with the enemy unless truly nessecary, but instead enforce laws and regulations within the NCR's control."
 	supervisors = "NCROSI"
 	selection_color = "#fff5cc"
 
@@ -413,8 +413,8 @@ NCR Military Police
 	accessory =     /obj/item/clothing/accessory/ncr/SSGT
 	head = 			/obj/item/clothing/head/f13/ncr/goggles
 	suit = 			/obj/item/clothing/suit/armor/f13/ncrarmor
-	suit_store = 	/obj/item/gun/ballistic/shotgun/riot
-	r_hand = 		/obj/item/melee/baton/cattleprod
+	r_hand = 		/obj/item/melee/classic_baton/telescopic
+	l_hand = 		/obj/item/shield/riot/tele
 	belt =          /obj/item/storage/belt/military/NCR_Bandolier
 	r_pocket =		/obj/item/restraints/handcuffs
 	glasses = 		/obj/item/clothing/glasses/sunglasses/big
@@ -422,8 +422,6 @@ NCR Military Police
 		/obj/item/kitchen/knife/combat=1, \
 		/obj/item/reagent_containers/hypospray/medipen/stimpak=1, \
 		/obj/item/storage/bag/money/small/ncrenlisted, \
-		/obj/item/storage/box/rubbershot = 2, \
-		/obj/item/stock_parts/cell/high/plus=2,
 		/obj/item/clothing/accessory/armband/mp=1,
 		)
 
