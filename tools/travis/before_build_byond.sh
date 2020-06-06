@@ -1,5 +1,15 @@
 #!/bin/bash
-set -euo pipefail
+set -e
+
+#If this is the build tools step, we do not bother to install/build byond
+if [ "$BUILD_TOOLS" = true ]; then
+  exit 0
+fi;
+
+echo "Combining maps for building"
+if [ $BUILD_TESTING = true ]; then
+    python tools/travis/template_dm_generator.py
+fi;
 
 source dependencies.sh
 
