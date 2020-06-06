@@ -318,6 +318,6 @@
 
 /obj/item/reagent_containers/glass/bottle/antivenom 
 	name = "Antivenom bottle"
-	desc = "Antivenom is modern medicine's answer to the tribal antidote by combining barral cactus fruit, cave fungus, and human blood in which the venom has come into contact with, which acts as a cure against poison."
+	desc = "Antivenom is modern medicine's answer to the tribal antidote by combining barral cactus fruit, xander root, and a venom gland from a cazador or radscorpion, which acts as a cure against animal venom."
 	icon_state = "bottle_antivenom"
-	list_reagents = list("antivenom" = 25) 
+	list_reagents = list("antivenom" = 30) 
