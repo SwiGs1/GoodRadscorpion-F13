@@ -55,7 +55,7 @@
 /client/proc/admin_headset_message(mob/M in GLOB.mob_list, sender = null)
 	var/mob/living/carbon/human/H = M
 
-	if(!check_rights(R_ADMIN))
+	if(!check_rights(R_FUN))
 		return
 
 	if(!istype(H))
@@ -148,7 +148,7 @@
 	set category = "Special Verbs"
 	set name = "Direct Narrate"
 
-	if(!check_rights(R_ADMIN))
+	if(!check_rights(R_FUN))
 		return
 
 	if(!M)
