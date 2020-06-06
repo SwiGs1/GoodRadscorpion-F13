@@ -676,7 +676,7 @@
 	fire_delay = 3
 	spread = 10
 	weapon_weight = WEAPON_HEAVY
-	extra_damage = 30
+	extra_damage = 25
 	extra_penetration = 5
 
 /obj/item/gun/ballistic/automatic/marksman
@@ -963,7 +963,7 @@
 	en_bloc = 1
 	auto_eject = 1
 	auto_eject_sound = 'sound/f13weapons/garand_ping.ogg'
-	extra_damage = 40
+	extra_damage = 30
 	extra_penetration = 10
 
 /obj/item/gun/ballistic/automatic/m1garand/update_icon()
@@ -979,7 +979,7 @@
 	name = "Old Glory"
 	desc = "This Machine kills communists!"
 	icon_state = "oldglory"
-	extra_damage = 45
+	extra_damage = 35
 	extra_penetration = 20
 
 /obj/item/gun/ballistic/automatic/rangemaster

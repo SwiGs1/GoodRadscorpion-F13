@@ -126,7 +126,7 @@
 	mag_type = /obj/item/ammo_box/magazine/m9mm
 	fire_delay = 1
 	can_suppress = FALSE
-	extra_damage = 25
+	extra_damage = 20
 	extra_penetration = 10
 	fire_sound = 'sound/f13weapons/ninemil.ogg'
 
