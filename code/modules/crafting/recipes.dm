@@ -1043,35 +1043,6 @@
 	category = CAT_WEAPONRY
 	subcategory = CAT_WEAPON
 
-/datum/crafting_recipe/citykiller
-	name = "combat shotgun"
-	result = /obj/item/gun/ballistic/shotgun/automatic/combat
-	reqs = list(/obj/item/stack/sheet/mineral/wood = 1,
-				/obj/item/stack/crafting/metalparts = 4,
-				/obj/item/stack/crafting/goodparts = 2,
-				/obj/item/stack/sheet/metal = 1,
-				/datum/reagent/blackpowder = 35)
-	tools = list(TOOL_WORKBENCH, TOOL_GUNTIER4)
-	traits = list(TRAIT_GUNSMITH_FOUR)
-	time = 120
-	category = CAT_WEAPONRY
-	subcategory = CAT_WEAPON
-
-/datum/crafting_recipe/caws
-	name = "h&k caws"
-	result = /obj/item/gun/ballistic/automatic/shotgun/caws
-	reqs = list(/obj/item/stack/sheet/mineral/wood = 1,
-				/obj/item/stack/sheet/mineral/titanium = 2,
-				/obj/item/stack/sheet/metal = 2,
-				/obj/item/stack/crafting/metalparts = 3,
-				/obj/item/stack/crafting/goodparts = 3,
-				/datum/reagent/blackpowder = 35)
-	tools = list(TOOL_AWORKBENCH, /obj/item/blueprint/weapon/caws, TOOL_GUNTIER4)
-	traits = list(TRAIT_GUNSMITH_FOUR)
-	time = 120
-	category = CAT_WEAPONRY
-	subcategory = CAT_WEAPON
-
 /datum/crafting_recipe/greasegun
 	name = "M3A1 Grease Gun"
 	result = /obj/item/gun/ballistic/automatic/greasegun
