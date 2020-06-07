@@ -345,9 +345,18 @@
 				/obj/item/clothing/suit/armor/f13/power_armor/t51b,
 				/obj/item/clothing/head/helmet/power_armor/t51b
 				)
+	var/loot3 = list(
+				/obj/item/clothing/suit/armor/f13/power_armor/advanced,
+				/obj/item/clothing/head/helmet/power_armor/advanced
+				)
+	var/loot4 = list(
+				/obj/item/clothing/suit/armor/f13/power_armor/advanced/mk2,
+				/obj/item/clothing/head/helmet/power_armor/advanced/mk2
+				)
+// ^^^^ this could be replaced with tesla if it proves to be troublesome
 
 /obj/effect/spawner/lootdrop/f13/armor/tier5/Initialize(mapload) //on mapload, pick what shit to spawn
-	loot = pick(loot1, loot2)
+	loot = pick(loot1, loot2, loot3, loot4)
 	. = ..()
 
 /obj/effect/spawner/lootdrop/f13/armor/random
@@ -365,10 +374,9 @@
     lootcount = 1
 
     loot = list(
-            /obj/effect/spawner/lootdrop/f13/armor/tier2 = 59,
+            /obj/effect/spawner/lootdrop/f13/armor/tier2 = 60,
             /obj/effect/spawner/lootdrop/f13/armor/tier3 = 30,
             /obj/effect/spawner/lootdrop/f13/armor/tier4 = 10,
-            /obj/item/ring = 1 //one ring to rule them all
             )
 
 /* ------------------------------------------------
