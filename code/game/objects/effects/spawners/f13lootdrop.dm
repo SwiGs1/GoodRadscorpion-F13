@@ -350,10 +350,9 @@
 				/obj/item/clothing/head/helmet/power_armor/advanced
 				)
 	var/loot4 = list(
-				/obj/item/clothing/suit/armor/f13/power_armor/advanced/mk2,
-				/obj/item/clothing/head/helmet/power_armor/advanced/mk2
+				/obj/item/clothing/suit/armor/f13/power_armor/tesla,
+				/obj/item/clothing/head/helmet/power_armor/tesla
 				)
-// ^^^^ this could be replaced with tesla if it proves to be troublesome
 
 /obj/effect/spawner/lootdrop/f13/armor/tier5/Initialize(mapload) //on mapload, pick what shit to spawn
 	loot = pick(loot1, loot2, loot3, loot4)
