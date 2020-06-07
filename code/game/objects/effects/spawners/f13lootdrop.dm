@@ -376,7 +376,7 @@
     loot = list(
             /obj/effect/spawner/lootdrop/f13/armor/tier2 = 60,
             /obj/effect/spawner/lootdrop/f13/armor/tier3 = 30,
-            /obj/effect/spawner/lootdrop/f13/armor/tier4 = 10,
+            /obj/effect/spawner/lootdrop/f13/armor/tier4 = 10
             )
 
 /* ------------------------------------------------
