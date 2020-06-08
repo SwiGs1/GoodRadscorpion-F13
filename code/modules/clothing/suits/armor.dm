@@ -812,7 +812,7 @@
 
 /obj/item/clothing/suit/armor/f13/power_armor/tesla
 	name = "tesla power armor"
-	desc = "A variant of the Enclave's advanced power armor Mk I, jury-rigged with a Tesla device that is capable of dispersing a large percentage of the damage done by directed-energy attacks.<br>As it's made of complex composite materials designed to block most of energy damage - it's notably weaker against kinetic impacts."
+	desc = "A variant of the Enclave's advanced power armor Mk I, jury-rigged with a Tesla device that is capable of dispersing a large percentage of the damage done by directed-energy attacks.<br>As it's made of complex composite materials designed to block most of energy damage - it's notably both lighter as armor and weaker against kinetic impacts."
 	icon_state = "tesla"
 	item_state = "tesla"
 	slowdown = 0.15 // 0.15 + 0.1 from helmet. "The Gannon family Tesla armor is classified as medium armor"
