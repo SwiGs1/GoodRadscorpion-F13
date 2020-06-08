@@ -1836,7 +1836,7 @@
 	time = 80
 	category = CAT_MEDICAL
 
-	/datum/crafting_recipe/antivenom
+/datum/crafting_recipe/antivenom
 	name = "Antivenom"
 	result = /obj/item/reagent_containers/glass/bottle/antivenom
 	reqs = list(/obj/item/stack/sheet/glass = 1,
