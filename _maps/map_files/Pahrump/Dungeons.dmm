@@ -170,8 +170,8 @@
 /area/f13/radiation)
 "aD" = (
 /obj/effect/decal/waste{
-	icon_state = "goo12";
-	tag = "icon-goo12"
+	tag = "icon-goo12";
+	icon_state = "goo12"
 	},
 /obj/item/reagent_containers/glass/bottle/FEV_solution,
 /turf/open/floor/plasteel/barber{
@@ -428,9 +428,9 @@
 /area/f13/bunker)
 "bs" = (
 /obj/machinery/shower{
-	dir = 4;
+	tag = "icon-shower (EAST)";
 	icon_state = "shower";
-	tag = "icon-shower (EAST)"
+	dir = 4
 	},
 /obj/effect/decal/remains/human,
 /turf/open/floor/plasteel/barber{
@@ -533,9 +533,9 @@
 /area/f13/bunker)
 "bC" = (
 /obj/structure/chair{
-	dir = 8;
+	tag = "icon-chair (WEST)";
 	icon_state = "chair";
-	tag = "icon-chair (WEST)"
+	dir = 8
 	},
 /obj/machinery/light{
 	dir = 4;
@@ -619,7 +619,7 @@
 /obj/item/seeds/tower/steel,
 /obj/effect/spawner/lootdrop/f13/armor/tier4,
 /obj/effect/spawner/lootdrop/f13/cash_random_high,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/tier3,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/tier4,
 /turf/open/floor/plasteel/barber{
 	icon = 'icons/turf/f13floors2.dmi';
 	icon_state = "bluerustychess2";
@@ -665,9 +665,9 @@
 /area/f13/bunker)
 "bP" = (
 /obj/machinery/shower{
-	dir = 4;
+	tag = "icon-shower (EAST)";
 	icon_state = "shower";
-	tag = "icon-shower (EAST)"
+	dir = 4
 	},
 /mob/living/simple_animal/hostile/supermutant/rangedmutant,
 /turf/open/floor/plasteel/barber{
@@ -716,9 +716,9 @@
 /area/f13/bunker)
 "bU" = (
 /obj/structure/chair{
-	dir = 1;
+	tag = "icon-chair (NORTH)";
 	icon_state = "chair";
-	tag = "icon-chair (NORTH)"
+	dir = 1
 	},
 /turf/open/floor/plasteel/barber{
 	icon = 'icons/turf/f13floors2.dmi';
@@ -1444,8 +1444,8 @@
 /area/f13/bunker)
 "dJ" = (
 /obj/effect/decal/waste{
-	icon_state = "goo8";
-	tag = "icon-goo8"
+	tag = "icon-goo8";
+	icon_state = "goo8"
 	},
 /obj/structure/reagent_dispensers/barrel/four,
 /turf/open/floor/plating/tunnel,
@@ -1813,8 +1813,8 @@
 /obj/machinery/chem_master,
 /obj/machinery/light/small,
 /turf/open/floor/f13{
-	icon_state = "bluedirtychess2";
-	tag = "icon-bluedirtychess2"
+	tag = "icon-bluedirtychess2";
+	icon_state = "bluedirtychess2"
 	},
 /area/f13/bunker)
 "eH" = (
@@ -2204,8 +2204,8 @@
 	dir = 1
 	},
 /turf/open/floor/f13{
-	icon_state = "bluedirtychess2";
-	tag = "icon-bluedirtychess2"
+	tag = "icon-bluedirtychess2";
+	icon_state = "bluedirtychess2"
 	},
 /area/f13/bunker)
 "fF" = (
@@ -2304,8 +2304,8 @@
 /area/f13/bunker)
 "fS" = (
 /obj/structure/simple_door/house{
-	icon_state = "roomopening";
-	tag = "icon-roomopening"
+	tag = "icon-roomopening";
+	icon_state = "roomopening"
 	},
 /turf/open/floor/f13/wood,
 /area/f13/tunnel)
@@ -2427,7 +2427,8 @@
 /obj/structure/rack,
 /obj/item/reagent_containers/food/snacks/grown/ambrosia/gaia,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/random_high,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/tier3,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/tier4,
+/obj/effect/spawner/lootdrop/f13/weapon/melee/tier4,
 /turf/open/floor/plasteel/barber{
 	icon = 'icons/turf/f13floors2.dmi';
 	icon_state = "bluerustychess2";
@@ -2463,8 +2464,8 @@
 "gl" = (
 /obj/machinery/light,
 /turf/open/floor/f13{
-	icon_state = "bluedirtychess2";
-	tag = "icon-bluedirtychess2"
+	tag = "icon-bluedirtychess2";
+	icon_state = "bluedirtychess2"
 	},
 /area/f13/bunker)
 "gm" = (
@@ -2754,8 +2755,8 @@
 /area/f13/bunker)
 "gX" = (
 /obj/effect/decal/waste{
-	icon_state = "goo12";
-	tag = "icon-goo12"
+	tag = "icon-goo12";
+	icon_state = "goo12"
 	},
 /obj/structure/closet/crate/solarpanel_small,
 /turf/open/floor/plasteel/barber{
@@ -3069,8 +3070,8 @@
 /area/f13/bunker)
 "hN" = (
 /obj/structure/simple_door/house{
-	icon_state = "interior";
-	tag = "icon-interior"
+	tag = "icon-interior";
+	icon_state = "interior"
 	},
 /turf/open/floor/plasteel/barber{
 	icon = 'icons/turf/f13floors2.dmi';
@@ -3854,9 +3855,9 @@
 /area/f13/bunker)
 "ju" = (
 /obj/structure/chair/wood/modern{
-	dir = 1;
+	tag = "icon-wooden_chair_new (NORTH)";
 	icon_state = "wooden_chair_new";
-	tag = "icon-wooden_chair_new (NORTH)"
+	dir = 1
 	},
 /turf/open/floor/carpet,
 /area/f13/bunker)
@@ -4438,8 +4439,8 @@
 /obj/structure/rack,
 /obj/structure/bedsheetbin,
 /turf/open/floor/f13{
-	icon_state = "bluedirtychess2";
-	tag = "icon-bluedirtychess2"
+	tag = "icon-bluedirtychess2";
+	icon_state = "bluedirtychess2"
 	},
 /area/f13/bunker)
 "kK" = (
@@ -5148,8 +5149,8 @@
 	color = "#000000"
 	},
 /turf/open/floor/f13{
-	icon_state = "bluedirtychess2";
-	tag = "icon-bluedirtychess2"
+	tag = "icon-bluedirtychess2";
+	icon_state = "bluedirtychess2"
 	},
 /area/f13/bunker)
 "mt" = (
@@ -5837,8 +5838,8 @@
 /obj/structure/rack,
 /obj/item/soap,
 /turf/open/floor/f13{
-	icon_state = "bluedirtychess2";
-	tag = "icon-bluedirtychess2"
+	tag = "icon-bluedirtychess2";
+	icon_state = "bluedirtychess2"
 	},
 /area/f13/bunker)
 "nW" = (
@@ -5908,8 +5909,8 @@
 /obj/item/clothing/shoes/sneakers/black,
 /obj/item/clothing/shoes/sneakers/black,
 /turf/open/floor/f13{
-	icon_state = "bluedirtychess2";
-	tag = "icon-bluedirtychess2"
+	tag = "icon-bluedirtychess2";
+	icon_state = "bluedirtychess2"
 	},
 /area/f13/bunker)
 "oc" = (
@@ -6582,8 +6583,8 @@
 	tag = "icon-sink (EAST)"
 	},
 /turf/open/floor/f13{
-	icon_state = "bluedirtychess2";
-	tag = "icon-bluedirtychess2"
+	tag = "icon-bluedirtychess2";
+	icon_state = "bluedirtychess2"
 	},
 /area/f13/bunker)
 "pH" = (
@@ -6643,8 +6644,8 @@
 	dir = 8
 	},
 /turf/open/floor/f13{
-	icon_state = "bluedirtychess2";
-	tag = "icon-bluedirtychess2"
+	tag = "icon-bluedirtychess2";
+	icon_state = "bluedirtychess2"
 	},
 /area/f13/bunker)
 "pO" = (
@@ -6928,8 +6929,8 @@
 	req_access_txt = "31"
 	},
 /obj/effect/turf_decal/stripes/line{
-	icon_state = "warningline";
-	dir = 8
+	dir = 8;
+	icon_state = "warningline"
 	},
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
@@ -6965,8 +6966,8 @@
 	dir = 1
 	},
 /turf/open/floor/f13{
-	icon_state = "bluedirtychess2";
-	tag = "icon-bluedirtychess2"
+	tag = "icon-bluedirtychess2";
+	icon_state = "bluedirtychess2"
 	},
 /area/f13/bunker)
 "qH" = (
@@ -6982,8 +6983,8 @@
 /area/f13/bunker)
 "qI" = (
 /obj/effect/turf_decal/stripes/line{
-	icon_state = "warningline";
-	dir = 8
+	dir = 8;
+	icon_state = "warningline"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/underground/cave)
@@ -6998,8 +6999,8 @@
 	icon_state = "2-4"
 	},
 /obj/effect/turf_decal/stripes/line{
-	icon_state = "warningline";
-	dir = 1
+	dir = 1;
+	icon_state = "warningline"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/underground/cave)
@@ -7008,8 +7009,8 @@
 	icon_state = "1-8"
 	},
 /obj/effect/turf_decal/stripes/line{
-	icon_state = "warningline";
-	dir = 1
+	dir = 1;
+	icon_state = "warningline"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/underground/cave)
@@ -7049,8 +7050,8 @@
 	icon_state = "1-2"
 	},
 /obj/effect/turf_decal/stripes/line{
-	icon_state = "warningline";
-	dir = 1
+	dir = 1;
+	icon_state = "warningline"
 	},
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
@@ -7183,8 +7184,8 @@
 	req_access_txt = "31"
 	},
 /obj/effect/turf_decal/stripes/line{
-	icon_state = "warningline";
-	dir = 1
+	dir = 1;
+	icon_state = "warningline"
 	},
 /obj/effect/turf_decal/stripes/line,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper,
@@ -7196,8 +7197,8 @@
 	req_access_txt = "31"
 	},
 /obj/effect/turf_decal/stripes/line{
-	icon_state = "warningline";
-	dir = 1
+	dir = 1;
+	icon_state = "warningline"
 	},
 /obj/effect/turf_decal/stripes/line,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper,
@@ -7578,8 +7579,8 @@
 /area/f13/underground/cave)
 "sd" = (
 /turf/open/floor/f13/wood{
-	icon_state = "housewood2-broken";
-	tag = "icon-housewood2-broken"
+	tag = "icon-housewood2-broken";
+	icon_state = "housewood2-broken"
 	},
 /area/f13/tunnel)
 "se" = (
@@ -7924,8 +7925,8 @@
 /obj/structure/rack,
 /obj/item/crafting/abraxo,
 /turf/open/floor/f13{
-	icon_state = "bluedirtychess2";
-	tag = "icon-bluedirtychess2"
+	tag = "icon-bluedirtychess2";
+	icon_state = "bluedirtychess2"
 	},
 /area/f13/bunker)
 "vn" = (
@@ -7959,14 +7960,14 @@
 /area/f13/bunker)
 "vy" = (
 /obj/machinery/shower{
-	dir = 8;
+	tag = "icon-shower (WEST)";
 	icon_state = "shower";
-	tag = "icon-shower (WEST)"
+	dir = 8
 	},
 /obj/item/soap,
 /turf/open/floor/f13{
-	icon_state = "bluedirtychess2";
-	tag = "icon-bluedirtychess2"
+	tag = "icon-bluedirtychess2";
+	icon_state = "bluedirtychess2"
 	},
 /area/f13/bunker)
 "vD" = (
@@ -7977,8 +7978,8 @@
 	color = "#000000"
 	},
 /turf/open/floor/f13{
-	icon_state = "bluedirtychess2";
-	tag = "icon-bluedirtychess2"
+	tag = "icon-bluedirtychess2";
+	icon_state = "bluedirtychess2"
 	},
 /area/f13/bunker)
 "vL" = (
@@ -8085,8 +8086,8 @@
 "xh" = (
 /obj/machinery/washing_machine,
 /turf/open/floor/f13{
-	icon_state = "bluedirtychess2";
-	tag = "icon-bluedirtychess2"
+	tag = "icon-bluedirtychess2";
+	icon_state = "bluedirtychess2"
 	},
 /area/f13/bunker)
 "xj" = (
@@ -8111,8 +8112,8 @@
 /area/f13/bunker)
 "xp" = (
 /turf/open/floor/f13/wood{
-	icon_state = "housewood3-broken";
-	tag = "icon-housewood3-broken"
+	tag = "icon-housewood3-broken";
+	icon_state = "housewood3-broken"
 	},
 /area/f13/tunnel)
 "xr" = (
@@ -8367,8 +8368,8 @@
 "zs" = (
 /obj/structure/toilet,
 /turf/open/floor/f13{
-	icon_state = "bluedirtychess2";
-	tag = "icon-bluedirtychess2"
+	tag = "icon-bluedirtychess2";
+	icon_state = "bluedirtychess2"
 	},
 /area/f13/bunker)
 "zt" = (
@@ -8388,8 +8389,8 @@
 	layer = 2.9
 	},
 /turf/open/floor/f13{
-	icon_state = "bluedirtychess2";
-	tag = "icon-bluedirtychess2"
+	tag = "icon-bluedirtychess2";
+	icon_state = "bluedirtychess2"
 	},
 /area/f13/bunker)
 "zU" = (
@@ -8527,8 +8528,8 @@
 /area/f13/bunker)
 "Bo" = (
 /obj/effect/decal/waste{
-	icon_state = "goo12";
-	tag = "icon-goo12"
+	tag = "icon-goo12";
+	icon_state = "goo12"
 	},
 /turf/open/floor/plasteel/barber{
 	icon_state = "plating";
@@ -8643,8 +8644,8 @@
 /obj/item/clothing/gloves/f13/baseball,
 /obj/item/twohanded/baseball,
 /turf/open/floor/f13{
-	icon_state = "bluedirtychess2";
-	tag = "icon-bluedirtychess2"
+	tag = "icon-bluedirtychess2";
+	icon_state = "bluedirtychess2"
 	},
 /area/f13/bunker)
 "Cu" = (
@@ -8724,6 +8725,17 @@
 	icon_state = "bar"
 	},
 /area/f13/bunker)
+"Dl" = (
+/obj/machinery/light/small{
+	dir = 4
+	},
+/obj/structure/reagent_dispensers/barrel/explosive,
+/turf/open/floor/plasteel/barber{
+	icon = 'icons/turf/f13floors2.dmi';
+	icon_state = "bluerustychess2";
+	tag = "icon-bluerustychess2"
+	},
+/area/f13/bunker)
 "Do" = (
 /obj/structure/table/wood,
 /obj/machinery/recharger,
@@ -8737,8 +8749,8 @@
 /area/f13/bunker)
 "Dv" = (
 /obj/effect/decal/waste{
-	icon_state = "goo8";
-	tag = "icon-goo8"
+	tag = "icon-goo8";
+	icon_state = "goo8"
 	},
 /turf/open/floor/plasteel/barber{
 	icon_state = "platingdmg2";
@@ -8921,9 +8933,9 @@
 /area/f13/bunker)
 "EO" = (
 /obj/structure/toilet{
-	dir = 8;
+	tag = "icon-toilet00 (WEST)";
 	icon_state = "toilet00";
-	tag = "icon-toilet00 (WEST)"
+	dir = 8
 	},
 /turf/open/floor/f13{
 	icon_state = "whitegreenrustychess"
@@ -9080,8 +9092,8 @@
 "Gh" = (
 /obj/machinery/chem_heater,
 /turf/open/floor/f13{
-	icon_state = "bluedirtychess2";
-	tag = "icon-bluedirtychess2"
+	tag = "icon-bluedirtychess2";
+	icon_state = "bluedirtychess2"
 	},
 /area/f13/bunker)
 "Gj" = (
@@ -9492,8 +9504,8 @@
 /obj/item/storage/box/syringes,
 /obj/item/storage/box/beakers,
 /turf/open/floor/f13{
-	icon_state = "bluedirtychess2";
-	tag = "icon-bluedirtychess2"
+	tag = "icon-bluedirtychess2";
+	icon_state = "bluedirtychess2"
 	},
 /area/f13/bunker)
 "Ku" = (
@@ -9587,8 +9599,8 @@
 /area/f13/bunker)
 "KQ" = (
 /obj/effect/decal/waste{
-	icon_state = "goo8";
-	tag = "icon-goo8"
+	tag = "icon-goo8";
+	icon_state = "goo8"
 	},
 /turf/open/floor/plasteel/barber{
 	icon_state = "plating";
@@ -9766,9 +9778,9 @@
 /area/f13/tunnel)
 "LW" = (
 /obj/structure/chair{
-	dir = 8;
+	tag = "icon-chair (WEST)";
 	icon_state = "chair";
-	tag = "icon-chair (WEST)"
+	dir = 8
 	},
 /turf/open/floor/plasteel/barber{
 	icon = 'icons/turf/f13floors2.dmi';
@@ -9782,8 +9794,8 @@
 /obj/item/reagent_containers/pill/patch/jet,
 /obj/item/reagent_containers/pill/patch/jet,
 /turf/open/floor/f13{
-	icon_state = "bluedirtychess2";
-	tag = "icon-bluedirtychess2"
+	tag = "icon-bluedirtychess2";
+	icon_state = "bluedirtychess2"
 	},
 /area/f13/bunker)
 "Me" = (
@@ -9813,8 +9825,8 @@
 	},
 /obj/item/soap,
 /turf/open/floor/f13{
-	icon_state = "bluedirtychess2";
-	tag = "icon-bluedirtychess2"
+	tag = "icon-bluedirtychess2";
+	icon_state = "bluedirtychess2"
 	},
 /area/f13/bunker)
 "MD" = (
@@ -9830,9 +9842,9 @@
 /area/f13/bunker)
 "MM" = (
 /obj/structure/chair{
-	dir = 4;
+	tag = "icon-chair (EAST)";
 	icon_state = "chair";
-	tag = "icon-chair (EAST)"
+	dir = 4
 	},
 /turf/open/floor/plasteel/barber{
 	icon = 'icons/turf/f13floors2.dmi';
@@ -9858,9 +9870,9 @@
 /area/f13/bunker)
 "MU" = (
 /obj/structure/toilet{
-	dir = 8;
+	tag = "icon-toilet00 (WEST)";
 	icon_state = "toilet00";
-	tag = "icon-toilet00 (WEST)"
+	dir = 8
 	},
 /turf/open/floor/f13{
 	icon_state = "whitegreenrustychess"
@@ -10029,8 +10041,8 @@
 /area/f13/tunnel)
 "PC" = (
 /obj/effect/decal/waste{
-	icon_state = "goo12";
-	tag = "icon-goo12"
+	tag = "icon-goo12";
+	icon_state = "goo12"
 	},
 /obj/structure/closet,
 /obj/effect/spawner/lootdrop/f13/armor/random_high,
@@ -10090,6 +10102,10 @@
 	tag = "icon-bluerustychess2"
 	},
 /area/f13/bunker)
+"PO" = (
+/obj/structure/reagent_dispensers/barrel/explosive,
+/turf/closed/indestructible/rock,
+/area/f13/underground/cave)
 "PQ" = (
 /obj/structure/rack{
 	dir = 8;
@@ -10147,8 +10163,8 @@
 "Qj" = (
 /obj/machinery/chem_dispenser,
 /turf/open/floor/f13{
-	icon_state = "bluedirtychess2";
-	tag = "icon-bluedirtychess2"
+	tag = "icon-bluedirtychess2";
+	icon_state = "bluedirtychess2"
 	},
 /area/f13/bunker)
 "Qq" = (
@@ -10248,8 +10264,8 @@
 	dir = 4
 	},
 /turf/open/floor/f13{
-	icon_state = "bluedirtychess2";
-	tag = "icon-bluedirtychess2"
+	tag = "icon-bluedirtychess2";
+	icon_state = "bluedirtychess2"
 	},
 /area/f13/bunker)
 "Rg" = (
@@ -10353,8 +10369,8 @@
 	layer = 2.9
 	},
 /turf/open/floor/f13{
-	icon_state = "bluedirtychess2";
-	tag = "icon-bluedirtychess2"
+	tag = "icon-bluedirtychess2";
+	icon_state = "bluedirtychess2"
 	},
 /area/f13/bunker)
 "RN" = (
@@ -10625,8 +10641,8 @@
 	tag = "icon-sink (EAST)"
 	},
 /turf/open/floor/f13{
-	icon_state = "bluedirtychess2";
-	tag = "icon-bluedirtychess2"
+	tag = "icon-bluedirtychess2";
+	icon_state = "bluedirtychess2"
 	},
 /area/f13/bunker)
 "TP" = (
@@ -10665,8 +10681,8 @@
 /area/f13/bunker)
 "TW" = (
 /turf/open/floor/f13/wood{
-	icon_state = "housewood2-broken";
-	tag = "icon-housewood2-broken"
+	tag = "icon-housewood2-broken";
+	icon_state = "housewood2-broken"
 	},
 /area/f13/bunker)
 "TZ" = (
@@ -10704,8 +10720,8 @@
 "Ut" = (
 /obj/structure/closet/crate/bin,
 /turf/open/floor/f13{
-	icon_state = "bluedirtychess2";
-	tag = "icon-bluedirtychess2"
+	tag = "icon-bluedirtychess2";
+	icon_state = "bluedirtychess2"
 	},
 /area/f13/bunker)
 "UA" = (
@@ -10716,13 +10732,13 @@
 /area/f13/bunker)
 "UD" = (
 /obj/machinery/shower{
-	dir = 8;
+	tag = "icon-shower (WEST)";
 	icon_state = "shower";
-	tag = "icon-shower (WEST)"
+	dir = 8
 	},
 /turf/open/floor/f13{
-	icon_state = "bluedirtychess2";
-	tag = "icon-bluedirtychess2"
+	tag = "icon-bluedirtychess2";
+	icon_state = "bluedirtychess2"
 	},
 /area/f13/bunker)
 "UE" = (
@@ -10741,8 +10757,8 @@
 /area/f13/bunker)
 "UG" = (
 /obj/effect/decal/waste{
-	icon_state = "goo8";
-	tag = "icon-goo8"
+	tag = "icon-goo8";
+	icon_state = "goo8"
 	},
 /obj/structure/reagent_dispensers/barrel/four,
 /turf/open/floor/plating,
@@ -10871,9 +10887,9 @@
 /area/f13/bunker)
 "VN" = (
 /obj/structure/chair/wood/modern{
-	dir = 1;
+	tag = "icon-wooden_chair_new (NORTH)";
 	icon_state = "wooden_chair_new";
-	tag = "icon-wooden_chair_new (NORTH)"
+	dir = 1
 	},
 /turf/open/floor/holofloor/carpet,
 /area/f13/bunker)
@@ -10916,8 +10932,8 @@
 /area/f13/bunker)
 "Wa" = (
 /turf/open/floor/f13{
-	icon_state = "bluedirtychess2";
-	tag = "icon-bluedirtychess2"
+	tag = "icon-bluedirtychess2";
+	icon_state = "bluedirtychess2"
 	},
 /area/f13/bunker)
 "Wd" = (
@@ -11021,8 +11037,8 @@
 /area/f13/bunker)
 "WT" = (
 /obj/structure/simple_door/house{
-	icon_state = "room";
-	tag = "icon-room"
+	tag = "icon-room";
+	icon_state = "room"
 	},
 /obj/structure/barricade/wooden/planks/pregame,
 /turf/open/floor/f13/wood,
@@ -11049,9 +11065,9 @@
 /area/f13/bunker)
 "Xg" = (
 /obj/structure/chair/wood/modern{
-	dir = 1;
+	tag = "icon-wooden_chair_new (NORTH)";
 	icon_state = "wooden_chair_new";
-	tag = "icon-wooden_chair_new (NORTH)"
+	dir = 1
 	},
 /turf/open/floor/f13/wood{
 	icon_state = "housewood2";
@@ -11072,6 +11088,14 @@
 	},
 /turf/open/floor/f13{
 	icon_state = "darkdirty"
+	},
+/area/f13/bunker)
+"XB" = (
+/obj/structure/reagent_dispensers/water_cooler,
+/turf/open/floor/plasteel/barber{
+	icon = 'icons/turf/f13floors2.dmi';
+	icon_state = "bluerustychess2";
+	tag = "icon-bluerustychess2"
 	},
 /area/f13/bunker)
 "XH" = (
@@ -11305,8 +11329,8 @@
 "ZJ" = (
 /obj/effect/decal/remains/human,
 /obj/effect/decal/waste{
-	icon_state = "goo12";
-	tag = "icon-goo12"
+	tag = "icon-goo12";
+	icon_state = "goo12"
 	},
 /turf/open/floor/plasteel/barber{
 	icon_state = "platingdmg2";
@@ -15717,7 +15741,7 @@ aX
 jZ
 jZ
 jZ
-jZ
+ws
 jZ
 jZ
 jZ
@@ -17006,7 +17030,7 @@ aX
 jZ
 jZ
 jZ
-jZ
+jd
 aX
 aa
 aa
@@ -17259,7 +17283,7 @@ aa
 aa
 aa
 aa
-aa
+PO
 aX
 pI
 pI
@@ -18817,7 +18841,7 @@ aV
 HD
 aV
 Fb
-aV
+ig
 HD
 aa
 aa
@@ -19058,7 +19082,7 @@ aa
 aa
 aa
 aa
-aa
+PO
 aX
 aV
 aV
@@ -20344,7 +20368,7 @@ aa
 aa
 HD
 cg
-dL
+Dl
 aV
 dq
 aV
@@ -20861,7 +20885,7 @@ IY
 aV
 aV
 bH
-aV
+ig
 HD
 HD
 pI
@@ -21383,7 +21407,7 @@ aV
 aV
 aV
 aV
-aV
+ig
 HD
 aa
 aa
@@ -23180,7 +23204,7 @@ wQ
 Hv
 Dv
 HD
-aV
+XB
 aV
 aV
 ig
