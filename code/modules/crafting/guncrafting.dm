@@ -68,7 +68,7 @@
 	density = TRUE
 	layer = BELOW_OBJ_LAYER
 	anchored = TRUE
-	machine_tool_behaviour = TOOL_RELOADER
+	machine_tool_behaviour = list(TOOL_RELOADER, TOOL_MSRELOADER)
 
 /obj/machinery/ammobench/makeshift
 	name = "makeshift reloading bench"
