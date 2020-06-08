@@ -554,8 +554,9 @@
 	desc = "A set of standard issue ranger patrol armor that provides defense similar to a suit of pre-war combat armor."
 	icon_state = "ncr_patrol"
 	item_state = "ncr_patrol"
+	slowdown = -0.05
 	body_parts_covered = CHEST|GROIN|LEGS|ARMS
-	armor = list("melee" = 40, "bullet" = 45, "laser" = 40, "energy" = 40, "bomb" = 50, "bio" = 0, "rad" = 0, "fire" = 60, "acid" = 20)
+	armor = list("melee" = 50, "bullet" = 40, "laser" = 40, "energy" = 40, "bomb" = 50, "bio" = 0, "rad" = 0, "fire" = 60, "acid" = 20)
 
 /obj/item/clothing/suit/armor/f13/combat/brotherhood
 	name = "brotherhood combat armor"
@@ -599,8 +600,8 @@
 	icon_state = "ranger"
 	item_state = "ranger"
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS
-	slowdown = 0.5
-	armor = list("melee" = 65, "bullet" = 65, "laser" = 45, "energy" = 45, "bomb" = 55, "bio" = 60, "rad" = 60, "fire" = 90, "acid" = 20)
+	slowdown = -0.05 //same as vet legion, NCR only gets one set of this
+	armor = list("melee" = 60, "bullet" = 50, "laser" = 40, "energy" = 45, "bomb" = 55, "bio" = 60, "rad" = 60, "fire" = 90, "acid" = 20)
 	strip_delay = 60
 
 /obj/item/clothing/suit/armor/f13/rangercombat/desert
@@ -614,8 +615,7 @@
 	desc = "A heavily reinforced set of military grade armor, commonly seen in the Divide now repurposed and reissued to Leading Rangers."
 	icon_state = "elite_riot"
 	item_state = "elite_riot"
-	slowdown = 0.6
-	armor = list("melee" = 65, "bullet" = 60, "laser" = 60, "energy" = 60, "bomb" = 70, "bio" = 60, "rad" = 60, "fire" = 90, "acid" = 50)
+	armor = list("melee" = 60, "bullet" = 50, "laser" = 40, "energy" = 45, "bomb" = 55, "bio" = 60, "rad" = 60, "fire" = 90, "acid" = 20) //keeping this here for future changes
 //	icon = 'icons/fallout/clothing_w/suit.dmi'
 
 /obj/item/clothing/suit/armor/f13/chitinarmor
@@ -778,7 +778,7 @@
 	desc = "Developed in early 2077 after the Anchorage Reclamation, the T-60 series of power armor was designed to eventually replace the T-51b as the pinnacle of powered armor technology in the U.S. military arsenal."
 	icon_state = "t60powerarmor"
 	item_state = "t60powerarmor"
-	slowdown = 0.16
+	slowdown = 0.2
 	armor = list("melee" = 85, "bullet" = 75, "laser" = 55, "energy" = 70, "bomb" = 82, "bio" = 100, "rad" = 100, "fire" = 95, "acid" = 0)
 
 /obj/item/clothing/suit/armor/f13/power_armor/t51b
@@ -786,7 +786,7 @@
 	desc = "The pinnacle of pre-war technology. This suit of power armor provides substantial protection to the wearer."
 	icon_state = "t51bpowerarmor"
 	item_state = "t51bpowerarmor"
-	slowdown = 0.15 //+0.1 from helmet = total 0.25
+	slowdown = 0.25 //+0.1 from helmet = total 0.25
 	armor = list("melee" = 75, "bullet" = 70, "laser" = 50, "energy" = 60, "bomb" = 62, "bio" = 100, "rad" = 100, "fire" = 90, "acid" = 0)
 
 /obj/item/clothing/suit/armor/f13/power_armor/t51b/sierra
@@ -801,6 +801,7 @@
 	icon_state = "advpowerarmor1"
 	item_state = "advpowerarmor1"
 	armor = list("melee" = 85, "bullet" = 80, "laser" = 65, "energy" = 75, "bomb" = 72, "bio" = 100, "rad" = 100, "fire" = 90, "acid" = 0)
+	slowdown = 0.25
 
 /obj/item/clothing/suit/armor/f13/power_armor/advanced/mk2
 	name = "advanced power armor mark II"
@@ -860,8 +861,8 @@
 	desc = "Heavy metal armor worn by the Veteran Decanii retinue of the region."
 	icon_state = "legmetal"
 	item_state = "legmetal"
-	slowdown = 0.2//better armor, slight slowdown
-	armor = list("melee" = 65, "bullet" = 45, "laser" = 25, "energy" = 15, "bomb" = 25, "bio" = 50, "rad" = 20, "fire" = 70, "acid" = 0)
+	slowdown = 0.1//better armor, slight slowdown
+	armor = list("melee" = 65, "bullet" = 45, "laser" = 40, "energy" = 15, "bomb" = 25, "bio" = 50, "rad" = 20, "fire" = 70, "acid" = 0)
 
 /obj/item/clothing/suit/armor/f13/legion/vet/explorer
 	name = "legion explorer armor"
@@ -975,6 +976,7 @@
 	icon_state = "scoutarmor"
 	item_state = "scoutarmor"
 	armor = list("melee" = 50, "bullet" = 40, "laser" = 30, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 30, "fire" = 60, "acid" = 0)
+	slowdown = -0.05
 
 /obj/item/clothing/suit/armor/f13/ncrarmor/scout/veteran
 	name = "NCR 3rd Scout veteran combat armor"
@@ -1027,7 +1029,7 @@
 	allowed = list(/obj/item/gun)
 	togglename = "collar"
 
-/obj/item/clothing/suit/toggle/armor/f13/rangerrecon
+/obj/item/clothing/suit/toggle/armor/f13/rangerrecon //unused
 	name = "ranger recon duster"
 	desc = "A thicker than average duster worn by NCR recon rangers out in the field. It's not heavily armored by any means, but is easy to move around in and provides excellent protection from the harsh desert environment."
 	icon_state = "duster_recon"
@@ -1041,7 +1043,8 @@
 	desc = "A quaint little jacket and scarf worn by NCR trail rangers."
 	icon_state = "cowboyrang"
 	item_state = "cowboyrang"
-	slowdown = -0.15
+	slowdown = -0.1
+	armor = list("melee" = 40, "bullet" = 35, "laser" = 20, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
 
 /obj/item/clothing/suit/armor/f13/town
 	name = "town trenchcoat"

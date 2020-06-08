@@ -484,7 +484,7 @@
 	desc = "An intimidating helmet that is issued with it's corresponding suit."
 	icon_state = "enclave_helmet"
 	item_state = "enclave_helmet"
-	armor = list("melee" = 50, "bullet" = 39, "laser" = 25, "energy" = 25, "bomb" = 39, "bio" = 0, "rad" = 50, "fire" = 0, "acid" = 20)
+	armor = list("melee" = 45, "bullet" = 50, "laser" = 25, "energy" = 25, "bomb" = 39, "bio" = 0, "rad" = 50, "fire" = 0, "acid" = 20)
 
 /obj/item/clothing/head/helmet/f13/combat/swat
 	name = "SWAT combat helmet"
@@ -631,7 +631,7 @@
 	desc = "An old combat helmet, out of use around the time of the war."
 	icon_state = "ranger"
 	item_state = "ranger"
-	armor = list("melee" = 65, "bullet" = 65, "laser" = 45, "energy" = 45, "bomb" = 55, "bio" = 60, "rad" = 60, "fire" = 90, "acid" = 20)
+	armor = list("melee" = 60, "bullet" = 50, "laser" = 45, "energy" = 45, "bomb" = 55, "bio" = 60, "rad" = 60, "fire" = 90, "acid" = 20)
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR|HIDEFACIALHAIR|HIDEFACE
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
 	strip_delay = 50
@@ -660,8 +660,7 @@
 	desc = "An old combat helmet seen in the divide, repurposed for higher ranking Rangers."
 	icon_state = "elite_riot"
 	item_state = "elite_riot"
-	slowdown = 0.2
-	armor = list("melee" = 70, "bullet" = 60, "laser" = 40, "energy" = 60, "bomb" = 55, "bio" = 60, "rad" = 60, "fire" = 40, "acid" = 0)
+	armor = list("melee" = 60, "bullet" = 50, "laser" = 45, "energy" = 45, "bomb" = 55, "bio" = 60, "rad" = 60, "fire" = 90, "acid" = 20)
 
 //Metal masks
 
