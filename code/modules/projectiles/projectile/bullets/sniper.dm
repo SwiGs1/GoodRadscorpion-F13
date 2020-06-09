@@ -67,7 +67,7 @@
 	damage = 80
 	armour_penetration = 100
 	knockdown = 100
-	dismemberment = 100
+	dismemberment = 45
 
 /obj/item/projectile/bullet/a50MG/explosive/on_hit(atom/target, blocked = FALSE)
 	..()
