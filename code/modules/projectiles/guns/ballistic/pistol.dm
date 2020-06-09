@@ -26,7 +26,8 @@
 	w_class = WEIGHT_CLASS_NORMAL
 	mag_type = /obj/item/ammo_box/magazine/m45
 	can_suppress = FALSE
-	fire_delay = 2
+	fire_delay = 3
+	extra_damage = 28
 
 /obj/item/gun/ballistic/automatic/pistol/deagle
 	name = "desert eagle"
@@ -36,6 +37,8 @@
 	mag_type = /obj/item/ammo_box/magazine/a50
 	can_suppress = FALSE
 	w_class = WEIGHT_CLASS_NORMAL
+	fire_delay = 3
+	extra_damage = 45
 
 /obj/item/gun/ballistic/automatic/pistol/deagle/update_icon()
 	..()
@@ -91,6 +94,9 @@
 	w_class = WEIGHT_CLASS_NORMAL
 	fire_delay = 2
 	can_suppress = TRUE
+	extra_damage = 25
+	extra_penetration = 5
+
 
 /obj/item/gun/ballistic/automatic/pistol/n99/executive
 	name = "\improper Executive" //'the Executive'
@@ -98,17 +104,19 @@
 	icon_state = "executive"
 	can_suppress = FALSE
 	burst_size = 2
-	extra_penetration = 10 //2x 35 damage, 10 AP- hits like a 2rd burst 5.56, but more accurate
+	extra_penetration = 10 
+	extra_damage = 30
 
 /obj/item/gun/ballistic/automatic/pistol/ninemil
-	name = "browning hi-power"
+	name = "9mm"
 	desc = "A mass produced pre-war Browning Hi-power 9mm pistol."
 	icon_state = "ninemil"
 	mag_type = /obj/item/ammo_box/magazine/m9mm
 	w_class = WEIGHT_CLASS_NORMAL
 	fire_delay = 2
 	can_suppress = FALSE
-	extra_damage = 5
+	extra_damage = 20
+	extra_penetration = 5
 	fire_sound = 'sound/f13weapons/ninemil.ogg'
 
 /obj/item/gun/ballistic/automatic/pistol/type17
@@ -118,7 +126,8 @@
 	mag_type = /obj/item/ammo_box/magazine/m9mm
 	fire_delay = 1
 	can_suppress = FALSE
-	extra_damage = 5
+	extra_damage = 20
+	extra_penetration = 10
 	fire_sound = 'sound/f13weapons/ninemil.ogg'
 
 /obj/item/gun/ballistic/automatic/pistol/ninemil/maria
@@ -127,5 +136,5 @@
 	icon_state = "maria"
 	w_class = WEIGHT_CLASS_SMALL
 	fire_delay = 0
-	extra_damage = 10 //40 damage, 20 AP- hits like a 7.62 and fires faster
-	extra_penetration = 20
+	extra_damage = 30
+	extra_penetration = 15

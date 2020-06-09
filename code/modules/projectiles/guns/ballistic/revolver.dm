@@ -362,6 +362,8 @@
 	fire_sound = 'sound/f13weapons/44mag.ogg'
 	w_class = WEIGHT_CLASS_NORMAL
 	fire_delay = 3
+	extra_damage = 30
+	extra_penetration = 10
 
 /obj/item/gun/ballistic/revolver/m29/alt
 	item_state = "44magnum"
@@ -373,8 +375,8 @@
 	desc = "This .44 revolver has been modified with a special hammer mechanism, allowing for slow, powerful shots, or fanning the hammer for a flurry of more inaccurate shots."
 	item_state = "m29peace"
 	icon_state = "m29peace"
-	extra_damage = 15
-	extra_penetration = 5
+	extra_damage = 0
+	extra_penetration = 0
 	fire_delay = 15
 	burst_size = 1
 	burst_delay = 1
@@ -391,17 +393,17 @@
 			select += 1
 			burst_size = 6 //fan the hammer
 			spread = 45
-			extra_damage = -10 //25 damage, 5 AP - equivalent to a .38 round. Sounds weak, but it's six-round-burst!
-			extra_penetration = 0
+			extra_damage = 25
+			extra_penetration = 5
 			fire_delay = 1
 			to_chat(user, "<span class='notice'>You prepare to fan the hammer for a rapid burst of shots.</span>")
 		if(1)
 			select = 0
 			burst_size = 1
 			spread = 0
-			extra_damage = 15 //50 damage, 10 AP - equivalent to a .45-70 Govt round. Strong, but slow.
-			extra_penetration = 5
-			fire_delay = 10 //pace your shots
+			extra_damage = 40
+			extra_penetration = 20
+			fire_delay = 6
 			to_chat(user, "<span class='notice'>You switch to single-shot fire.</span>")
 	update_icon()
 
@@ -413,6 +415,7 @@
 	zoom_amt = 10
 	zoom_out_amt = 13
 	w_class = WEIGHT_CLASS_NORMAL
+	fire_delay = 4
 
 /obj/item/gun/ballistic/revolver/colt357
 	name = "\improper .357 magnum revolver"
@@ -421,7 +424,9 @@
 	icon_state = "colt357"
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/rev357
 	w_class = WEIGHT_CLASS_NORMAL
-	fire_delay = 5
+	fire_delay = 4
+	extra_damage = 30
+	extra_penetration = 0
 
 /obj/item/gun/ballistic/revolver/colt357/lucky
 	name = "Lucky"
@@ -430,7 +435,8 @@
 	icon_state = "lucky"
 	w_class = WEIGHT_CLASS_SMALL
 	fire_delay = 0
-	block_chance = 20 //Do you feel lucky? Well, do you, punk?
+	block_chance = 20 
+	extra_penetration = 10
 
 /obj/item/gun/ballistic/revolver/colt357/lucky/hit_reaction(mob/living/carbon/human/owner, atom/movable/hitby, attack_text = "the attack", final_block_chance = 0, damage = 0, attack_type = MELEE_ATTACK)
 	if(attack_type == PROJECTILE_ATTACK)
@@ -447,6 +453,8 @@
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/revneedler
 	fire_sound = 'sound/weapons/gunshot_silenced.ogg'
 	w_class = WEIGHT_CLASS_SMALL
+	extra_damage = 25
+	extra_penetration = 30
 
 /obj/item/gun/ballistic/revolver/colt6250
 	name = "colt 6250"
@@ -455,7 +463,9 @@
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/rev6250
 	fire_sound = 'sound/f13weapons/10mm_fire_02.ogg'
 	w_class = WEIGHT_CLASS_NORMAL
-	fire_delay = 3
+	fire_delay = 2
+	extra_damage = 30
+	extra_penetration = 5
 
 /obj/item/gun/ballistic/revolver/sequoia
 	name = "ranger sequoia"
@@ -466,6 +476,8 @@
 	fire_sound = 'sound/f13weapons/sequoia.ogg'
 	w_class = WEIGHT_CLASS_NORMAL
 	fire_delay = 4
+	extra_damage = 45
+	extra_penetration = 5
 
 /obj/item/gun/ballistic/revolver/sequoia/scoped
 	name = "hunting revolver"
@@ -475,6 +487,8 @@
 	zoom_amt = 10
 	zoom_out_amt = 13
 	w_class = WEIGHT_CLASS_NORMAL
+	fire_delay = 5
+
 
 /obj/item/gun/ballistic/revolver/zipgun
 	name = "zipgun"
@@ -484,7 +498,9 @@
 	fire_sound = 'sound/weapons/Gunshot.ogg'
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/improvised9mm
 	spread = 6
-	fire_delay = 1
+	fire_delay = 4
+	extra_damage = 30
+	extra_penetration = 0
 
 /obj/item/gun/ballistic/revolver/pipe_rifle
 	name = "pipe rifle"
@@ -496,7 +512,10 @@
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
 	spread = 4
-	fire_delay = 1
+	fire_delay = 5
+	extra_damage = 30
+	extra_penetration = 10
+
 
 /obj/item/gun/ballistic/revolver/police
 	name = "police pistol"
@@ -505,7 +524,9 @@
 	fire_sound = 'sound/f13weapons/policepistol.ogg'
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/rev38
 	w_class = WEIGHT_CLASS_SMALL
-	fire_delay = 2
+	fire_delay = 3
+	extra_damage = 30
+	extra_penetration = 0
 
 /obj/item/gun/ballistic/revolver/thatgun
 	name = ".223 pistol"
@@ -514,6 +535,8 @@
 	fire_sound = 'sound/f13weapons/magnum_fire.ogg'
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/thatgun
 	w_class = WEIGHT_CLASS_NORMAL
+	extra_damage = 45
+	extra_penetration = 10
 
 /obj/item/gun/ballistic/revolver/zhurong
 	name = "Zhu-Rong v417"
@@ -522,7 +545,7 @@
 	w_class = WEIGHT_CLASS_SMALL
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/rev6250
 	fire_delay = 0
-	extra_damage = 20
-	burst_size = 2
-	extra_penetration = 5
+	extra_damage = 35
+	burst_size = 1
+	extra_penetration = 15
 	fire_sound = 'sound/f13weapons/ninemil.ogg'

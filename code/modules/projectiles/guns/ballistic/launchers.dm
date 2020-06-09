@@ -108,10 +108,12 @@
 	mag_type = /obj/item/ammo_box/magazine/internal/tribalbow
 	fire_sound = 'sound/weapons/grenadelaunch.ogg'
 	burst_size = 1
-	fire_delay = 0
+	fire_delay = 6
 	select = 0
 	actions_types = list()
 	casing_ejector = FALSE
+	extra_damage = 30
+
 
 /obj/item/gun/ballistic/automatic/tribalbow/update_icon()
 	return

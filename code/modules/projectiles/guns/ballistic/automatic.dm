@@ -288,6 +288,8 @@
 	burst_size = 3
 	fire_delay = 1
 	pin = /obj/item/firing_pin
+	extra_damage = 15
+	extra_penetration = 10
 
 /obj/item/gun/ballistic/automatic/l6_saw/unrestricted
 	pin = /obj/item/firing_pin
@@ -362,6 +364,8 @@
 	weapon_weight = WEAPON_HEAVY
 	spread = 5
 	randomspread = 1
+	extra_damage = 15
+	extra_penetration = 10
 
 /obj/item/gun/ballistic/automatic/l6_saw/m38/update_icon()
 	icon_state = "M38[cover_open ? "open" : "closed"][magazine ? CEILING(get_ammo(0)/20, 1)*20 : "-empty"][suppressed ? "-suppressed" : ""]"
@@ -484,6 +488,8 @@
 	fire_delay = 2
 	force = 15
 	spread = 10
+	extra_damage = 20
+	extra_penetration = 5
 
 /obj/item/gun/ballistic/automatic/mini_uzi/burst_select()
 	var/mob/living/carbon/human/user = usr
@@ -517,6 +523,8 @@
 	fire_delay = 2
 	burst_delay = 2
 	automatic = 1
+	extra_damage = 25
+	extra_penetration = 5
 
 /obj/item/gun/ballistic/automatic/smg10mm
 	name = "10mm submachine gun"
@@ -527,12 +535,14 @@
 	mag_type = /obj/item/ammo_box/magazine/m10mm_auto
 	w_class = WEIGHT_CLASS_BULKY
 	fire_sound = 'sound/f13weapons/10mm_fire_03.ogg'
-	burst_size = 6
+	burst_size = 3
 	fire_delay = 3
 	burst_delay = 3
 	can_suppress = FALSE //we dont have sprites therefore cease
 	force = 10
-	spread = 23
+	spread = 18
+	extra_damage = 20
+	extra_penetration = 10
 
 /obj/item/gun/ballistic/automatic/smg10mm/burst_select()
 	var/mob/living/carbon/human/user = usr
@@ -561,12 +571,14 @@
 	init_mag_type = /obj/item/ammo_box/magazine/m556/rifle
 	fire_sound = 'sound/f13weapons/assault_carbine.ogg'
 	burst_size = 2
-	fire_delay = 3
-	burst_delay = 2.0
+	fire_delay = 4
+	burst_delay = 1.8
 	spread = 16
 	automatic = 1
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
+	extra_damage = 25
+	extra_penetration = 10
 
 /obj/item/gun/ballistic/automatic/assault_carbine/burst_select()
 	var/mob/living/carbon/human/user = usr
@@ -594,12 +606,14 @@
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
 	init_mag_type = /obj/item/ammo_box/magazine/m556/rifle/assault
 	fire_sound = 'sound/f13weapons/assaultrifle_fire.ogg'
-	burst_size = 2
+	burst_size = 3
 	automatic = 1
 	fire_delay = 3
 	spread = 8
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
+	extra_damage = 20
+	extra_penetration = 20
 
 /obj/item/gun/ballistic/automatic/assault_rifle/burst_select()
 	var/mob/living/carbon/human/user = usr
@@ -632,6 +646,8 @@
 	fire_sound = 'sound/weapons/Gunshot_large_silenced.ogg'
 	weapon_weight = WEAPON_HEAVY
 	force = 15
+	extra_damage = 20
+	extra_penetration = 20
 
 
 /obj/item/gun/ballistic/automatic/infiltrator/burst_select()
@@ -660,7 +676,8 @@
 	fire_delay = 3
 	spread = 10
 	weapon_weight = WEAPON_HEAVY
-	extra_damage = 2
+	extra_damage = 25
+	extra_penetration = 5
 
 /obj/item/gun/ballistic/automatic/marksman
 	name = "marksman carbine"
@@ -679,6 +696,8 @@
 	weapon_weight = WEAPON_HEAVY
 	actions_types = null
 	select = 0
+	extra_damage = 40
+	extra_penetration = 5
 
 /obj/item/gun/ballistic/automatic/marksman/sniper
 	name = "sniper rifle"
@@ -689,7 +708,9 @@
 	fire_sound = 'sound/f13weapons/hunting_rifle.ogg'
 	fire_delay = 10
 	burst_size = 1
-	projectile_speed = 0 //basically hitscan
+	projectile_speed = 0.4
+	extra_damage = 40
+	extra_penetration = 20
 
 /obj/item/gun/ballistic/automatic/marksman/sniper/gold
 	name = "golden sniper rifle"
@@ -707,17 +728,21 @@
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
 	zoomable = FALSE
 	weapon_weight = WEAPON_HEAVY
+	extra_damage = 25
+	extra_penetration = 10
 
 /obj/item/gun/ballistic/automatic/marksman/servicerifle/r82
 	name = "R82 heavy service rifle"
 	desc = "A top of the line 5.56x45 automatic service rifle manufactured by the NCR and issued to high ranking personnel."
-	fire_delay = 1 //faster ROF, superior to regular service rifle
-	projectile_speed = 0.6 //faster velocity, superior to regular service rifle
+	fire_delay = 4 
+	projectile_speed = 0.8 //faster velocity, superior to regular service rifle
 	init_mag_type = /obj/item/ammo_box/magazine/m556/rifle
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
 	icon_state = "R82"
 	item_state = "R82"
 	automatic = 1
+	extra_damage = 30
+	extra_penetration = 10
 
 /obj/item/gun/ballistic/automatic/marksman/servicerifle/varmint
 	name = "varmint rifle"
@@ -727,6 +752,8 @@
 	fire_delay = 8
 	init_mag_type = /obj/item/ammo_box/magazine/m556/rifle/small
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
+	extra_damage = 30
+	extra_penetration = 0
 
 /obj/item/gun/ballistic/automatic/marksman/servicerifle/varmint/ratslayer
 	name = "ratslayer"
@@ -737,6 +764,8 @@
 	zoom_amt = 10
 	zoom_out_amt = 13
 	fire_sound = 'sound/weapons/Gunshot_large_silenced.ogg'
+	extra_damage = 35
+	extra_penetration = 10
 
 /obj/item/gun/ballistic/automatic/minigun
 	name = "M134 Minigun"
@@ -745,10 +774,12 @@
 	item_state = "arg"
 	mag_type = /obj/item/ammo_box/magazine/tommygunm45
 	fire_sound = 'sound/f13weapons/10mm_fire_03.ogg'
-	burst_size = 3
+	burst_size = 10
 	fire_delay = 0.2
 	automatic = 1
 	weapon_weight = WEAPON_HEAVY
+	extra_damage = 20
+	extra_penetration = 20
 
 /obj/item/gun/ballistic/automatic/shotgun/pancor
 	name = "Pancor Jackhammer"
@@ -800,6 +831,8 @@
 	burst_delay = 3
 	force = 15
 	spread = 10
+	extra_damage = 20
+	extra_penetration = 5
 
 /obj/item/gun/ballistic/automatic/greasegun/burst_select()
 	var/mob/living/carbon/human/user = usr
@@ -825,7 +858,7 @@
 	item_state = "sniper"
 	slot_flags = SLOT_BACK
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
-	burst_size = 1
+	burst_size = 3
 	fire_delay = 3
 	automatic = 1
 	w_class = WEIGHT_CLASS_BULKY
@@ -834,6 +867,9 @@
 	zoomable = TRUE
 	zoom_amt = 10
 	zoom_out_amt = 13
+	extra_damage = 35
+	extra_penetration = 15
+	spread = 8
 
 /obj/item/gun/ballistic/automatic/m72
 	name = "M72 gauss rifle"
@@ -851,6 +887,9 @@
 	zoom_out_amt = 13
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
+	extra_damage = 70
+	extra_penetration = 60
+	projectile_speed = 0.4
 
 /obj/item/gun/ballistic/automatic/lsw
 	name = "L86A1 LSW"
@@ -862,10 +901,12 @@
 	mag_type = /obj/item/ammo_box/magazine/m556
 	fire_sound = 'sound/f13weapons/assaultrifle_fire.ogg'
 	can_suppress = FALSE
-	burst_size = 5
+	burst_size = 3
 	fire_delay = 0.3
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
+	extra_damage = 20
+	extra_penetration = 0
 
 /obj/item/gun/ballistic/automatic/lmg
 	name = "R84 LMG"
@@ -885,6 +926,8 @@
 	weapon_weight = WEAPON_HEAVY
 	spread = 25
 	randomspread = 1
+	extra_damage = 20
+	extra_penetration = 5
 
 /obj/item/gun/ballistic/automatic/lmg/burst_select()
 	var/mob/living/carbon/human/user = usr
@@ -915,11 +958,13 @@
 	item_state = "rifle"
 	mag_type = /obj/item/ammo_box/magazine/garand308
 	fire_sound = 'sound/f13weapons/hunting_rifle.ogg'
-	fire_delay = 3
+	fire_delay = 4
 	burst_size = 1
 	en_bloc = 1
 	auto_eject = 1
 	auto_eject_sound = 'sound/f13weapons/garand_ping.ogg'
+	extra_damage = 30
+	extra_penetration = 10
 
 /obj/item/gun/ballistic/automatic/m1garand/update_icon()
 	..()
@@ -934,6 +979,8 @@
 	name = "Old Glory"
 	desc = "This Machine kills communists!"
 	icon_state = "oldglory"
+	extra_damage = 35
+	extra_penetration = 20
 
 /obj/item/gun/ballistic/automatic/rangemaster
 	name = "Colt Rangemaster"
@@ -946,6 +993,8 @@
 	weapon_weight = WEAPON_HEAVY
 	burst_size = 1
 	fire_delay = 3
+	extra_damage = 35
+	extra_penetration = 15
 
 /obj/item/gun/ballistic/automatic/rangemaster/scoped
 	name = "Scoped Colt Rangemaster"
@@ -956,6 +1005,7 @@
 	zoomable = TRUE
 	zoom_amt = 10
 	zoom_out_amt = 13
+	fire_delay = 5
 
 /obj/item/gun/ballistic/automatic/fnfal
 	name = "FN FAL"
@@ -971,3 +1021,5 @@
 	weapon_weight = WEAPON_HEAVY
 	spread = 10
 	fire_delay = 3
+	extra_damage = 30
+	extra_penetration = 15
