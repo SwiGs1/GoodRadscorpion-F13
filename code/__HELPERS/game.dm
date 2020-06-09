@@ -500,7 +500,7 @@
 		return
 	var/area/A = get_area(character)
 	var/message = "<span class='game deadsay'><span class='name'>\
-		[character.real_name]</span> ([rank]) has wandered into the wastewasteland at \
+		[character.real_name]</span> ([rank]) has wandered into the wasteland at \
 		<span class='name'>[A.name]</span>.</span>"
 	deadchat_broadcast(message, follow_target = character, message_type=DEADCHAT_ARRIVALRATTLE)
 	if((!GLOB.announcement_systems.len) || (!character.mind))
