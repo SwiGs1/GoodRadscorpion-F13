@@ -126,6 +126,7 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
+/obj/effect/landmark/start/f13/vetdecanus,
 /turf/open/floor/plasteel/f13{
 	icon_state = "dark"
 	},
@@ -362,6 +363,7 @@
 	dir = 4;
 	icon_state = "officechair_dark"
 	},
+/obj/effect/landmark/start/f13/vetdecanus,
 /turf/open/floor/plasteel/f13{
 	icon_state = "dark"
 	},
@@ -578,6 +580,7 @@
 /area/f13/legioncamp)
 "abU" = (
 /obj/structure/chair/office/dark,
+/obj/effect/landmark/start/f13/vetdecanus,
 /turf/open/floor/plasteel/f13{
 	icon_state = "dark"
 	},
@@ -757,7 +760,7 @@
 "acs" = (
 /obj/structure/bed/pod,
 /obj/item/bedsheet/black,
-/obj/effect/landmark/start/f13/initiate,
+/obj/effect/landmark/start/f13/initiateknight,
 /turf/open/floor/plasteel/f13/vault_floor/yellow/white,
 /area/f13/brotherhood)
 "act" = (
@@ -942,7 +945,7 @@
 /area/f13/legioncamp)
 "acZ" = (
 /obj/structure/chair/office/dark,
-/obj/effect/landmark/start/f13/seniorpaladin,
+/obj/effect/landmark/start/f13/paladin,
 /turf/open/floor/plasteel/f13/vault_floor/red,
 /area/f13/brotherhood)
 "ada" = (
@@ -1789,18 +1792,18 @@
 /area/f13/legioncamp)
 "afA" = (
 /obj/structure/bed/mattress/pregame,
-/obj/effect/landmark/start/f13/legionary,
+/obj/effect/landmark/start/f13/recleg,
 /turf/open/floor/wood/f13/old,
 /area/f13/legioncamp)
 "afB" = (
-/obj/effect/landmark/start/f13/legionary,
+/obj/effect/landmark/start/f13/recleg,
 /turf/open/floor/wood/f13/old,
 /area/f13/legioncamp)
 "afC" = (
 /obj/machinery/light/small{
 	dir = 1
 	},
-/obj/effect/landmark/start/f13/legionary,
+/obj/effect/landmark/start/f13/recleg,
 /turf/open/floor/wood/f13/old,
 /area/f13/legioncamp)
 "afD" = (
@@ -1925,7 +1928,6 @@
 "afW" = (
 /obj/structure/bed/pod,
 /obj/item/bedsheet/black,
-/obj/effect/landmark/start/f13/paladin,
 /turf/open/floor/plasteel/f13/vault_floor/yellow/white,
 /area/f13/brotherhood)
 "afX" = (
@@ -1993,16 +1995,14 @@
 	brightness = 3;
 	dir = 8
 	},
+/obj/effect/landmark/start/f13/primedecanus,
 /turf/open/floor/wood/f13/old{
 	icon_state = "housewood1-broken"
 	},
 /area/f13/legioncamp)
 "agh" = (
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/effect/landmark/start/f13/vertipilot,
-/turf/open/floor/plasteel/f13/vault_floor/red/whiteredfull,
+/obj/effect/landmark/start/f13/initiatescribe,
+/turf/open/floor/plasteel/f13/vault_floor/neutral,
 /area/f13/brotherhood)
 "agi" = (
 /obj/machinery/conveyor{
@@ -2093,6 +2093,7 @@
 /area/f13/klamat)
 "agw" = (
 /obj/structure/bed/mattress/pregame,
+/obj/effect/landmark/start/f13/primelegionary,
 /turf/open/floor/wood/f13/old,
 /area/f13/legioncamp)
 "agx" = (
@@ -8732,9 +8733,6 @@
 "axQ" = (
 /turf/closed/wall/r_wall/rust,
 /area/maintenance/disposal)
-"axR" = (
-/turf/closed/mineral/random,
-/area/f13/underground/enclave_base)
 "axS" = (
 /obj/effect/decal/cleanable/oil{
 	icon_state = "floor5"
@@ -13008,20 +13006,6 @@
 	icon_state = "floorgrime"
 	},
 /area/f13/den)
-"aIZ" = (
-/obj/structure/table/wood,
-/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds,
-/obj/item/reagent_containers/syringe/piercing,
-/obj/item/reagent_containers/syringe/piercing,
-/obj/item/reagent_containers/syringe/piercing,
-/obj/item/reagent_containers/syringe/piercing,
-/obj/item/reagent_containers/syringe/piercing,
-/obj/item/reagent_containers/syringe/piercing,
-/obj/item/gun/syringe,
-/turf/open/floor/plasteel/f13{
-	icon_state = "floorgrime"
-	},
-/area/f13/sunny_dale)
 "aJa" = (
 /obj/structure/window/fulltile/wood_window,
 /turf/open/floor/plating/f13/outside/road,
@@ -13130,7 +13114,6 @@
 /obj/structure/table,
 /obj/item/storage/box/syringes,
 /obj/item/storage/box/beakers,
-/obj/item/gun/syringe,
 /turf/open/floor/wood/f13/old,
 /area/f13/den)
 "aJq" = (
@@ -23989,6 +23972,7 @@
 "bom" = (
 /obj/structure/bed,
 /obj/item/bedsheet/purple,
+/obj/effect/landmark/start/f13/ncrrecranger,
 /turf/open/floor/wood/f13/old,
 /area/f13/ncr_main)
 "bon" = (
@@ -24420,10 +24404,8 @@
 	},
 /area/f13/ncr_main)
 "bpz" = (
-/obj/effect/landmark/start/f13/ncrspecialist,
-/turf/open/floor/plating/f13/outside/road{
-	icon_state = "horizontaloutermain0"
-	},
+/obj/effect/landmark/start/f13/campfollower,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/desert)
 "bpA" = (
 /obj/structure/bed/mattress/pregame,
@@ -24828,6 +24810,7 @@
 	dir = 1;
 	icon_state = "f13chair2"
 	},
+/obj/effect/landmark/start/f13/ncrcorporal,
 /turf/open/floor/plasteel/f13{
 	icon_state = "whitebluechess"
 	},
@@ -26017,6 +26000,7 @@
 	dir = 1;
 	icon_state = "f13chair2"
 	},
+/obj/effect/landmark/start/f13/ncrsergeant,
 /turf/open/floor/plasteel/f13{
 	icon_state = "floorgrime"
 	},
@@ -26727,6 +26711,7 @@
 	dir = 4;
 	icon_state = "f13chair2"
 	},
+/obj/effect/landmark/start/f13/ncrncb,
 /turf/open/floor/plasteel/f13{
 	icon_state = "yellowrustyfull"
 	},
@@ -33858,9 +33843,6 @@
 "bRj" = (
 /turf/closed/indestructible/f13/matrix,
 /area/f13/tunnel)
-"bRk" = (
-/turf/closed/indestructible/rock,
-/area/f13/underground/enclave_base)
 "bRl" = (
 /obj/structure/simple_door/metal/fence{
 	dir = 8;
@@ -33989,7 +33971,9 @@
 /area/f13/desert)
 "bRG" = (
 /obj/effect/decal/cleanable/shreds,
-/turf/open/space/basic,
+/turf/open/floor/plating{
+	icon_state = "platingdmg3"
+	},
 /turf/open/floor/plating{
 	icon_state = "platingdmg2"
 	},
@@ -34085,6 +34069,10 @@
 	icon_state = "greendirtysolid"
 	},
 /area/f13/mountain_bunker)
+"cIF" = (
+/obj/effect/landmark/start/f13/ncrncb,
+/turf/open/floor/plasteel/cafeteria,
+/area/f13/ncr_main)
 "cKW" = (
 /obj/effect/decal/cleanable/blood/old{
 	icon_state = "floor1-old"
@@ -34124,6 +34112,10 @@
 	icon_state = "bluefull"
 	},
 /area/f13/mountain_bunker)
+"cRZ" = (
+/obj/effect/landmark/start/f13/primedecanus,
+/turf/open/floor/wood/f13/old,
+/area/f13/legioncamp)
 "daJ" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -34353,6 +34345,12 @@
 /obj/structure/sign/warning/securearea,
 /turf/closed/wall/r_wall/rust,
 /area/f13/tunnel)
+"fFP" = (
+/obj/effect/landmark/start/f13/ncrcorporal,
+/turf/open/floor/plasteel/f13{
+	icon_state = "floorgrime"
+	},
+/area/f13/ncr_main)
 "fNZ" = (
 /obj/structure/chair/f13chair2{
 	dir = 8;
@@ -34494,12 +34492,22 @@
 	icon_state = "floorgrime"
 	},
 /area/f13/mountain_bunker)
+"gMg" = (
+/obj/effect/landmark/start/f13/primelegionary,
+/turf/open/floor/plating/f13/inside/mountain,
+/area/f13/legioncamp)
 "gRO" = (
 /obj/effect/spawner/lootdrop/f13/crafting,
 /turf/open/floor/plasteel/f13{
 	icon_state = "whitebluerustychess"
 	},
 /area/f13/farmhouse)
+"gXx" = (
+/obj/effect/landmark/start/f13/ncrcorporal,
+/turf/open/floor/plasteel/f13{
+	icon_state = "whitebluechess"
+	},
+/area/f13/ncr_main)
 "heP" = (
 /turf/closed/wall/r_wall/f13composite{
 	icon_state = "ruins14alt"
@@ -34548,6 +34556,12 @@
 	icon_state = "ruins12alt"
 	},
 /area/f13/tunnel)
+"hPc" = (
+/obj/effect/landmark/start/f13/primedecanus,
+/turf/open/floor/plating/f13/outside/road{
+	icon_state = "innermiddle"
+	},
+/area/f13/desert)
 "hQA" = (
 /obj/effect/mine/explosive,
 /turf/open/floor/plating/f13/outside/road{
@@ -34588,6 +34602,10 @@
 	},
 /turf/open/floor/plating,
 /area/f13/powerplant)
+"iDJ" = (
+/obj/effect/landmark/start/f13/campfollower,
+/turf/open/floor/wood/f13/old,
+/area/f13/legioncamp)
 "iMB" = (
 /obj/structure/cable{
 	icon_state = "1-4"
@@ -34814,6 +34832,10 @@
 /obj/structure/chair/wood,
 /turf/open/floor/wood/f13,
 /area/f13/desert)
+"kFE" = (
+/obj/effect/landmark/start/f13/recleg,
+/turf/open/indestructible/ground/outside/desert,
+/area/f13/desert)
 "kIr" = (
 /obj/effect/decal/roadline,
 /obj/effect/decal/cleanable/blood/old,
@@ -34837,6 +34859,10 @@
 	icon_state = "floorgrime"
 	},
 /area/f13/mountain_bunker)
+"lkG" = (
+/obj/effect/landmark/start/f13/primelegionary,
+/turf/open/floor/wood/f13/old,
+/area/f13/legioncamp)
 "lmy" = (
 /obj/effect/decal/cleanable/oil,
 /mob/living/simple_animal/hostile/ghoul,
@@ -34964,6 +34990,12 @@
 	icon_state = "innermiddle"
 	},
 /area/f13/tunnel)
+"mCc" = (
+/obj/effect/landmark/start/f13/recleg,
+/turf/open/floor/plating/f13/outside/road{
+	icon_state = "innermiddle"
+	},
+/area/f13/desert)
 "mDt" = (
 /turf/closed/mineral/random,
 /area/f13/tunnel)
@@ -35004,6 +35036,10 @@
 	icon_state = "showroomfloor"
 	},
 /area/f13/mountain_bunker)
+"nee" = (
+/obj/effect/landmark/start/f13/primelegionary,
+/turf/open/indestructible/ground/outside/desert,
+/area/f13/desert)
 "npJ" = (
 /obj/structure/table/reinforced,
 /obj/item/reagent_containers/syringe/piercing,
@@ -35156,6 +35192,17 @@
 	icon_state = "horizontaltopbordertop0"
 	},
 /area/f13/tunnel)
+"oRp" = (
+/obj/effect/landmark/start/f13/vetdecanus,
+/turf/open/floor/plating/f13/outside/road{
+	icon_state = "outerpavement";
+	dir = 4
+	},
+/area/f13/desert)
+"oXO" = (
+/obj/effect/landmark/start/f13/initiatescribe,
+/turf/open/floor/plasteel/f13/vault_floor/purple/whitepurplefull,
+/area/f13/brotherhood)
 "paT" = (
 /obj/effect/decal/remains/human,
 /obj/item/clothing/under/f13/ranger,
@@ -35311,6 +35358,10 @@
 	icon_state = "housewood1-broken"
 	},
 /area/f13/desert)
+"qDi" = (
+/obj/effect/landmark/start/f13/vetdecanus,
+/turf/open/floor/wood/f13/old,
+/area/f13/legioncamp)
 "qDu" = (
 /obj/effect/spawner/lootdrop/f13/crafting,
 /turf/open/floor/plasteel/f13{
@@ -35567,6 +35618,10 @@
 	icon_state = "ruins13"
 	},
 /area/f13/tunnel)
+"tjm" = (
+/obj/effect/landmark/start/f13/ncrcorporal,
+/turf/open/floor/plasteel/cafeteria,
+/area/f13/ncr_main)
 "tkV" = (
 /turf/closed/wall/mineral/wood,
 /area/f13/underground/mountain)
@@ -35610,6 +35665,10 @@
 	icon_state = "floorgrime"
 	},
 /area/f13/sunny_dale)
+"tGH" = (
+/obj/effect/landmark/start/f13/ncrncb,
+/turf/open/indestructible/ground/outside/desert,
+/area/f13/desert)
 "tMX" = (
 /obj/structure/table,
 /obj/effect/spawner/lootdrop/f13/foodspawner,
@@ -35743,6 +35802,12 @@
 	icon_state = "whitebluechess"
 	},
 /area/f13/mountain_bunker)
+"uUK" = (
+/obj/effect/landmark/start/f13/ncrncb,
+/turf/open/floor/plasteel/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/ncr_main)
 "vat" = (
 /turf/open/floor/plasteel/f13{
 	icon_state = "bluefull"
@@ -35770,6 +35835,12 @@
 "vrk" = (
 /turf/closed/wall/r_wall,
 /area/f13/powerplant)
+"vzg" = (
+/obj/effect/landmark/start/f13/ncrncb,
+/turf/open/floor/plasteel/f13{
+	icon_state = "whitebluechess"
+	},
+/area/f13/ncr_main)
 "vzz" = (
 /turf/closed/wall/r_wall/f13composite{
 	icon_state = "ruins7"
@@ -35930,6 +36001,10 @@
 	icon_state = "horizontaltopborderbottom0"
 	},
 /area/f13/desert)
+"xMl" = (
+/obj/effect/landmark/start/f13/campfollower,
+/turf/open/floor/plasteel/floorgrime,
+/area/f13/legioncamp)
 "xMI" = (
 /obj/structure/frame/machine,
 /turf/open/floor/plasteel/f13{
@@ -36524,32 +36599,32 @@ aaf
 aaf
 aaf
 aaf
+bNA
+aqI
+aqI
+aqI
+aqI
+aqI
+aqI
+aqI
+aqI
+aqI
+aqI
+aqI
+aqI
+aqI
+aqI
+aqI
+aqI
+aqI
+aqI
+aqI
+aqI
+bNA
 aaf
-aqI
-aqI
-aqI
-aqI
-aqI
-aqI
-aqI
-aqI
-aqI
-aqI
-aqI
-aqI
-aqI
-aqI
-aqI
-aqI
-aqI
-aqI
-aqI
-aqI
-aag
-aag
-aag
-aag
-aag
+aaf
+aaf
+aaf
 aaf
 aaf
 aaf
@@ -36926,29 +37001,29 @@ aaf
 aaf
 aaf
 aaf
+bNA
+aqI
+arf
+arf
+arf
+arf
+arf
+arf
+arf
+arf
+arf
+arf
+arf
+arf
+arf
+arf
+arf
+arf
+arf
+arf
+aqI
+bNA
 aaf
-aqI
-arf
-arf
-arf
-arf
-arf
-arf
-arf
-arf
-arf
-arf
-arf
-arf
-arf
-arf
-arf
-arf
-arf
-arf
-aqI
-aag
-aag
 aag
 aag
 aag
@@ -37328,7 +37403,7 @@ aaf
 aaf
 aaf
 aaf
-aaf
+bNA
 aqI
 arf
 aGL
@@ -37349,8 +37424,8 @@ aFP
 aFP
 arf
 aqI
-aag
-aag
+bNA
+aaf
 aag
 aGQ
 aHg
@@ -37730,7 +37805,7 @@ aaf
 aaf
 aaf
 aaf
-aaf
+bNA
 aqI
 arf
 aGL
@@ -37751,8 +37826,8 @@ aFP
 aNe
 arf
 aqI
-aag
-aag
+bNA
+aaf
 aag
 aGR
 aHh
@@ -37871,7 +37946,7 @@ boD
 boD
 bpC
 bvu
-bpU
+gXx
 bqk
 bpU
 bpU
@@ -37880,7 +37955,7 @@ brd
 scY
 scY
 brO
-scY
+cIF
 bsx
 boq
 bsR
@@ -38118,21 +38193,21 @@ aaf
 aaf
 aaf
 aaf
-aaf
-aaf
-aaf
-aaf
-aaf
-aaf
-aaf
-aaf
-aaf
-aaf
-aaf
-aaf
-aaf
-aaf
-aaf
+bNA
+bNA
+bNA
+bNA
+bNA
+bNA
+bNA
+bNA
+bNA
+bNA
+bNA
+bNA
+bNA
+bNA
+bNA
 aqI
 arf
 aFR
@@ -38153,8 +38228,8 @@ aFP
 aFP
 arf
 aqI
-aag
-aag
+bNA
+aaf
 aag
 aGS
 aHi
@@ -38282,7 +38357,7 @@ brd
 scY
 scY
 brP
-scY
+tjm
 bsy
 boq
 bsS
@@ -38513,14 +38588,14 @@ aaf
 aaf
 aaf
 aaf
-aaf
-aaf
-aaf
-aaf
-aaf
-aaf
-aaf
-aaf
+bNA
+bNA
+bNA
+bNA
+bNA
+bNA
+bNA
+bNA
 aqI
 aqI
 aqI
@@ -38555,8 +38630,8 @@ aFP
 aNn
 arf
 aqI
-aag
-aag
+bNA
+aaf
 aag
 aag
 aag
@@ -38681,7 +38756,7 @@ bpU
 bpU
 boq
 bre
-scY
+tjm
 scY
 scY
 scY
@@ -38915,7 +38990,7 @@ aaf
 aaf
 aaf
 aaf
-aaf
+bNA
 aqI
 aqI
 aqI
@@ -38957,8 +39032,8 @@ aFP
 aFP
 arf
 aqI
-aag
-aag
+bNA
+aaf
 aag
 aag
 aag
@@ -39077,7 +39152,7 @@ eNU
 bve
 boq
 bpK
-bpU
+vzg
 bpU
 bpU
 bpU
@@ -39086,7 +39161,7 @@ brf
 scY
 scY
 scY
-scY
+cIF
 bsA
 boq
 bpk
@@ -39317,7 +39392,7 @@ aaf
 aaf
 aaf
 aaf
-aaf
+bNA
 aqI
 arf
 arf
@@ -39359,8 +39434,8 @@ aFP
 aFP
 arf
 aqI
-aag
-aag
+bNA
+aaf
 aag
 aag
 aag
@@ -39719,7 +39794,7 @@ aaf
 aaf
 aaf
 aaf
-aaf
+bNA
 aqI
 arf
 aCb
@@ -39761,8 +39836,8 @@ aFP
 aFP
 arf
 aqI
-aag
-aag
+bNA
+aaf
 aag
 aag
 aag
@@ -40121,7 +40196,7 @@ aaf
 aaf
 aaf
 aaf
-aaf
+bNA
 aqI
 arf
 aCb
@@ -40163,8 +40238,8 @@ aMW
 aFP
 arf
 aqI
-aag
-aag
+bNA
+aaf
 aag
 aGQ
 aHg
@@ -40523,7 +40598,7 @@ aaf
 aaf
 aaf
 aaf
-aaf
+bNA
 aqI
 arf
 aCb
@@ -40565,8 +40640,8 @@ aMX
 aFP
 arf
 aqI
-aag
-aag
+bNA
+aaf
 aag
 aGR
 aHh
@@ -40925,7 +41000,7 @@ aaf
 aaf
 aaf
 aaf
-aaf
+bNA
 aqI
 arf
 arf
@@ -40967,8 +41042,8 @@ arf
 arf
 arf
 aqI
-aag
-aag
+bNA
+aaf
 aag
 aGS
 aHi
@@ -41327,7 +41402,7 @@ aaf
 aaf
 aaf
 aaf
-aaf
+bNA
 aqI
 arf
 auU
@@ -41369,8 +41444,8 @@ aHq
 arf
 arf
 aqI
-aag
-aag
+bNA
+aaf
 aag
 aag
 aag
@@ -41512,7 +41587,7 @@ afv
 aag
 aag
 bnm
-aag
+tGH
 aag
 boq
 aab
@@ -41729,7 +41804,7 @@ aaf
 aaf
 aaf
 aaf
-aaf
+bNA
 aqI
 arf
 auU
@@ -41771,8 +41846,8 @@ aHr
 arf
 arf
 aqI
-aag
-aag
+aaf
+aaf
 aag
 aag
 aag
@@ -41900,7 +41975,7 @@ aSa
 brs
 vQi
 vQi
-vQi
+fFP
 vQi
 boq
 vQi
@@ -42006,7 +42081,7 @@ bNr
 aNb
 bPI
 bNr
-bNr
+oXO
 bNr
 bQE
 aNb
@@ -42131,7 +42206,7 @@ aaf
 aaf
 aaf
 aaf
-aaf
+bNA
 aqI
 arf
 aDi
@@ -42173,7 +42248,7 @@ aHs
 arf
 arf
 aqI
-aag
+aaf
 aag
 aag
 aag
@@ -42533,7 +42608,7 @@ aaf
 aaf
 aaf
 aaf
-aaf
+bNA
 aqI
 arf
 aDj
@@ -42575,7 +42650,7 @@ aJM
 arf
 arf
 aqI
-aag
+aaf
 aag
 aag
 aag
@@ -42935,7 +43010,7 @@ aaf
 aaf
 aaf
 aaf
-aaf
+bNA
 aqI
 arf
 aDk
@@ -42977,7 +43052,7 @@ aHq
 arf
 arf
 aqI
-aag
+aaf
 aag
 aag
 aGQ
@@ -43337,7 +43412,7 @@ aaf
 aaf
 aaf
 aaf
-aaf
+bNA
 aqI
 arf
 auU
@@ -43379,7 +43454,7 @@ aHr
 arf
 arf
 aqI
-aag
+aaf
 aag
 aag
 aGR
@@ -43739,7 +43814,7 @@ aaf
 aaf
 aaf
 aaf
-aaf
+bNA
 aqI
 arf
 auU
@@ -43781,7 +43856,7 @@ aHs
 arf
 arf
 aqI
-aag
+aaf
 aag
 aag
 aGS
@@ -44141,7 +44216,7 @@ aaf
 aaf
 aaf
 aaf
-aaf
+bNA
 aqI
 arf
 arf
@@ -44183,7 +44258,7 @@ arf
 arf
 arf
 aqI
-aag
+aaf
 aag
 aag
 aag
@@ -44324,9 +44399,9 @@ baE
 aeE
 afv
 abc
-aag
+tGH
 abc
-aag
+tGH
 abc
 boq
 aab
@@ -44543,7 +44618,7 @@ aaf
 aaf
 aaf
 aaf
-aaf
+bNA
 aqI
 aqI
 aqI
@@ -44561,12 +44636,12 @@ auU
 arf
 aqI
 aqI
-axR
-axR
-axR
-axR
-axR
-axR
+aqI
+aqI
+aqI
+aqI
+aqI
+aqI
 aqI
 aqI
 aqI
@@ -44945,29 +45020,29 @@ aaf
 aaf
 aaf
 aaf
-aaf
-aaf
-aaf
-aaf
-aaf
-aaf
-aaf
-aaf
-aaf
-aaf
-aaf
+bNA
+bNA
+bNA
+bNA
+bNA
+bNA
+bNA
+bNA
+bNA
+bNA
+bNA
 aqI
 arf
 auU
 aFr
 arf
 aqI
-aaf
-aaf
-aaf
-aaf
-aaf
-aaf
+bNA
+bNA
+bNA
+bNA
+bNA
+bNA
 aaf
 aaf
 aag
@@ -45128,9 +45203,9 @@ baE
 aeE
 afv
 abc
-aag
+tGH
 abc
-aag
+tGH
 abc
 boq
 aab
@@ -45338,34 +45413,34 @@ bNA
 bNA
 bNA
 bNA
-aaf
-aaf
-aaf
-aaf
-aaf
-aaf
-aaf
-aaf
-aaf
-aaf
-aaf
-aaf
-aaf
-aaf
-aaf
-aaf
-aaf
-aaf
-aaf
-aaf
+bNA
+bNA
+bNA
+bNA
+bNA
+bNA
+bNA
+bNA
+bNA
+bNA
+bNA
+bNA
+bNA
+bNA
+bNA
+bNA
+bNA
+bNA
+bNA
+bNA
 aqI
 arf
 ayw
 auU
 arf
 aqI
-aaf
-aaf
+bNA
+bNA
 aaf
 aaf
 aaf
@@ -45616,7 +45691,7 @@ bMr
 bMI
 bNf
 bOl
-bOl
+agh
 bOl
 bOE
 bOW
@@ -45739,13 +45814,13 @@ aqI
 aqI
 aqI
 aqI
-bRk
-axR
-axR
-axR
-axR
-axR
-axR
+aqI
+aqI
+aqI
+aqI
+aqI
+aqI
+aqI
 aqI
 aqI
 aqI
@@ -45767,7 +45842,7 @@ auU
 arf
 aqI
 aqI
-aaf
+bNA
 aaf
 aaf
 aaf
@@ -45909,7 +45984,7 @@ bLJ
 aQk
 bon
 afp
-bpz
+afp
 boq
 bpv
 vQi
@@ -46169,7 +46244,7 @@ avo
 arf
 arf
 aqI
-aaf
+bNA
 aaf
 aaf
 aaf
@@ -46311,7 +46386,7 @@ bpc
 aQk
 bon
 afp
-bpz
+afp
 boq
 bpX
 vQi
@@ -46571,7 +46646,7 @@ auU
 auU
 arf
 aqI
-aaf
+bNA
 aaf
 aaf
 aaf
@@ -46973,7 +47048,7 @@ aAk
 aFr
 arf
 aqI
-aaf
+bNA
 aaf
 aaf
 aaf
@@ -47375,7 +47450,7 @@ auU
 auU
 arf
 aqI
-aaf
+bNA
 aaf
 aaf
 aaf
@@ -47751,13 +47826,13 @@ aqI
 aqI
 aqI
 aqI
-bRk
-axR
-axR
-axR
-axR
-axR
-axR
+aqI
+aqI
+aqI
+aqI
+aqI
+aqI
+aqI
 aqI
 aqI
 aqI
@@ -47767,17 +47842,17 @@ aCT
 aCT
 arf
 aqI
-axR
-axR
-axR
-axR
+aqI
+aqI
+aqI
+aqI
 arf
 arf
 arf
 arf
 arf
 aqI
-aaf
+bNA
 aaf
 aaf
 aaf
@@ -48154,12 +48229,12 @@ bNA
 bNA
 bNA
 bNA
-aaf
-aaf
-aaf
-aaf
-aaf
-aaf
+bNA
+bNA
+bNA
+bNA
+bNA
+bNA
 aqI
 arf
 arf
@@ -48171,15 +48246,15 @@ arf
 arf
 arf
 aqI
-aaf
-axR
-axR
-axR
-axR
-axR
-axR
-axR
-aaf
+bNA
+aqI
+aqI
+aqI
+aqI
+aqI
+aqI
+aqI
+bNA
 aaf
 aaf
 aaf
@@ -48561,7 +48636,7 @@ aaf
 aaf
 aaf
 aaf
-aaf
+bNA
 aqI
 arf
 aCa
@@ -48573,15 +48648,15 @@ aCa
 aCa
 arf
 aqI
-aaf
-aaf
-aaf
-aaf
-aaf
-aaf
-aaf
-aaf
-aaf
+bNA
+bNA
+bNA
+bNA
+bNA
+bNA
+bNA
+bNA
+bNA
 aaf
 aaf
 aaf
@@ -48748,7 +48823,7 @@ mLn
 mLn
 mLn
 mLn
-mLn
+uUK
 bwi
 boq
 aab
@@ -48963,7 +49038,7 @@ aaf
 aaf
 aaf
 aaf
-aaf
+bNA
 aqI
 arf
 aCa
@@ -48975,7 +49050,7 @@ aFc
 aCa
 arf
 aqI
-aaf
+bNA
 aaf
 aaf
 aaf
@@ -49365,7 +49440,7 @@ aaf
 aaf
 aaf
 aaf
-aaf
+bNA
 aqI
 arf
 aCB
@@ -49377,7 +49452,7 @@ aDl
 aEO
 arf
 aqI
-aaf
+bNA
 aaf
 aaf
 aaf
@@ -49767,7 +49842,7 @@ aaf
 aaf
 aaf
 aaf
-aaf
+bNA
 aqI
 arf
 aCa
@@ -49779,7 +49854,7 @@ aFg
 aCa
 arf
 aqI
-aaf
+bNA
 aaf
 aaf
 aaf
@@ -50167,9 +50242,9 @@ aaf
 aaf
 aaf
 aaf
-aaf
-aaf
-aaf
+bNA
+bNA
+bNA
 aqI
 arf
 arf
@@ -50181,9 +50256,9 @@ arf
 arf
 arf
 aqI
-aaf
-aaf
-aaf
+bNA
+bNA
+bNA
 aaf
 aaf
 aaf
@@ -50569,7 +50644,7 @@ aaf
 aaf
 aaf
 aaf
-aaf
+bNA
 aqI
 aqI
 aqI
@@ -50585,7 +50660,7 @@ aqI
 aqI
 aqI
 aqI
-aaf
+bNA
 aaf
 aaf
 aaf
@@ -50971,7 +51046,7 @@ aaf
 aaf
 aaf
 aaf
-aaf
+bNA
 aqI
 arf
 arf
@@ -50987,7 +51062,7 @@ arf
 arf
 arf
 aqI
-aaf
+bNA
 aaf
 aaf
 aaf
@@ -51373,7 +51448,7 @@ aaf
 aaf
 aaf
 aaf
-aaf
+bNA
 aqI
 arf
 aEv
@@ -51389,7 +51464,7 @@ aCa
 aEv
 arf
 aqI
-aaf
+bNA
 aaf
 aaf
 aaf
@@ -51775,7 +51850,7 @@ aaf
 aaf
 aaf
 aaf
-aaf
+bNA
 aqI
 arf
 aBY
@@ -51791,7 +51866,7 @@ aCa
 aFq
 arf
 aqI
-aaf
+bNA
 aaf
 aaf
 aaf
@@ -52176,8 +52251,8 @@ aaf
 aaf
 aaf
 aaf
-aaf
-aaf
+bNA
+bNA
 aqI
 arf
 aBZ
@@ -52193,8 +52268,8 @@ aCa
 aBZ
 arf
 aqI
-aaf
-aaf
+bNA
+bNA
 aaf
 aaf
 aaf
@@ -52578,7 +52653,7 @@ aaf
 aaf
 aaf
 aaf
-aaf
+bNA
 aqI
 aqI
 arf
@@ -52596,7 +52671,7 @@ aCa
 arf
 aqI
 aqI
-aaf
+bNA
 aaf
 aaf
 aaf
@@ -52980,7 +53055,7 @@ aaf
 aaf
 aaf
 aaf
-aaf
+bNA
 aqI
 arf
 arf
@@ -52998,7 +53073,7 @@ arf
 arf
 arf
 aqI
-aaf
+bNA
 aaf
 aaf
 aaf
@@ -53382,7 +53457,7 @@ aaf
 aaf
 aaf
 aaf
-aaf
+bNA
 aqI
 arf
 aBX
@@ -53400,7 +53475,7 @@ aCb
 aBX
 arf
 aqI
-aaf
+bNA
 aaf
 aaf
 aaf
@@ -53659,7 +53734,7 @@ aNb
 aNb
 aNb
 aNb
-agh
+bPf
 bLS
 aNb
 aNb
@@ -53784,7 +53859,7 @@ aaf
 aaf
 aaf
 aaf
-aaf
+bNA
 aqI
 arf
 aBX
@@ -53802,7 +53877,7 @@ aCb
 aBX
 arf
 aqI
-aaf
+bNA
 aaf
 aaf
 aaf
@@ -54186,7 +54261,7 @@ aaf
 aaf
 aaf
 aaf
-aaf
+bNA
 aqI
 arf
 aBX
@@ -54204,7 +54279,7 @@ aCb
 aBX
 arf
 aqI
-aaf
+bNA
 aaf
 aaf
 aaf
@@ -54588,7 +54663,7 @@ aaf
 aaf
 aaf
 aaf
-aaf
+bNA
 aqI
 arf
 aCC
@@ -54606,7 +54681,7 @@ aCb
 aHd
 arf
 aqI
-aaf
+bNA
 aaf
 aaf
 aaf
@@ -54990,7 +55065,7 @@ aaf
 aaf
 aaf
 aaf
-aaf
+bNA
 aqI
 arf
 aCR
@@ -55008,7 +55083,7 @@ aCb
 aCR
 arf
 aqI
-aaf
+bNA
 aaf
 aaf
 aaf
@@ -55392,7 +55467,7 @@ aaf
 aaf
 aaf
 aaf
-aaf
+bNA
 aqI
 arf
 arf
@@ -55410,7 +55485,7 @@ arf
 arf
 arf
 aqI
-aaf
+bNA
 aaf
 aaf
 aaf
@@ -55794,7 +55869,7 @@ aaf
 aaf
 aaf
 aaf
-aaf
+bNA
 aqI
 aqI
 aqI
@@ -55812,7 +55887,7 @@ aqI
 aqI
 aqI
 aqI
-aaf
+bNA
 aaf
 aaf
 aaf
@@ -56196,12 +56271,12 @@ aaf
 aaf
 aaf
 aaf
-aaf
-aaf
-aaf
-aaf
-aaf
-aaf
+bNA
+bNA
+bNA
+bNA
+bNA
+bNA
 aqI
 arf
 aCa
@@ -56209,12 +56284,12 @@ aCa
 aCa
 arf
 aqI
-aaf
-aaf
-aaf
-aaf
-aaf
-aaf
+bNA
+bNA
+bNA
+bNA
+bNA
+bNA
 aaf
 aaf
 aaf
@@ -56598,7 +56673,7 @@ aaf
 aaf
 aaf
 aaf
-aaf
+bNA
 aqI
 aqI
 aqI
@@ -56615,7 +56690,7 @@ aqI
 aqI
 aqI
 aqI
-aaf
+bNA
 aaf
 aaf
 aaf
@@ -57000,7 +57075,7 @@ aaf
 aaf
 aaf
 aaf
-aaf
+bNA
 aqI
 arf
 arf
@@ -57017,7 +57092,7 @@ arf
 arf
 arf
 aqI
-aaf
+bNA
 aaf
 aaf
 aaf
@@ -57402,7 +57477,7 @@ aaf
 aaf
 aaf
 aaf
-aaf
+bNA
 aqI
 arf
 auU
@@ -57419,7 +57494,7 @@ auU
 auU
 arf
 aqI
-aaf
+bNA
 aaf
 aaf
 aaf
@@ -57804,7 +57879,7 @@ aaf
 aaf
 aaf
 aaf
-aaf
+bNA
 aqI
 arf
 aBO
@@ -57821,7 +57896,7 @@ auU
 aFr
 arf
 aqI
-aaf
+bNA
 aaf
 aaf
 aaf
@@ -58206,7 +58281,7 @@ aaf
 aaf
 aaf
 aaf
-aaf
+bNA
 aqI
 arf
 auU
@@ -58223,7 +58298,7 @@ auU
 auU
 arf
 aqI
-aaf
+bNA
 aaf
 aaf
 aaf
@@ -58608,7 +58683,7 @@ aaf
 aaf
 aaf
 aaf
-aaf
+bNA
 aqI
 arf
 auU
@@ -58625,7 +58700,7 @@ auU
 auU
 arf
 aqI
-aaf
+bNA
 aaf
 aaf
 aaf
@@ -59010,7 +59085,7 @@ aaf
 aaf
 aaf
 aaf
-aaf
+bNA
 aqI
 arf
 auU
@@ -59027,7 +59102,7 @@ auU
 auU
 arf
 aqI
-aaf
+bNA
 aaf
 aaf
 aaf
@@ -59412,7 +59487,7 @@ aaf
 aaf
 aaf
 aaf
-aaf
+bNA
 aqI
 arf
 aBO
@@ -59429,7 +59504,7 @@ auU
 aFr
 arf
 aqI
-aaf
+bNA
 aaf
 aaf
 aaf
@@ -59814,7 +59889,7 @@ aaf
 aaf
 aaf
 aaf
-aaf
+bNA
 aqI
 arf
 auU
@@ -59831,7 +59906,7 @@ auU
 auU
 arf
 aqI
-aaf
+bNA
 aaf
 aaf
 aaf
@@ -60216,7 +60291,7 @@ aaf
 aaf
 aaf
 aaf
-aaf
+bNA
 aqI
 arf
 arf
@@ -60233,7 +60308,7 @@ arf
 arf
 arf
 aqI
-aaf
+bNA
 aaf
 aaf
 aaf
@@ -60618,7 +60693,7 @@ aaf
 aaf
 aaf
 aaf
-aaf
+bNA
 aqI
 aqI
 aqI
@@ -60635,7 +60710,7 @@ aqI
 aqI
 aqI
 aqI
-aaf
+bNA
 aaf
 aaf
 aaf
@@ -61020,24 +61095,24 @@ aaf
 aaf
 aaf
 aaf
-aaf
-aaf
-aaf
-aaf
-aaf
-aaf
-aaf
-aaf
-aaf
-aaf
-aaf
-aaf
-aaf
-aaf
-aaf
-aaf
-aaf
-aaf
+bNA
+bNA
+bNA
+bNA
+bNA
+bNA
+bNA
+bNA
+bNA
+bNA
+bNA
+bNA
+bNA
+bNA
+bNA
+bNA
+bNA
+bNA
 aaf
 aaf
 aaf
@@ -65875,7 +65950,7 @@ aaf
 aaf
 aaf
 aHk
-aIZ
+aJe
 aJe
 aJe
 aIH
@@ -134075,7 +134150,7 @@ xTx
 aPD
 abt
 osl
-xTx
+qDi
 xTx
 adQ
 aag
@@ -138084,7 +138159,7 @@ aby
 abH
 xTx
 xTx
-xTx
+afB
 xTx
 adQ
 aag
@@ -138485,7 +138560,7 @@ abt
 abx
 abH
 abS
-xTx
+afB
 xTx
 xTx
 abt
@@ -138519,7 +138594,7 @@ xTx
 acN
 abt
 xTx
-xTx
+cRZ
 xTx
 xTx
 abt
@@ -138908,7 +138983,7 @@ aag
 aag
 aeA
 aeI
-aeI
+xMl
 afd
 aeI
 aeI
@@ -139725,8 +139800,8 @@ xTx
 abQ
 xTx
 xTx
-xTx
-xTx
+qDi
+qDi
 acN
 abt
 aag
@@ -140939,7 +141014,7 @@ aag
 aag
 aag
 aag
-aag
+kFE
 aag
 aaf
 aip
@@ -141312,9 +141387,9 @@ aag
 aag
 aag
 aag
-aag
-aag
-aag
+nee
+nee
+nee
 aag
 aag
 aag
@@ -141341,12 +141416,12 @@ aag
 aag
 aag
 aag
-aag
+kFE
 aag
 aaf
 aaf
 aiq
-aip
+gMg
 aip
 aaf
 bNA
@@ -141740,7 +141815,7 @@ bzo
 bzo
 bzo
 bzo
-bzo
+oRp
 bzo
 bzo
 bzo
@@ -142533,12 +142608,12 @@ boV
 baE
 baE
 baE
+hPc
 baE
 baE
 baE
 baE
-baE
-baE
+mCc
 acx
 baE
 boV
@@ -143748,7 +143823,7 @@ acx
 baE
 baE
 baE
-baE
+mCc
 baE
 baE
 baE
@@ -144925,7 +145000,7 @@ aMJ
 aam
 aag
 aag
-aag
+kFE
 aag
 aag
 aag
@@ -144955,7 +145030,7 @@ aag
 aag
 aag
 aag
-aag
+nee
 aag
 aag
 aag
@@ -145327,7 +145402,7 @@ aMJ
 aam
 aag
 aag
-aag
+kFE
 aag
 aag
 aag
@@ -145357,7 +145432,7 @@ aag
 ahD
 aag
 abR
-aag
+nee
 aag
 aag
 aag
@@ -145749,7 +145824,7 @@ acm
 afy
 agV
 afU
-xTx
+cRZ
 afy
 xTx
 xTx
@@ -146151,14 +146226,14 @@ acm
 afz
 agV
 afV
-xTx
+cRZ
 afy
 xTx
 xTx
 acm
 aag
 aag
-aag
+kFE
 aag
 aag
 aag
@@ -146560,7 +146635,7 @@ acN
 acm
 aag
 aag
-aag
+kFE
 aag
 aag
 aag
@@ -146748,7 +146823,7 @@ aag
 wtN
 bRe
 mQx
-bRe
+bom
 mQx
 bom
 xiy
@@ -146927,7 +147002,7 @@ aag
 abc
 abq
 aag
-aag
+bpz
 aag
 aag
 abq
@@ -146953,7 +147028,7 @@ abs
 aag
 acm
 afA
-afB
+xTx
 agw
 xTx
 bvl
@@ -147355,8 +147430,8 @@ abt
 aag
 acm
 afB
-afB
 xTx
+afB
 xTx
 bIe
 xTx
@@ -147554,7 +147629,7 @@ bRe
 bwd
 bRe
 bwd
-bRe
+bom
 bvF
 aab
 aab
@@ -147732,7 +147807,7 @@ abc
 abq
 aag
 aag
-aag
+bpz
 acw
 aam
 aco
@@ -147757,7 +147832,7 @@ abt
 aag
 acm
 afA
-afB
+xTx
 agw
 xTx
 bvl
@@ -148149,18 +148224,18 @@ aag
 acl
 adc
 aej
-xTx
+afB
 xTx
 adc
-xTx
+iDJ
 xTx
 bKW
 acl
 aag
 acm
 afC
-afB
 xTx
+lkG
 xTx
 bIe
 aNa
@@ -148551,7 +148626,7 @@ aag
 acl
 adc
 aej
-xTx
+afB
 xTx
 adc
 xTx
@@ -148561,7 +148636,7 @@ acl
 aag
 acm
 afA
-afB
+xTx
 agw
 xTx
 bvl
@@ -148953,7 +149028,7 @@ aag
 acl
 adc
 aej
-xTx
+afB
 xTx
 efS
 efS
@@ -148963,8 +149038,8 @@ acl
 aag
 acm
 afB
-afB
 xTx
+afB
 xTx
 bIe
 xTx
@@ -149365,7 +149440,7 @@ acl
 aag
 acm
 afA
-afB
+xTx
 agw
 abS
 bvl
@@ -152968,7 +153043,7 @@ xTx
 xTx
 add
 aeC
-xTx
+iDJ
 aeC
 acl
 aag
