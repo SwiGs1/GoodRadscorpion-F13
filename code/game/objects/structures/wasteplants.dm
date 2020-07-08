@@ -55,16 +55,27 @@
 	desc = "This irradiated sapling offers a fruit that is highly nutritious and hydrating."
 	produce = /obj/item/reagent_containers/food/snacks/grown/mutfruit
 
-
 /obj/structure/flora/wasteplant/wild_fungus
 	name = "cave fungi"
 	icon_state = "wild_fungus"
 	desc = "This edible strain of fungus grows in dark places and is said to have anti-toxic properties."
 	produce = /obj/item/reagent_containers/food/snacks/grown/fungus
 
-
 /obj/structure/flora/wasteplant/wild_agave
 	name = "wild agave"
 	icon_state = "wild_agave"
 	desc = "The juice of this fleshy plant soothes burns, but it also removes nutrients from the body."
 	produce = /obj/item/reagent_containers/food/snacks/grown/agave
+
+/obj/structure/flora/wasteplant/wild_yucca
+	name = "wild yucca"
+	icon_state = "wild_yucca"
+	desc = "The banana yucca plant produces the soft, tasty banana yucca fruits"
+	produce = /obj/item/reagent_containers/food/snacks/grown/yucca
+
+/obj/structure/flora/wasteplant/wild_prickly
+	name = "wild prickly pear"
+	icon_state = "wild_prickly"
+	desc = "This paddle-shaped cactus bears a juicy, pear shaped fruit."
+	produce = /obj/item/reagent_containers/food/snacks/grown/prickly
+	

@@ -462,8 +462,8 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 	name = "NCR Sergeant"
 	icon_state = "NCR Sergeant"
 
-/obj/effect/landmark/start/f13/ncrspecialist
-	name = "NCR Specialist"
+/obj/effect/landmark/start/f13/ncrcorporal
+	name = "NCR Corporal"
 	icon_state = "NCR Trooper"
 
 /obj/effect/landmark/start/f13/ncrmp
@@ -479,6 +479,10 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 	icon_state = "NCR Trooper"
 
 /obj/effect/landmark/start/f13/ncrrecruit
+	name = "NCR Recruit"
+	icon_state = "NCR Recruit"
+
+/obj/effect/landmark/start/f13/ncrncb
 	name = "NCR Non-Combatant"
 	icon_state = "NCR Recruit"
 
@@ -487,8 +491,12 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 	icon_state = "NCR Veteran Ranger"
 
 /obj/effect/landmark/start/f13/ncrranger
-	name = "NCR Ranger"
+	name = "NCR Patrol Ranger"
 	icon_state = "NCR Patrol Ranger"
+
+/obj/effect/landmark/start/f13/ncrrecranger
+	name = "NCR Recon Ranger"
+	icon_state = "NCR Recon Ranger"
 
 
 // Legion
@@ -501,6 +509,9 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 	name = "Legion Centurion"
 	icon_state = "Centurion"
 
+/obj/effect/landmark/start/f13/vetdecanus
+	name = "Legion Veteran Decanus"
+
 /obj/effect/landmark/start/f13/librator
 	name = "Legion Libritor"
 
@@ -510,8 +521,11 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 /obj/effect/landmark/start/f13/priestess
 	name = "Priestess of Mars"
 
+/obj/effect/landmark/start/f13/primedecanus
+	name = "Legion Prime Decanus"
+
 /obj/effect/landmark/start/f13/decanus
-	name = "Legion Decanus"
+	name = "Legion Recruit Decanus"
 	icon_state = "Decanus"
 
 /obj/effect/landmark/start/f13/vexillarius
@@ -522,9 +536,8 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 	name = "Veteran Legionary"
 	icon_state = "Veteran Legionnaire"
 
-/obj/effect/landmark/start/f13/legionary
-	name = "Legionnaire"
-	icon_state = "Veteran Legionnaire"
+/obj/effect/landmark/start/f13/primelegionary
+	name = "Prime Legionary"
 
 /obj/effect/landmark/start/f13/recleg
 	name = "Recruit Legionary"
@@ -549,18 +562,6 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 	name = "Head Scribe"
 	icon_state = "Head Scribe"
 
-/obj/effect/landmark/start/f13/sentinel
-	name = "Sentinel"
-	icon_state = "Paladin"
-
-/obj/effect/landmark/start/f13/knightcap
-	name = "Knight-Captain"
-	icon_state = "Initiate Knight"
-
-/obj/effect/landmark/start/f13/seniorpaladin
-	name = "Senior Paladin"
-	icon_state = "Knight"
-
 /obj/effect/landmark/start/f13/paladin
 	name = "Paladin"
 	icon_state = "Knight"
@@ -573,13 +574,13 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 	name = "Knight"
 	icon_state = "Knight"
 
-/obj/effect/landmark/start/f13/initiate
-	name = "Initiate"
+/obj/effect/landmark/start/f13/initiateknight
+	name = "Initiate Knight"
 	icon_state = "Knight"
 
-/obj/effect/landmark/start/f13/vertipilot
-	name = "Vertibird Pilot"
-	icon_state = "Knight"
+/obj/effect/landmark/start/f13/initiatescribe
+	name = "Initiate Scribe"
+	icon_state = "Scribe"
 
 /obj/effect/landmark/start/f13/handy
 	name = "Mr. Handy"
@@ -698,3 +699,4 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 /obj/effect/landmark/start/f13/villager
 	name = "Villager"
 	icon_state = "Villager"
+	

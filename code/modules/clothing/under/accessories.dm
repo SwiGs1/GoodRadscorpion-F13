@@ -104,14 +104,14 @@
     item_color = "colonelrank"
     minimize_when_attached = TRUE
 
-/obj/item/clothing/accessory/ncr/CPT
+/obj/item/clothing/accessory/ncr/cpt
     name = "(O-3) Captain rank pin"
     desc = "An officer holding the rank of Captain should wear this."
     icon_state = "captainrank"
     item_color = "captainrank"
     minimize_when_attached = TRUE
 
-/obj/item/clothing/accessory/ncr/LT
+/obj/item/clothing/accessory/ncr/lt
     name = "(O-1) Lieutenant rank pin"
     desc = "An officer holding the rank of Lieutenant should wear this."
     icon_state = "lieutenantrank"
@@ -122,14 +122,14 @@
 	name = "medical armband (O-1 Medical Officer)"
 	desc = "An armband worn by NCR Medical Officers to diplay their rank and specialty. This one is white."
 
-/obj/item/clothing/accessory/ncr/SSGT
+/obj/item/clothing/accessory/ncr/ssgt
     name = "(E-6) Staff Sergeant rank pins"
     desc = "A trooper holding the rank of Staff Sergeant should wear this."
     icon_state = "ncrenlisted"
     item_color = "ncrenlisted"
     minimize_when_attached = TRUE
 
-/obj/item/clothing/accessory/ncr/SGT
+/obj/item/clothing/accessory/ncr/sgt
     name = "(E-5) Sergeant rank pins"
     desc = "A trooper holding the rank of Sergeant should wear this."
     icon_state = "ncrenlisted"
@@ -140,33 +140,37 @@
     name = "engineering armband (E-5 Engineer)"
     desc = "An armband worn by NCR Engineers to display their rank and speciality. This one is orange with a reflective strip!"
 
-/obj/item/clothing/accessory/ncr/CPL
-    name = "(E-4) Corporal rank pins"
+/obj/item/clothing/accessory/ncr/spc
+    name = "(E-4) Specialist rank pins"
     desc = "A Corporal should wear this."
     icon_state = "ncrenlisted"
     item_color = "ncrenlisted"
     minimize_when_attached = TRUE
 
-/obj/item/clothing/accessory/ncr/SPC
-    name = "(E-4) Corporal rank pins"
+/obj/item/clothing/accessory/ncr/cpl
+    name = "(E-3) Corporal rank pins"
     desc = "A Corporal should wear this."
     icon_state = "ncrenlisted"
     item_color = "ncrenlisted"
     minimize_when_attached = TRUE
 
-/obj/item/clothing/accessory/ncr/TPR
-    name = "(E-3) Trooper rank pins"
+/obj/item/clothing/accessory/ncr/tpr
+    name = "(E-2) Trooper rank pins"
     desc = "A trooper should wear this."
     icon_state = "ncrenlisted"
     item_color = "ncrenlisted"
     minimize_when_attached = TRUE
 
-/obj/item/clothing/accessory/ncr/REC
-    name = "(E-2) Recruit rank pins"
+/obj/item/clothing/accessory/ncr/rec
+    name = "(E-1) Recruit rank pins"
     desc = "A recruit should wear this."
     icon_state = "ncrenlisted"
     item_color = "ncrenlisted"
     minimize_when_attached = TRUE
+
+/obj/item/clothing/accessory/armband/engine/ncr/ncb
+    name = "Non-Combatant NCR Civilian armband (E-0 Non-Combatant)"
+    desc = "An armband worn by NCR Non-Combatants to display their rank and status. This one is orange with a reflective strip!"
 
 //BOSRanks
 
@@ -498,3 +502,4 @@
 	item_color = "skull"
 	above_suit = TRUE
 	armor = list("melee" = 5, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 25)
+	

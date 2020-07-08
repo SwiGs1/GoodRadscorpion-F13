@@ -104,8 +104,8 @@
 	icon_state = "sentrybot"
 	icon_living = "sentrybot"
 	icon_dead = "sentrybot"
-	health = 680
-	maxHealth = 680
+	health = 330
+	maxHealth = 330
 	melee_damage_lower = 48
 	melee_damage_upper = 72
 	extra_projectiles = 4 //5 projectiles
@@ -167,8 +167,8 @@
 	icon_state = "assaultron"
 	icon_living = "assaultron"
 	icon_dead = "gib7"
-	health = 450
-	maxHealth = 450
+	health = 200
+	maxHealth = 200
 	faction = list("wastebot", "enclave")
 	speed = 0
 	melee_damage_lower = 55
@@ -183,8 +183,8 @@
 	icon_state = "robobrain"
 	icon_living = "robobrain"
 	icon_dead = "robobrain"
-	health = 480
-	maxHealth = 480
+	health = 265
+	maxHealth = 265
 	melee_damage_lower = 24
 	melee_damage_upper = 72//why would you even get close?
 	extra_projectiles = 0
@@ -243,3 +243,4 @@
 /mob/living/simple_animal/hostile/handy/robobrain/Aggro()
 	. = ..()
 	summon_backup(15)
+	

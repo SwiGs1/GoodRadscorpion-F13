@@ -354,7 +354,6 @@
 	icon = 'icons/fallout/objects/food&drinks/grown.dmi'
 	//slot_flags = SLOT_HEAD
 	filling_color = "#FF6347"
-
 /obj/item/reagent_containers/food/snacks/grown/xander
 	seed = /obj/item/seeds/xander
 	name = "xander root"
@@ -362,7 +361,6 @@
 	icon_state = "xander"
 	icon = 'icons/fallout/objects/food&drinks/grown.dmi'
 	filling_color = "#FF6347"
-
 /obj/item/reagent_containers/food/snacks/grown/mutfruit
 	seed = /obj/item/seeds/mutfruit
 	name = "mutfruit"
@@ -370,7 +368,6 @@
 	icon_state = "mutfruit"
 	icon = 'icons/fallout/objects/food&drinks/grown.dmi'
 	filling_color = "#FF6347"
-
 /obj/item/reagent_containers/food/snacks/grown/ferocactus
 	seed = /obj/item/seeds/ferocactus
 	name = "barrel cactus fruit"
@@ -378,7 +375,6 @@
 	icon_state = "cactusfruit"
 	icon = 'icons/fallout/objects/food&drinks/grown.dmi'
 	filling_color = "#FF6347"
-
 /obj/item/reagent_containers/food/snacks/grown/shroom
 	seed = /obj/item/seeds/shroom
 	name = "shroom"
@@ -386,7 +382,6 @@
 	icon_state = "shroom"
 	icon = 'icons/fallout/objects/food&drinks/grown.dmi'
 	filling_color = "#FF6347"
-
 /obj/item/reagent_containers/food/snacks/grown/glow
 	seed = /obj/item/seeds/glow
 	name = "glowing fungus"
@@ -394,11 +389,26 @@
 	icon_state = "glow"
 	icon = 'icons/fallout/objects/food&drinks/grown.dmi'
 	filling_color = "#FF6347"
-
 /obj/item/reagent_containers/food/snacks/grown/agave
 	seed = /obj/item/seeds/agave
 	name = "agave"
 	desc = "Strange grass. Looks safe."
 	icon_state = "agave"
 	icon = 'icons/fallout/objects/food&drinks/grown.dmi'
+*/
+
+/*
+/obj/item/reagent_containers/food/snacks/grown/yucca
+	seed = /obj/item/seeds/yucca
+	name = "banana yucca"
+	desc = "A large, soft, fleshy fruit."
+	icon_state = "yucca"
+	icon = 'icons/fallout/objects/food&drinks/grown.dmi'
+	filling_color = "#FF6347"
+/obj/item/reagent_containers/food/snacks/grown/prickly
+	seed = /obj/item/seeds/prickly
+	name = "prickly pear"
+	desc = "A prickly pear is a pear-shaped fruit full of juice that tastes similar to watermelon."
+	icon_state = "prickly"
+	filling_color = "#FF6347"
 */
