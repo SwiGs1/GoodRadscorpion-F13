@@ -1,8 +1,7 @@
 GLOBAL_LIST_INIT(command_positions, list(
     "Elder",
     "Head Scribe",
-    "Sentinel",
-    "Knight-Captain",
+    "Paladin",
     "Legion Centurion",
     "Legion Orator",
     "Priestess of Mars",
@@ -27,10 +26,7 @@ GLOBAL_LIST_INIT(faction_whitelist_positions, list(
 "Chief of Security",
 "Overseer",
 "Elder",
-"Sentinel",
-"Knight-Captain",
 "Head Scribe",
-"Senior Paladin",
 "Paladin",
 "Knight",
 "Scribe",
@@ -62,10 +58,11 @@ GLOBAL_LIST_INIT(faction_whitelist_positions, list(
 "Shaman"
 ))
 GLOBAL_LIST_INIT(faction_player_positions, list(
-"Senior Paladin",
 "Paladin",
 "Knight",
 "Scribe",
+"Initiate Knight",
+"Initiate Scribe",
 "Legion Decanus",
 "Veteran Legionary",
 "Prime Legionary",
@@ -92,21 +89,18 @@ GLOBAL_LIST_INIT(antagonist_whitelist_positions, list(
 
 GLOBAL_LIST_INIT(brotherhood_command_positions, list(
 	"Elder",
-	"Sentinel",
-	"Knight-Captain",
+    "Paladin",
 	"Head Scribe"
 ))
 
 GLOBAL_LIST_INIT(brotherhood_positions, list(
     "Elder",
-	"Sentinel",
-	"Knight-Captain",
 	"Head Scribe",
-	"Senior Paladin",
 	"Paladin",
 	"Knight",
 	"Scribe",
-	"Initiate"
+	"Initiate Knight",
+    "Initiate Scribe"
 ))
 
 GLOBAL_LIST_INIT(den_command_positions, list(
@@ -135,8 +129,10 @@ GLOBAL_LIST_INIT(legion_command_positions, list(
 GLOBAL_LIST_INIT(legion_positions, list(
     "Legion Centurion",
     "Priestess of Mars",
+    "Legion Veteran Decanus",
+    "Legion Prime Decanus",
     "Legion Libritor",
-    "Legion Decanus",
+    "Legion Recruit Decanus",
     "Veteran Legionary",
 	"Prime Legionary",
     "Recruit Legionary",
@@ -165,8 +161,10 @@ GLOBAL_LIST_INIT(ncr_positions, list(
     "NCR Corporal",
     "NCR Specialist",
     "NCR Trooper",
-    "NCR Assistant",
-    "NCR Ranger"
+    "NCR Recruit",
+    "NCR Non-Combatant",
+    "NCR Patrol Ranger",
+    "NCR Recon Ranger"
 ))
 
 GLOBAL_LIST_INIT(vault_command_positions, list(
@@ -213,29 +211,21 @@ GLOBAL_LIST_INIT(engineering_positions, list(
     "Chief Engineer",
     "Station Engineer",
     "Atmospheric Technician"))
-
-
 GLOBAL_LIST_INIT(medical_positions, list(
     "Chief Medical Officer",
     "Medical Doctor",
     "Geneticist",
     "Virologist",
     "Chemist"))
-
-
 GLOBAL_LIST_INIT(science_positions, list(
     "Research Director",
     "Scientist",
     "Roboticist"))
-
-
 GLOBAL_LIST_INIT(supply_positions, list(
     "Head of Personnel",
     "Quartermaster",
     "Cargo Technician",
     "Shaft Miner"))
-
-
 GLOBAL_LIST_INIT(civilian_positions, list(
     "Bartender",
     "Botanist",
@@ -247,15 +237,11 @@ GLOBAL_LIST_INIT(civilian_positions, list(
     "Clown",
     "Mime",
     "Assistant"))
-
-
 GLOBAL_LIST_INIT(security_positions, list(
     "Head of Security",
     "Warden",
     "Detective",
     "Security Officer"))
-
-
 GLOBAL_LIST_INIT(nonhuman_positions, list(
     "AI",
     "Cyborg",
@@ -273,10 +259,10 @@ GLOBAL_LIST_INIT(exp_jobsmap, list(
     EXP_TYPE_WASTELAND     = list("titles" = wasteland_positions    ),
     EXP_TYPE_SECURITY      = list("titles" = security_positions),
     EXP_TYPE_NCRCOMMAND    = list("titles" = list("NCR Lieutenant","NCR Sergeant","NCR Captain","NCR Ambassador")),
-    EXP_TYPE_RANGER        = list("titles" = list("NCR Veteran Ranger","NCR Ranger")),
+    EXP_TYPE_RANGER        = list("titles" = list("NCR Veteran Ranger","NCR Recon Ranger","NCR Patrol Ranger")),
     EXP_TYPE_KNIGHT        = list("titles" = list("Knight")),
     EXP_TYPE_SCRIBE        = list("titles" = list("Scribe")),
-    EXP_TYPE_DECANUS       = list("titles" = list("Legion Decanus")),
+    EXP_TYPE_DECANUS       = list("titles" = list("Legion Veteran Decanus","Legion Prime Decanus","Legion Recruit Decanus")),
     EXP_TYPE_TRIBAL        = list("titles" = tribal_positions)
     //EXP_TYPE_ENCLAVE = list("titles" = enclave_positions),
     // EXP_TYPE_CREW = list("titles" = command_positions | engineering_positions | medical_positions | science_positions | supply_positions | security_positions | civilian_positions | list("AI","Cyborg")), // crew positions
