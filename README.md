@@ -1,3 +1,15 @@
+## Good Radscorpion 13
+Welcome one, welcome all, to Good Radscorpion 13. This is our little attempt at bringing back the old /tg/ Fallout 13 style Crashpoint showed us actually works.
+
+HRP, with a dash of MRP goodness to keep shit fun. You'll be able to fight, you'll be able to steal, and if you roleplay it well, and you'll be allowed to do anything excluding anything which would break the rules. An emphasis on a great environment for players and staff alike, objective and fair administration, sensible rules and some leniency to a certain degree. Players will be expected to follow a MRP - HRP standard, with exceptions to be made of course.
+
+We're always looking for suggestions and feedback and always welcoming new staff, experienced or inexperienced. Unofficially Crashpoint 2! Hosted in the US. That's all.
+
+Have fun and don't forget our motto, "We told you we'd do it." 
+Sponsored by Sips Co. Funded by the S Foundation. Manufactured by Swigs Industries 
+*Crashpoint Approved :)
+
+
 ## F13 codebase 
 
 [![Build Status](https://travis-ci.org/BadDeathclaw/TG-Claw.svg?branch=master)](https://travis-ci.org/BadDeathclaw/TG-Claw) [![Krihelimeter](https://www.krihelinator.xyz/badge/BadDeathclaw/TG-Claw)](http://www.krihelinator.xyz/repositories/BadDeathclaw/TG-Claw) 
@@ -5,7 +17,7 @@
 [![Percentage of issues still open](https://isitmaintained.com/badge/open/BadDeathclaw/TG-Claw.svg)](https://isitmaintained.com/project/BadDeathclaw/TG-Claw "Percentage of issues still open") [![Average time to resolve an issue](https://isitmaintained.com/badge/resolution/BadDeathclaw/TG-Claw.svg)](https://isitmaintained.com/project/BadDeathclaw/TG-Claw "Average time to resolve an issue")  
 [![forthebadge](https://forthebadge.com/images/badges/built-with-resentment.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/contains-technical-debt.svg)](https://forthebadge.com) [![worksonmymachine](https://img.shields.io/badge/works--on-_my--machine-yellowgreen.svg?longCache=true&style=for-the-badge)](https://shields.io) [![forinfinityandbyond](https://user-images.githubusercontent.com/5211576/29499758-4efff304-85e6-11e7-8267-62919c3688a9.gif)](https://www.reddit.com/r/SS13/comments/5oplxp/what_is_the_main_problem_with_byond_as_an_engine/dclbu1a)
 
-**Discord** https://discord.gg/TCj5cJN
+**Discord** https://discord.gg/fBZTqPV
 
 ## Notes from F13
 
