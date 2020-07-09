@@ -35,24 +35,25 @@
 # END_KEYWORDS
 
 #Previous ranks on archive incase someone shits the proverbial bed. (once everyone has been switched over to the new ranks you're more than welcome to blitz these to reduce bloat)
-Admin Observer	= -AUTOLOGIN
-Moderator		= +ADMIN
-Admin Candidate	= +@
+Admin Observer		= -AUTOLOGIN
+Moderator		= +ADMIN +FUN +BAN +SPAWN +POSSESS +BUILD +VAREDIT
+Admin Candidate		= +@
 Trial Admin		= +@ +SPAWN +VAREDIT +BAN
+Devmentor		= +@ +SERVER +DEBUG -AUTOLOGIN
+Mentor			= +ADMIN
 Badmin			= +@ +POSSESS +POLL +BUILDMODE +SERVER +FUN
-Admin			= +@ +STEALTH +SOUNDS +DEBUG
+Admin			= +EVERYTHING *EVERYTHING
 Game Master		= +EVERYTHING *EVERYTHING
-Lazy Master 	= +EVERYTHING -AUTOLOGIN *EVERYTHING
+Lazy Master 		= +EVERYTHING -AUTOLOGIN *EVERYTHING
 Three Dog		= -@ -ADMIN +DJ
-
 Scribe 			= +SERVER +DEBUG +VAREDIT +SPAWN -AUTOLOGIN
-Head Scribe 	= +@ +POLL -AUTOLOGIN
-
-Initiate		= +ADMIN
-Aspirant 		= +@ +BAN
-Knight 			= +@ +SPAWN +FUN +VAREDIT
-Paladin			= +@ +STEALTH +POSSESS +BUILD +SOUND +SERVER +DEBUG
+Head Scribe 		= +@ +POLL -AUTOLOGIN
+Initiate Moderator	= +ADMIN
+Aspirant Moderator	= +@ +BAN
+Knight Admin		= +@ +SPAWN +FUN +VAREDIT
+Paladin	Admin		= +@ +STEALTH +POSSESS +BUILD +SOUND +SERVER +DEBUG
 Head Coder 		= +EVERYTHING *EVERYTHING
-Head Paladin	= +EVERYTHING *EVERYTHING
+Head Admin		= +EVERYTHING *EVERYTHING
 Elder			= +EVERYTHING *EVERYTHING
 Host 			= +EVERYTHING *EVERYTHING
+Supporter		= +AUTOLOGIN
