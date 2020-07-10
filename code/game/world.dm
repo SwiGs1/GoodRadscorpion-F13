@@ -254,7 +254,7 @@ GLOBAL_PROTECT(security_mode)
 		hostedby = CONFIG_GET(string/hostedby)
 
 	s += "<b>\[ENG] Fallout 13 \[18+]<br>"
-	s += "An 18+ HRP server with a dash of MRP goodness based around 2280. F:NV.<br>"
+	s += "An 18+ HRP server with a dash of MRP goodness based around 2280 F:NV.<br>"
 	s += "RP expected \[ https://discord.gg/fBZTqPV]<br>"
 	s += "Hosted by: Swigs"
 
