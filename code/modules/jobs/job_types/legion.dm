@@ -577,7 +577,7 @@ Prime Legionairy
 	mask =			/obj/item/clothing/mask/bandana/legprime
 	suit_store = /obj/item/gun/ballistic/shotgun/hunting
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/internal/shot/lethal=2, \
+		/obj/item/storage/box/lethalshot=1, \
 		/obj/item/twohanded/binocs=1)
 
 /datum/outfit/loadout/legtribal
