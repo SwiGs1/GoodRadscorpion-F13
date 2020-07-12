@@ -568,7 +568,7 @@ Prime Legionairy
 	mask =			/obj/item/clothing/mask/bandana/legprime
 	suit_store = /obj/item/gun/ballistic/revolver/colt357
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/internal/cylinder/rev357=2)
+		/obj/item/ammo_box/a357 =2)
 
 /datum/outfit/loadout/primelegassault
 	name = "Assault Legionary"
