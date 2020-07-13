@@ -204,6 +204,22 @@
 	list_reagents = list("nutriment" = 3, "vitamin" = 3)
 	tastes = list("spicy cooked insect guts" = 1)
 
+/obj/item/reagent_containers/food/snacks/meat/slab/bloatfly_meat
+	name = "bloatfly meat"
+	desc = "A slab of bloatfly meat."
+	icon_state = "mothmeat"
+	list_reagents = list("nutriment" = 2, "bad_food" = 3, "vitamin" = 2)
+	tastes = list("insect guts" = 1)
+	cooked_type = /obj/item/reagent_containers/food/snacks/meat/steak/bloatfly_meat
+	slice_path = null
+
+/obj/item/reagent_containers/food/snacks/meat/steak/bloatfly_meat
+	name = "bloatfly steak"
+	desc = "A steak of bloatfly meat. Chunky and Tasty. Maybe..."
+	icon_state = "mothmeat"
+	list_reagents = list("nutriment" = 3, "vitamin" = 3)
+	tastes = list("spicy cooked insect guts" = 1)
+
 /obj/item/reagent_containers/food/snacks/meat/slab/human/ghoul
 	name = "ghoul meat"
 	icon_state = "flymeat"
