@@ -29,7 +29,7 @@
 	attack_sound = "punch"
 	loot = list(/obj/item/stealthboy/malfuctioning)
 
-/mob/living/simple_animal/hostile/nightkin/ListTargets() //when we see enemy, we cloak 
+/mob/living/simple_animal/hostile/nightkin/ListTargets() //when we see enemy, we cloak
 	if(!search_objects)
 		. = hearers(vision_range, targets_from) - src
 	icon_state = "nightkin_jailer_cloak"
@@ -49,13 +49,13 @@
 		return FALSE
 
 
-/mob/living/simple_animal/hostile/nightkin/death(gibbed)// when we die uncloak 
+/mob/living/simple_animal/hostile/nightkin/death(gibbed)// when we die uncloak
 	icon = 'icons/fallout/mobs/nightkin_dead.dmi'
 	icon_state = icon_dead
 	anchored = FALSE
 	..()
 
-/mob/living/simple_animal/pet/dog/nightkin   //This is Dog and God, he is friendly, not an actual dog - swigs 
+/mob/living/simple_animal/pet/dog/nightkin   //This is Dog and God, he is friendly, not an actual dog - swigs
 	name = "Dog and God"
 	desc = "Dog is a psychologically disturbed nightkin. Who helps the Town under the guidance and control of His alternate personality, God. Dog is the tool of violence to protect the town, and God is the voice of reason."
 	icon = 'icons/fallout/mobs/nightkin.dmi'
@@ -113,7 +113,7 @@
 	attack_sound = "punch"
 	loot = list(/obj/item/stealthboy)
 
-/mob/living/simple_animal/hostile/nightkin/nightkinmaster/ListTargets() //when we see enemy, we cloak 
+/mob/living/simple_animal/hostile/nightkin/nightkinmaster/ListTargets() //when we see enemy, we cloak
 	if(!search_objects)
 		. = hearers(vision_range, targets_from) - src
 	icon_state = "nightkin_master_cloak"
@@ -133,7 +133,7 @@
 		return FALSE
 
 
-/mob/living/simple_animal/hostile/nightkin/nightkinmaster/death(gibbed)// when we die uncloak 
+/mob/living/simple_animal/hostile/nightkin/nightkinmaster/death(gibbed)// when we die uncloak
 	icon = 'icons/fallout/mobs/nightkin_dead.dmi'
 	icon_state = icon_dead
 	anchored = FALSE
