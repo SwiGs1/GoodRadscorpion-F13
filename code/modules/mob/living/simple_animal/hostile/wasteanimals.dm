@@ -211,6 +211,53 @@
 	faction = list("gecko")
 	gold_core_spawnable = HOSTILE_SPAWN
 
+/mob/living/simple_animal/hostile/bloatfly
+	name = "bloatfly"
+	desc = "A bloatfly is a common mutated pest resembling an oversized blow-fly. Spits nasty neurotoxin and gestating maggot larvae from its abdomen. "
+	icon = 'icons/mob/wastemobs.dmi'
+	icon_state = "bloatfly"
+	icon_living = "bloatfly"
+	icon_dead = "bloatfly_dead1"
+	mob_biotypes = list(MOB_ORGANIC, MOB_BEAST)
+	speak_chance = 0
+	turns_per_move = 6
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/slab/bloatfly_meat = 2,
+						/obj/item/stack/sheet/sinew = 2,
+						/obj/item/stack/sheet/animalhide/chitin = 3, 
+						/obj/item/reagent_containers/food/snacks/f13/venomgland = 1)
+	response_help = "pets"
+	response_disarm = "gently pushes aside"
+	response_harm = "hits"
+	emote_taunt = list("buzzes")
+	emote_taunt_sound = 'sound/creatures/cazador_buzz.ogg'
+	stat_attack = UNCONSCIOUS
+	robust_searching = 1
+	taunt_chance = 30
+	speed = 0
+	maxHealth = 40
+	health = 40
+	harm_intent_damage = 8
+	obj_damage = 18
+	melee_damage_lower = 18
+	melee_damage_upper = 18
+	ranged = 1
+	retreat_distance = 5
+	minimum_distance = 5
+	attacktext = "stings"
+	attack_sound = 'sound/creatures/cazador_attack.ogg'
+	projectiletype = /obj/item/projectile/neurotox
+	projectilesound = 'sound/weapons/pierce.ogg'
+	speak_emote = list("buzzes")
+	atmos_requirements = list("min_oxy" = 5, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 1, "min_co2" = 0, "max_co2" = 5, "min_n2" = 0, "max_n2" = 0)
+	faction = list("bloatfly")
+	movement_type = FLYING
+	gold_core_spawnable = HOSTILE_SPAWN
+
+/obj/item/projectile/neurotox
+	name = "Bloatfly Neurotoxin"
+	damage = 20
+	icon_state = "neurotoxin"
+
 /mob/living/simple_animal/hostile/giantant
 	name = "fireant"
 	desc = "A large mutated insect that finds its way everywhere."

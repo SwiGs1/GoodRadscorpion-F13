@@ -37,7 +37,7 @@
 	health = 110
 	retreat_distance = 4
 	minimum_distance = 6
-	projectiletype = /obj/item/projectile/bullet/c9mm
+	projectiletype = /obj/item/projectile/lbullet
 	projectilesound =  'sound/f13weapons/ninemil.ogg'
 
 /mob/living/simple_animal/hostile/chinese/ranged/assault
@@ -48,7 +48,7 @@
 	health = 200
 	extra_projectiles = 3
 	loot = list(/obj/effect/mob_spawn/human/corpse/chineseremnant/assault, /obj/item/gun/ballistic/automatic/type93, /obj/item/ammo_box/magazine/m556/rifle/assault)
-	projectiletype = /obj/item/projectile/bullet/a556/ap
+	projectiletype = /obj/item/projectile/hbullet
 	projectilesound = 'sound/f13weapons/assaultrifle_fire.ogg'
 
 /mob/living/simple_animal/hostile/chinese/ranged/assault/Aggro()

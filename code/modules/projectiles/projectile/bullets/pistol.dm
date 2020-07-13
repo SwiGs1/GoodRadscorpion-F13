@@ -14,7 +14,7 @@
 
 //9x19mm
 /obj/item/projectile/bullet/c9mm
-	damage = 0
+	damage = 2
 	armour_penetration = 0
 
 /obj/item/projectile/bullet/c9mm/ap
