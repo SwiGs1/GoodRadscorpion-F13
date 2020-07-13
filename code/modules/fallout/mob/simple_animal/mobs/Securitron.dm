@@ -42,6 +42,10 @@
 	projectiletype = /obj/item/projectile/beam
 	projectilesound = 'sound/weapons/resonator_fire.ogg'
 
+/mob/living/simple_animal/hostile/securitron/Initialize()
+	. = ..()
+	add_overlay("Securitron_e")
+
 /mob/living/simple_animal/hostile/securitron/bullet_act(obj/item/projectile/Proj)
 	if(!Proj)
 		CRASH("[src] securitron invoked bullet_act() without a projectile")

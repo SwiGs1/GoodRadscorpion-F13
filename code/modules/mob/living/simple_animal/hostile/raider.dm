@@ -38,7 +38,7 @@
 	health = 115
 	retreat_distance = 4
 	minimum_distance = 6
-	projectiletype = /obj/item/projectile/bullet/c9mm
+	projectiletype = /obj/item/projectile/lbullet
 	projectilesound = 'sound/f13weapons/ninemil.ogg'
 
 /mob/living/simple_animal/hostile/raider/ranged/boss
