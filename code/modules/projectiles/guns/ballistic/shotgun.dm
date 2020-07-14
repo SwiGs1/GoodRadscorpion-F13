@@ -357,8 +357,8 @@
 	weapon_weight = WEAPON_HEAVY
 	recoil = 1 
 	fire_delay = 6
-	projectile_speed = 0.3
-	extra_damage = 55
+	projectile_speed = 0.4
+	extra_damage = 45
 	extra_penetration = 25
 
 /obj/item/gun/ballistic/shotgun/automatic/hunting/trail

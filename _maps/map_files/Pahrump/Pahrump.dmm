@@ -9259,12 +9259,11 @@
 /area/f13/wasteland)
 "axS" = (
 /obj/structure/rack,
-/obj/item/ammo_box/magazine/mm762,
-/obj/item/ammo_box/magazine/mm762,
-/obj/item/ammo_box/magazine/mm762,
-/obj/item/ammo_box/magazine/mm762,
-/obj/item/ammo_box/magazine/mm762,
-/obj/item/ammo_box/magazine/mm762,
+/obj/item/ammo_box/a556/stripper,
+/obj/item/ammo_box/a556/stripper,
+/obj/item/ammo_box/a556/stripper,
+/obj/item/ammo_box/a556/stripper,
+/obj/item/ammo_box/a556/stripper,
 /turf/open/floor/plasteel/f13{
 	icon_state = "plating"
 	},
@@ -12681,16 +12680,16 @@
 	},
 /area/f13/city)
 "aGM" = (
-/obj/structure/displaycase,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/random,
+/obj/structure/displaycase,
 /turf/open/floor/f13/wood{
 	icon_state = "housewood2";
 	tag = "icon-housewood2"
 	},
 /area/f13/building)
 "aGN" = (
-/obj/structure/displaycase,
 /obj/effect/spawner/lootdrop/f13/weapon/melee/random,
+/obj/structure/displaycase,
 /turf/open/floor/f13/wood{
 	icon_state = "housewood2";
 	tag = "icon-housewood2"
@@ -13083,8 +13082,8 @@
 	},
 /area/f13/building)
 "aHV" = (
-/obj/structure/displaycase,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/random_high,
+/obj/structure/displaycase,
 /turf/open/floor/f13/wood{
 	icon_state = "housewood2";
 	tag = "icon-housewood2"
@@ -24896,7 +24895,9 @@
 /obj/item/gun/ballistic/revolver/caravan_shotgun,
 /obj/item/gun/ballistic/revolver/caravan_shotgun,
 /obj/item/gun/ballistic/revolver/caravan_shotgun,
-/obj/item/gun/ballistic/revolver/caravan_shotgun,
+/obj/item/gun/ballistic/shotgun/hunting,
+/obj/item/gun/ballistic/shotgun/hunting,
+/obj/item/gun/ballistic/shotgun/hunting,
 /turf/open/floor/plasteel/f13{
 	icon_state = "plating"
 	},
@@ -24905,6 +24906,8 @@
 /obj/structure/rack,
 /obj/item/storage/box/lethalshot,
 /obj/item/storage/box/lethalshot,
+/obj/item/storage/box/lethalshot,
+/obj/item/ammo_box/c10mm,
 /obj/item/ammo_box/c10mm,
 /turf/open/floor/plasteel/f13{
 	icon_state = "plating"
@@ -24920,7 +24923,9 @@
 /obj/item/gun/ballistic/revolver/colt357,
 /obj/item/gun/ballistic/revolver/colt357,
 /obj/item/gun/ballistic/revolver/colt357,
-/obj/item/gun/ballistic/revolver/colt357,
+/obj/item/gun/ballistic/revolver/m29,
+/obj/item/gun/ballistic/revolver/m29,
+/obj/item/gun/ballistic/revolver/m29,
 /turf/open/floor/plasteel/f13{
 	icon_state = "plating"
 	},
@@ -24936,8 +24941,6 @@
 /obj/item/ammo_box/tube/a357,
 /obj/item/ammo_box/m44,
 /obj/item/ammo_box/m44,
-/obj/item/ammo_box/a762,
-/obj/item/ammo_box/a762,
 /obj/item/ammo_box/a762,
 /obj/item/ammo_box/m44,
 /obj/item/ammo_box/a357,
@@ -40425,10 +40428,18 @@
 /obj/item/candle/tribal_torch,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
+"cFR" = (
+/mob/living/simple_animal/hostile/bloatfly,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/tunnel)
 "cJV" = (
 /obj/structure/bonfire,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
+"cPZ" = (
+/mob/living/simple_animal/hostile/bloatfly,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/legion)
 "cUo" = (
 /turf/closed/wall/f13/wood,
 /area/f13/tunnel)
@@ -40471,6 +40482,10 @@
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier4,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
+"ejS" = (
+/mob/living/simple_animal/hostile/bloatfly,
+/turf/open/floor/plating/tunnel,
+/area/f13/tunnel)
 "epP" = (
 /obj/structure/bed,
 /obj/item/bedsheet{
@@ -40529,6 +40544,13 @@
 /obj/effect/decal/remains/human,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
+"ePa" = (
+/mob/living/simple_animal/hostile/bloatfly,
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "horizontaltopbordertop0";
+	tag = "icon-horizontaltopbordertop0"
+	},
+/area/f13/wasteland)
 "eTT" = (
 /mob/living/simple_animal/hostile/radroach,
 /turf/open/floor/f13/wood{
@@ -40796,12 +40818,22 @@
 /obj/structure/debris/v3,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
+"hGC" = (
+/mob/living/simple_animal/hostile/bloatfly,
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "horizontalinnermain0"
+	},
+/area/f13/wasteland)
 "hKE" = (
 /obj/item/storage/trash_stack,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
 "ibj" = (
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier1,
+/turf/open/indestructible/ground/outside/desert,
+/area/f13/wasteland)
+"ihB" = (
+/mob/living/simple_animal/hostile/bloatfly,
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "itQ" = (
@@ -40885,6 +40917,10 @@
 	},
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
+"jGK" = (
+/mob/living/simple_animal/hostile/bloatfly,
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/wasteland)
 "jJI" = (
 /obj/structure/bed/mattress,
 /obj/item/bedsheet{
@@ -40964,6 +41000,10 @@
 /obj/item/crowbar,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/village)
+"loR" = (
+/mob/living/simple_animal/hostile/bloatfly,
+/turf/open/floor/plasteel/f13/vault_floor/yellow,
+/area/f13/tunnel)
 "lwX" = (
 /obj/machinery/computer/shuttle/vault113elevator{
 	dir = 4;
@@ -41104,6 +41144,12 @@
 	tag = "icon-floorrusty"
 	},
 /area/f13/ncr)
+"nIz" = (
+/mob/living/simple_animal/hostile/bloatfly,
+/turf/open/indestructible/ground/outside/dirt{
+	icon_state = "dirt"
+	},
+/area/f13/wasteland)
 "nLM" = (
 /obj/structure/chair/wood/normal{
 	dir = 8
@@ -41624,6 +41670,10 @@
 /obj/item/pickaxe,
 /turf/open/floor/f13/wood,
 /area/f13/tunnel)
+"wbd" = (
+/mob/living/simple_animal/hostile/bloatfly,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "wfi" = (
 /mob/living/simple_animal/hostile/retaliate/poison/snake,
 /turf/open/indestructible/ground/inside/mountain,
@@ -41644,6 +41694,10 @@
 	tag = "icon-verticalrightborderleft0"
 	},
 /area/f13/city)
+"wGG" = (
+/mob/living/simple_animal/hostile/bloatfly,
+/turf/open/floor/f13/wood,
+/area/f13/radiation)
 "wGH" = (
 /obj/machinery/door/airlock/grunge/abandoned{
 	locked = 1
@@ -41672,6 +41726,10 @@
 /obj/structure/barricade/wooden,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
+"wTB" = (
+/mob/living/simple_animal/hostile/bloatfly,
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/tunnel)
 "wZd" = (
 /obj/effect/spawner/lootdrop/f13/junkspawners,
 /turf/open/floor/f13/wood,
@@ -46706,7 +46764,7 @@ acv
 acv
 acv
 ads
-aat
+ihB
 aat
 aat
 ach
@@ -47315,7 +47373,7 @@ aae
 aae
 bbs
 afF
-adH
+ePa
 adY
 aeY
 afx
@@ -47746,7 +47804,7 @@ aat
 aat
 aat
 aat
-aat
+ihB
 aat
 aat
 aat
@@ -51424,7 +51482,7 @@ aYT
 abS
 abS
 abS
-abS
+hGC
 abT
 abT
 abT
@@ -55983,7 +56041,7 @@ bvT
 afj
 aat
 ahF
-aat
+ihB
 aat
 ach
 acv
@@ -56503,7 +56561,7 @@ ach
 acv
 acv
 acv
-acv
+jGK
 ads
 aat
 aat
@@ -56756,7 +56814,7 @@ aat
 aat
 aat
 aat
-ach
+nIz
 acv
 acv
 acv
@@ -83681,7 +83739,7 @@ aae
 aae
 ank
 aat
-aat
+ihB
 aat
 ank
 aae
@@ -86146,7 +86204,7 @@ aat
 aat
 aat
 aat
-aat
+ihB
 aat
 aat
 aat
@@ -90203,7 +90261,7 @@ aVU
 aVV
 aVV
 aVV
-aWh
+aVV
 aVX
 aVN
 aWi
@@ -90457,7 +90515,7 @@ aat
 aVx
 aVO
 aVV
-aVV
+wGG
 aVV
 aVN
 aWi
@@ -90554,7 +90612,7 @@ aat
 aat
 aat
 aat
-aat
+ihB
 aat
 aat
 aat
@@ -93650,7 +93708,7 @@ aae
 aae
 bpG
 bys
-bys
+cPZ
 bpG
 aae
 aaa
@@ -94889,7 +94947,7 @@ bgF
 acv
 acv
 bhV
-aat
+ihB
 aat
 aat
 aae
@@ -95655,7 +95713,7 @@ acv
 bgT
 acv
 acv
-acv
+jGK
 bgT
 bhV
 aat
@@ -96258,7 +96316,7 @@ aeC
 aeT
 ahW
 aat
-aat
+ihB
 aat
 aat
 aat
@@ -103623,7 +103681,7 @@ bgU
 acv
 ael
 afL
-aat
+ihB
 aat
 aat
 aat
@@ -109920,7 +109978,7 @@ aae
 bFx
 bGZ
 aah
-boU
+cFR
 boU
 boU
 boU
@@ -111445,7 +111503,7 @@ aah
 aah
 aah
 aah
-aah
+wTB
 aah
 biV
 aah
@@ -113468,7 +113526,7 @@ aae
 aae
 aab
 bja
-bAY
+ejS
 bBm
 bAY
 bAY
@@ -113751,7 +113809,7 @@ aah
 aah
 aah
 aah
-aah
+wTB
 aah
 bFx
 aae
@@ -120634,7 +120692,7 @@ aae
 aae
 bLL
 aaB
-aaB
+wbd
 bLL
 aae
 aae
@@ -124234,7 +124292,7 @@ aae
 aae
 aae
 bLL
-aaB
+wbd
 aaB
 aae
 aaa
@@ -146241,7 +146299,7 @@ bHv
 bHv
 bQf
 bQi
-bHv
+loR
 bHv
 bHv
 bFx

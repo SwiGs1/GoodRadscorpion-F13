@@ -84,8 +84,8 @@
 /area/f13/underground/enclave_base)
 "an" = (
 /obj/effect/turf_decal/stripes/line{
-	icon_state = "warningline";
-	dir = 8
+	dir = 8;
+	icon_state = "warningline"
 	},
 /turf/open/floor/plasteel/f13/vault_floor{
 	icon_state = "floorgrime"
@@ -116,8 +116,8 @@
 /area/f13/underground/enclave_base)
 "aq" = (
 /obj/effect/turf_decal/stripes/line{
-	icon_state = "warningline";
-	dir = 1
+	dir = 1;
+	icon_state = "warningline"
 	},
 /turf/open/floor/plasteel/f13/vault_floor{
 	icon_state = "floorgrime"
@@ -217,15 +217,15 @@
 /area/f13/underground/enclave_base)
 "aD" = (
 /obj/effect/turf_decal/stripes/line{
-	icon_state = "warningline";
-	dir = 4
+	dir = 4;
+	icon_state = "warningline"
 	},
 /turf/open/floor/plating,
 /area/f13/underground/enclave_base)
 "aE" = (
 /obj/effect/turf_decal/stripes/line{
-	icon_state = "warningline";
-	dir = 8
+	dir = 8;
+	icon_state = "warningline"
 	},
 /turf/open/floor/plating,
 /area/f13/underground/enclave_base)
@@ -384,15 +384,15 @@
 /area/f13/underground/enclave_base)
 "aZ" = (
 /obj/effect/turf_decal/stripes/line{
-	icon_state = "warningline";
-	dir = 1
+	dir = 1;
+	icon_state = "warningline"
 	},
 /turf/open/floor/plating,
 /area/f13/underground/enclave_base)
 "ba" = (
 /obj/effect/turf_decal/stripes/line{
-	icon_state = "warningline";
-	dir = 5
+	dir = 5;
+	icon_state = "warningline"
 	},
 /turf/open/floor/plating,
 /area/f13/underground/enclave_base)
@@ -413,8 +413,8 @@
 /area/f13/underground/enclave_base)
 "bd" = (
 /obj/effect/turf_decal/stripes/line{
-	icon_state = "warningline";
-	dir = 1
+	dir = 1;
+	icon_state = "warningline"
 	},
 /obj/machinery/light{
 	dir = 4
@@ -571,8 +571,8 @@
 /area/f13/underground/enclave_base)
 "by" = (
 /obj/structure/chair/f13chair2{
-	icon_state = "f13chair2";
-	dir = 8
+	dir = 8;
+	icon_state = "f13chair2"
 	},
 /turf/open/floor/plasteel/f13/vault_floor{
 	icon_state = "whitepurplerustychess2"
@@ -580,8 +580,8 @@
 /area/f13/underground/enclave_base)
 "bz" = (
 /obj/structure/chair/f13chair2{
-	icon_state = "f13chair2";
-	dir = 4
+	dir = 4;
+	icon_state = "f13chair2"
 	},
 /turf/open/floor/plasteel/f13/vault_floor{
 	icon_state = "whitepurplerustychess2"
@@ -1079,8 +1079,8 @@
 /area/f13/underground/cave)
 "cP" = (
 /obj/structure/chair/f13chair2{
-	icon_state = "f13chair2";
-	dir = 8
+	dir = 8;
+	icon_state = "f13chair2"
 	},
 /turf/open/floor/plasteel/f13{
 	icon_state = "floorgrime"
@@ -1310,8 +1310,8 @@
 	light_color = "#e8eaff"
 	},
 /obj/structure/chair/f13chair2{
-	icon_state = "f13chair2";
-	dir = 4
+	dir = 4;
+	icon_state = "f13chair2"
 	},
 /turf/open/floor/plasteel/f13{
 	icon_state = "floorgrime"
@@ -1455,8 +1455,8 @@
 /area/f13/bunker)
 "dS" = (
 /obj/structure/chair/f13chair2{
-	icon_state = "f13chair2";
-	dir = 4
+	dir = 4;
+	icon_state = "f13chair2"
 	},
 /turf/open/floor/plasteel/f13{
 	icon_state = "floorgrime"
@@ -2053,8 +2053,8 @@
 	icon_state = "4-8"
 	},
 /obj/effect/decal/cleanable/blood/tracks{
-	icon_state = "tracks";
-	dir = 10
+	dir = 10;
+	icon_state = "tracks"
 	},
 /turf/open/floor/plasteel/f13{
 	icon_state = "floorgrime"
@@ -2065,8 +2065,8 @@
 	icon_state = "4-8"
 	},
 /obj/effect/decal/cleanable/blood/tracks{
-	icon_state = "tracks";
-	dir = 4
+	dir = 4;
+	icon_state = "tracks"
 	},
 /turf/open/floor/plasteel/f13{
 	icon_state = "floorgrime"
@@ -2077,8 +2077,8 @@
 	icon_state = "2-8"
 	},
 /obj/effect/decal/cleanable/blood/tracks{
-	icon_state = "tracks";
-	dir = 5
+	dir = 5;
+	icon_state = "tracks"
 	},
 /turf/open/floor/plasteel/f13{
 	icon_state = "floorgrime"
@@ -2667,12 +2667,12 @@
 /area/f13/bunker)
 "gK" = (
 /obj/effect/turf_decal/stripes/line{
-	icon_state = "warningline";
-	dir = 4
+	dir = 4;
+	icon_state = "warningline"
 	},
 /obj/machinery/door/window/brigdoor{
-	icon_state = "leftsecure";
-	dir = 4
+	dir = 4;
+	icon_state = "leftsecure"
 	},
 /turf/open/floor/plasteel/f13{
 	icon_state = "redrustyfull"
@@ -2796,8 +2796,8 @@
 /area/f13/bunker)
 "gZ" = (
 /obj/structure/toilet{
-	icon_state = "toilet00";
-	dir = 8
+	dir = 8;
+	icon_state = "toilet00"
 	},
 /turf/open/floor/plasteel/f13{
 	icon_state = "redrustyfull"
@@ -2937,8 +2937,8 @@
 /area/f13/bunker)
 "hq" = (
 /obj/structure/chair/f13chair2{
-	icon_state = "f13chair2";
-	dir = 1
+	dir = 1;
+	icon_state = "f13chair2"
 	},
 /turf/open/floor/plasteel/f13{
 	icon_state = "floorgrime"
@@ -2955,8 +2955,8 @@
 /area/f13/bunker)
 "hs" = (
 /obj/structure/chair/office/dark{
-	icon_state = "officechair_dark";
-	dir = 4
+	dir = 4;
+	icon_state = "officechair_dark"
 	},
 /turf/open/floor/plasteel/f13{
 	icon_state = "redrustyfull"
@@ -2971,8 +2971,8 @@
 /area/f13/bunker)
 "hu" = (
 /obj/effect/turf_decal/stripes/line{
-	icon_state = "warningline";
-	dir = 4
+	dir = 4;
+	icon_state = "warningline"
 	},
 /turf/open/floor/plasteel/f13{
 	icon_state = "yellowrustyfull"
@@ -3065,8 +3065,8 @@
 "hF" = (
 /obj/machinery/light,
 /obj/structure/chair/f13chair2{
-	icon_state = "f13chair2";
-	dir = 1
+	dir = 1;
+	icon_state = "f13chair2"
 	},
 /turf/open/floor/plasteel/f13{
 	icon_state = "floorgrime"
@@ -3509,8 +3509,8 @@
 /area/f13/bunker)
 "iC" = (
 /obj/effect/turf_decal/stripes/line{
-	icon_state = "warningline";
-	dir = 8
+	dir = 8;
+	icon_state = "warningline"
 	},
 /turf/open/floor/plasteel/f13{
 	icon_state = "redrustyfull"
@@ -3518,8 +3518,8 @@
 /area/f13/bunker)
 "iD" = (
 /obj/effect/turf_decal/stripes/line{
-	icon_state = "warningline";
-	dir = 4
+	dir = 4;
+	icon_state = "warningline"
 	},
 /turf/open/floor/plasteel/f13{
 	icon_state = "redrustyfull"
@@ -3599,8 +3599,8 @@
 /area/f13/bunker)
 "iM" = (
 /obj/effect/turf_decal/stripes/line{
-	icon_state = "warningline";
-	dir = 8
+	dir = 8;
+	icon_state = "warningline"
 	},
 /mob/living/simple_animal/hostile/ghoul/reaver,
 /turf/open/floor/plasteel/f13{
@@ -3615,8 +3615,8 @@
 /area/f13/bunker)
 "iO" = (
 /obj/effect/turf_decal/stripes/line{
-	icon_state = "warningline";
-	dir = 4
+	dir = 4;
+	icon_state = "warningline"
 	},
 /mob/living/simple_animal/hostile/ghoul/reaver,
 /turf/open/floor/plasteel/f13{
@@ -3662,8 +3662,8 @@
 /area/medical/abandoned)
 "iT" = (
 /obj/structure/chair/f13chair2{
-	icon_state = "f13chair2";
-	dir = 4
+	dir = 4;
+	icon_state = "f13chair2"
 	},
 /turf/open/floor/plasteel/f13{
 	icon_state = "showroomfloor"
@@ -3999,8 +3999,8 @@
 /area/f13/bunker)
 "jD" = (
 /obj/structure/chair/office/dark{
-	icon_state = "officechair_dark";
-	dir = 1
+	dir = 1;
+	icon_state = "officechair_dark"
 	},
 /turf/open/floor/plasteel/f13{
 	icon_state = "redrustyfull"
@@ -4205,8 +4205,8 @@
 /area/f13/bunker)
 "kd" = (
 /obj/structure/chair/office/dark{
-	icon_state = "officechair_dark";
-	dir = 1
+	dir = 1;
+	icon_state = "officechair_dark"
 	},
 /turf/open/floor/plasteel/f13{
 	icon_state = "floorgrime"
@@ -4260,8 +4260,8 @@
 /area/f13/underground/vault_atrium_Lower)
 "kl" = (
 /obj/machinery/computer/shuttle/vaultelevator{
-	icon_state = "computer";
-	dir = 4
+	dir = 4;
+	icon_state = "computer"
 	},
 /obj/machinery/light{
 	dir = 8
@@ -4355,8 +4355,8 @@
 	req_access_txt = "31"
 	},
 /obj/effect/turf_decal/stripes/line{
-	icon_state = "warningline";
-	dir = 8
+	dir = 8;
+	icon_state = "warningline"
 	},
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
@@ -4388,8 +4388,8 @@
 /area/f13/underground/vault_atrium_Lower)
 "kG" = (
 /obj/effect/turf_decal/stripes/line{
-	icon_state = "warningline";
-	dir = 8
+	dir = 8;
+	icon_state = "warningline"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/underground/vault_atrium_Lower)
@@ -4404,8 +4404,8 @@
 	icon_state = "2-4"
 	},
 /obj/effect/turf_decal/stripes/line{
-	icon_state = "warningline";
-	dir = 1
+	dir = 1;
+	icon_state = "warningline"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/underground/vault_atrium_Lower)
@@ -4414,8 +4414,8 @@
 	icon_state = "1-8"
 	},
 /obj/effect/turf_decal/stripes/line{
-	icon_state = "warningline";
-	dir = 1
+	dir = 1;
+	icon_state = "warningline"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/underground/vault_atrium_Lower)
@@ -4449,8 +4449,8 @@
 	icon_state = "1-2"
 	},
 /obj/effect/turf_decal/stripes/line{
-	icon_state = "warningline";
-	dir = 1
+	dir = 1;
+	icon_state = "warningline"
 	},
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
@@ -4548,8 +4548,8 @@
 	req_access_txt = "31"
 	},
 /obj/effect/turf_decal/stripes/line{
-	icon_state = "warningline";
-	dir = 1
+	dir = 1;
+	icon_state = "warningline"
 	},
 /obj/effect/turf_decal/stripes/line,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper,
@@ -4561,8 +4561,8 @@
 	req_access_txt = "31"
 	},
 /obj/effect/turf_decal/stripes/line{
-	icon_state = "warningline";
-	dir = 1
+	dir = 1;
+	icon_state = "warningline"
 	},
 /obj/effect/turf_decal/stripes/line,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper,
