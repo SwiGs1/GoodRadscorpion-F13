@@ -40857,6 +40857,13 @@
 	tag = "icon-housewood2"
 	},
 /area/f13/village)
+"iEw" = (
+/mob/living/simple_animal/hostile/bloatfly,
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "verticalrightborderleft2bottom";
+	tag = "icon-verticalrightborderleft2bottom"
+	},
+/area/f13/wasteland)
 "iWS" = (
 /obj/structure/bed/mattress{
 	icon_state = "mattress1"
@@ -40951,6 +40958,13 @@
 	tag = "icon-gib5-old"
 	},
 /turf/open/indestructible/ground/outside/desert,
+/area/f13/wasteland)
+"kce" = (
+/mob/living/simple_animal/hostile/bloatfly,
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "horizontalinnermain2";
+	tag = "icon-horizontalinnermain2"
+	},
 /area/f13/wasteland)
 "kfG" = (
 /turf/open/indestructible/ground/outside/road{
@@ -41136,6 +41150,13 @@
 /obj/effect/spawner/lootdrop/f13/weapon/melee/tier3,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
+"nlg" = (
+/mob/living/simple_animal/hostile/bloatfly,
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "horizontaltopbordertop2right";
+	tag = "icon-horizontaltopbordertop2right"
+	},
+/area/f13/wasteland)
 "npx" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/landmark/start/f13/ncrcorporal,
@@ -41193,6 +41214,13 @@
 /obj/effect/landmark/start/f13/primelegionary,
 /turf/open/floor/f13/wood,
 /area/f13/legion)
+"oZB" = (
+/mob/living/simple_animal/hostile/bloatfly,
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "horizontaloutermain2";
+	tag = "icon-horizontaloutermain2"
+	},
+/area/f13/wasteland)
 "pbU" = (
 /obj/structure/fence{
 	dir = 4;
@@ -41411,6 +41439,13 @@
 	tag = "icon-housewood2"
 	},
 /area/f13/village)
+"tgH" = (
+/mob/living/simple_animal/hostile/bloatfly,
+/turf/open/indestructible/ground/outside/dirt{
+	dir = 1;
+	icon_state = "dirt"
+	},
+/area/f13/wasteland)
 "tqt" = (
 /obj/structure/campfire/barrel,
 /turf/open/indestructible/ground/outside/dirt,
@@ -41586,6 +41621,14 @@
 	},
 /turf/open/indestructible/ground/outside/dirt{
 	icon_state = "dirtcorner"
+	},
+/area/f13/wasteland)
+"uRl" = (
+/mob/living/simple_animal/hostile/bloatfly,
+/turf/open/indestructible/ground/outside/sidewalk{
+	dir = 1;
+	icon_state = "horizontaloutermain1";
+	tag = "icon-horizontaloutermain1 (NORTH)"
 	},
 /area/f13/wasteland)
 "uRT" = (
@@ -53749,7 +53792,7 @@ ach
 acv
 acv
 acv
-ads
+tgH
 aat
 aat
 aat
@@ -59479,7 +59522,7 @@ afx
 abT
 afx
 abT
-abT
+kce
 afx
 abS
 aeq
@@ -63888,7 +63931,7 @@ aeb
 aeY
 aiv
 aeU
-acB
+oZB
 acB
 acB
 agM
@@ -64140,7 +64183,7 @@ bkI
 abA
 abO
 acB
-adK
+nlg
 aec
 aes
 aiv
@@ -65416,7 +65459,7 @@ bqq
 bkI
 afF
 abN
-abN
+uRl
 acB
 acB
 agM
@@ -87899,7 +87942,7 @@ agC
 agC
 afO
 afO
-age
+iEw
 aje
 aje
 aaQ
@@ -103681,7 +103724,7 @@ bgU
 acv
 ael
 afL
-ihB
+aat
 aat
 aat
 aat
@@ -106587,7 +106630,7 @@ aat
 aat
 aat
 aat
-aat
+ihB
 aat
 aat
 aat
