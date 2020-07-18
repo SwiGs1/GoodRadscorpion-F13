@@ -48,7 +48,7 @@
 /obj/item/reagent_containers/pill/patch/turbo
 	name = "Turbo"
 	desc = "A chem that vastly increases the user's reflexes and slows their perception of time."
-	list_reagents = list("turbo" = 6)
+	list_reagents = list("turbo" = 5)
 	icon_state = "bandaid_turbo"
 
 /obj/item/reagent_containers/pill/patch/healingpowder
