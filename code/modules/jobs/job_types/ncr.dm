@@ -532,9 +532,9 @@ Non-Combatant
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m9mm=1, \
 		/obj/item/reagent_containers/hypospray/medipen/stimpak=2, \
-		/obj/item/storage/pill_bottle/mining, \
-		/obj/item/storage/firstaid/regular,  \
-		/obj/item/book/granter/trait/chemistry)
+		/obj/item/storage/pill_bottle/mining=1, \
+		/obj/item/storage/firstaid/regular=1,  \
+		/obj/item/book/granter/trait/chemistry=1)
 
 /datum/outfit/loadout/ncbengineer
 	name = "Non-Combatant Engineer"
@@ -552,7 +552,7 @@ Non-Combatant
 		/obj/item/grenade/plastic=1, \
 		/obj/item/stack/sheet/metal/fifty=2, \
 		/obj/item/stack/sheet/glass/fifty=1, \
-		/obj/item/storage/box/emptysandbags,  \
+		/obj/item/storage/box/emptysandbags=2,  \
 		/obj/item/clothing/head/f13/ncr/goggles
 		)
 
