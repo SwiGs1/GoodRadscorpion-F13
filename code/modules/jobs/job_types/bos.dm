@@ -46,7 +46,7 @@ Elder
 	supervisors = "the high elders and the codex"
 	selection_color = "#7f8c8d"
 	req_admin_notify = 1
-	exp_requirements = 2100
+	exp_requirements = 1440
 	description = "You are the Elder of this Brotherhood installation. You're here to ensure that the chapter lives on, and, with that, you must maintain the security of those in your charge. Cooperate with the Paladin and Head Scribe to ensure technology is safeguarded from prying wastrel hands. Additionally, you should make certain that your presence or location in the region is made unknown to any outsiders."
 	forbids = "The Brotherhood of Steel Forbids: Unethical human experimentation. Violence beyond what is needed to accomplish Brotherhood goals."
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
@@ -205,7 +205,7 @@ Scribe
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
 	supervisors = "the Head Scribe"
 	selection_color = "#95a5a6"
-	exp_requirements = 540
+	exp_requirements = 480
 
 	outfit = /datum/outfit/job/bos/f13scribe
 
@@ -243,7 +243,7 @@ Initiate Knight
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
 	supervisors = "the knights"
 	selection_color = "#95a5a6"
-	exp_requirements = 1500
+	exp_requirements = 300
 	exp_type = EXP_TYPE_CREW
 
 	outfit = /datum/outfit/job/bos/f13initiateknight
@@ -276,7 +276,7 @@ Initiate Scribe
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
 	supervisors = "the scribes"
 	selection_color = "#95a5a6"
-	exp_requirements = 1500
+	exp_requirements = 300
 	exp_type = EXP_TYPE_CREW
 
 	outfit = /datum/outfit/job/bos/f13initiatescribe
