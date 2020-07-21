@@ -2342,9 +2342,12 @@
 /turf/open/water,
 /area/f13/forest)
 "agR" = (
-/obj/machinery/door/poddoor/shutters,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/door/poddoor/shutters{
+	id = "Mini_Mart";
+	name = "mini mart shutters"
+	},
 /turf/open/floor/f13{
 	icon_state = "floorrusty";
 	tag = "icon-floorrusty"
@@ -9378,6 +9381,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table/wood/settler,
 /obj/item/trash/f13/bubblegum,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier1,
 /turf/open/floor/f13{
 	icon_state = "floorrusty";
 	tag = "icon-floorrusty"
@@ -18390,9 +18394,9 @@
 /area/f13/ruins)
 "aZp" = (
 /obj/structure/rack,
-/obj/item/ammo_box/magazine/uzim9mm,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier1,
 /turf/open/floor/f13{
 	icon_state = "reddirtyfull";
 	tag = "icon-reddirtyfull"
@@ -19137,6 +19141,7 @@
 /obj/item/claymore/machete,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/lootdrop/f13/weapon/melee/tier1,
 /turf/open/floor/f13{
 	icon_state = "reddirtyfull";
 	tag = "icon-reddirtyfull"
@@ -19525,9 +19530,10 @@
 /area/f13/wasteland)
 "bcr" = (
 /obj/structure/guncase,
-/obj/item/gun/ballistic/shotgun/hunting,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/tier3,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2,
 /turf/open/floor/f13{
 	icon_state = "reddirtyfull";
 	tag = "icon-reddirtyfull"
@@ -19542,9 +19548,10 @@
 /area/f13/wasteland)
 "bcu" = (
 /obj/structure/guncase,
-/obj/item/gun/ballistic/shotgun/remington,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/tier2,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2,
 /turf/open/floor/f13{
 	icon_state = "reddirtyfull";
 	tag = "icon-reddirtyfull"
@@ -19595,9 +19602,10 @@
 /area/f13/wasteland)
 "bcA" = (
 /obj/structure/guncase,
-/obj/item/gun/ballistic/automatic/mini_uzi,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/tier2,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/tier2,
 /turf/open/floor/f13{
 	icon_state = "reddirtyfull";
 	tag = "icon-reddirtyfull"
@@ -22399,14 +22407,14 @@
 	},
 /area/f13/ruins)
 "bll" = (
-/obj/structure/table/reinforced,
+/obj/structure/table/wood/settler,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/obj/item/trash/f13/electronic,
-/turf/open/floor/f13{
-	icon_state = "floorrusty"
-	},
-/area/f13/ruins)
+/obj/effect/spawner/lootdrop/f13/weapon/gun/tier2,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2,
+/turf/open/floor/wood/f13/old,
+/area/f13/bar)
 "blm" = (
 /obj/structure/table/wood/settler,
 /obj/machinery/computer/terminal{
@@ -23753,17 +23761,31 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "bpS" = (
-/obj/structure/sign/bilboards/klamat,
-/turf/open/indestructible/ground/outside/desert,
-/area/f13/wasteland)
+/obj/machinery/button/door{
+	id = "Mini_Mart";
+	name = "window shutters";
+	pixel_y = 8
+	},
+/turf/closed/wall/f13/store,
+/area/f13/ruins)
 "bpU" = (
-/obj/structure/sign/bilboards/den,
-/turf/open/indestructible/ground/outside/desert,
-/area/f13/wasteland)
+/obj/structure/rack,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/lootdrop/f13/weapon/melee/tier2,
+/turf/open/floor/f13{
+	icon_state = "whitegreenrustychess"
+	},
+/area/f13/ruins)
 "bpV" = (
-/obj/structure/sign/sing/ratnest,
-/turf/open/indestructible/ground/outside/desert,
-/area/f13/wasteland)
+/obj/structure/table/reinforced,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/tier1,
+/turf/open/floor/f13{
+	icon_state = "whitegreenrustychess"
+	},
+/area/f13/ruins)
 "bpW" = (
 /obj/structure/window/fulltile/wood,
 /turf/open/floor/f13/wood,
@@ -38901,6 +38923,16 @@
 /mob/living/simple_animal/hostile/bloatfly,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
+"cGl" = (
+/obj/structure/table/reinforced,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/lootdrop/f13/weapon/melee/tier2,
+/turf/open/floor/f13{
+	icon_state = "reddirtyfull";
+	tag = "icon-reddirtyfull"
+	},
+/area/f13/ruins)
 "cJV" = (
 /obj/structure/bonfire,
 /turf/open/indestructible/ground/outside/dirt,
@@ -39554,6 +39586,16 @@
 	tag = "icon-bluedirtychess2"
 	},
 /area/f13/city)
+"fPE" = (
+/obj/structure/rack,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/tier1,
+/turf/open/floor/f13{
+	icon_state = "reddirtyfull";
+	tag = "icon-reddirtyfull"
+	},
+/area/f13/ruins)
 "fSe" = (
 /obj/structure/closet/cabinet,
 /obj/item/clothing/shoes/f13/explorer,
@@ -40588,6 +40630,16 @@
 /obj/item/clothing/under/f13/settler,
 /turf/open/floor/f13/wood,
 /area/f13/city)
+"lcI" = (
+/obj/structure/rack,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/lootdrop/f13/weapon/melee/tier2,
+/turf/open/floor/f13{
+	icon_state = "reddirtyfull";
+	tag = "icon-reddirtyfull"
+	},
+/area/f13/ruins)
 "lcZ" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/pill_bottle/chem_tin/mentats,
@@ -40662,6 +40714,16 @@
 /obj/structure/destructible/tribal_torch,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/farm)
+"lvj" = (
+/obj/structure/rack,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2,
+/turf/open/floor/f13{
+	icon_state = "reddirtyfull";
+	tag = "icon-reddirtyfull"
+	},
+/area/f13/ruins)
 "lwX" = (
 /obj/machinery/computer/shuttle/vault113elevator{
 	dir = 4;
@@ -41542,6 +41604,14 @@
 /obj/structure/flora/stump,
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
+"qrT" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/tier2,
+/turf/open/floor/f13{
+	icon_state = "whitegreenrustychess"
+	},
+/area/f13/ruins)
 "qsf" = (
 /obj/item/cigbutt,
 /turf/open/indestructible/ground/outside/desert,
@@ -42051,6 +42121,16 @@
 	tag = "icon-dirt (WEST)"
 	},
 /area/f13/wasteland)
+"sRQ" = (
+/obj/structure/rack,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/tier2,
+/turf/open/floor/f13{
+	icon_state = "reddirtyfull";
+	tag = "icon-reddirtyfull"
+	},
+/area/f13/ruins)
 "sRR" = (
 /obj/structure/closet/crate/miningcar,
 /obj/effect/decal/cleanable/dirt,
@@ -47220,7 +47300,7 @@ aat
 aat
 agy
 aat
-bpS
+aat
 agl
 adH
 axA
@@ -47734,7 +47814,7 @@ aoD
 anQ
 agy
 aat
-bpU
+aat
 agl
 adI
 adZ
@@ -48248,7 +48328,7 @@ apt
 aoI
 agy
 aat
-bpV
+aat
 agl
 axd
 adY
@@ -59545,7 +59625,7 @@ bhQ
 bkc
 bbE
 bkG
-bll
+bkk
 bkk
 bbE
 bbE
@@ -59771,7 +59851,7 @@ aae
 aae
 aae
 bbf
-aYq
+bll
 baP
 aen
 adG
@@ -63643,7 +63723,7 @@ aMb
 aMb
 bbt
 aMb
-aMb
+qrT
 aZS
 adH
 adY
@@ -63894,7 +63974,7 @@ agR
 ahG
 ajE
 ahG
-bfU
+bpS
 aLs
 aLs
 aPx
@@ -64412,7 +64492,7 @@ bfU
 aLY
 aLY
 aMb
-aQI
+bpV
 aWe
 aQI
 bfU
@@ -64924,7 +65004,7 @@ bfU
 bfU
 bfU
 aLY
-aLY
+bpU
 aPI
 aTb
 aLY
@@ -66984,7 +67064,7 @@ bfU
 aQc
 aTh
 bbT
-bbT
+fPE
 bdv
 bdv
 bdt
@@ -67758,7 +67838,7 @@ bdv
 bdv
 bdv
 bdv
-bdt
+cGl
 bdt
 bfU
 bfU
@@ -68010,7 +68090,7 @@ aGp
 awJ
 bfU
 bdv
-bbT
+fPE
 bbT
 bbT
 bbT
@@ -68528,7 +68608,7 @@ aVl
 bbT
 aUo
 aQc
-bbT
+lcI
 bdv
 bdv
 bfU
@@ -69554,11 +69634,11 @@ bfU
 bdv
 aVm
 bbT
-bbT
+sRQ
 bdv
 bbD
 bbT
-bbT
+lvj
 bdv
 bea
 agl
