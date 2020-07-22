@@ -486,7 +486,7 @@ Recruit
 Non-Combatant
 */
 /datum/job/ncr/f13noncombatant
-	title = "NCR Non-Combatant"
+	title = "NCR Support Personnel"
 	flag = F13NONCOMBATANT
 	faction = "NCR"
 	total_positions = 4
