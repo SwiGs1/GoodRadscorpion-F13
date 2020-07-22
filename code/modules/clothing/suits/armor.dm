@@ -41,6 +41,20 @@
 	icon_state = "blueshift"
 	item_state = "blueshift"
 
+/obj/item/clothing/suit/armor/vest/sov_light
+	name = "foreign light armor vest"
+	desc = "The army flak jacket series PPS-3 provides a sufficient level of protection for leading war operation against hardly-equipped opponent."
+	icon_state = "army_armor"
+	item_state = "army_armor"
+	armor = list("melee" = 25, "bullet" = 30, "laser" = 25, "energy" = 30, "bomb" = 25, "bio" = 25, "rad" = 20, "fire" = 20, "acid" = 20)
+
+/obj/item/clothing/suit/armor/vest/sov_heavy
+	name = "foreign heavy armor vest"
+	desc = "This item comprises military PPS-5 series body armor with beryllium sputter modified for use in the Wasteland. It is ineffective in areas of high radioactive activity."
+	icon_state = "berill_5m"
+	item_state = "berill_5m"
+	armor = list("melee" = 40, "bullet" = 45, "laser" = 40, "energy" = 40, "bomb" = 35, "bio" = 40, "rad" = 35, "fire" = 35, "acid" = 20)
+
 /obj/item/clothing/suit/armor/hos
 	name = "armored greatcoat"
 	desc = "A greatcoat enhanced with a special alloy for some extra protection and style for those with a commanding presence."
