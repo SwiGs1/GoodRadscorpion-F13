@@ -476,7 +476,8 @@ Veteran Legionary
 	loadout_options = list(
 	/datum/outfit/loadout/vetlegassault, //scoped .44 revolver
 	/datum/outfit/loadout/vetlegbreach, //lever-action shotgun
-	/datum/outfit/loadout/vetlegclose //shotgun
+	/datum/outfit/loadout/vetlegclose, //shotgun
+	/datum/outfit/loadout/vetleglong //.308 DKS sniper rifle
 	)
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13vetlegionary
@@ -509,6 +510,7 @@ Veteran Legionary
 	suit_store = /obj/item/gun/ballistic/shotgun/automatic/hunting/trail
 	backpack_contents = list(
 		/obj/item/ammo_box/tube/m44=1,
+		/obj/item/grenade/plastic=1,
 		)
 
 /datum/outfit/loadout/vetlegclose
@@ -517,6 +519,13 @@ Veteran Legionary
 	backpack_contents = list(
 		/obj/item/storage/box/slugshot=1,
 		/obj/item/shield/riot/roman=1
+		)
+
+/datum/outfit/loadout/vetleglong
+	name = "Ranger Veteran"
+	suit_store = /obj/item/gun/ballistic/automatic/marksman/sniper
+	backpack_contents = list(
+		/obj/item/ammo_box/magazine/w308=3,
 		)
 
 /datum/job/CaesarsLegion/Legionnaire/f13vetlegionary/after_spawn(mob/living/carbon/human/H, mob/M)
