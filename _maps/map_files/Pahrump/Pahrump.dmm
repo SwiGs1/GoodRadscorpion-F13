@@ -39344,10 +39344,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
 /area/f13/city)
-"ikq" = (
-/turf/open/space/basic,
-/turf/open/space/basic,
-/area/f13/wasteland)
 "ilm" = (
 /obj/structure/closet/crate/bin,
 /turf/open/indestructible/ground/outside/dirt{
@@ -61922,7 +61918,7 @@ aat
 aat
 aoV
 aat
-ikq
+aoV
 aat
 aat
 aat
