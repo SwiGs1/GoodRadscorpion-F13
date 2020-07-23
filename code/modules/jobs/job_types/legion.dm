@@ -476,8 +476,7 @@ Veteran Legionary
 	loadout_options = list(
 	/datum/outfit/loadout/vetlegassault, //scoped .44 revolver
 	/datum/outfit/loadout/vetlegbreach, //lever-action shotgun
-	/datum/outfit/loadout/vetlegclose, //shotgun
-	/datum/outfit/loadout/vetleglong //.308 DKS sniper rifle
+	/datum/outfit/loadout/vetlegclose //shotgun
 	)
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13vetlegionary
@@ -510,7 +509,6 @@ Veteran Legionary
 	suit_store = /obj/item/gun/ballistic/shotgun/automatic/hunting/trail
 	backpack_contents = list(
 		/obj/item/ammo_box/tube/m44=1,
-		/obj/item/grenade/plastic=1,
 		)
 
 /datum/outfit/loadout/vetlegclose
@@ -519,13 +517,6 @@ Veteran Legionary
 	backpack_contents = list(
 		/obj/item/storage/box/slugshot=1,
 		/obj/item/shield/riot/roman=1
-		)
-
-/datum/outfit/loadout/vetleglong
-	name = "Ranger Veteran"
-	suit_store = /obj/item/gun/ballistic/automatic/marksman/sniper
-	backpack_contents = list(
-		/obj/item/ammo_box/magazine/w308=3,
 		)
 
 /datum/job/CaesarsLegion/Legionnaire/f13vetlegionary/after_spawn(mob/living/carbon/human/H, mob/M)
@@ -539,8 +530,8 @@ Prime Legionairy
 	title = "Prime Legionary"
 	flag = F13LEGIONARY
 	faction = "Legion"
-	total_positions = 10
-	spawn_positions = 10
+	total_positions = 8
+	spawn_positions = 8
 	description = "You answer to the Decani and the Centurion. Acting as a loyal soldier of the Legion, you're not expected to do anything but follow orders."
 	supervisors = "the Decani and Centurion"
 
@@ -640,8 +631,8 @@ Explorer
 	title = "Legion Explorer"
 	flag = F13EXPLORER
 	faction = "Legion"
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 2
+	spawn_positions = 2
 	description = "Acting as the eyes and ears of the Legion, you are in the region to scout it out for potential conquest. Make note of your surroundings and above all, survive to report back."
 	supervisors = "the Decani and Centurion"
 
@@ -651,7 +642,7 @@ Explorer
 	loadout_options = list(
 	/datum/outfit/loadout/explinfil, //C4, engineering supplies
 	/datum/outfit/loadout/explscout, //.44 trail carbine
-	//datum/outfit/loadout/explassassin //.308 DKS sniper rifle
+	/datum/outfit/loadout/explassassin //.308 DKS sniper rifle
 	)
 
 /datum/job/CaesarsLegion/Legionnaire/f13explorer/after_spawn(mob/living/carbon/human/H, mob/M)
@@ -688,7 +679,15 @@ Explorer
 	name = "Scout Explorer"
 	suit_store = /obj/item/gun/ballistic/shotgun/automatic/hunting/trail/scoped
 	backpack_contents = list(
-		/obj/item/ammo_box/tube/m44=2)
+		/obj/item/ammo_box/tube/m44=2,
+		/obj/item/grenade/plastic=1)
+
+/datum/outfit/loadout/explassassin
+	name = "Assassin Explorer"
+	suit_store = /obj/item/gun/ballistic/automatic/marksman/sniper
+	backpack_contents = list(
+		/obj/item/ammo_box/magazine/w308=3,
+		)
 
 /*
 Auxilia
