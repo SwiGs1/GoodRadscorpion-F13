@@ -483,29 +483,29 @@ Recruit
 		/obj/item/storage/bag/money/small/ncrenlisted)
 
 /*
-Non-Combatant
+Support Personnel
 */
-/datum/job/ncr/f13noncombatant
+/datum/job/ncr/f13support
 	title = "NCR Support Personnel"
-	flag = F13NONCOMBATANT
+	flag = F13SUPPORT
 	faction = "NCR"
 	total_positions = 4
 	spawn_positions = 4
-	description = "You are a noncombatant member of the NCR assigned the vital duty of helping them with cooking, farming, mining, engineering and serving as an on-base doctor and other non-combative tasks. While you have been to basic training, it was rushed and hardly prepared you for the horrors of war. Your sidearm is to be used in your own defense, only."
+	description = "You are base support personnel of the NCR Army assigned the vital duty of helping them with cooking, farming, mining, engineering and serving as an on-base doctor and other non-combative tasks. While you have been to basic training, it was rushed and hardly prepared you for the horrors of war. Your sidearm is to be used in your own defense, only."
 	supervisors = "everyone in the NCR"
 	selection_color = "#fff5cc"
 
-	outfit = /datum/outfit/job/ncr/f13noncombatant
+	outfit = /datum/outfit/job/ncr/f13support
 
 	loadout_options = list(
-	/datum/outfit/loadout/ncbdoctor, //Non-Combatant Doctor
-	/datum/outfit/loadout/ncbengineer, // Non-Combatant Engineer
-	/datum/outfit/loadout/ncbassistant // Non-Combatant Assistant
+	/datum/outfit/loadout/nspdoctor, //Support Personnel Doctor
+	/datum/outfit/loadout/nspengineer, // Support Personnel Engineer
+	/datum/outfit/loadout/nspassistant // Support Personnel Assistant
 	)
 
-/datum/outfit/job/ncr/f13noncombatant
-	name = "NCR Non-Combatant"
-	jobtype = /datum/job/ncr/f13noncombatant
+/datum/outfit/job/ncr/f13support
+	name = "NCR Support Personnel"
+	jobtype = /datum/job/ncr/f13support
 	id = 			/obj/item/card/id/dogtag/ncrtrooper
 	uniform =  		/obj/item/clothing/under/f13/ncr
 	accessory =     /obj/item/clothing/accessory/armband/engine/ncr/ncb
@@ -522,8 +522,8 @@ Non-Combatant
 		/obj/item/storage/bag/ore = 1,
 		/obj/item/storage/bag/money/small/ncrenlisted)
 
-/datum/outfit/loadout/ncbdoctor
-	name = "Non-Combatant Doctor"
+/datum/outfit/loadout/nspdoctor
+	name = "Support Personnel Doctor"
 	suit = 			/obj/item/clothing/suit/armor/f13/ncrarmor/labcoat
 	head = 			/obj/item/clothing/head/f13/ncr/medic
 	glasses = 		/obj/item/clothing/glasses/hud/health
@@ -536,8 +536,8 @@ Non-Combatant
 		/obj/item/storage/firstaid/regular=1,  \
 		/obj/item/book/granter/trait/chemistry=1)
 
-/datum/outfit/loadout/ncbengineer
-	name = "Non-Combatant Engineer"
+/datum/outfit/loadout/nspengineer
+	name = "Support Personnel Engineer"
 	suit =          /obj/item/clothing/suit/armor/f13/ncrarmor/mantle
 	head = 			/obj/item/clothing/head/hardhat/ncr
 	glasses = 		/obj/item/clothing/glasses/welding
@@ -556,8 +556,8 @@ Non-Combatant
 		/obj/item/clothing/head/f13/ncr/goggles
 		)
 
-/datum/outfit/loadout/ncbassistant
-	name = "Non-Combatant Assistant"
+/datum/outfit/loadout/nspassistant
+	name = "Support Personnel Assistant"
 	backpack_contents = list(
 		/obj/item/storage/bag/plants, \
 		/obj/item/clothing/suit/apron/chef, \

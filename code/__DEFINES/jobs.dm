@@ -57,7 +57,7 @@
 #define F13NCRHT		(1<<7)
 #define F13TROOPER		(1<<8)
 #define F13RECRUIT		(1<<9)
-#define F13NONCOMBATANT (1<<10)
+#define F13SUPPORT      (1<<10)
 #define F13VETRANGER	(1<<11)
 #define F13RANGER		(1<<12)
 #define F13RECRANGER    (1<<13)
