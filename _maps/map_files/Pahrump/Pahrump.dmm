@@ -5066,7 +5066,7 @@
 /area/f13/ncr)
 "aoV" = (
 /turf/open/indestructible/ground/outside/desert,
-/turf/open/space/basic,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "aoX" = (
 /mob/living/simple_animal/hostile/ghoul,
@@ -6432,7 +6432,7 @@
 	},
 /area/f13/ncr)
 "asZ" = (
-/turf/open/space/basic,
+/turf/open/indestructible/ground/outside/desert,
 /turf/closed/wall/r_wall/f13composite{
 	icon_state = "ruins3"
 	},
@@ -6629,10 +6629,10 @@
 /area/f13/ncr)
 "aty" = (
 /turf/closed/wall/f13/wood/house,
-/turf/open/space/basic,
+/turf/closed/wall/f13/wood/house,
 /area/f13/ncr)
 "atz" = (
-/turf/open/space/basic,
+/turf/open/indestructible/ground/outside/desert,
 /turf/closed/wall/r_wall/rust,
 /area/f13/ncr)
 "atA" = (
@@ -38046,6 +38046,10 @@
 /obj/structure/wreck/trash/two_tire,
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
+"dpa" = (
+/turf/closed/wall/r_wall/rust,
+/turf/open/indestructible/ground/outside/desert,
+/area/f13/ncr)
 "dpr" = (
 /obj/structure/bed/dogbed,
 /turf/open/floor/f13/wood,
@@ -39340,6 +39344,10 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
 /area/f13/city)
+"ikq" = (
+/turf/open/space/basic,
+/turf/open/space/basic,
+/area/f13/wasteland)
 "ilm" = (
 /obj/structure/closet/crate/bin,
 /turf/open/indestructible/ground/outside/dirt{
@@ -40533,6 +40541,12 @@
 	icon_state = "dirt"
 	},
 /area/f13/wasteland)
+"mKi" = (
+/turf/closed/wall/r_wall/f13composite{
+	icon_state = "ruins3"
+	},
+/turf/open/indestructible/ground/outside/desert,
+/area/f13/ncr)
 "mLe" = (
 /obj/effect/decal/cleanable/blood/old{
 	icon_state = "gib5-old";
@@ -43459,6 +43473,14 @@
 /obj/structure/sign/poster/official/help_others,
 /turf/closed/wall/f13/store,
 /area/f13/city)
+"xGx" = (
+/turf/closed/wall/r_wall/f13composite{
+	icon_state = "ruins3"
+	},
+/turf/closed/wall/r_wall/f13composite{
+	icon_state = "ruins3"
+	},
+/area/f13/ncr)
 "xGK" = (
 /mob/living/simple_animal/hostile/wolf,
 /turf/open/floor/f13/wood,
@@ -61140,7 +61162,7 @@ xhl
 cpm
 aat
 avd
-aZD
+aJe
 aJK
 xhl
 avd
@@ -61900,7 +61922,7 @@ aat
 aat
 aoV
 aat
-aoV
+ikq
 aat
 aat
 aat
@@ -62425,9 +62447,9 @@ crN
 crN
 crN
 crN
-atz
+dpa
 crN
-atz
+dpa
 crN
 crN
 crN
@@ -62678,10 +62700,10 @@ atA
 atA
 atA
 atA
-asZ
-asZ
-asZ
-asZ
+xGx
+xGx
+xGx
+mKi
 atA
 atA
 atA
