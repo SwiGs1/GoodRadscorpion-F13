@@ -404,8 +404,8 @@ Trooper
 	title = "NCR Trooper"
 	flag = F13TROOPER
 	faction = "NCR"
-	total_positions = 20
-	spawn_positions = 20
+	total_positions = 14
+	spawn_positions = 14
 	description = "You answer to everyone above you in the chain of command, taking orders from the Corporals or the Sergeants directly and obeying all commands given by officers such as the Lieutenant and Captain."
 	supervisors = "Corporals and above"
 	selection_color = "#fff5cc"
