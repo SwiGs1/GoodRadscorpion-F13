@@ -39344,6 +39344,10 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
 /area/f13/city)
+"ikq" = (
+/obj/item/toy/beach_ball/holoball,
+/turf/open/indestructible/ground/outside/sidewalk,
+/area/f13/wasteland)
 "ilm" = (
 /obj/structure/closet/crate/bin,
 /turf/open/indestructible/ground/outside/dirt{
@@ -55468,7 +55472,7 @@ ayW
 akV
 afF
 afF
-afF
+ikq
 afF
 afF
 amS
