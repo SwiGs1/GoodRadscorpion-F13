@@ -101,8 +101,8 @@ Ambassador
 	flag = F13AMBASSADOR
 	head_announce = list("Security")
 	faction = "NCR"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	description = "You are the political and diplomatic attaché to the NCR forces in the area. Though you are not part of the military, and should avoid conflict, you wield great bureaucratic power."
 	supervisors = "Colonel"
 	req_admin_notify = 1
@@ -251,8 +251,8 @@ Corporal
 	title = "NCR Corporal"
 	flag = F13CORPORAL
 	faction = "NCR"
-	total_positions = 3
-	spawn_positions = 3
+	total_positions = 4
+	spawn_positions = 4
 	description = "You are a Corporal, an experienced enlisted soldier with a high degree of skill in a particular area. You work closely with your squad, taking orders from your Sergeant directly to achieve the NCR's goals and follow the chain of command, to your commanding officer, the Captain."
 	supervisors = "Sergeants and above"
 	selection_color = "#fff5cc"
@@ -368,8 +368,8 @@ NCR Military Police
 	title = "NCR Military Police"
 	flag = F13NCRMP
 	faction = "NCR"
-	total_positions = 3
-	spawn_positions = 3
+	total_positions = 0
+	spawn_positions = 0
 	description = "You are the primary enforcers of NCR law within the ranks of the local embassy. You are technically exempt from the standard chain of command, answering only to High-Command, and specifically, the NCR Office of Special Investigations (NCROSI). You are NOT to engage in direct combat with the enemy unless truly nessecary, but instead enforce laws and regulations within the NCR's control."
 	supervisors = "NCROSI"
 	selection_color = "#fff5cc"
@@ -404,8 +404,8 @@ Trooper
 	title = "NCR Trooper"
 	flag = F13TROOPER
 	faction = "NCR"
-	total_positions = 8
-	spawn_positions = 8
+	total_positions = 16
+	spawn_positions = 16
 	description = "You answer to everyone above you in the chain of command, taking orders from the Corporals or the Sergeants directly and obeying all commands given by officers such as the Lieutenant and Captain."
 	supervisors = "Corporals and above"
 	selection_color = "#fff5cc"
@@ -454,8 +454,8 @@ Recruit
 	title = "NCR Recruit"
 	flag = F13RECRUIT
 	faction = "NCR"
-	total_positions = 10
-	spawn_positions = 10
+	total_positions = 0
+	spawn_positions = 0
 	description = "You answer to the Sergeants or Corporals, following the chain of command, to your commanding officer, the Captain."
 	supervisors = "Corporals and above"
 	selection_color = "#fff5cc"
@@ -486,7 +486,7 @@ Recruit
 Non-Combatant
 */
 /datum/job/ncr/f13noncombatant
-	title = "NCR Non-Combatant"
+	title = "NCR Support Personnel"
 	flag = F13NONCOMBATANT
 	faction = "NCR"
 	total_positions = 4
