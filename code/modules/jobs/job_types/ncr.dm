@@ -508,7 +508,7 @@ Support Personnel
 	jobtype = /datum/job/ncr/f13support
 	id = 			/obj/item/card/id/dogtag/ncrtrooper
 	uniform =  		/obj/item/clothing/under/f13/ncr
-	accessory =     /obj/item/clothing/accessory/armband/engine/ncr/ncb
+	accessory =     /obj/item/clothing/accessory/armband/engine/ncr/nsp
 	suit = 			/obj/item/clothing/suit/armor/f13/ncrarmor
 	suit_store = 	/obj/item/gun/ballistic/automatic/pistol/ninemil
 	ears = 			/obj/item/radio/headset //no NCR comms

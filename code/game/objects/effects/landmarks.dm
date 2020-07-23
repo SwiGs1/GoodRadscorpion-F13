@@ -482,8 +482,8 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 	name = "NCR Recruit"
 	icon_state = "NCR Recruit"
 
-/obj/effect/landmark/start/f13/ncrncb
-	name = "NCR Non-Combatant"
+/obj/effect/landmark/start/f13/ncrsp
+	name = "NCR Support Personnel"
 	icon_state = "NCR Recruit"
 
 /obj/effect/landmark/start/f13/ncrveteranranger

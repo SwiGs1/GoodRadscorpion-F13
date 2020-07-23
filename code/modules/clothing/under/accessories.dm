@@ -168,9 +168,9 @@
     item_color = "ncrenlisted"
     minimize_when_attached = TRUE
 
-/obj/item/clothing/accessory/armband/engine/ncr/ncb
-    name = "Non-Combatant NCR Civilian armband (E-0 Non-Combatant)"
-    desc = "An armband worn by NCR Non-Combatants to display their rank and status. This one is orange with a reflective strip!"
+/obj/item/clothing/accessory/armband/engine/ncr/nsp
+    name = "Support Personnel NCR armband (E-2 Support)"
+    desc = "An armband worn by NCR Support Personnel to display their rank and status. This one is orange with a reflective strip!"
 
 //BOSRanks
 
