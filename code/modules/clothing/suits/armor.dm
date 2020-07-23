@@ -46,14 +46,21 @@
 	desc = "The army flak jacket series PPS-3 provides a sufficient level of protection for leading war operation against hardly-equipped opponent."
 	icon_state = "army_armor"
 	item_state = "army_armor"
-	armor = list("melee" = 25, "bullet" = 30, "laser" = 25, "energy" = 30, "bomb" = 25, "bio" = 25, "rad" = 20, "fire" = 20, "acid" = 20)
+	armor = list("melee" = 45, "bullet" = 45, "laser" = 45, "energy" = 45, "bomb" = 40, "bio" = 40, "rad" = 35, "fire" = 35, "acid" = 35)
 
 /obj/item/clothing/suit/armor/vest/sov_heavy
 	name = "foreign heavy armor vest"
 	desc = "This item comprises military PPS-5 series body armor with beryllium sputter modified for use in the Wasteland. It is ineffective in areas of high radioactive activity."
 	icon_state = "berill_5m"
 	item_state = "berill_5m"
-	armor = list("melee" = 40, "bullet" = 45, "laser" = 40, "energy" = 40, "bomb" = 35, "bio" = 40, "rad" = 35, "fire" = 35, "acid" = 20)
+	armor = list("melee" = 65, "bullet" = 65, "laser" = 65, "energy" = 65, "bomb" = 55, "bio" = 55, "rad" = 50, "fire" = 50, "acid" = 50)
+
+/obj/item/clothing/suit/armor/vest/scavenger
+	name = "scavenger vest"
+	desc = "Light bulletproof vest with inserted steel plates. Provides a somewhat decent level of protection against most hazards of the Wasteland, but is still outclassed by a more specialized ones. Commonly used in tandem with a similar jumpsuit."
+	icon_state = "scavenger"
+	item_state = "scavenger"
+	armor = list("melee" = 35, "bullet" = 35, "laser" = 35, "energy" = 45, "bomb" = 35, "bio" = 45, "rad" = 45, "fire" = 45, "acid" = 45)
 
 /obj/item/clothing/suit/armor/hos
 	name = "armored greatcoat"
