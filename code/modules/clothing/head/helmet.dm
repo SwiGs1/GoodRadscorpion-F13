@@ -74,6 +74,22 @@
 	visor_flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
 	dog_fashion = null
 
+/obj/item/clothing/head/helmet/sov_light
+	name = "foreign light armor helmet"
+	desc = "A desperately outdated steel army helmet without any additions. Provides no protection against radiation, but can deflect bullets."
+	icon_state = "sov_light"
+	item_state = "sov_light"
+	armor = list("melee" = 25, "bullet" = 30, "laser" = 25,"energy" = 30, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 20, "acid" = 20)
+	flags_inv = HIDEEARS|HIDEHAIR
+
+/obj/item/clothing/head/helmet/sov_heavy
+	name = "foreign heavy armor helmet"
+	desc = "An aluminum/titanium helmet with a cloth exterior that comes with pockets for additional steel armor pieces and an armor face mask. This helmet is normally used as part of a combination that includes PPS-5 model body armor."
+	icon_state = "sov_heavy"
+	item_state = "sov_heavy"
+	armor = list("melee" = 35, "bullet" = 40, "laser" = 35,"energy" = 35, "bomb" = 30, "bio" = 25, "rad" = 35, "fire" = 30, "acid" = 30)
+	flags_inv = HIDEEARS|HIDEHAIR
+
 /obj/item/clothing/head/helmet/attack_self(mob/user)
 	if(can_toggle && !user.incapacitated())
 		if(world.time > cooldown + toggle_cooldown)
