@@ -97,7 +97,7 @@
 
 /datum/crafting_recipe/scavengervest
 	name = "scavenger vest"
-	result = /obj/item/clothing/suit/armor/vest/scavenger
+	result = /obj/item/clothing/suit/hooded/armor/vest/scavenger
 	reqs = list(/obj/item/stack/sheet/leather = 4,
 				/obj/item/stack/sheet/durathread = 3,
 				/obj/item/stack/crafting/metalparts = 2,

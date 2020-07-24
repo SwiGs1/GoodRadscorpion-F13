@@ -55,12 +55,13 @@
 	item_state = "berill_5m"
 	armor = list("melee" = 65, "bullet" = 65, "laser" = 65, "energy" = 65, "bomb" = 55, "bio" = 55, "rad" = 50, "fire" = 50, "acid" = 50)
 
-/obj/item/clothing/suit/armor/vest/scavenger
+/obj/item/clothing/suit/hooded/armor/vest/scavenger
 	name = "scavenger vest"
 	desc = "Light bulletproof vest with inserted steel plates. Provides a somewhat decent level of protection against most hazards of the Wasteland, but is still outclassed by a more specialized ones. Commonly used in tandem with a similar jumpsuit."
 	icon_state = "scavenger"
 	item_state = "scavenger"
 	armor = list("melee" = 35, "bullet" = 35, "laser" = 35, "energy" = 45, "bomb" = 35, "bio" = 45, "rad" = 45, "fire" = 45, "acid" = 45)
+	hoodtype = /obj/item/clothing/head/hooded/scavenger
 
 /obj/item/clothing/suit/armor/hos
 	name = "armored greatcoat"
