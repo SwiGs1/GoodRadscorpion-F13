@@ -462,7 +462,7 @@
 	item_state = "bl_suit"
 	item_color = "scavenger"
 	body_parts_covered = CHEST|GROIN|LEGS|ARMS
-	armor = list ("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 25, "bomb" = 0, "bio" = 25, "rad" = 35, "fire" = 35, "acid" = 40)
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 25, "bomb" = 0, "bio" = 25, "rad" = 35, "fire" = 35, "acid" = 40)
 	can_adjust = 0
 
 //Fallout 13 general clothing directory

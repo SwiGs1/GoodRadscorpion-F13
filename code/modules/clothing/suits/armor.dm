@@ -60,8 +60,9 @@
 	desc = "Light bulletproof vest with inserted steel plates. Provides a somewhat decent level of protection against most hazards of the Wasteland, but is still outclassed by a more specialized ones. Commonly used in tandem with a similar jumpsuit."
 	icon_state = "scavenger"
 	item_state = "scavenger"
-	armor = list("melee" = 35, "bullet" = 35, "laser" = 35, "energy" = 45, "bomb" = 35, "bio" = 45, "rad" = 45, "fire" = 45, "acid" = 45)
+	armor = list("melee" = 35, "bullet" = 35, "laser" = 35, "energy" = 45, "bomb" = 35, "bio" = 55, "rad" = 55, "fire" = 55, "acid" = 55)
 	hoodtype = /obj/item/clothing/head/hooded/scavenger
+	allowed = list(/obj/item/gun)
 
 /obj/item/clothing/suit/armor/hos
 	name = "armored greatcoat"
