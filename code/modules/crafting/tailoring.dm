@@ -98,10 +98,10 @@
 /datum/crafting_recipe/scavengervest
 	name = "scavenger vest"
 	result = /obj/item/clothing/suit/hooded/armor/vest/scavenger
-	reqs = list(/obj/item/stack/sheet/leather = 4,
-				/obj/item/stack/sheet/durathread = 3,
-				/obj/item/stack/crafting/metalparts = 2,
-				/obj/item/stack/sheet/metal = 5)
+	reqs = list(/obj/item/stack/sheet/leather = 3,
+				/obj/item/stack/sheet/durathread = 1,
+				/obj/item/stack/crafting/metalparts = 1,
+				/obj/item/stack/sheet/metal = 2)
 	tools = list(TOOL_WORKBENCH)
 	time = 80
 	category = CAT_CLOTHING
@@ -115,6 +115,18 @@
 				)
 	tools = list(TOOL_WORKBENCH)
 	time = 40
+	category = CAT_CLOTHING
+	subcategory = CAT_CLOTHING
+
+/datum/crafting_recipe/respirator
+	name = "respirator"
+	result = /obj/item/clothing/mask/respirator
+	reqs = list(/obj/item/stack/sheet/metal = 2,
+				/obj/item/stack/sheet/durathread = 1,
+				/obj/item/stack/crafting/metalparts = 1,
+				/obj/item/reagent_containers/food/snacks/grown/agave = 2)
+	tools = list(TOOL_WORKBENCH)
+	time = 60
 	category = CAT_CLOTHING
 	subcategory = CAT_CLOTHING
 

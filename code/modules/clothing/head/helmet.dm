@@ -95,7 +95,7 @@
 	desc = "Scavenger vest's environment-resistant hood"
 	icon_state = "hood_scavenger"
 	item_state = "hood_scavenger"
-	armor = list ("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 25, "bomb" = 0, "bio" = 25, "rad" = 35, "fire" = 35, "acid" = 40)
+	armor = list ("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 35, "bomb" = 0, "bio" = 35, "rad" = 35, "fire" = 45, "acid" = 50)
 	flags_inv = HIDEEARS|HIDEHAIR
 
 /obj/item/clothing/head/helmet/attack_self(mob/user)
