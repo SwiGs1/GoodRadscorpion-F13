@@ -465,16 +465,6 @@
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 25, "bomb" = 0, "bio" = 25, "rad" = 35, "fire" = 35, "acid" = 40)
 	can_adjust = 0
 
-/obj/item/clothing/under/f13/german
-	name = "german uniform"
-	desc = "Uh."
-	icon_state = "german"
-	item_state = "bl_suit"
-	item_color = "german"
-	body_parts_covered = CHEST|GROIN|LEGS|ARMS
-	armor = list("melee" = 15, "bullet" = 15, "laser" = 15, "energy" = 15, "bomb" = 10, "bio" = 10, "rad" = 20, "fire" = 20, "acid" = 30)
-	can_adjust = 0
-
 //Fallout 13 general clothing directory
 
 /obj/item/clothing/under/f13
