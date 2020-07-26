@@ -62,6 +62,7 @@
 	item_state = "scavenger"
 	armor = list("melee" = 35, "bullet" = 35, "laser" = 35, "energy" = 45, "bomb" = 35, "bio" = 55, "rad" = 55, "fire" = 55, "acid" = 55)
 	hoodtype = /obj/item/clothing/head/hooded/scavenger
+	body_parts_covered = CHEST|GROIN|LEGS|ARMS
 	allowed = list(/obj/item/gun)
 
 /obj/item/clothing/suit/armor/hos
