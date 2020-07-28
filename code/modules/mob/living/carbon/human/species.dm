@@ -1018,8 +1018,10 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 	else if(H.water > THIRST_LEVEL_DEADLY) //HARD THIRST
 		if(H.transpiration_efficiency != 0.6)
 			H << "<span class='warning'>You are very dehydrated, find water immediately or you will perish.</span>"
+		if(prob(10))
+			H.adjust_blurriness(5)
 		if(prob(4))
-			H.AdjustWeakened(5)
+			H.adjustStaminaLoss(4)
 		H.transpiration_efficiency = 0.6
 	else
 		if(H.transpiration_efficiency != 0.1)
@@ -1027,7 +1029,8 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 		H.adjustOxyLoss(5)
 		H.transpiration_efficiency = 0.1
 		if(prob(10))
-			H.AdjustWeakened(5)
+			H.adjust_blurriness(2)
+
 
 	switch(H.nutrition)
 		if(NUTRITION_LEVEL_FULL to INFINITY)
