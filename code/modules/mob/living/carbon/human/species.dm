@@ -1025,7 +1025,7 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 		H.transpiration_efficiency = 0.6
 	else
 		if(H.transpiration_efficiency != 0.1)
-			to_chat(H, "<span class='warning'>You are extremely dehydrated, death is apon you, you must find water.</span>")
+			to_chat(H, "<span class='warning'>You are extremely dehydrated, death is upon you, you must find water.</span>")
 		H.adjustOxyLoss(5)
 		H.transpiration_efficiency = 0.1
 		if(prob(10))
