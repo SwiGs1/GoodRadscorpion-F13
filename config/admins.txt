@@ -1,1 +1,1 @@
-Nitr0Del7 = Host
+nitr0del7 = Host
