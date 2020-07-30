@@ -91,7 +91,7 @@
 	glass_icon_state = "berryjuice"
 	glass_name = "glass of berry juice"
 	glass_desc = "Berry juice. Or maybe it's jam. Who cares?"
-	thirst_factor = 12 * REAGENTS_METABOLISM
+	thirst_factor = 10 * REAGENTS_METABOLISM
 	water_level = 1
 
 /datum/reagent/consumable/applejuice
@@ -100,7 +100,7 @@
 	description = "The sweet juice of an apple, fit for all ages."
 	color = "#ECFF56" // rgb: 236, 255, 86
 	taste_description = "apples"
-	thirst_factor = 15 * REAGENTS_METABOLISM
+	thirst_factor = 10 * REAGENTS_METABOLISM
 	water_level = 1
 
 /datum/reagent/consumable/poisonberryjuice
@@ -129,7 +129,7 @@
 	glass_icon_state = "glass_red"
 	glass_name = "glass of watermelon juice"
 	glass_desc = "A glass of watermelon juice."
-	thirst_factor = 15 * REAGENTS_METABOLISM
+	thirst_factor = 10 * REAGENTS_METABOLISM
 	water_level = 1
 
 /datum/reagent/consumable/lemonjuice
@@ -237,7 +237,7 @@
 	glass_icon_state = "glass_white"
 	glass_name = "glass of milk"
 	glass_desc = "White and nutritious goodness!"
-	thirst_factor = 20 * REAGENTS_METABOLISM
+	thirst_factor = 10 * REAGENTS_METABOLISM
 	water_level = 1
 
 /datum/reagent/consumable/milk/on_mob_life(mob/living/carbon/M)
@@ -261,7 +261,7 @@
 	glass_icon_state = "glass_white"
 	glass_name = "glass of soy milk"
 	glass_desc = "White and nutritious soy goodness!"
-	thirst_factor = 14 * REAGENTS_METABOLISM
+	thirst_factor = 7 * REAGENTS_METABOLISM
 	water_level = 1
 
 /datum/reagent/consumable/soymilk/on_mob_life(mob/living/carbon/M)
@@ -299,7 +299,7 @@
 	glass_icon_state = "glass_brown"
 	glass_name = "glass of coffee"
 	glass_desc = "Don't drop it, or you'll send scalding liquid and glass shards everywhere."
-	thirst_factor = 10 * REAGENTS_METABOLISM
+	thirst_factor = 8 * REAGENTS_METABOLISM
 	water_level = 1
 
 /datum/reagent/consumable/coffee/overdose_process(mob/living/M)
@@ -327,7 +327,7 @@
 	glass_icon_state = "teaglass"
 	glass_name = "glass of tea"
 	glass_desc = "Drinking it from here would not seem right."
-	thirst_factor = 15 * REAGENTS_METABOLISM
+	thirst_factor = 10 * REAGENTS_METABOLISM
 	water_level = 1
 
 /datum/reagent/consumable/tea/on_mob_life(mob/living/carbon/M)
@@ -350,7 +350,7 @@
 	glass_icon_state = "lemonpitcher"
 	glass_name = "pitcher of lemonade"
 	glass_desc = "This drink leaves you feeling nostalgic for some reason."
-	thirst_factor = 20 * REAGENTS_METABOLISM
+	thirst_factor = 10 * REAGENTS_METABOLISM
 	water_level = 1
 
 /datum/reagent/consumable/tea/arnold_palmer
@@ -363,7 +363,7 @@
 	glass_icon_state = "arnold_palmer"
 	glass_name = "Arnold Palmer"
 	glass_desc = "You feel like taking a few golf swings after a few swigs of this."
-	thirst_factor = 10 * REAGENTS_METABOLISM
+	thirst_factor = 5 * REAGENTS_METABOLISM
 	water_level = 1
 
 /datum/reagent/consumable/tea/arnold_palmer/on_mob_life(mob/living/carbon/M)
@@ -382,7 +382,7 @@
 	glass_icon_state = "icedcoffeeglass"
 	glass_name = "iced coffee"
 	glass_desc = "A drink to perk you up and refresh you!"
-	thirst_factor = 15 * REAGENTS_METABOLISM
+	thirst_factor = 10 * REAGENTS_METABOLISM
 	water_level = 1
 
 /datum/reagent/consumable/icecoffee/on_mob_life(mob/living/carbon/M)
@@ -404,7 +404,7 @@
 	glass_icon_state = "icedteaglass"
 	glass_name = "iced tea"
 	glass_desc = "All natural, antioxidant-rich flavour sensation."
-	thirst_factor = 15 * REAGENTS_METABOLISM
+	thirst_factor = 11 * REAGENTS_METABOLISM
 	water_level = 1
 
 /datum/reagent/consumable/icetea/on_mob_life(mob/living/carbon/M)
@@ -443,7 +443,7 @@
 	glass_icon_state = "nuka_colaglass"
 	glass_name = "glass of Nuka Cola"
 	glass_desc = "Don't cry, Don't raise your eye, It's only nuclear wasteland."
-	thirst_factor = 6 * REAGENTS_METABOLISM
+	thirst_factor = 8 * REAGENTS_METABOLISM
 	water_level = 1
 
 /datum/reagent/consumable/nuka_cola/on_mob_life(mob/living/carbon/M)
@@ -484,7 +484,7 @@
 	glass_icon_state = "dr_gibb_glass"
 	glass_name = "glass of Dr. Gibb"
 	glass_desc = "Dr. Gibb. Not as dangerous as the glass_name might imply."
-	thirst_factor = 10 * REAGENTS_METABOLISM
+	thirst_factor =6 * REAGENTS_METABOLISM
 	water_level = 1
 
 /datum/reagent/consumable/dr_gibb/on_mob_life(mob/living/carbon/M)
@@ -501,7 +501,7 @@
 	glass_icon_state = "space-up_glass"
 	glass_name = "glass of Space-Up"
 	glass_desc = "Space-up. It helps you keep your cool."
-	thirst_factor = 10 * REAGENTS_METABOLISM
+	thirst_factor = 6 * REAGENTS_METABOLISM
 	water_level = 1
 
 
@@ -566,7 +566,7 @@
 	glass_icon_state = "glass_clear"
 	glass_name = "glass of soda water"
 	glass_desc = "Soda water. Why not make a scotch and soda?"
-	thirst_factor = 10 * REAGENTS_METABOLISM
+	thirst_factor = 6 * REAGENTS_METABOLISM
 	water_level = 1
 
 /datum/reagent/consumable/sodawater/on_mob_life(mob/living/carbon/M)
@@ -584,7 +584,7 @@
 	glass_icon_state = "glass_clear"
 	glass_name = "glass of tonic water"
 	glass_desc = "Quinine tastes funny, but at least it'll keep that Space Malaria away."
-	thirst_factor = 9 * REAGENTS_METABOLISM
+	thirst_factor = 7 * REAGENTS_METABOLISM
 	water_level = 1
 
 /datum/reagent/consumable/tonic/on_mob_life(mob/living/carbon/M)
@@ -643,7 +643,7 @@
 	glass_icon_state = "cafe_latte"
 	glass_name = "cafe latte"
 	glass_desc = "A nice, strong and refreshing beverage while you're reading."
-	thirst_factor = 7 * REAGENTS_METABOLISM
+	thirst_factor = 6 * REAGENTS_METABOLISM
 	water_level = 1
 
 /datum/reagent/consumable/cafe_latte/on_mob_life(mob/living/carbon/M)
@@ -666,7 +666,7 @@
 	glass_icon_state = "doctorsdelightglass"
 	glass_name = "Doctor's Delight"
 	glass_desc = "The space doctor's favorite. Guaranteed to restore bodily injury; side effects include cravings and hunger."
-	thirst_factor = 10 * REAGENTS_METABOLISM
+	thirst_factor = 6 * REAGENTS_METABOLISM
 	water_level = 1
 
 /datum/reagent/consumable/doctor_delight/on_mob_life(mob/living/carbon/M)
@@ -783,7 +783,7 @@
 	glass_icon_state = "triplecitrus" //needs own sprite mine are trash
 	glass_name = "glass of triple citrus"
 	glass_desc = "A mixture of citrus juices. Tangy, yet smooth."
-	thirst_factor = 10 * REAGENTS_METABOLISM
+	thirst_factor = 7 * REAGENTS_METABOLISM
 	water_level = 1
 
 /datum/reagent/consumable/grape_soda
@@ -803,7 +803,7 @@
 	description = "Milk for cool kids."
 	color = "#7D4E29"
 	taste_description = "chocolate milk"
-	thirst_factor = 13 * REAGENTS_METABOLISM
+	thirst_factor = 9 * REAGENTS_METABOLISM
 	water_level = 1
 
 /datum/reagent/consumable/menthol
