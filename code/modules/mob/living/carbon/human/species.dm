@@ -1004,7 +1004,7 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 
 	//THIRST//
 	if(H.water > THIRST_LEVEL_TURGID)
-		if(H.transpiration_efficiency != 1.1)
+		if(H.transpiration_efficiency != 1.15)
 			to_chat(H, "<span class='notice'>Your stomach feels swollen with liquid...</span>")
 	else if(H.water > THIRST_LEVEL_LIGHT)
 		if(H.transpiration_efficiency != 1.1)
