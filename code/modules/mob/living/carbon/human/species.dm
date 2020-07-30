@@ -1005,19 +1005,19 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 	//THIRST//
 	if(H.water > THIRST_LEVEL_LIGHT)
 		if(H.transpiration_efficiency != 1.1)
-			H << "<span class='notice'>You are no longer thirsty.</span>"
+			to_chat(H, "<span class='notice'>You are no longer thirsty.</span>")
 		H.transpiration_efficiency = 1.1
 	else if(H.water > THIRST_LEVEL_MIDDLE) //LITLE THIRST
 		if(H.transpiration_efficiency != 1)
-			H << "<span class='notice'>Your mouth is incredibly dry.</span>"
+			to_chat(H, "<span class='notice'>Your mouth is incredibly dry.</span>")
 		H.transpiration_efficiency = 1
 	else if(H.water > THIRST_LEVEL_HARD) //MIDDLE THIRST
 		if(H.transpiration_efficiency != 0.9)
-			H << "<span class='warning'>You are very thirsty, find water.</span>"
+			to_chat(H, "<span class='warning'>You are very thirsty, find water.</span>")
 		H.transpiration_efficiency = 0.9
 	else if(H.water > THIRST_LEVEL_DEADLY) //HARD THIRST
 		if(H.transpiration_efficiency != 0.6)
-			H << "<span class='warning'>You are very dehydrated, find water immediately or you will perish.</span>"
+			to_chat(H, "<span class='warning'>You are very dehydrated, find water immediately or you will perish.</span>")
 		if(prob(10))
 			H.adjust_blurriness(5)
 		if(prob(4))
@@ -1025,7 +1025,7 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 		H.transpiration_efficiency = 0.6
 	else
 		if(H.transpiration_efficiency != 0.1)
-			H << "<span class='warning'>You are extremely dehydrated, death is apon you, you must find water.</span>"
+			to_chat(H, "<span class='warning'>You are extremely dehydrated, death is apon you, you must find water.</span>")
 		H.adjustOxyLoss(5)
 		H.transpiration_efficiency = 0.1
 		if(prob(10))
