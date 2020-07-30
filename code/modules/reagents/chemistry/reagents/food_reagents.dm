@@ -7,7 +7,6 @@
 // 	condiments, additives, and such go.
 
 
-
 /datum/reagent/consumable
 	name = "Consumable"
 	id = "consumable"

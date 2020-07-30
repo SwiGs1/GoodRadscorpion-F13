@@ -151,6 +151,11 @@
 	icon_state = "too_much_tox"
 //End gas alerts
 
+/obj/screen/alert/turgid
+    name = "Turgid"
+    desc = "You've drank too much and your stomach is sloshing around with liquid."
+    icon_state = "turgid"
+
 /obj/screen/alert/hydrated
 	name = "Hydrated"
 	desc = "You're well hydrated. Keep up your fluids."

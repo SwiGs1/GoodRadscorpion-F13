@@ -440,7 +440,7 @@
 		update_canmove()
 		update_sight()
 		clear_alert("not_enough_oxy")
-		water = THIRST_LEVEL_FULL + 100
+		water = THIRST_LEVEL_HYDRATED + 100
 		reload_fullscreen()
 		. = 1
 		if(mind)
@@ -475,7 +475,7 @@
 	ExtinguishMob()
 	fire_stacks = 0
 	confused = 0
-	water = THIRST_LEVEL_FULL + 100
+	water = THIRST_LEVEL_HYDRATED + 100
 	update_canmove()
 	GET_COMPONENT(mood, /datum/component/mood)
 	if (mood)

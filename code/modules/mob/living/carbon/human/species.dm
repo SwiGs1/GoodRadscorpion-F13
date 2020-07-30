@@ -1003,7 +1003,10 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 		H.metabolism_efficiency = 1
 
 	//THIRST//
-	if(H.water > THIRST_LEVEL_LIGHT)
+	if(H.water > THIRST_LEVEL_TURGID)
+		if(H.transpiration_efficiency != 1.1)
+			to_chat(H, "<span class='notice'>Your stomach feels swollen with liquid...</span>")
+	else if(H.water > THIRST_LEVEL_LIGHT)
 		if(H.transpiration_efficiency != 1.1)
 			to_chat(H, "<span class='notice'>You are no longer thirsty.</span>")
 		H.transpiration_efficiency = 1.1
@@ -1052,9 +1055,12 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 			SEND_SIGNAL(H, COMSIG_ADD_MOOD_EVENT, "nutrition", /datum/mood_event/nutrition/starving)
 			H.throw_alert("nutrition", /obj/screen/alert/starving)
 	switch(H.water)
-		if(THIRST_LEVEL_FULL to INFINITY)
+		if(THIRST_LEVEL_TURGID to INFINITY)
 			H.clear_alert("thirst")
-		if(THIRST_LEVEL_LIGHT to THIRST_LEVEL_FULL)
+		if(THIRST_LEVEL_HYDRATED to THIRST_LEVEL_TURGID)
+			SEND_SIGNAL(H, COMSIG_ADD_MOOD_EVENT, "thirst", /datum/mood_event/thirst/turgid)
+			H.throw_alert("thirst", /obj/screen/alert/turgid)
+		if(THIRST_LEVEL_LIGHT to THIRST_LEVEL_HYDRATED)
 			SEND_SIGNAL(H, COMSIG_ADD_MOOD_EVENT, "thirst", /datum/mood_event/thirst/hydrated)
 			H.throw_alert("thirst", /obj/screen/alert/hydrated)
 		if(THIRST_LEVEL_MIDDLE to THIRST_LEVEL_LIGHT)
@@ -1199,8 +1205,11 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 				if(SANITY_UNSTABLE to SANITY_DISTURBED)
 					. += 0.5
 
-/*		if(H.has_trait(TRAIT_FAT))
-			. += (1.5 - flight)*/
+		if(H.has_trait(TRAIT_FAT))
+			. += (1.5 - flight)
+		if(H.water > THIRST_LEVEL_TURGID)
+			. += (1.1 - flight)
+
 		if(H.bodytemperature < BODYTEMP_COLD_DAMAGE_LIMIT && !H.has_trait(TRAIT_RESISTCOLD))
 			. += (BODYTEMP_COLD_DAMAGE_LIMIT - H.bodytemperature) / COLD_SLOWDOWN_FACTOR
 	return .

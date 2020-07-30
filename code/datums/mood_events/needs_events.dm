@@ -20,6 +20,10 @@
 	mood_change = -15
 
 //thirst 
+/datum/mood_event/thirst/turgid
+    description = "<span class='warning'><B>All this drinking is making me feel sick...</B></span>\n" 
+    mood_change = -4
+
 /datum/mood_event/thirst/hydrated
 	description = "<span class='nicegreen'>I feel nice and hydrated.</span>\n"
 	mood_change = 6
