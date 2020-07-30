@@ -1009,7 +1009,7 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 		H.transpiration_efficiency = 1.1
 	else if(H.water > THIRST_LEVEL_MIDDLE) //LITLE THIRST
 		if(H.transpiration_efficiency != 1)
-			to_chat(H, "<span class='notice'>Your mouth is incredibly dry.</span>")
+			to_chat(H, "<span class='notice'>You are a bit parched.</span>")
 		H.transpiration_efficiency = 1
 	else if(H.water > THIRST_LEVEL_HARD) //MIDDLE THIRST
 		if(H.transpiration_efficiency != 0.9)
