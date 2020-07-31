@@ -117,13 +117,13 @@
 	color = "#AAAAAA77" // rgb: 170, 170, 170, 77 (alpha)
 	taste_description = "water"
 	var/thirst_factor = 0.8 * REAGENTS_METABOLISM
-	var/water_level = 1
+	var/water_level = 0.1
 	var/cooling_temperature = 2
 	glass_icon_state = "glass_clear"
 	glass_name = "glass of water"
 	glass_desc = "The father of all refreshments."
 	shot_glass_icon_state = "shotglassclear"
-	thirst_factor = 20 * REAGENTS_METABOLISM
+	thirst_factor = 2 * REAGENTS_METABOLISM
 
 /datum/reagent/water/on_mob_life(mob/living/carbon/M)
 	current_cycle++

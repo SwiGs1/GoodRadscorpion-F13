@@ -984,7 +984,14 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 			H.overeatduration++
 	else
 		if(H.overeatduration > 1)
-			H.overeatduration -= 2 //doubled the unfat rate
+			H.overeatduration -= 2 //doubled the unfat rates
+
+	if (H.water > THIRST_LEVEL_TURGID)
+		if(H.overdrinkduration < 450) //capped so people don't take forever to unfat
+			H.overdrinkduration++
+	else
+		if(H.overdrinkduration > 1)
+			H.overdrinkduration -= 2
 
 	//metabolism change
 	if(H.nutrition > NUTRITION_LEVEL_FAT)
@@ -1057,10 +1064,11 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 			H.throw_alert("nutrition", /obj/screen/alert/starving)
 	switch(H.water)
 		if(THIRST_LEVEL_TURGID to INFINITY)
-			H.clear_alert("thirst")
-		if(THIRST_LEVEL_HYDRATED to THIRST_LEVEL_TURGID)
 			SEND_SIGNAL(H, COMSIG_ADD_MOOD_EVENT, "thirst", /datum/mood_event/thirst/turgid)
 			H.throw_alert("thirst", /obj/screen/alert/turgid)
+		if(THIRST_LEVEL_HYDRATED to THIRST_LEVEL_TURGID)
+			SEND_SIGNAL(H, COMSIG_CLEAR_MOOD_EVENT, "thirst")
+			H.clear_alert("thirst")
 		if(THIRST_LEVEL_LIGHT to THIRST_LEVEL_HYDRATED)
 			SEND_SIGNAL(H, COMSIG_ADD_MOOD_EVENT, "thirst", /datum/mood_event/thirst/hydrated)
 			H.throw_alert("thirst", /obj/screen/alert/hydrated)
@@ -1209,7 +1217,7 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 		if(H.has_trait(TRAIT_FAT))
 			. += (1.5 - flight)
 		if(H.water > THIRST_LEVEL_TURGID)
-			. += (1.1 - flight)
+			. += (0.5 - flight)
 
 		if(H.bodytemperature < BODYTEMP_COLD_DAMAGE_LIMIT && !H.has_trait(TRAIT_RESISTCOLD))
 			. += (BODYTEMP_COLD_DAMAGE_LIMIT - H.bodytemperature) / COLD_SLOWDOWN_FACTOR
