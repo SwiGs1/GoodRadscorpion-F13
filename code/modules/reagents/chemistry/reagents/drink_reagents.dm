@@ -225,7 +225,7 @@
 	description = "The juice of a bunch of grapes. Guaranteed non-alcoholic."
 	color = "#290029" // dark purple
 	taste_description = "grape soda"
-	thirst_factor = 0.4 * REAGENTS_METABOLISM
+	thirst_factor = 0.7 * REAGENTS_METABOLISM
 	water_level = 1
 
 /datum/reagent/consumable/milk
@@ -261,7 +261,7 @@
 	glass_icon_state = "glass_white"
 	glass_name = "glass of soy milk"
 	glass_desc = "White and nutritious soy goodness!"
-	thirst_factor = 0.4 * REAGENTS_METABOLISM
+	thirst_factor = 0.6 * REAGENTS_METABOLISM
 	water_level = 1
 
 /datum/reagent/consumable/soymilk/on_mob_life(mob/living/carbon/M)
@@ -279,7 +279,7 @@
 	glass_icon_state  = "glass_white"
 	glass_name = "glass of cream"
 	glass_desc = "Ewwww..."
-	thirst_factor = 3 * REAGENTS_METABOLISM
+	thirst_factor = 0.8 * REAGENTS_METABOLISM
 	water_level = 1
 
 /datum/reagent/consumable/cream/on_mob_life(mob/living/carbon/M)
@@ -620,7 +620,7 @@
 	glass_icon_state = "soy_latte"
 	glass_name = "soy latte"
 	glass_desc = "A nice and refreshing beverage while you're reading."
-	thirst_factor = 0.3 * REAGENTS_METABOLISM // for losers - swigs
+	thirst_factor = 0.4 * REAGENTS_METABOLISM // for losers - swigs
 	water_level = 1
 
 /datum/reagent/consumable/soy_latte/on_mob_life(mob/living/carbon/M)

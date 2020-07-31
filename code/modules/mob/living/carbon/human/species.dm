@@ -987,7 +987,7 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 			H.overeatduration -= 2 //doubled the unfat rates
 
 	if (H.water > THIRST_LEVEL_TURGID)
-		if(H.overdrinkduration < 450) //capped so people don't take forever to unfat
+		if(H.overdrinkduration < 450) //capped so people don't take forever to get unturgid
 			H.overdrinkduration++
 	else
 		if(H.overdrinkduration > 1)
@@ -1011,9 +1011,9 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 
 	//THIRST//
 	if(H.water > THIRST_LEVEL_TURGID)
-		if(H.transpiration_efficiency != 1.1)
+		if(H.transpiration_efficiency != 1)
 			to_chat(H, "<span class='notice'>Your stomach feels swollen with liquid...</span>")
-		H.transpiration_efficiency != 1.1
+		H.transpiration_efficiency = 1
 	else if(H.water > THIRST_LEVEL_LIGHT)
 		if(H.transpiration_efficiency != 1.1)
 			to_chat(H, "<span class='notice'>You are no longer thirsty.</span>")
@@ -1067,7 +1067,7 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 			SEND_SIGNAL(H, COMSIG_ADD_MOOD_EVENT, "thirst", /datum/mood_event/thirst/turgid)
 			H.throw_alert("thirst", /obj/screen/alert/turgid)
 		if(THIRST_LEVEL_HYDRATED to THIRST_LEVEL_TURGID)
-			SEND_SIGNAL(H, COMSIG_CLEAR_MOOD_EVENT, "thirst")
+			SEND_SIGNAL(H, COMSIG_CLEAR_MOOD_EVENT, "thirst", /datum/mood_event/thirst/hydrated)
 			H.clear_alert("thirst")
 		if(THIRST_LEVEL_LIGHT to THIRST_LEVEL_HYDRATED)
 			SEND_SIGNAL(H, COMSIG_ADD_MOOD_EVENT, "thirst", /datum/mood_event/thirst/hydrated)
