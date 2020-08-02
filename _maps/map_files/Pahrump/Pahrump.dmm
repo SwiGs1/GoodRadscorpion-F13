@@ -6602,9 +6602,11 @@
 	},
 /area/f13/ncr)
 "aty" = (
-/turf/closed/wall/f13/wood/house,
-/turf/open/space/basic,
-/area/f13/ncr)
+/obj/structure/table/wood/settler,
+/obj/item/claymore/machete/reinforced,
+/obj/item/claymore/machete/reinforced,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "atz" = (
 /turf/open/indestructible/ground/outside/desert,
 /turf/closed/wall/r_wall/rust,
@@ -21247,8 +21249,10 @@
 /area/f13/clinic)
 "bku" = (
 /obj/structure/table/wood/settler,
-/obj/item/claymore/machete/reinforced,
-/obj/item/claymore/machete/reinforced,
+/obj/item/throwing_star/spear,
+/obj/item/throwing_star/spear,
+/obj/item/throwing_star/spear,
+/obj/item/throwing_star/spear,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "bkv" = (
@@ -22215,16 +22219,18 @@
 /area/f13/clinic)
 "bod" = (
 /obj/structure/table/wood/settler,
-/obj/item/throwing_star/spear,
-/obj/item/throwing_star/spear,
+/obj/item/throwing_star/throwingknife,
+/obj/item/throwing_star/throwingknife,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "boe" = (
-/obj/structure/table/wood/settler,
-/obj/item/throwing_star/throwingknife,
-/obj/item/throwing_star/throwingknife,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/light/small{
+	dir = 8;
+	light_color = "#d8b1b1"
+	},
+/turf/open/floor/f13/wood,
+/area/f13/legion)
 "bog" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -23128,12 +23134,19 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/rack,
 /obj/item/stack/sheet/cloth/five,
+/obj/machinery/light/small{
+	dir = 8;
+	light_color = "#d8b1b1"
+	},
 /turf/open/floor/f13/wood,
 /area/f13/legion)
 "brP" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/rack,
 /obj/item/stack/sheet/metal/twenty,
+/obj/machinery/light/small{
+	dir = 4
+	},
 /turf/open/floor/f13/wood,
 /area/f13/legion)
 "brQ" = (
@@ -23319,6 +23332,9 @@
 /obj/item/gun/ballistic/shotgun/hunting,
 /obj/item/gun/ballistic/shotgun/hunting,
 /obj/item/gun/ballistic/shotgun/hunting,
+/obj/machinery/light/small{
+	dir = 4
+	},
 /turf/open/floor/f13/wood,
 /area/f13/legion)
 "bsx" = (
@@ -26000,6 +26016,8 @@
 /area/f13/brotherhood)
 "bEo" = (
 /obj/structure/rack,
+/obj/item/assembly/signaler/electropack/shockcollar,
+/obj/item/assembly/signaler/electropack/shockcollar,
 /obj/item/assembly/signaler/electropack/shockcollar,
 /obj/item/assembly/signaler/electropack/shockcollar,
 /obj/item/assembly/signaler/electropack/shockcollar,
@@ -38109,8 +38127,6 @@
 /obj/item/assembly/signaler/electropack/boomcollar,
 /obj/item/assembly/signaler/electropack/boomcollar,
 /obj/item/assembly/signaler/electropack/boomcollar,
-/obj/item/assembly/signaler/electropack/boomcollar,
-/obj/item/assembly/signaler/electropack/boomcollar,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/legion)
 "ihB" = (
@@ -38180,6 +38196,11 @@
 "itQ" = (
 /obj/structure/simple_door/wood,
 /obj/effect/decal/cleanable/dirt,
+/turf/open/floor/f13/wood,
+/area/f13/legion)
+"iua" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/light/small,
 /turf/open/floor/f13/wood,
 /area/f13/legion)
 "iwx" = (
@@ -39843,6 +39864,16 @@
 /obj/item/reagent_containers/food/snacks/meat/steak/gecko,
 /turf/open/floor/f13/wood,
 /area/f13/city)
+"onm" = (
+/obj/structure/closet/cabinet,
+/obj/effect/spawner/lootdrop/f13/cash_legion_low,
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/light/small{
+	dir = 8;
+	light_color = "#d8b1b1"
+	},
+/turf/open/floor/f13/wood,
+/area/f13/legion)
 "ooD" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/campfire/barrel,
@@ -40064,6 +40095,15 @@
 	icon_state = "dirt"
 	},
 /area/f13/wasteland)
+"oZj" = (
+/obj/structure/closet/cabinet,
+/obj/effect/spawner/lootdrop/f13/cash_legion_low,
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/open/floor/f13/wood,
+/area/f13/legion)
 "oZB" = (
 /mob/living/simple_animal/hostile/bloatfly,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -40529,6 +40569,10 @@
 /obj/structure/barricade/wooden,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
+"qDL" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/closed/wall/f13/wood/house,
+/area/f13/legion)
 "qFg" = (
 /obj/structure/bodycontainer/crematorium,
 /turf/open/floor/plasteel/f13{
@@ -41644,6 +41688,9 @@
 /obj/structure/table/wood/settler,
 /obj/item/kitchen/rollingpin,
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/light/small{
+	dir = 4
+	},
 /turf/open/floor/f13/wood,
 /area/f13/legion)
 "tUE" = (
@@ -61142,9 +61189,9 @@ avd
 avd
 aat
 avd
-aty
+aoU
 avd
-aty
+aoU
 avd
 aat
 crG
@@ -93954,14 +94001,14 @@ brN
 brR
 bnB
 brZ
-cli
+boe
 bsR
 btk
 btG
 btY
-cli
+boe
 but
-cli
+boe
 buT
 bnB
 aae
@@ -94200,7 +94247,7 @@ aae
 bnB
 bpw
 bpA
-cli
+boe
 cli
 bpz
 bnB
@@ -94983,7 +95030,7 @@ brW
 bnB
 bsw
 cli
-cli
+bsX
 btl
 cli
 buf
@@ -95239,9 +95286,9 @@ bnB
 bnB
 bnB
 bnB
-bpw
-bua
-bua
+qDL
+qDL
+qDL
 bnB
 bnB
 bnB
@@ -95493,7 +95540,7 @@ hlw
 bgA
 bgA
 bss
-aLm
+aat
 aat
 bgK
 bgA
@@ -95750,7 +95797,7 @@ acv
 acv
 acv
 ads
-aat
+aLm
 aat
 anl
 acv
@@ -96007,7 +96054,7 @@ bvT
 acw
 acv
 ads
-aLm
+aat
 aat
 anl
 acv
@@ -96258,7 +96305,7 @@ acv
 ads
 aat
 aat
-aLm
+aat
 aat
 aLm
 anl
@@ -96501,9 +96548,9 @@ aaa
 aaa
 aae
 aae
-bku
-bod
-boe
+aae
+aae
+aae
 aae
 aae
 bvb
@@ -96513,7 +96560,7 @@ bvb
 anl
 acv
 ads
-aLm
+aat
 aat
 aat
 aat
@@ -97782,7 +97829,7 @@ aat
 aae
 aae
 aaa
-aae
+aty
 aaB
 bcV
 aaB
@@ -97808,7 +97855,7 @@ acv
 ads
 bvb
 buu
-cli
+boe
 cli
 bvb
 aat
@@ -98039,7 +98086,7 @@ aat
 aae
 aae
 aaa
-aae
+bku
 aaB
 bcV
 agT
@@ -98296,7 +98343,7 @@ aat
 aae
 aae
 aaa
-aae
+bod
 aaB
 bdb
 biZ
@@ -98309,9 +98356,9 @@ aaB
 aaB
 aaB
 aaB
-afw
-bvT
-afj
+anl
+acv
+ads
 bvb
 bvb
 bvb
@@ -98566,9 +98613,9 @@ aaB
 aaB
 aaB
 aae
-aat
-aat
-aat
+afw
+bvT
+afj
 aat
 aat
 aaV
@@ -99094,7 +99141,7 @@ ads
 bvb
 voM
 cli
-cli
+iua
 bvb
 bvb
 bvb
@@ -100090,7 +100137,7 @@ bvb
 aLl
 bvb
 bgL
-aLm
+aat
 aat
 aat
 bph
@@ -100106,7 +100153,7 @@ bvb
 aae
 bnB
 cli
-cli
+boe
 bnB
 aat
 bvb
@@ -100602,7 +100649,7 @@ bvb
 bvb
 bvb
 bgL
-aLm
+aat
 aat
 aat
 alm
@@ -101677,7 +101724,7 @@ bvb
 hVh
 cli
 cli
-cli
+iua
 bnB
 aae
 aae
@@ -102658,7 +102705,7 @@ bvb
 bvb
 bvb
 afL
-aLm
+aat
 aat
 aat
 alm
@@ -103174,7 +103221,7 @@ bvb
 aLl
 bvb
 afL
-aLm
+aat
 aat
 aat
 bjB
@@ -103205,9 +103252,9 @@ ads
 bvb
 xLg
 cli
-xLg
+onm
 cli
-xLg
+onm
 cli
 xLg
 bvb
@@ -104233,9 +104280,9 @@ ads
 bvb
 xLg
 cli
-xLg
+oZj
 cli
-xLg
+oZj
 cli
 xLg
 bvb
@@ -106282,11 +106329,11 @@ aae
 aae
 aae
 bnB
+bqd
 cli
 cli
 cli
-cli
-cli
+iua
 bvb
 aae
 aae
@@ -106796,11 +106843,11 @@ aae
 aae
 aae
 bvb
+bqd
 cli
 cli
 cli
-cli
-cli
+iua
 bnB
 aae
 aae
@@ -107310,11 +107357,11 @@ aae
 aae
 aae
 bnB
+bqd
 cli
 cli
 cli
-cli
-cli
+iua
 bnB
 aae
 aae
