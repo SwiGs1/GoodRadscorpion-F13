@@ -1026,7 +1026,11 @@
 /turf/closed/wall/f13/wood/house/broken,
 /area/f13/raiders)
 "adp" = (
-/turf/closed/wall/f13/wood,
+/obj/structure/barricade/sandbags,
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "verticalinnermain2bottom";
+	tag = "icon-verticalinnermain2bottom"
+	},
 /area/f13/wasteland)
 "adq" = (
 /obj/effect/landmark/start/f13/ncrranger,
@@ -8246,7 +8250,7 @@
 	icon_state = "bluedirtychess2";
 	tag = "icon-bluedirtychess2"
 	},
-/area/f13/wasteland)
+/area/f13/ncr)
 "axT" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/reagent_dispensers/water_cooler,
@@ -8410,11 +8414,12 @@
 	},
 /area/f13/wasteland)
 "ayq" = (
-/obj/item/key,
-/turf/closed/wall/r_wall/f13composite{
-	icon_state = "ruins2"
+/obj/structure/barricade/sandbags,
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "verticalrightborderleft2bottom";
+	tag = "icon-verticalrightborderleft2bottom"
 	},
-/area/f13/ncr)
+/area/f13/wasteland)
 "ayr" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small{
@@ -12690,17 +12695,10 @@
 /turf/open/floor/f13/wood,
 /area/f13/ncr)
 "aJO" = (
-/obj/structure/headpike,
+/obj/structure/barricade/sandbags,
 /turf/open/indestructible/ground/outside/sidewalk{
-	dir = 5;
-	icon_state = "outerpavement"
-	},
-/area/f13/wasteland)
-"aJP" = (
-/obj/structure/headpike,
-/turf/open/indestructible/ground/outside/sidewalk{
-	dir = 9;
-	icon_state = "outerpavement"
+	icon_state = "verticalrightborderright3";
+	tag = "icon-verticalrightborderright3"
 	},
 /area/f13/wasteland)
 "aJQ" = (
@@ -12977,24 +12975,10 @@
 	icon_state = "outerpavement"
 	},
 /area/f13/wasteland)
-"aKE" = (
-/obj/structure/headpike,
-/turf/open/indestructible/ground/outside/sidewalk{
-	dir = 4;
-	icon_state = "outerpavement"
-	},
-/area/f13/wasteland)
 "aKF" = (
 /obj/item/reagent_containers/glass/bucket/wooden,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/farm)
-"aKG" = (
-/obj/structure/headpike,
-/turf/open/indestructible/ground/outside/sidewalk{
-	dir = 8;
-	icon_state = "outerpavement"
-	},
-/area/f13/wasteland)
 "aKH" = (
 /obj/structure/rack,
 /obj/item/seeds/prickly,
@@ -14701,13 +14685,6 @@
 	tag = "icon-horizontalinnermain2"
 	},
 /area/f13/wasteland)
-"aPO" = (
-/obj/structure/barricade/sandbags,
-/turf/open/indestructible/ground/outside/sidewalk{
-	icon_state = "verticalleftborderleftbottom";
-	tag = "icon-verticalleftborderleftbottom"
-	},
-/area/f13/wasteland)
 "aPQ" = (
 /obj/structure/tires,
 /turf/open/indestructible/ground/outside/desert,
@@ -15159,14 +15136,6 @@
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "horizontaltopbordertop0";
 	tag = "icon-horizontaltopbordertop0"
-	},
-/area/f13/wasteland)
-"aRt" = (
-/obj/structure/table/wood/settler,
-/obj/item/folder/red,
-/turf/open/indestructible/ground/outside/road{
-	icon_state = "verticalleftborderrightbottom";
-	tag = "icon-verticalleftborderrightbottom"
 	},
 /area/f13/wasteland)
 "aRv" = (
@@ -15772,15 +15741,6 @@
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier2,
 /turf/open/floor/f13/wood,
 /area/f13/raiders)
-"aTs" = (
-/obj/structure/table/wood/settler,
-/obj/item/paper_bin,
-/obj/item/pen/red,
-/turf/open/indestructible/ground/outside/road{
-	icon_state = "verticalleftborderrightbottom";
-	tag = "icon-verticalleftborderrightbottom"
-	},
-/area/f13/wasteland)
 "aTt" = (
 /obj/structure/table/wood,
 /obj/item/paper_bin,
@@ -16317,14 +16277,6 @@
 	},
 /turf/open/floor/wood/f13,
 /area/f13/raiders)
-"aVi" = (
-/obj/structure/table/wood/settler,
-/obj/item/folder/blue,
-/turf/open/indestructible/ground/outside/road{
-	icon_state = "verticalleftborderrightbottom";
-	tag = "icon-verticalleftborderrightbottom"
-	},
-/area/f13/wasteland)
 "aVj" = (
 /turf/open/floor/f13/wood,
 /area/f13/raiders)
@@ -16420,10 +16372,6 @@
 /obj/item/reagent_containers/food/drinks/beer,
 /turf/open/floor/f13/wood,
 /area/f13/raiders)
-"aVA" = (
-/obj/structure/barricade/bars,
-/turf/open/indestructible/ground/outside/desert,
-/area/f13/wasteland)
 "aVC" = (
 /obj/structure/bed,
 /obj/item/bedsheet{
@@ -17742,13 +17690,6 @@
 "aZV" = (
 /turf/open/floor/wood/f13/old/ruinedcornerendtr,
 /area/f13/bar)
-"aZY" = (
-/obj/structure/simple_door/metal/barred,
-/turf/open/indestructible/ground/outside/desert,
-/area/f13/wasteland)
-"aZZ" = (
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/wasteland)
 "bab" = (
 /obj/effect/spawner/lootdrop/f13/alcoholspawner,
 /turf/open/floor/f13{
@@ -17814,10 +17755,6 @@
 "bal" = (
 /obj/structure/fermenting_barrel,
 /turf/open/indestructible/ground/outside/dirt,
-/area/f13/wasteland)
-"bam" = (
-/obj/structure/simple_door/wood,
-/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "baq" = (
 /obj/structure/simple_door/metal/store{
@@ -18332,13 +18269,6 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/building)
-"bbI" = (
-/obj/structure/barricade/sandbags,
-/turf/open/indestructible/ground/outside/sidewalk{
-	icon_state = "verticalrightborderrightbottom";
-	tag = "icon-verticalrightborderrightbottom"
-	},
-/area/f13/wasteland)
 "bbJ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table/wood/settler,
@@ -18434,21 +18364,6 @@
 	dir = 1;
 	icon_state = "outerpavementcorner"
 	},
-/area/f13/wasteland)
-"bbV" = (
-/obj/structure/chair/wood{
-	dir = 1;
-	icon_state = "wooden_chair_settler";
-	tag = "icon-wooden_chair_settler (NORTH)"
-	},
-/turf/open/indestructible/ground/outside/dirt{
-	icon_state = "dirt";
-	tag = "icon-dirt"
-	},
-/area/f13/wasteland)
-"bbW" = (
-/obj/structure/headpike,
-/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "bbX" = (
 /obj/structure/table/wood,
@@ -18724,10 +18639,6 @@
 	tag = "icon-dirt (WEST)"
 	},
 /area/f13/wasteland)
-"bcF" = (
-/obj/structure/simple_door/room,
-/turf/open/indestructible/ground/outside/desert,
-/area/f13/building)
 "bcH" = (
 /mob/living/simple_animal/hostile/gecko,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -60344,17 +60255,17 @@ aat
 aat
 aat
 aat
-bcT
-axH
-bcT
-axH
-bcT
-axH
-bcT
-axH
-bcT
-axH
-bcT
+bDY
+aZB
+bDY
+aZB
+bDY
+aZB
+bDY
+aZB
+bDY
+aZB
+bDY
 aat
 avd
 aZD
@@ -60601,17 +60512,17 @@ aat
 aat
 aat
 aat
-bcT
+bDY
 axS
-bcT
+bDY
 axS
-bcT
+bDY
 axS
-bcT
+bDY
 axS
-bcT
+bDY
 axS
-bcT
+bDY
 aat
 avd
 aJx
@@ -60858,17 +60769,17 @@ aat
 aat
 aat
 aat
-bcT
-bcT
-bcT
-bcT
-bcT
-bcT
-bcT
-bcT
-bcT
-bcT
-bcT
+bDY
+bDY
+bDY
+bDY
+bDY
+bDY
+bDY
+bDY
+bDY
+bDY
+bDY
 aat
 aoU
 avd
@@ -61889,7 +61800,7 @@ aae
 aae
 aae
 aae
-ayq
+axw
 atA
 atA
 atA
@@ -80837,7 +80748,7 @@ aat
 aat
 aat
 agk
-bcF
+ang
 agk
 agk
 agk
@@ -95733,7 +95644,7 @@ aaa
 aaa
 aaa
 aaa
-aaa
+aae
 aae
 aat
 aat
@@ -100346,8 +100257,8 @@ bgL
 aat
 aat
 aat
-alm
-alm
+aat
+aat
 aat
 jJr
 aae
@@ -100592,17 +100503,17 @@ abS
 abS
 abS
 aeV
-aJO
+azr
 aJX
-aKE
+aBO
 aJX
-aKE
+aBO
 aJX
-aKE
 aBO
 aBO
 aBO
 aBO
+bpq
 aLn
 aat
 aat
@@ -100859,8 +100770,8 @@ acG
 acG
 acG
 acG
-aeQ
-aPO
+aXT
+azs
 aii
 bgA
 bgA
@@ -101116,8 +101027,8 @@ ahb
 ahb
 ahb
 ahb
-afl
-aRt
+aUI
+aFu
 anl
 acv
 acv
@@ -101373,9 +101284,9 @@ akG
 akG
 ahb
 ahb
-akG
-aTs
-bbV
+adp
+aFu
+anl
 acv
 acv
 acv
@@ -101630,8 +101541,8 @@ ahb
 akG
 akG
 akG
-age
-aVi
+ayq
+aFu
 anl
 acv
 acv
@@ -101887,8 +101798,8 @@ axb
 axb
 axb
 axb
-aMG
-bbI
+aJO
+apr
 afw
 bvT
 bvT
@@ -102134,17 +102045,17 @@ abS
 abS
 abT
 aeV
-aJP
+aiq
 aKD
-aKG
+adf
 aKD
-aKG
+adf
 aKD
-aKG
 adf
 adf
 adf
 adf
+aiY
 bbU
 aat
 aat
@@ -102402,8 +102313,8 @@ afL
 aat
 aat
 aat
-alm
-alm
+aat
+aat
 aat
 aPQ
 aae
@@ -104689,8 +104600,8 @@ aat
 aat
 aat
 aat
-aVA
-adp
+aat
+aat
 aat
 aat
 aat
@@ -104716,7 +104627,7 @@ afL
 aat
 aat
 aat
-bbW
+aat
 aae
 aae
 aae
@@ -104946,8 +104857,8 @@ aat
 aat
 aat
 aat
-aZY
-bam
+aat
+aat
 aat
 aat
 aat
@@ -104974,7 +104885,7 @@ aat
 aat
 aat
 bqC
-aat
+aae
 aae
 aae
 aae
@@ -105203,8 +105114,8 @@ aat
 aat
 aat
 aat
-aZZ
-acv
+aat
+aat
 aat
 aat
 aat
@@ -105231,8 +105142,8 @@ aat
 aat
 aat
 aat
-aat
-aat
+aae
+aae
 aae
 aae
 aae
@@ -105489,8 +105400,8 @@ aat
 aat
 aat
 aat
-aat
-aat
+aae
+aae
 aae
 aae
 aae
@@ -105747,8 +105658,8 @@ aat
 aat
 aat
 aat
-aat
-aat
+aae
+aae
 aae
 aae
 aae
@@ -106005,8 +105916,8 @@ aat
 aat
 aat
 aat
-aat
-aat
+aae
+aae
 aae
 aae
 aae
@@ -106262,9 +106173,9 @@ aat
 aat
 aat
 aat
-aat
-aat
-aat
+aae
+aae
+aae
 aae
 aae
 aae
@@ -106518,11 +106429,11 @@ aat
 aat
 aat
 aat
-aat
-aat
-aat
-aat
-aat
+aae
+aae
+aae
+aae
+aae
 aae
 aae
 aae
@@ -106774,11 +106685,11 @@ aat
 aat
 aat
 aat
-aat
-aat
-aat
-aat
-aat
+aae
+aae
+aae
+aae
+aae
 aae
 aae
 aae
@@ -107005,8 +106916,8 @@ aae
 aae
 aae
 aae
-gQz
-gQz
+aat
+aat
 agl
 aJz
 abS
@@ -107263,7 +107174,7 @@ aae
 aae
 aae
 aae
-gQz
+aat
 agl
 adH
 abS
