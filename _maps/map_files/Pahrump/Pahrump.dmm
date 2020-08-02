@@ -5051,7 +5051,7 @@
 	},
 /area/f13/ncr)
 "aoU" = (
-/turf/open/indestructible/ground/outside/desert,
+/turf/closed/wall/f13/wood/house,
 /turf/closed/wall/f13/wood/house,
 /area/f13/ncr)
 "aoV" = (
@@ -6406,7 +6406,9 @@
 	},
 /area/f13/ncr)
 "asZ" = (
-/turf/open/indestructible/ground/outside/desert,
+/turf/closed/wall/r_wall/f13composite{
+	icon_state = "ruins3"
+	},
 /turf/closed/wall/r_wall/f13composite{
 	icon_state = "ruins3"
 	},
@@ -6608,7 +6610,7 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "atz" = (
-/turf/open/indestructible/ground/outside/desert,
+/turf/closed/wall/r_wall/rust,
 /turf/closed/wall/r_wall/rust,
 /area/f13/ncr)
 "atA" = (
@@ -8988,13 +8990,6 @@
 	icon_state = "horizontalinnermain0"
 	},
 /area/f13/wasteland)
-"azS" = (
-/obj/structure/fence/corner{
-	dir = 9;
-	icon_state = "corner"
-	},
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "azT" = (
 /obj/structure/wreck/trash/two_barrels,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -26881,10 +26876,6 @@
 /obj/structure/barricade/bars,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
-"bHJ" = (
-/obj/structure/fence,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "bHN" = (
 /obj/structure/rack,
 /obj/item/pda,
@@ -36428,12 +36419,6 @@
 	icon_state = "darkdirty"
 	},
 /area/f13/building)
-"cEu" = (
-/obj/item/twohanded/required/kirbyplants{
-	icon_state = "plant-03"
-	},
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "cFR" = (
 /mob/living/simple_animal/hostile/bloatfly,
 /turf/open/indestructible/ground/inside/mountain,
@@ -36643,12 +36628,6 @@
 	icon_state = "dirt"
 	},
 /area/f13/wasteland)
-"diF" = (
-/obj/item/twohanded/required/kirbyplants{
-	icon_state = "plant-04"
-	},
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "djA" = (
 /mob/living/simple_animal/hostile/radroach,
 /turf/open/floor/f13{
@@ -36750,10 +36729,6 @@
 /obj/item/trash/f13/instamash,
 /turf/open/floor/f13/wood,
 /area/f13/city)
-"dJB" = (
-/obj/machinery/iv_drip,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "dJF" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/trash/f13/steak,
@@ -36775,10 +36750,6 @@
 /obj/item/trash/f13/instamash,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/city)
-"dLj" = (
-/obj/item/storage/backpack/duffelbag/med/surgery,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "dNH" = (
 /obj/structure/simple_door/metal/store,
 /obj/effect/decal/cleanable/dirt,
@@ -37324,10 +37295,6 @@
 	tag = "icon-housewood2"
 	},
 /area/f13/village)
-"fLf" = (
-/obj/effect/turf_decal/stripes/box,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "fMc" = (
 /obj/structure/rack,
 /obj/item/gun/ballistic/revolver/detective,
@@ -37516,12 +37483,6 @@
 	tag = "icon-dirt (WEST)"
 	},
 /area/f13/wasteland)
-"gor" = (
-/obj/item/twohanded/required/kirbyplants{
-	icon_state = "plant-08"
-	},
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "gpq" = (
 /obj/structure/chair{
 	dir = 4;
@@ -37690,18 +37651,6 @@
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/legion)
-"gPU" = (
-/obj/machinery/door/poddoor/shutters/preopen{
-	id = 100;
-	name = "Surgery Shutters"
-	},
-/obj/machinery/button/door{
-	id = 100;
-	name = "Surgery Shutters";
-	pixel_x = 30
-	},
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "gQz" = (
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/tunnel)
@@ -37902,12 +37851,6 @@
 	icon_state = "darkdirty"
 	},
 /area/f13/building)
-"hsh" = (
-/obj/item/twohanded/required/kirbyplants{
-	icon_state = "applebush"
-	},
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "htv" = (
 /obj/structure/rack,
 /obj/item/wrench,
@@ -38052,15 +37995,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
 /area/f13/legion)
-"hXq" = (
-/obj/item/radio/intercom{
-	frequency = 1361;
-	name = "Vault Intercom";
-	pixel_x = -32
-	},
-/obj/item/gun/medbeam,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "hYY" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small{
@@ -38166,13 +38100,6 @@
 /obj/structure/chair/wood/fancy,
 /turf/open/floor/wood/f13/carpet,
 /area/f13/city)
-"ioI" = (
-/obj/machinery/sleeper{
-	dir = 8;
-	icon_state = "sleeper"
-	},
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "iqk" = (
 /obj/effect/decal/cleanable/ash/large,
 /turf/open/indestructible/ground/outside/desert,
@@ -38181,12 +38108,6 @@
 /obj/item/trash/f13/cram_large,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
-"ith" = (
-/obj/item/twohanded/required/kirbyplants{
-	icon_state = "plant-22"
-	},
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "itQ" = (
 /obj/structure/simple_door/wood,
 /obj/effect/decal/cleanable/dirt,
@@ -38222,10 +38143,6 @@
 	tag = "icon-bluedirtychess2"
 	},
 /area/f13/building)
-"iBf" = (
-/obj/structure/grille,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "iBm" = (
 /obj/structure/table/wood,
 /obj/effect/decal/cleanable/dirt,
@@ -38584,10 +38501,6 @@
 "jNm" = (
 /turf/closed/indestructible/f13/matrix,
 /area/f13/brotherhood)
-"jNy" = (
-/obj/structure/bed,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "jON" = (
 /obj/machinery/vending/coffee,
 /obj/effect/decal/cleanable/dirt,
@@ -38692,13 +38605,6 @@
 	icon_state = "bar"
 	},
 /area/f13/building)
-"kiw" = (
-/obj/effect/turf_decal/stripes/red/line{
-	dir = 1;
-	icon_state = "warningline_red"
-	},
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "kiN" = (
 /obj/structure/sink{
 	dir = 1;
@@ -38712,12 +38618,6 @@
 	icon_state = "whitegreenrustychess"
 	},
 /area/f13/building)
-"kjl" = (
-/obj/structure/chair/stool/f13stool{
-	name = "stool"
-	},
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "kjW" = (
 /obj/structure/sign/poster/official/work_for_a_future,
 /turf/closed/wall/f13/store,
@@ -38777,10 +38677,6 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/building)
-"kBe" = (
-/obj/machinery/autolathe/ammobench,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "kBw" = (
 /obj/structure/closet/fridge,
 /obj/item/reagent_containers/food/snacks/f13/crispysquirrel,
@@ -39094,12 +38990,6 @@
 	},
 /turf/open/floor/f13/wood,
 /area/f13/city)
-"lDU" = (
-/obj/item/twohanded/required/kirbyplants{
-	icon_state = "plant-05"
-	},
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "lFo" = (
 /obj/structure/campfire/stove,
 /turf/open/floor/f13/wood,
@@ -39280,12 +39170,6 @@
 	},
 /turf/open/floor/f13/wood,
 /area/f13/city)
-"lZj" = (
-/obj/item/twohanded/required/kirbyplants{
-	icon_state = "plant-24"
-	},
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "mco" = (
 /obj/structure/table/wood/fancy/black,
 /obj/item/instrument/bikehorn,
@@ -39303,12 +39187,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
 /area/f13/city)
-"mgR" = (
-/obj/item/twohanded/required/kirbyplants{
-	icon_state = "plant-13"
-	},
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "mjU" = (
 /obj/structure/table/wood/fancy,
 /obj/item/reagent_containers/food/drinks/bottle/whiskey,
@@ -39443,10 +39321,6 @@
 	tag = "icon-bluedirtychess2"
 	},
 /area/f13/building)
-"mHW" = (
-/obj/effect/turf_decal/bot,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "mIN" = (
 /obj/structure/campfire/barrel,
 /turf/open/indestructible/ground/outside/dirt{
@@ -39588,14 +39462,6 @@
 /obj/item/claymore/machete/pipe/pan,
 /turf/open/floor/f13/wood,
 /area/f13/city)
-"nfS" = (
-/obj/machinery/power/apc{
-	dir = 8;
-	name = "Garbage Disposal APC";
-	pixel_x = -30
-	},
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "nfU" = (
 /obj/structure/chair/f13chair2,
 /turf/open/floor/f13/wood,
@@ -39636,13 +39502,6 @@
 	tag = "icon-dirt (WEST)"
 	},
 /area/f13/wasteland)
-"nnr" = (
-/obj/machinery/door/airlock/security{
-	name = "Brig";
-	req_access_txt = "1"
-	},
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "npf" = (
 /obj/structure/table/wood/settler,
 /obj/effect/decal/cleanable/dirt,
@@ -39722,13 +39581,6 @@
 	tag = "icon-floorrusty"
 	},
 /area/f13/city)
-"nHb" = (
-/obj/machinery/door/poddoor/shutters/preopen{
-	id = 102;
-	name = "Vault Door Security Checkpoint"
-	},
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "nIz" = (
 /mob/living/simple_animal/hostile/bloatfly,
 /turf/open/indestructible/ground/outside/dirt{
@@ -39889,12 +39741,6 @@
 	tag = "icon-dirt"
 	},
 /area/f13/wasteland)
-"oqt" = (
-/obj/machinery/computer/security{
-	network = list("vault")
-	},
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "orp" = (
 /obj/structure/closet/cabinet,
 /obj/item/clothing/shoes/laceup,
@@ -40003,13 +39849,6 @@
 /obj/effect/spawner/lootdrop/f13/armor/random_high,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
-"oJM" = (
-/obj/machinery/camera/autoname{
-	dir = 10;
-	icon_state = "camera"
-	},
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "oKF" = (
 /obj/structure/chair/office/dark{
 	dir = 1
@@ -40021,16 +39860,6 @@
 /obj/structure/disposalpipe/junction/flip,
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/ruins)
-"oLq" = (
-/obj/item/storage/box/masks,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
-"oLy" = (
-/obj/item/twohanded/required/kirbyplants{
-	icon_state = "plant-16"
-	},
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "oLQ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/rack,
@@ -40071,13 +39900,6 @@
 /obj/item/reagent_containers/food/condiment/saltshaker,
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
-"oYt" = (
-/obj/machinery/camera/autoname{
-	dir = 9;
-	icon_state = "camera"
-	},
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "oZi" = (
 /mob/living/simple_animal/hostile/lizard{
 	desc = "Herbivorous reptiles which can range from three to six feet in length, and inhabit tropical and desert biomes.";
@@ -40154,12 +39976,6 @@
 /obj/item/bedsheet/green,
 /turf/open/floor/f13/wood,
 /area/f13/city)
-"piV" = (
-/obj/item/twohanded/required/kirbyplants{
-	icon_state = "plant-11"
-	},
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "plq" = (
 /obj/structure/chair/office/dark{
 	dir = 1;
@@ -40359,10 +40175,6 @@
 /obj/structure/wreck/trash/autoshaft,
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
-"pUA" = (
-/obj/structure/guncase,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "pVe" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -40410,12 +40222,6 @@
 /obj/effect/decal/cleanable/blood/old{
 	icon_state = "gibbear1";
 	tag = "icon-gibbear1"
-	},
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
-"qhQ" = (
-/obj/item/twohanded/required/kirbyplants{
-	icon_state = "plant-14"
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
@@ -40486,10 +40292,6 @@
 /mob/living/simple_animal/pet/fox,
 /turf/open/floor/wood/f13/carpet,
 /area/f13/city)
-"qtM" = (
-/obj/structure/closet/crate/freezer/surplus_limbs,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "qtN" = (
 /obj/machinery/workbench,
 /obj/machinery/light/small{
@@ -40532,10 +40334,6 @@
 /obj/item/trash/f13/tin,
 /turf/open/floor/f13/wood,
 /area/f13/city)
-"qzg" = (
-/obj/structure/table/optable,
-/turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite/rarecyan,
-/area/f13/caves)
 "qzC" = (
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalleftborderright0";
@@ -40611,10 +40409,6 @@
 /obj/machinery/light/small,
 /turf/open/floor/f13/wood,
 /area/f13/legion)
-"qKX" = (
-/obj/item/gun/ballistic/shotgun/riot,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "qMz" = (
 /obj/machinery/light/small,
 /obj/structure/table/wood/settler,
@@ -40822,10 +40616,6 @@
 	icon_state = "darkdirty"
 	},
 /area/f13/building)
-"rwy" = (
-/obj/effect/turf_decal/delivery,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "rxB" = (
 /obj/structure/bed/mattress{
 	icon_state = "mattress2"
@@ -40885,7 +40675,6 @@
 /area/f13/city)
 "rIq" = (
 /obj/effect/decal/cleanable/cobweb/cobweb2,
-/obj/item/gun/ballistic/shotgun/riot,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "rJd" = (
@@ -41021,13 +40810,6 @@
 	},
 /turf/open/floor/f13,
 /area/f13/city)
-"rYM" = (
-/obj/structure/sink{
-	dir = 4;
-	pixel_x = 11
-	},
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "sas" = (
 /obj/item/reagent_containers/glass/bucket/wooden,
 /turf/open/indestructible/ground/outside/dirt,
@@ -41135,10 +40917,6 @@
 	tag = "icon-housewood2"
 	},
 /area/f13/village)
-"sug" = (
-/obj/machinery/computer/operating,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "sxe" = (
 /obj/effect/decal/cleanable/blood/old{
 	icon_state = "gibmid1";
@@ -41161,10 +40939,6 @@
 /obj/structure/chair/f13chair1,
 /turf/open/floor/f13/wood,
 /area/f13/city)
-"syo" = (
-/obj/item/twohanded/required/kirbyplants/dead,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "syO" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -41370,7 +41144,6 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/obj/item/storage/box/gloves,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "tbV" = (
@@ -41447,13 +41220,6 @@
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/legion)
-"ttF" = (
-/obj/machinery/power/apc{
-	name = "Surgery APC";
-	pixel_y = -25
-	},
-/turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
-/area/f13/caves)
 "ttG" = (
 /obj/item/picket_sign,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -41474,10 +41240,6 @@
 /obj/item/paperslip,
 /turf/open/floor/wood/f13/old,
 /area/f13/building)
-"twZ" = (
-/obj/item/stock_parts/cell,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "tyu" = (
 /obj/structure/table,
 /obj/machinery/camera/autoname{
@@ -41520,12 +41282,6 @@
 	},
 /turf/open/floor/f13/wood,
 /area/f13/city)
-"tCH" = (
-/obj/item/twohanded/required/kirbyplants{
-	icon_state = "plant-06"
-	},
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "tDg" = (
 /obj/machinery/door/airlock/hatch{
 	locked = 1
@@ -41753,12 +41509,6 @@
 	icon_state = "bar"
 	},
 /area/f13/building)
-"udq" = (
-/obj/structure/cable{
-	icon_state = "0-8"
-	},
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "udD" = (
 /obj/structure/displaycase{
 	start_showpiece_type = /obj/item/reagent_containers/food/drinks/flask/vault113
@@ -42124,13 +41874,6 @@
 	},
 /turf/open/floor/f13/wood,
 /area/f13/city)
-"viG" = (
-/obj/effect/turf_decal/stripes/line{
-	dir = 1;
-	icon_state = "warningline"
-	},
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "vjc" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/closet/fridge,
@@ -42270,20 +42013,10 @@
 /obj/item/claymore/machete/pipe/pan,
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
-"vCn" = (
-/obj/item/twohanded/required/kirbyplants{
-	icon_state = "plant-20"
-	},
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "vEm" = (
 /obj/structure/disposalpipe/segment,
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/ruins)
-"vEF" = (
-/obj/machinery/doorButtons/vaultButton,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "vET" = (
 /obj/structure/rack,
 /obj/item/screwdriver,
@@ -42374,10 +42107,6 @@
 /obj/item/pickaxe,
 /turf/open/floor/f13/wood,
 /area/f13/tunnel)
-"vQS" = (
-/obj/structure/window/reinforced/fulltile,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "vTc" = (
 /obj/structure/table/wood/settler,
 /obj/effect/decal/cleanable/dirt,
@@ -42591,10 +42320,6 @@
 	icon_state = "dirt"
 	},
 /area/f13/city)
-"wAs" = (
-/obj/item/roller,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "wAL" = (
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalrightborderleft0";
@@ -42608,12 +42333,6 @@
 "wGH" = (
 /obj/machinery/door/airlock/grunge/abandoned{
 	locked = 1
-	},
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
-"wGW" = (
-/obj/item/twohanded/required/kirbyplants{
-	icon_state = "plant-18"
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
@@ -42722,10 +42441,6 @@
 /mob/living/simple_animal/hostile/bloatfly,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
-"wUh" = (
-/obj/item/twohanded/required/kirbyplants,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "wVN" = (
 /obj/structure/rack,
 /obj/effect/decal/cleanable/dirt,
@@ -42776,10 +42491,6 @@
 	tag = "icon-bluedirtychess2"
 	},
 /area/f13/city)
-"xav" = (
-/obj/structure/closet/crate/freezer/blood,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "xba" = (
 /obj/structure/fermenting_barrel,
 /turf/open/indestructible/ground/outside/desert,
@@ -42848,12 +42559,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
 /area/f13/ncr)
-"xjb" = (
-/obj/item/twohanded/required/kirbyplants{
-	icon_state = "plant-10"
-	},
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "xmV" = (
 /obj/structure/sign/poster/prewar/corporate_espionage,
 /turf/closed/wall/rust,
@@ -42981,12 +42686,6 @@
 	},
 /turf/open/floor/wood/f13/carpet,
 /area/f13/city)
-"xIZ" = (
-/obj/machinery/computer/med_data{
-	dir = 8
-	},
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "xLg" = (
 /obj/structure/closet/cabinet,
 /obj/effect/spawner/lootdrop/f13/cash_legion_low,
@@ -43050,22 +42749,10 @@
 /obj/item/cigbutt,
 /turf/closed/mineral/random/low_chance,
 /area/f13/citycaves)
-"xUz" = (
-/obj/effect/turf_decal/caution/stand_clear,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "xUI" = (
 /obj/structure/reagent_dispensers/compostbin,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
-"xVg" = (
-/obj/structure/sign/departments/medbay/alt,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
-"xXW" = (
-/obj/item/storage/box/bodybags,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "xYb" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/closet/crate/freezer/blood,
@@ -43124,12 +42811,6 @@
 /obj/item/trash/plate,
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
-"ylh" = (
-/obj/item/twohanded/required/kirbyplants{
-	icon_state = "plant-21"
-	},
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "ylC" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/landmark/start/f13/settler,
@@ -115102,8 +114783,8 @@ cjk
 hMD
 cjk
 aaB
-bHJ
-azS
+aaB
+aaB
 aaB
 aaB
 aaB
@@ -115358,9 +115039,9 @@ ciR
 fWt
 cjk
 aae
-jNy
 aaB
-aWn
+aaB
+aaB
 aaB
 aaB
 aaB
@@ -115616,7 +115297,7 @@ cjh
 cjk
 aae
 bLL
-xUz
+aaB
 aaB
 aaB
 aaB
@@ -115872,9 +115553,9 @@ ciR
 wKm
 cjk
 aae
-oYt
-kiw
-bZm
+aaB
+aaB
+aaB
 aaB
 aaB
 aaB
@@ -116131,7 +115812,7 @@ cjk
 aae
 aaB
 aaB
-kjl
+aaB
 aaB
 aaB
 aaB
@@ -116643,7 +116324,7 @@ cjk
 cjk
 cjk
 aae
-qKX
+aaB
 aaB
 aaB
 aaB
@@ -116901,11 +116582,11 @@ cjk
 aae
 aae
 rIq
-fLf
-vQS
-wUh
-lDU
-mgR
+aaB
+aaB
+aaB
+aaB
+aaB
 aaB
 aae
 aaa
@@ -117158,11 +116839,11 @@ cjk
 aae
 aae
 aaB
-rwy
-iBf
-hsh
-tCH
-piV
+aaB
+aaB
+aaB
+aaB
+aaB
 aaB
 aae
 aaa
@@ -117414,12 +117095,12 @@ cHh
 cjk
 aae
 aae
-bLL
-mHW
-bLL
-cEu
-gor
-qhQ
+aaB
+aaB
+aaB
+aaB
+aaB
+aaB
 aaB
 aae
 aaa
@@ -117671,12 +117352,12 @@ cjk
 cjk
 aae
 aae
-bZm
-nHb
-udq
-diF
-xjb
-oLy
+aaB
+aaB
+aaB
+aaB
+aaB
+aaB
 aaB
 aae
 aaa
@@ -117928,12 +117609,12 @@ hqy
 cjk
 aae
 aae
-vEF
 aaB
-pUA
-wGW
-vCn
-ylh
+aaB
+aaB
+aaB
+aaB
+aaB
 aaB
 aae
 aaa
@@ -118185,12 +117866,12 @@ pSt
 cjk
 aae
 aae
-oqt
 aaB
-nnr
-ith
-lZj
-syo
+aaB
+aaB
+aaB
+aaB
+aaB
 aaB
 aae
 aaa
@@ -118444,7 +118125,7 @@ aae
 aae
 aaB
 bLL
-kBe
+aaB
 aaB
 aaB
 aaB
@@ -118699,8 +118380,8 @@ aae
 aae
 aae
 aae
-dLj
-oJM
+aaB
+aaB
 aaB
 aaB
 aaB
@@ -118957,8 +118638,8 @@ aae
 aae
 aae
 tbH
-qzg
-oLq
+aaB
+aaB
 aaB
 aaB
 aaB
@@ -119214,8 +118895,8 @@ aae
 aae
 aae
 bLL
-dJB
-xXW
+aaB
+aaB
 aaB
 aaB
 aaB
@@ -119470,9 +119151,9 @@ aae
 aae
 aae
 aae
-sug
-xav
-bZm
+aaB
+aaB
+aaB
 aaB
 aaB
 aaB
@@ -119728,7 +119409,7 @@ aae
 aae
 aae
 aaB
-qtM
+aaB
 bLL
 aaB
 aaB
@@ -119985,7 +119666,7 @@ aae
 aae
 aae
 aaB
-ttF
+aaB
 aaB
 aaB
 aaB
@@ -120241,8 +119922,8 @@ aae
 aae
 aae
 aae
-rYM
-ioI
+aaB
+aaB
 aaB
 aaB
 aaB
@@ -120500,8 +120181,8 @@ aae
 aae
 aaB
 aaB
-hXq
-bZm
+aaB
+aaB
 aaB
 aaB
 aaB
@@ -120755,10 +120436,10 @@ aae
 aae
 aae
 aae
-xIZ
+aaB
 bLL
-wAs
-xVg
+aaB
+aaB
 aaB
 aaB
 aaB
@@ -121273,7 +120954,7 @@ aae
 aaB
 aaB
 bLL
-nfS
+aaB
 aaB
 aaB
 aae
@@ -121528,7 +121209,7 @@ aae
 aae
 aae
 aaB
-viG
+aaB
 aaB
 aaB
 aaB
@@ -121784,8 +121465,8 @@ aae
 aae
 aae
 aae
-bZm
-gPU
+aaB
+aaB
 aaB
 aaB
 aaB
@@ -123585,7 +123266,7 @@ aae
 aae
 aae
 aae
-twZ
+aaB
 aaB
 aaB
 aae
