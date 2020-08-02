@@ -1587,11 +1587,20 @@
 	category = CAT_MISC
 
 /datum/crafting_recipe/slavecollar
-	name = "Slave Collar"
+	name = "Shock Collar"
 	result = /obj/item/assembly/signaler/electropack/shockcollar
 	reqs = list(/obj/item/clothing/neck/petcollar = 1,
 				/obj/item/assembly/signaler = 1,
 				/obj/item/assembly/igniter =1)
+	time = 40
+	category = CAT_MISC
+
+/datum/crafting_recipe/explosivecollar
+	name = "Explosive Collar"
+	result = /obj/item/assembly/signaler/electropack/boomcollar
+	reqs = list(/obj/item/clothing/neck/petcollar = 1,
+				/obj/item/assembly/signaler = 1,
+				/obj/item/grenade/iedcasing =1)
 	time = 40
 	category = CAT_MISC
 

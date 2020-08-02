@@ -443,16 +443,26 @@
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 20, "fire" = 20, "acid" = 40)
 	can_adjust = 0
 
-//Commies
+//Commies and other Stalkeros' stuff
 
 /obj/item/clothing/under/f13/ps5m
 	name = "sovkras uniform"
-	desc = "A standard Sovkras uniform.<br>The outer layer is made of a sturdy material designed to withstand the harsh conditions of the wasteland."
+	desc = "A standard Sovkras uniform.<br>The outer layer is made of a retardant material designed to withstand the harsh conditions of the wasteland."
 	icon_state = "ps5m"
 	item_state = "bl_suit"
 	item_color = "ps5m"
 	body_parts_covered = CHEST|GROIN|LEGS|ARMS
-	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 00, "bio" = 20, "rad" = 20, "fire" = 20, "acid" = 20)
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 30, "bomb" = 0, "bio" = 30, "rad" = 40, "fire" = 45, "acid" = 50)
+	can_adjust = 0
+
+/obj/item/clothing/under/f13/scavenger
+	name = "scavenger jumpsuit"
+	desc = "A bodysuit of twin-layered rubberized cloth with plexiglass lining. the suit enjoys great popularity due to its low cost and modification potential. Comes with no built-in artifact containers, as it's not the right universe."
+	icon_state = "scavenger"
+	item_state = "bl_suit"
+	item_color = "scavenger"
+	body_parts_covered = CHEST|GROIN|LEGS|ARMS
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 25, "bomb" = 0, "bio" = 25, "rad" = 35, "fire" = 35, "acid" = 40)
 	can_adjust = 0
 
 //Fallout 13 general clothing directory

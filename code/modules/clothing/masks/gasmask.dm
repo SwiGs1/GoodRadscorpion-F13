@@ -11,6 +11,17 @@
 	flags_cover = MASKCOVERSEYES | MASKCOVERSMOUTH
 	resistance_flags = NONE
 
+/obj/item/clothing/mask/respirator
+	name = "respirator"
+	desc = "A regular rubberized fabric respirator, used for filtering air for radioactive particles and poisonous substances. Does not provide any physical protection. Commonly used in tandem with scavenger suit and vest."
+	icon_state = "respirator"
+	item_state = "respirator"
+	flags_inv = HIDEFACE|HIDEFACIALHAIR
+	w_class = WEIGHT_CLASS_SMALL
+	flags_cover = MASKCOVERSMOUTH
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 30, "rad" = 30, "fire" = 0, "acid" = 30)
+
+
 // **** Welding gas mask ****
 
 /obj/item/clothing/mask/gas/welding

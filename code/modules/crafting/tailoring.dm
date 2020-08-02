@@ -95,6 +95,41 @@
 	category = CAT_CLOTHING
 	subcategory = CAT_CLOTHING
 
+/datum/crafting_recipe/scavengervest
+	name = "scavenger vest"
+	result = /obj/item/clothing/suit/hooded/armor/vest/scavenger
+	reqs = list(/obj/item/stack/sheet/leather = 3,
+				/obj/item/stack/sheet/durathread = 1,
+				/obj/item/stack/crafting/metalparts = 1,
+				/obj/item/stack/sheet/metal = 2)
+	tools = list(TOOL_WORKBENCH)
+	time = 80
+	category = CAT_CLOTHING
+	subcategory = CAT_CLOTHING
+
+/datum/crafting_recipe/scavengersuit
+	name = "scavenger suit"
+	result = /obj/item/clothing/under/f13/scavenger
+	reqs = list(/obj/item/stack/sheet/leather = 2,
+				/obj/item/stack/sheet/durathread = 1,
+				)
+	tools = list(TOOL_WORKBENCH)
+	time = 40
+	category = CAT_CLOTHING
+	subcategory = CAT_CLOTHING
+
+/datum/crafting_recipe/respirator
+	name = "respirator"
+	result = /obj/item/clothing/mask/respirator
+	reqs = list(/obj/item/stack/sheet/metal = 2,
+				/obj/item/stack/sheet/durathread = 1,
+				/obj/item/stack/crafting/metalparts = 1,
+				/obj/item/reagent_containers/food/snacks/grown/agave = 2)
+	tools = list(TOOL_WORKBENCH)
+	time = 60
+	category = CAT_CLOTHING
+	subcategory = CAT_CLOTHING
+
 /datum/crafting_recipe/f13/tesla_armor
 	name = "tesla armor"
 	result = /obj/item/clothing/suit/armor/f13/tesla
