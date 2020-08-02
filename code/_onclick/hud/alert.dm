@@ -151,14 +151,34 @@
 	icon_state = "too_much_tox"
 //End gas alerts
 
-/obj/screen/alert/thirst
-	name = "Thirst"
-	desc = "Drink."
-	icon_state = "water"//temp
+/obj/screen/alert/turgid
+    name = "Turgid"
+    desc = "You've drank too much and your stomach is sloshing around with liquid."
+    icon_state = "turgid"
+
+/obj/screen/alert/hydrated
+	name = "Hydrated"
+	desc = "You're well hydrated. Keep up your fluids."
+	icon_state = "hydrated" 
+
+/obj/screen/alert/drink 
+	name = "Drink"
+	desc = "Just had something to drink."
+	icon_state = "drink"
+
+/obj/screen/alert/thirsty
+	name = "Thirsty"
+	desc = "You are thirsty. Drink."
+	icon_state = "thirsty"
+
+/obj/screen/alert/dehydrated
+	name = "Dehydrated"
+	desc = "You are Dehydrated. Drink immediately"
+	icon_state = "dehydrated"
 
 /obj/screen/alert/fat
 	name = "Fat"
-	desc = "You ate too much food, lardass. Run around the station and lose some weight."
+	desc = "You ate too much food, lardass. Run around the wasteland and lose some weight."
 	icon_state = "fat"
 
 /obj/screen/alert/hungry

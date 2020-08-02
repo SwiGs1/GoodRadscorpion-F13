@@ -146,14 +146,18 @@
 #define NUTRITION_LEVEL_HUNGRY 250
 #define NUTRITION_LEVEL_STARVING 150
 
-#define THIRST_LEVEL_FULL 600
-#define THIRST_LEVEL_LIGHT 300
-#define THIRST_LEVEL_MIDDLE 200
+#define THIRST_LEVEL_TURGID 450
+#define THIRST_LEVEL_HYDRATED 400
+#define THIRST_LEVEL_LIGHT 200
+#define THIRST_LEVEL_MIDDLE 150
 #define THIRST_LEVEL_HARD 100
-#define THIRST_LEVEL_DEADLY 75
+#define THIRST_LEVEL_DEADLY 50
 
 #define NUTRITION_LEVEL_START_MIN 250
-#define NUTRITION_LEVEL_START_MAX 400
+#define NUTRITION_LEVEL_START_MAX 415	
+
+#define THIRST_LEVEL_START_MIN 300
+#define THIRST_LEVEL_START_MAX 415
 
 //Disgust levels for humans
 #define DISGUST_LEVEL_MAXEDOUT 150
@@ -250,7 +254,7 @@
 #define POCKET_STRIP_DELAY			40	//time taken (in deciseconds) to search somebody's pockets
 #define DOOR_CRUSH_DAMAGE	15	//the amount of damage that airlocks deal when they crush you
 
-#define THIRST_FACTOR		0.2
+#define THIRST_FACTOR		0.2 // factor at which mob thrist decreases
 #define	HUNGER_FACTOR		0.1	//factor at which mob nutrition decreases
 #define	REAGENTS_METABOLISM 0.4	//How many units of reagent are consumed per tick, by default.
 #define REAGENTS_EFFECT_MULTIPLIER (REAGENTS_METABOLISM / 0.4)	// By defining the effect multiplier this way, it'll exactly adjust all effects according to how they originally were with the 0.4 metabolism

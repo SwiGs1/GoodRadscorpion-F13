@@ -13,11 +13,13 @@
 	taste_description = "generic food"
 	taste_mult = 4
 	var/nutriment_factor = 1 * REAGENTS_METABOLISM
+	var/thirst_factor = 1 * REAGENTS_METABOLISM
 	var/water_level = 0.1
 
 /datum/reagent/consumable/on_mob_life(mob/living/carbon/M)
 	current_cycle++
 	M.nutrition += nutriment_factor
+	M.water += thirst_factor
 	holder.remove_reagent(src.id, metabolization_rate)
 
 /datum/reagent/consumable/nutriment

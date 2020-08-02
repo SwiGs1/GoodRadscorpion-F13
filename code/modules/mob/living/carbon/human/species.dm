@@ -984,7 +984,14 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 			H.overeatduration++
 	else
 		if(H.overeatduration > 1)
-			H.overeatduration -= 2 //doubled the unfat rate
+			H.overeatduration -= 2 //doubled the unfat rates
+
+	if (H.water > THIRST_LEVEL_TURGID)
+		if(H.overdrinkduration < 450) //capped so people don't take forever to get unturgid
+			H.overdrinkduration++
+	else
+		if(H.overdrinkduration > 1)
+			H.overdrinkduration -= 2
 
 	//metabolism change
 	if(H.nutrition > NUTRITION_LEVEL_FAT)
@@ -1003,31 +1010,38 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 		H.metabolism_efficiency = 1
 
 	//THIRST//
-	if(H.water > THIRST_LEVEL_LIGHT)
+	if(H.water > THIRST_LEVEL_TURGID)
+		if(H.transpiration_efficiency != 1)
+			to_chat(H, "<span class='notice'>Your stomach feels swollen with liquid...</span>")
+		H.transpiration_efficiency = 1
+	else if(H.water > THIRST_LEVEL_LIGHT)
 		if(H.transpiration_efficiency != 1.1)
-			H << "<span class='notice'>You are no longer thirsty.</span>"
+			to_chat(H, "<span class='notice'>You are no longer thirsty.</span>")
 		H.transpiration_efficiency = 1.1
 	else if(H.water > THIRST_LEVEL_MIDDLE) //LITLE THIRST
 		if(H.transpiration_efficiency != 1)
-			H << "<span class='notice'>Your mouth is incredibly dry.</span>"
+			to_chat(H, "<span class='notice'>You are a bit parched.</span>")
 		H.transpiration_efficiency = 1
 	else if(H.water > THIRST_LEVEL_HARD) //MIDDLE THIRST
 		if(H.transpiration_efficiency != 0.9)
-			H << "<span class='warning'>You are very thirsty, find water.</span>"
+			to_chat(H, "<span class='warning'>You are very thirsty, find water.</span>")
 		H.transpiration_efficiency = 0.9
 	else if(H.water > THIRST_LEVEL_DEADLY) //HARD THIRST
 		if(H.transpiration_efficiency != 0.6)
-			H << "<span class='warning'>You are very dehydrated, find water immediately or you will perish.</span>"
-//		if(prob(4))
-//			H.AdjustWeakened(5)
+			to_chat(H, "<span class='warning'>You are very dehydrated, find water immediately or you will perish.</span>")
+		if(prob(10))
+			H.adjust_blurriness(5)
+		if(prob(4))
+			H.adjustStaminaLoss(4)
 		H.transpiration_efficiency = 0.6
 	else
 		if(H.transpiration_efficiency != 0.1)
-			H << "<span class='warning'>You are extremely dehydrated, death is apon you, you must find water.</span>"
-//		H.adjustOxyLoss(5)//temp disable until this is fixed up.
+			to_chat(H, "<span class='warning'>You are extremely dehydrated, death is upon you, you must find water.</span>")
+		H.adjustOxyLoss(5)
 		H.transpiration_efficiency = 0.1
-//		if(prob(10))
-//			H.AdjustWeakened(5)
+		if(prob(10))
+			H.adjust_blurriness(2)
+
 
 	switch(H.nutrition)
 		if(NUTRITION_LEVEL_FULL to INFINITY)
@@ -1049,16 +1063,26 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 			SEND_SIGNAL(H, COMSIG_ADD_MOOD_EVENT, "nutrition", /datum/mood_event/nutrition/starving)
 			H.throw_alert("nutrition", /obj/screen/alert/starving)
 	switch(H.water)
-		if(THIRST_LEVEL_LIGHT to INFINITY)
+		if(THIRST_LEVEL_TURGID to INFINITY)
+			SEND_SIGNAL(H, COMSIG_ADD_MOOD_EVENT, "thirst", /datum/mood_event/thirst/turgid)
+			H.throw_alert("thirst", /obj/screen/alert/turgid)
+		if(THIRST_LEVEL_HYDRATED to THIRST_LEVEL_TURGID)
+			SEND_SIGNAL(H, COMSIG_CLEAR_MOOD_EVENT, "thirst", /datum/mood_event/thirst/hydrated)
 			H.clear_alert("thirst")
+		if(THIRST_LEVEL_LIGHT to THIRST_LEVEL_HYDRATED)
+			SEND_SIGNAL(H, COMSIG_ADD_MOOD_EVENT, "thirst", /datum/mood_event/thirst/hydrated)
+			H.throw_alert("thirst", /obj/screen/alert/hydrated)
 		if(THIRST_LEVEL_MIDDLE to THIRST_LEVEL_LIGHT)
-			H.throw_alert("thirst", /obj/screen/alert/thirst, 2)
+			SEND_SIGNAL(H, COMSIG_ADD_MOOD_EVENT, "thirst", /datum/mood_event/thirst/drink)
+			H.throw_alert("thirst", /obj/screen/alert/drink)
 		if (THIRST_LEVEL_HARD to THIRST_LEVEL_MIDDLE)
-			H.throw_alert("thirst", /obj/screen/alert/thirst, 3)
+			SEND_SIGNAL(H, COMSIG_ADD_MOOD_EVENT, "thirst", /datum/mood_event/thirst/thirsty)
+			H.throw_alert("thirst", /obj/screen/alert/thirsty)
 		if (THIRST_LEVEL_DEADLY to THIRST_LEVEL_HARD)
-			H.throw_alert("thirst", /obj/screen/alert/thirst, 4)
+			SEND_SIGNAL(H, COMSIG_ADD_MOOD_EVENT, "thirst", /datum/mood_event/thirst/dehydrated)
+			H.throw_alert("thirst", /obj/screen/alert/dehydrated)
 		else
-			H.throw_alert("thirst", /obj/screen/alert/thirst, 5)
+			H.throw_alert("thirst", /obj/screen/alert/dehydrated)
 	return 1
 
 /datum/species/proc/update_health_hud(mob/living/carbon/human/H)
@@ -1190,8 +1214,11 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 				if(SANITY_UNSTABLE to SANITY_DISTURBED)
 					. += 0.5
 
-/*		if(H.has_trait(TRAIT_FAT))
-			. += (1.5 - flight)*/
+		if(H.has_trait(TRAIT_FAT))
+			. += (1.5 - flight)
+		if(H.water > THIRST_LEVEL_TURGID)
+			. += (0.5 - flight)
+
 		if(H.bodytemperature < BODYTEMP_COLD_DAMAGE_LIMIT && !H.has_trait(TRAIT_RESISTCOLD))
 			. += (BODYTEMP_COLD_DAMAGE_LIMIT - H.bodytemperature) / COLD_SLOWDOWN_FACTOR
 	return .
