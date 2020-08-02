@@ -5051,12 +5051,12 @@
 	},
 /area/f13/ncr)
 "aoU" = (
-/turf/closed/wall/f13/wood/house,
 /turf/open/indestructible/ground/outside/desert,
+/turf/closed/wall/f13/wood/house,
 /area/f13/ncr)
 "aoV" = (
 /turf/open/indestructible/ground/outside/desert,
-/turf/open/space/basic,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "aoX" = (
 /mob/living/simple_animal/hostile/ghoul,
@@ -12481,16 +12481,6 @@
 	tag = "icon-housewood2"
 	},
 /area/f13/building)
-"aJe" = (
-/obj/structure/table/wood/settler,
-/obj/effect/decal/cleanable/dirt,
-/obj/item/radio,
-/obj/machinery/light{
-	dir = 1;
-	light_color = "#706891"
-	},
-/turf/open/floor/f13/wood,
-/area/f13/ncr)
 "aJf" = (
 /obj/structure/chair/bench,
 /turf/open/indestructible/ground/outside/dirt,
@@ -12605,11 +12595,10 @@
 	},
 /area/f13/village)
 "aJx" = (
+/obj/effect/decal/cleanable/dirt,
 /obj/structure/closet/cabinet,
 /obj/item/reagent_containers/food/snacks/f13/galette,
 /obj/item/reagent_containers/food/snacks/f13/galette,
-/obj/item/reagent_containers/food/snacks/f13/galette,
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
 /area/f13/ncr)
 "aJy" = (
@@ -12685,8 +12674,8 @@
 /turf/closed/wall/f13/wood,
 /area/f13/village)
 "aJK" = (
-/obj/effect/landmark/start/f13/ncrrecranger,
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/landmark/start/f13/ncrrecranger,
 /turf/open/floor/f13/wood,
 /area/f13/ncr)
 "aJL" = (
@@ -16766,8 +16755,8 @@
 /area/f13/building)
 "aWC" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/landmark/start/f13/ncrncb,
 /obj/machinery/light,
+/obj/effect/landmark/start/f13/ncrsp,
 /turf/open/floor/f13/wood,
 /area/f13/ncr)
 "aWK" = (
@@ -17638,12 +17627,13 @@
 /turf/closed/wall/r_wall/rust,
 /area/f13/ncr)
 "aZD" = (
-/obj/structure/table/wood/settler,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light{
 	dir = 1;
 	light_color = "#706891"
 	},
+/obj/structure/table/wood/settler,
+/obj/item/radio,
 /turf/open/floor/f13/wood,
 /area/f13/ncr)
 "aZE" = (
@@ -39388,6 +39378,15 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
 /area/f13/chapel)
+"mxi" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/bed,
+/obj/item/bedsheet{
+	icon_state = "sheetbrown";
+	tag = "icon-sheetbrown"
+	},
+/turf/open/floor/f13/wood,
+/area/f13/ncr)
 "myi" = (
 /obj/structure/simple_door/house,
 /turf/open/floor/wood/f13/carpet,
@@ -42935,6 +42934,12 @@
 	icon_state = "bar"
 	},
 /area/f13/building)
+"xDK" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "horizontalinnermain0"
+	},
+/area/f13/wasteland)
 "xEM" = (
 /obj/structure/displaycase{
 	start_showpiece_type = /obj/item/clothing/suit/armor/f13/battlecoat/vault
@@ -43033,6 +43038,14 @@
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/legion)
+"xTr" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/closet/cabinet,
+/obj/item/reagent_containers/food/snacks/f13/galette,
+/obj/item/reagent_containers/food/snacks/f13/galette,
+/obj/item/reagent_containers/food/snacks/f13/galette,
+/turf/open/floor/f13/wood,
+/area/f13/ncr)
 "xTK" = (
 /obj/item/cigbutt,
 /turf/closed/mineral/random/low_chance,
@@ -59658,7 +59671,7 @@ crG
 adH
 adY
 abT
-ayw
+ayn
 aeV
 acm
 aiu
@@ -60156,7 +60169,7 @@ avd
 aat
 avd
 avd
-avd
+cpm
 avd
 avd
 aat
@@ -60406,19 +60419,19 @@ adf
 adf
 aWT
 avd
-bmf
+bdF
 xhl
 xhl
 avd
 aat
 avd
-bmf
+bdF
 xhl
 xhl
 avd
 aat
 avd
-bmf
+bdF
 xhl
 xhl
 avd
@@ -60427,7 +60440,7 @@ crG
 crN
 crG
 ajo
-abS
+ajp
 aer
 aer
 aeU
@@ -60661,9 +60674,9 @@ axH
 bcT
 axH
 bcT
-aoN
+aat
 avd
-aJe
+aZD
 aJK
 xhl
 avd
@@ -60672,7 +60685,7 @@ avd
 aZD
 aJK
 xhl
-cpm
+avd
 aat
 avd
 aZD
@@ -60684,7 +60697,7 @@ crG
 crN
 crG
 ajp
-abS
+xDK
 abS
 aeq
 aeV
@@ -60921,20 +60934,20 @@ bcT
 aat
 avd
 aJx
-aue
 xhl
+mxi
 avd
 aat
 avd
-aJx
-aue
+xTr
 xhl
+mxi
 avd
 aat
 avd
-aJx
-aue
+xTr
 xhl
+mxi
 avd
 aat
 crG
