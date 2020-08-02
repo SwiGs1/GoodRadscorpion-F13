@@ -271,7 +271,7 @@ All effects don't start immediately, but rather get worse over time; the rate is
 	id = "rum"
 	description = "Yohoho and all that."
 	color = "#664300" // rgb: 102, 67, 0
-	thirst_factor = 2 * REAGENTS_METABOLISM
+	thirst_factor = 1 * REAGENTS_METABOLISM
 	boozepwr = 60
 	taste_description = "spiked butterscotch"
 	glass_icon_state = "rumglass"
@@ -284,7 +284,7 @@ All effects don't start immediately, but rather get worse over time; the rate is
 	id = "tequila"
 	description = "A strong and mildly flavoured, Mexican produced spirit. Feeling thirsty, hombre?"
 	color = "#FFFF91" // rgb: 255, 255, 145
-	thirst_factor = 6 * REAGENTS_METABOLISM
+	thirst_factor = 0.6 * REAGENTS_METABOLISM
 	boozepwr = 70
 	taste_description = "paint stripper"
 	glass_icon_state = "tequilaglass"

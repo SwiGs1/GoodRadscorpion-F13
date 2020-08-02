@@ -13,7 +13,7 @@
 	glass_icon_state = "glass_orange"
 	glass_name = "glass of orange juice"
 	glass_desc = "Vitamins! Yay!"
-	thirst_factor = 0.9 * REAGENTS_METABOLISM
+	thirst_factor = 1 * REAGENTS_METABOLISM
 	water_level = 1
 
 /datum/reagent/consumable/orangejuice/on_mob_life(mob/living/carbon/M)
@@ -31,7 +31,7 @@
 	glass_icon_state = "glass_red"
 	glass_name = "glass of tomato juice"
 	glass_desc = "Are you sure this is tomato juice?"
-	thirst_factor = 9 * REAGENTS_METABOLISM
+	thirst_factor = 1 * REAGENTS_METABOLISM
 	water_level = 1
 
 /datum/reagent/consumable/tomatojuice/on_mob_life(mob/living/carbon/M)
@@ -49,7 +49,7 @@
 	glass_icon_state = "glass_green"
 	glass_name = "glass of lime juice"
 	glass_desc = "A glass of sweet-sour lime juice."
-	thirst_factor = 0.3 * REAGENTS_METABOLISM
+	thirst_factor = 0.9 * REAGENTS_METABOLISM
 	water_level = 1
 
 /datum/reagent/consumable/limejuice/on_mob_life(mob/living/carbon/M)
@@ -67,7 +67,7 @@
 	glass_icon_state = "carrotjuice"
 	glass_name = "glass of  carrot juice"
 	glass_desc = "It's just like a carrot but without crunching."
-	thirst_factor = 0.2 * REAGENTS_METABOLISM
+	thirst_factor = 0.7 * REAGENTS_METABOLISM
 	water_level = 1
 
 /datum/reagent/consumable/carrotjuice/on_mob_life(mob/living/carbon/M)
@@ -91,7 +91,7 @@
 	glass_icon_state = "berryjuice"
 	glass_name = "glass of berry juice"
 	glass_desc = "Berry juice. Or maybe it's jam. Who cares?"
-	thirst_factor = 0.6 * REAGENTS_METABOLISM
+	thirst_factor = 0.8 * REAGENTS_METABOLISM
 	water_level = 1
 
 /datum/reagent/consumable/applejuice
@@ -141,7 +141,7 @@
 	glass_icon_state  = "lemonglass"
 	glass_name = "glass of lemon juice"
 	glass_desc = "Sour..."
-	thirst_factor = 0.2 * REAGENTS_METABOLISM
+	thirst_factor = 0.6 * REAGENTS_METABOLISM
 	water_level = 1
 
 /datum/reagent/consumable/banana
@@ -153,7 +153,7 @@
 	glass_icon_state = "banana"
 	glass_name = "glass of banana juice"
 	glass_desc = "The raw essence of a banana. HONK."
-	thirst_factor = 0.4 * REAGENTS_METABOLISM
+	thirst_factor = 0.8 * REAGENTS_METABOLISM
 	water_level = 1
 
 /datum/reagent/consumable/banana/on_mob_life(mob/living/carbon/M)
@@ -225,7 +225,7 @@
 	description = "The juice of a bunch of grapes. Guaranteed non-alcoholic."
 	color = "#290029" // dark purple
 	taste_description = "grape soda"
-	thirst_factor = 0.7 * REAGENTS_METABOLISM
+	thirst_factor = 0.8 * REAGENTS_METABOLISM
 	water_level = 1
 
 /datum/reagent/consumable/milk
@@ -237,7 +237,7 @@
 	glass_icon_state = "glass_white"
 	glass_name = "glass of milk"
 	glass_desc = "White and nutritious goodness!"
-	thirst_factor = 0.5 * REAGENTS_METABOLISM
+	thirst_factor = 1.2 * REAGENTS_METABOLISM
 	water_level = 1
 
 /datum/reagent/consumable/milk/on_mob_life(mob/living/carbon/M)
@@ -261,7 +261,7 @@
 	glass_icon_state = "glass_white"
 	glass_name = "glass of soy milk"
 	glass_desc = "White and nutritious soy goodness!"
-	thirst_factor = 0.6 * REAGENTS_METABOLISM
+	thirst_factor = 0.9 * REAGENTS_METABOLISM
 	water_level = 1
 
 /datum/reagent/consumable/soymilk/on_mob_life(mob/living/carbon/M)
@@ -299,7 +299,7 @@
 	glass_icon_state = "glass_brown"
 	glass_name = "glass of coffee"
 	glass_desc = "Don't drop it, or you'll send scalding liquid and glass shards everywhere."
-	thirst_factor = 1 * REAGENTS_METABOLISM
+	thirst_factor = 1.1 * REAGENTS_METABOLISM
 	water_level = 1
 
 /datum/reagent/consumable/coffee/overdose_process(mob/living/M)
@@ -327,7 +327,7 @@
 	glass_icon_state = "teaglass"
 	glass_name = "glass of tea"
 	glass_desc = "Drinking it from here would not seem right."
-	thirst_factor = 1 * REAGENTS_METABOLISM
+	thirst_factor = 1.5 * REAGENTS_METABOLISM
 	water_level = 1
 
 /datum/reagent/consumable/tea/on_mob_life(mob/living/carbon/M)
@@ -382,7 +382,7 @@
 	glass_icon_state = "icedcoffeeglass"
 	glass_name = "iced coffee"
 	glass_desc = "A drink to perk you up and refresh you!"
-	thirst_factor = 0.5 * REAGENTS_METABOLISM
+	thirst_factor = 1.4 * REAGENTS_METABOLISM
 	water_level = 1
 
 /datum/reagent/consumable/icecoffee/on_mob_life(mob/living/carbon/M)
@@ -404,7 +404,7 @@
 	glass_icon_state = "icedteaglass"
 	glass_name = "iced tea"
 	glass_desc = "All natural, antioxidant-rich flavour sensation."
-	thirst_factor = 1 * REAGENTS_METABOLISM
+	thirst_factor = 1.2 * REAGENTS_METABOLISM
 	water_level = 1
 
 /datum/reagent/consumable/icetea/on_mob_life(mob/living/carbon/M)
@@ -426,7 +426,7 @@
 	glass_icon_state  = "glass_brown"
 	glass_name = "glass of Space Cola"
 	glass_desc = "A glass of refreshing Space Cola."
-	thirst_factor = 0.4 * REAGENTS_METABOLISM
+	thirst_factor = 0.9 * REAGENTS_METABOLISM
 	water_level = 1
 
 /datum/reagent/consumable/space_cola/on_mob_life(mob/living/carbon/M)
@@ -484,7 +484,7 @@
 	glass_icon_state = "dr_gibb_glass"
 	glass_name = "glass of Dr. Gibb"
 	glass_desc = "Dr. Gibb. Not as dangerous as the glass_name might imply."
-	thirst_factor = 0.6 * REAGENTS_METABOLISM
+	thirst_factor = 0.7 * REAGENTS_METABOLISM
 	water_level = 1
 
 /datum/reagent/consumable/dr_gibb/on_mob_life(mob/living/carbon/M)
@@ -501,7 +501,7 @@
 	glass_icon_state = "space-up_glass"
 	glass_name = "glass of Space-Up"
 	glass_desc = "Space-up. It helps you keep your cool."
-	thirst_factor = 0.6 * REAGENTS_METABOLISM
+	thirst_factor = 0.8 * REAGENTS_METABOLISM
 	water_level = 1
 
 
@@ -566,7 +566,7 @@
 	glass_icon_state = "glass_clear"
 	glass_name = "glass of soda water"
 	glass_desc = "Soda water. Why not make a scotch and soda?"
-	thirst_factor = 0.6 * REAGENTS_METABOLISM
+	thirst_factor = 0.9 * REAGENTS_METABOLISM
 	water_level = 1
 
 /datum/reagent/consumable/sodawater/on_mob_life(mob/living/carbon/M)
@@ -584,7 +584,7 @@
 	glass_icon_state = "glass_clear"
 	glass_name = "glass of tonic water"
 	glass_desc = "Quinine tastes funny, but at least it'll keep that Space Malaria away."
-	thirst_factor = 0.7 * REAGENTS_METABOLISM
+	thirst_factor = 0.8 * REAGENTS_METABOLISM
 	water_level = 1
 
 /datum/reagent/consumable/tonic/on_mob_life(mob/living/carbon/M)
@@ -620,7 +620,7 @@
 	glass_icon_state = "soy_latte"
 	glass_name = "soy latte"
 	glass_desc = "A nice and refreshing beverage while you're reading."
-	thirst_factor = 0.4 * REAGENTS_METABOLISM // for losers - swigs
+	thirst_factor = 0.5 * REAGENTS_METABOLISM // for losers - swigs
 	water_level = 1
 
 /datum/reagent/consumable/soy_latte/on_mob_life(mob/living/carbon/M)
@@ -643,7 +643,7 @@
 	glass_icon_state = "cafe_latte"
 	glass_name = "cafe latte"
 	glass_desc = "A nice, strong and refreshing beverage while you're reading."
-	thirst_factor = 0.6 * REAGENTS_METABOLISM
+	thirst_factor = 0.9 * REAGENTS_METABOLISM
 	water_level = 1
 
 /datum/reagent/consumable/cafe_latte/on_mob_life(mob/living/carbon/M)
@@ -803,7 +803,7 @@
 	description = "Milk for cool kids."
 	color = "#7D4E29"
 	taste_description = "chocolate milk"
-	thirst_factor = 0.9 * REAGENTS_METABOLISM
+	thirst_factor = 1.3 * REAGENTS_METABOLISM
 	water_level = 1
 
 /datum/reagent/consumable/menthol
