@@ -36944,6 +36944,10 @@
 	icon_state = "whitegreenrustychess"
 	},
 /area/f13/city)
+"ewp" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/closed/wall/f13/wood/house,
+/area/f13/legion)
 "eyl" = (
 /obj/machinery/light/small,
 /turf/open/floor/f13/wood,
@@ -38198,11 +38202,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
 /area/f13/legion)
-"iua" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/small,
-/turf/open/floor/f13/wood,
-/area/f13/legion)
 "iwx" = (
 /obj/effect/decal/cleanable/blood/old{
 	icon_state = "gibbearcore";
@@ -38891,6 +38890,11 @@
 	tag = "icon-dirt (WEST)"
 	},
 /area/f13/wasteland)
+"kWp" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/light/small,
+/turf/open/floor/f13/wood,
+/area/f13/legion)
 "kXe" = (
 /obj/structure/closet/crate/radiation,
 /obj/effect/decal/cleanable/dirt,
@@ -39864,16 +39868,6 @@
 /obj/item/reagent_containers/food/snacks/meat/steak/gecko,
 /turf/open/floor/f13/wood,
 /area/f13/city)
-"onm" = (
-/obj/structure/closet/cabinet,
-/obj/effect/spawner/lootdrop/f13/cash_legion_low,
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/small{
-	dir = 8;
-	light_color = "#d8b1b1"
-	},
-/turf/open/floor/f13/wood,
-/area/f13/legion)
 "ooD" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/campfire/barrel,
@@ -40095,15 +40089,6 @@
 	icon_state = "dirt"
 	},
 /area/f13/wasteland)
-"oZj" = (
-/obj/structure/closet/cabinet,
-/obj/effect/spawner/lootdrop/f13/cash_legion_low,
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/small{
-	dir = 4
-	},
-/turf/open/floor/f13/wood,
-/area/f13/legion)
 "oZB" = (
 /mob/living/simple_animal/hostile/bloatfly,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -40569,10 +40554,6 @@
 /obj/structure/barricade/wooden,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
-"qDL" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/closed/wall/f13/wood/house,
-/area/f13/legion)
 "qFg" = (
 /obj/structure/bodycontainer/crematorium,
 /turf/open/floor/plasteel/f13{
@@ -41858,6 +41839,16 @@
 	tag = "icon-innermaincornerouter (EAST)"
 	},
 /area/f13/tunnel)
+"unx" = (
+/obj/structure/closet/cabinet,
+/obj/effect/spawner/lootdrop/f13/cash_legion_low,
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/light/small{
+	dir = 8;
+	light_color = "#d8b1b1"
+	},
+/turf/open/floor/f13/wood,
+/area/f13/legion)
 "uoC" = (
 /obj/structure/rack,
 /obj/item/canvas/twentythreeXtwentythree,
@@ -42332,6 +42323,15 @@
 	icon_state = "bar"
 	},
 /area/f13/building)
+"vIZ" = (
+/obj/structure/closet/cabinet,
+/obj/effect/spawner/lootdrop/f13/cash_legion_low,
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/open/floor/f13/wood,
+/area/f13/legion)
 "vJD" = (
 /obj/structure/simple_door/wood,
 /obj/effect/decal/cleanable/dirt,
@@ -95286,9 +95286,9 @@ bnB
 bnB
 bnB
 bnB
-qDL
-qDL
-qDL
+ewp
+ewp
+ewp
 bnB
 bnB
 bnB
@@ -99141,7 +99141,7 @@ ads
 bvb
 voM
 cli
-iua
+kWp
 bvb
 bvb
 bvb
@@ -101724,7 +101724,7 @@ bvb
 hVh
 cli
 cli
-iua
+kWp
 bnB
 aae
 aae
@@ -103252,9 +103252,9 @@ ads
 bvb
 xLg
 cli
-onm
+unx
 cli
-onm
+unx
 cli
 xLg
 bvb
@@ -104280,9 +104280,9 @@ ads
 bvb
 xLg
 cli
-oZj
+vIZ
 cli
-oZj
+vIZ
 cli
 xLg
 bvb
@@ -106333,7 +106333,7 @@ bqd
 cli
 cli
 cli
-iua
+kWp
 bvb
 aae
 aae
@@ -106847,7 +106847,7 @@ bqd
 cli
 cli
 cli
-iua
+kWp
 bnB
 aae
 aae
@@ -107361,7 +107361,7 @@ bqd
 cli
 cli
 cli
-iua
+kWp
 bnB
 aae
 aae
