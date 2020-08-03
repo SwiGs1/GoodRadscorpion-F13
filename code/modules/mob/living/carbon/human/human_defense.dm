@@ -748,9 +748,9 @@
 
 			switch(water)
 				if(THIRST_LEVEL_TURGID to INFINITY)
-					to_chat(src, "<span class='info'>You feel absolutely full of liquid!/span>")
+					to_chat(src, "<span class='info'>You feel absolutely full of liquid!</span>")
 				if(THIRST_LEVEL_HYDRATED to THIRST_LEVEL_TURGID)
-					to_chat(src, "<span class='info'>You feel nice and hydrated./span>")
+					to_chat(src, "<span class='info'>You feel nice and hydrated.</span>")
 				if(THIRST_LEVEL_MIDDLE to THIRST_LEVEL_HYDRATED)
 					to_chat(src, "<span class='info'>You could use a drink.</span>")
 				if(THIRST_LEVEL_HARD to THIRST_LEVEL_MIDDLE)
